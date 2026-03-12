@@ -1,27 +1,30 @@
-Create a clean horizontal website logo for the brand DrainCleaningNearMe.us.
+Create a polished horizontal website logo for the brand DrainCleaningNearMe.us that matches a dark emergency-services landing page.
 
 Requirements:
-- Canvas: 240x48 pixels
-- Also provide a 2x retina export at 480x96 pixels
+- Primary canvas: 520x72 pixels
+- Also provide a 2x retina export at 1040x144 pixels
 - Transparent background
 - Modern plumbing / drain-cleaning style
 - Dark-site compatible logo meant to sit on a deep navy background (#0B1120)
-- Include a simple water droplet / drain icon on the left
-- Main text: DrainCleaningNearMe
-- Suffix: .us
+- Include a premium water droplet / drain icon on the left with a subtle glow
+- Use a compact two-line wordmark on the right:
+	- Line 1: Drain Cleaning
+	- Line 2: Near Me.us
 - Color the .us suffix in #00A3FF
 - Use a bold geometric sans style similar to Inter ExtraBold
 - Keep the result crisp and readable at small sizes
-- Use white text for DrainCleaningNearMe
+- Use white text for the main words and soft off-white (#E5E7EB) for the secondary line if needed
 - Accent color: #00A3FF
-- Optional subtle glow around the icon, but keep it professional
+- Use subtle cyan glow only around the icon, keep it professional
 - No background box, no mockup, no extra taglines
 
 Output:
-- Export as WebP: logo.webp (240x48)
-- Export as WebP: logo@2x.webp (480x96)
+- Export as SVG: logo.svg
+- Export as WebP: logo.webp (520x72)
+- Export as WebP: logo@2x.webp (1040x144)
 - Keep padding balanced so the icon and text are vertically centered
 
 Design direction:
 - Trustworthy, emergency-service, modern local-home-services branding
 - Minimal, premium, easy to read on mobile and desktop
+- Make it feel consistent with a dark blue, neon-accent theme
