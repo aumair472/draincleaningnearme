@@ -244,7 +244,7 @@ address {
 }
 
 .header__logo-image {
-    width: min(250px, 100%);
+    width: min(600px, 100%);
     height: auto;
 }
 
@@ -952,7 +952,7 @@ address {
     }
 
     .header__logo-image {
-        width: 132px;
+        width: 300px;
     }
 
     .header__logo-fallback {
@@ -1134,7 +1134,7 @@ address {
     }
 
     .header__logo-image {
-        width: 148px;
+        width: 450px;
     }
 
     .header__logo-fallback {
