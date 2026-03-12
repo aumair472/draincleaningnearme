@@ -128,6 +128,38 @@
     document.addEventListener('DOMContentLoaded', function () {
         initRevealAnimations();
         trackCallClicks();
+
+        // ---- Cookie Consent ----
+        function initCookieConsent() {
+            var banner = document.getElementById('cookie-banner');
+            if (!banner) return;
+            if (localStorage.getItem('cookie_consent')) return;
+            setTimeout(function () { banner.classList.add('cookie-banner--visible'); }, 1200);
+            document.getElementById('cookie-accept').addEventListener('click', function () {
+                localStorage.setItem('cookie_consent', 'accepted');
+                banner.classList.remove('cookie-banner--visible');
+                loadAnalytics();
+            });
+            document.getElementById('cookie-decline').addEventListener('click', function () {
+                localStorage.setItem('cookie_consent', 'declined');
+                banner.classList.remove('cookie-banner--visible');
+            });
+        }
+
+        function loadAnalytics() {
+            var GA_ID = 'G-XXXXXXXXXX'; // Replace with your real GA4 ID
+            if (!GA_ID || GA_ID === 'G-XXXXXXXXXX') return;
+            var s = document.createElement('script');
+            s.async = true;
+            s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+            document.head.appendChild(s);
+            window.dataLayer = window.dataLayer || [];
+            window.gtag = function () { window.dataLayer.push(arguments); };
+            gtag('js', new Date());
+            gtag('config', GA_ID);
+        }
+
+        initCookieConsent();
     });
 
 })();
