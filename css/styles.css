@@ -224,6 +224,7 @@ address {
     align-items: center;
     justify-content: space-between;
     height: 64px;
+    gap: var(--sp-3);
 }
 
 .header__logo {
@@ -234,10 +235,22 @@ address {
     font-weight: 800;
     font-size: var(--fs-lg);
     text-decoration: none;
+    min-width: 0;
+    flex: 1 1 auto;
 }
 
 .header__logo:hover {
     color: var(--c-heading);
+}
+
+.header__logo-image {
+    width: min(180px, 100%);
+    height: auto;
+}
+
+.header__logo-fallback {
+    max-width: 100%;
+    white-space: nowrap;
 }
 
 .header__logo-icon {
@@ -246,6 +259,11 @@ address {
 
 .logo-dot {
     color: var(--c-primary);
+}
+
+.header__cta {
+    flex-shrink: 0;
+    gap: var(--sp-2);
 }
 
 .header__cta svg {
@@ -933,9 +951,34 @@ address {
         gap: var(--sp-1);
     }
 
+    .header__logo-image {
+        width: 112px;
+    }
+
+    .header__logo-fallback {
+        font-size: 0.72rem !important;
+        gap: 6px !important;
+    }
+
     .header__logo-icon {
         width: 24px;
         height: 24px;
+    }
+
+    .header__cta {
+        min-width: 44px;
+        min-height: 44px;
+        padding: var(--sp-2);
+        border-radius: 50%;
+    }
+
+    .header__cta-text {
+        display: none;
+    }
+
+    .header__cta svg {
+        width: 18px;
+        height: 18px;
     }
 
     .btn--primary {
@@ -1082,8 +1125,32 @@ address {
 /* ---------- SMALL PHONES (375px–479px) — Default mobile base ---------- */
 @media (min-width: 375px) and (max-width: 479px) {
 
+    .header__inner {
+        gap: var(--sp-2);
+    }
+
     .header__logo {
         font-size: 0.7rem;
+    }
+
+    .header__logo-image {
+        width: 130px;
+    }
+
+    .header__logo-fallback {
+        font-size: 0.82rem !important;
+        gap: 6px !important;
+    }
+
+    .header__cta {
+        min-width: 44px;
+        min-height: 44px;
+        padding: var(--sp-2);
+        border-radius: 50%;
+    }
+
+    .header__cta-text {
+        display: none;
     }
 
     .hero {
