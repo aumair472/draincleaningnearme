@@ -50,25 +50,13 @@ Options -Indexes -MultiViews
 ErrorDocument 404 /404.html
 ErrorDocument 500 /500.html
 
-# Pretty URLs for static .html pages
+# Directory-based Pretty URLs handled by folder structure
 
 # 1. Canonical home URL
 RewriteRule ^index(?:\.html)?/?$ / [R=301,L,NC]
 
-# 2. Redirect /page.html to /page/
-RewriteCond %{THE_REQUEST} \s/+(.+?)\.html(?:[\s?]|$) [NC]
-RewriteRule ^ %1/ [R=301,L]
+# 2. Redirect folder/index.html to folder/
+RewriteCond %{THE_REQUEST} \s/+(.+?)/index\.html(?:[\s?]|$) [NC]
+RewriteRule ^ /%1/ [R=301,L]
 
-# 3. Add trailing slash to extensionless URLs (canonicalize)
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_URI} !/$
-RewriteCond %{REQUEST_URI} !\.
-RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^(.*)$ $1/ [R=301,L]
-
-# 4. Internally map /page/ to page.html
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^(.+?)/?$ $1.html [L]
+# No further rewrite rules needed for /about/, /contact/, etc.
