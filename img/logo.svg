@@ -1,41 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="560" height="56" viewBox="0 0 560 56" role="img" aria-labelledby="logoTitle logoDesc">
-  <title id="logoTitle">DrainCleaningNearMe.us logo</title>
-  <desc id="logoDesc">A modern single-line plumbing-themed logo with a blue droplet icon and the DrainCleaningNearMe.us wordmark on a transparent background.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="80" viewBox="0 0 480 80" role="img" aria-labelledby="logoTitle">
+  <title id="logoTitle">DrainCleaningNearMe.us - Clean Logo</title>
   <defs>
-    <linearGradient id="iconBg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#101A31"/>
-      <stop offset="100%" stop-color="#0B1120"/>
-    </linearGradient>
-    <linearGradient id="dropFill" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#44C3FF"/>
-      <stop offset="100%" stop-color="#00A3FF"/>
-    </linearGradient>
-    <filter id="iconGlow" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0 0 1 0 0 0.639 0 0 1 0 1 0 0 0 0.18 0" result="glow"/>
-      <feMerge>
-        <feMergeNode in="glow"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
+    <filter id="softGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
     </filter>
   </defs>
-
-  <g transform="translate(6 6)" filter="url(#iconGlow)">
-    <rect x="0" y="0" width="44" height="44" rx="14" fill="url(#iconBg)" stroke="#FFFFFF" stroke-opacity="0.08"/>
-    <circle cx="22" cy="22" r="16" fill="none" stroke="#00A3FF" stroke-width="2.25"/>
-    <path d="M22 10C22 10 15.1 19 15.1 25.1C15.1 30.55 18.19 34.5 22 34.5C25.81 34.5 28.9 30.55 28.9 25.1C28.9 19 22 10 22 10Z" fill="url(#dropFill)"/>
-    <g stroke="#FFFFFF" stroke-opacity="0.45" stroke-linecap="round" stroke-width="1.5">
-      <path d="M18.3 21.5H25.7"/>
-      <path d="M17.4 24.7H26.6"/>
-      <path d="M18.7 27.8H25.3"/>
-      <path d="M20.3 19.3V29"/>
-      <path d="M23.7 19.3V29"/>
-    </g>
+  <!-- Minimalist Icon -->
+  <g transform="translate(10, 15)">
+    <!-- Simple Circular Drain / Circle -->
+    <circle cx="25" cy="25" r="23" stroke="#00A3FF" stroke-width="2.5" fill="none" opacity="0.4" />
+    <!-- Modern Water Drop -->
+    <path d="M25 12C25 12 16 23 16 30C16 35 20 39 25 39C30 39 34 35 34 30C34 23 25 12 25 12Z" fill="#00A3FF" />
   </g>
-
-  <g font-family="Inter, Arial, Helvetica, sans-serif" text-rendering="geometricPrecision">
-    <text x="62" y="34" fill="#FFFFFF" font-size="25" font-weight="800" letter-spacing="-0.3">DrainCleaningNearMe</text>
-    <text x="320" y="34" fill="#00A3FF" font-size="25" font-weight="800">.us</text>
-    <path d="M62 42H354" stroke="#00A3FF" stroke-width="2.5" stroke-linecap="round" opacity="0.7"/>
+  <!-- Clean Typography -->
+  <g font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="28" letter-spacing="-0.5">
+    <text x="75" y="47" fill="#FFFFFF" font-weight="800">DrainCleaning</text>
+    <text x="268" y="47" fill="#FFFFFF" font-weight="400">NearMe</text>
+    <text x="375" y="47" fill="#00A3FF" font-weight="800">.us</text>
   </g>
 </svg>
