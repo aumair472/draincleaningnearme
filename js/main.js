@@ -163,3 +163,11 @@
     });
 
 })();
+gtag('js', new Date());
+gtag('config', GA_ID);
+        }
+
+initCookieConsent();
+    });
+
+}) ();
