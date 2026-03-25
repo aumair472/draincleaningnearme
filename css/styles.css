@@ -379,6 +379,123 @@ address {
     }
 }
 
+/* ========== HERO GRID LAYOUT ========== */
+.hero__grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-10);
+    align-items: center;
+    width: 100%;
+}
+
+.hero__image-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    animation: fadeInUp 0.6s 0.4s ease both;
+    gap: var(--sp-6);
+}
+
+@media (min-width: 992px) {
+    .hero__grid {
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+        gap: var(--sp-12);
+    }
+
+    .hero__content {
+        flex: 1.2;
+        max-width: 680px;
+        margin: 0;
+    }
+
+    .hero__image-column {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: var(--sp-6);
+    }
+
+    .hero__actions {
+        align-items: flex-start;
+    }
+}
+
+
+.hero__image-wrap {
+    position: relative;
+    border-radius: var(--r-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--c-border);
+    width: 100%;
+    max-width: 500px;
+    background: var(--c-bg-alt);
+}
+
+.hero__image-wrap::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(45deg, rgba(0, 163, 255, 0.1), transparent);
+    pointer-events: none;
+}
+
+.hero__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    transition: transform var(--tr-slow);
+}
+
+.hero__image-wrap:hover .hero__image {
+    transform: scale(1.05);
+}
+
+/* Service Page Hero Grid */
+.service-page__hero-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-8);
+}
+
+.service-page__image-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: var(--sp-6);
+}
+
+@media (min-width: 992px) {
+    .service-page__hero-grid {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: var(--sp-12);
+    }
+
+    .service-page__hero {
+        flex: 1.2;
+        margin-bottom: 0 !important;
+    }
+
+    .service-page__image-column {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: var(--sp-6);
+    }
+}
+
 /* ========== TRUST BAR ========== */
 .trust-bar {
     background: var(--c-bg-alt);
