@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="80" viewBox="0 0 480 80" role="img" aria-labelledby="logoTitle">
+  <title id="logoTitle">DrainCleaningNearMe.us - Clean Logo</title>
+  <defs>
+    <filter id="softGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  <!-- Minimalist Icon -->
+  <g transform="translate(10, 15)">
+    <!-- Simple Circular Drain / Circle -->
+    <circle cx="25" cy="25" r="23" stroke="#00A3FF" stroke-width="2.5" fill="none" opacity="0.4" />
+    <!-- Modern Water Drop -->
+    <path d="M25 12C25 12 16 23 16 30C16 35 20 39 25 39C30 39 34 35 34 30C34 23 25 12 25 12Z" fill="#00A3FF" />
+  </g>
+  <!-- Clean Typography -->
+  <g font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="28" letter-spacing="-0.5">
+    <text x="75" y="47" fill="#FFFFFF" font-weight="800">DrainCleaning</text>
+    <text x="268" y="47" fill="#FFFFFF" font-weight="400">NearMe</text>
+    <text x="375" y="47" fill="#00A3FF" font-weight="800">.us</text>
+  </g>
+</svg>
