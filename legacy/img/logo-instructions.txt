@@ -1,9 +1,0 @@
-Logo export instructions for DrainCleaningNearMe.us
-
-- Export file name: logo.webp
-- Dimensions: 240x48px
-- Also export: logo@2x.webp at 480x96px
-- Brand name: DrainCleaningNearMe with ".us" in #00A3FF
-- Font: Inter, 800 weight
-- Background: transparent
-- Use Figma, Canva, or any design tool to export the final WebP assets
