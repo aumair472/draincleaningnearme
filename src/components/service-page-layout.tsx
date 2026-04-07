@@ -50,10 +50,10 @@ export function ServicePageLayout({
             <div className="text-base md:text-lg text-slate-400 font-medium leading-relaxed max-w-3xl mx-auto space-y-6">
               {description}
             </div>
-            
+
             <div className="flex flex-col sm:flex-row justify-center gap-4 mt-12">
-              <Link 
-                href="tel:+17247506935" 
+              <Link
+                href="tel:+17247506935"
                 className={cn(
                   "h-16 px-12 md:px-20 text-xl font-black rounded-2xl flex items-center justify-center gap-3",
                   "bg-accent text-white shadow-accent-glow hover:scale-105 transition-all uppercase tracking-widest italic"
@@ -62,7 +62,7 @@ export function ServicePageLayout({
                 <Phone fill="currentColor" className="h-6 w-6" />
                 (724) 750-6935
               </Link>
-              <Link 
+              <Link
                 href="/contact"
                 className={cn(
                   "h-16 px-10 md:px-14 text-lg font-black rounded-2xl border-2 flex items-center justify-center gap-3",
@@ -112,15 +112,15 @@ export function ServicePageLayout({
               </ul>
               <div className="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center gap-6 relative z-10">
                 <div className="flex items-center gap-4">
-                   <div className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center text-primary">
-                      <Clock size={28} />
-                   </div>
+                  <div className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center text-primary">
+                    <Clock size={28} />
+                  </div>
                   <div>
                     <h4 className="font-black uppercase tracking-tight italic text-white text-sm">Available 24/7</h4>
                     <p className="text-[10px] text-slate-500 font-medium uppercase tracking-widest">Day or night assistance</p>
                   </div>
                 </div>
-                <Link 
+                <Link
                   href="tel:+17247506935"
                   className={cn(
                     "w-full sm:w-auto h-12 px-6 rounded-xl font-black uppercase italic tracking-widest bg-primary text-white text-xs flex items-center justify-center"
@@ -134,13 +134,6 @@ export function ServicePageLayout({
           {children && <div className="mt-24">{children}</div>}
         </section>
 
-        <CommonCauses />
-        <TrustBar />
-        <CTASection 
-          title="Need Emergency Help?" 
-          subtitle="Our local licensed experts are available 24/7 to solve your drainage problems. Call now for priority dispatch."
-          variant="accent"
-        />
       </main>
       <Footer />
     </>

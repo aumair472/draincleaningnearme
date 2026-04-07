@@ -23,6 +23,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const locationRoutes = [
     "/drain-cleaning-nyc",
     "/drain-cleaning-los-angeles",
+    "/drain-cleaning-albuquerque",
+    "/drain-cleaning-san-jose",
+    "/drain-cleaning-phoenix",
+    "/drain-cleaning-san-diego",
+    "/drain-cleaning-san-antonio",
+    "/drain-cleaning-houston",
+    "/drain-cleaning-philadelphia",
+    "/drain-cleaning-austin",
+    "/drain-cleaning-dallas",
+    "/drain-cleaning-chicago",
   ];
 
   const allRoutes = [...staticRoutes, ...serviceRoutes, ...locationRoutes].map((route) => ({
