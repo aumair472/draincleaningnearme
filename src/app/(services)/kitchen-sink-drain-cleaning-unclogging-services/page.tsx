@@ -1,12 +1,17 @@
 import Link from "next/link";
 import { Zap, Phone } from "lucide-react";
 import { ServicePageLayout } from "@/components/service-page-layout";
+import { CallConclusion } from "@/components/call-conclusion";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Kitchen Sink Drain Cleaning & Unclogging Services | Drain Cleaning Near Me",
   description: "Professional kitchen sink drain cleaning and unclogging services. 24/7 emergency clogged sink repair and kitchen drain pipe cleaning nationwide.",
+  alternates: {
+    canonical: "https://www.draincleaningnearme.us/kitchen-sink-drain-cleaning-unclogging-services",
+  },
 };
+
 
 export default function KitchenSinkPage() {
   return (
@@ -48,9 +53,9 @@ export default function KitchenSinkPage() {
         {/* Why Clogs Happen */}
         <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm  relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl opacity-50" />
-          <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-tight text-text mb-8 relative z-10">
+          <h3 className="text-3xl md:text-4xl font-bold uppercase tracking-tight text-text mb-8 relative z-10">
             Why Kitchen Sink <span className="text-primary ">Drain Clogs</span> Happen
-          </h2>
+          </h3>
           <div className="grid md:grid-cols-2 gap-12 relative z-10">
             <div className="space-y-6">
               <p className="text-text/80 font-bold uppercase tracking-widest text-xs leading-loose">
@@ -89,7 +94,7 @@ export default function KitchenSinkPage() {
         {/* Detailed Services */}
         <section className="grid lg:grid-cols-2 gap-8">
           <div className="p-10 md:p-14 rounded-xl bg-bg border border-border shadow-sm ">
-            <h2 className="text-2xl font-bold uppercase  mb-8 text-text">Our Kitchen Sink Services</h2>
+            <h3 className="text-2xl font-bold uppercase mb-8 text-text">Our Kitchen Sink Services</h3>
             <div className="space-y-8">
               {[
                 { title: "Clogged Sink Repair", desc: "Use motorized augers and plumbing snakes to break up and remove deep clogs safely without damaging fixtures." },
@@ -107,7 +112,7 @@ export default function KitchenSinkPage() {
           </div>
 
           <div className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
-            <h2 className="text-2xl font-bold uppercase  mb-8 text-text">DIY vs. Professional</h2>
+            <h3 className="text-2xl font-bold uppercase mb-8 text-text">DIY vs. Professional</h3>
             <div className="space-y-6">
               <p className="text-text/80 font-bold uppercase tracking-widest text-xs leading-loose">
                 Many homeowners start with DIY hacks like baking soda or store-bought chemicals. These have serious limitations:
@@ -134,9 +139,9 @@ export default function KitchenSinkPage() {
 
         {/* FAQ Section */}
         <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
-          <h2 className="text-3xl font-bold uppercase  mb-12 text-center text-text">
+          <h3 className="text-3xl font-bold uppercase mb-12 text-center text-text">
             Frequently Asked <span className="text-primary">Questions</span>
-          </h2>
+          </h3>
           <div className="grid md:grid-cols-2 gap-12">
             {[
               { q: "How fast can you unclog my kitchen sink?", a: "Most kitchen sink drain clogged cases are resolved within the same day. For emergencies, technicians can arrive within 1–2 hours." },
@@ -155,9 +160,9 @@ export default function KitchenSinkPage() {
 
         {/* Prevention Tips */}
         <section className="p-10 md:p-14 rounded-xl bg-gradient-to-br from-primary/5 to-accent/5 border border-border shadow-sm  text-center">
-          <h2 className="text-2xl font-bold uppercase tracking-tight text-text mb-8 text-center uppercase ">
+          <h3 className="text-2xl font-bold uppercase tracking-tight text-text mb-8 text-center">
              Keeping Your Kitchen Sink Drain Clear
-          </h2>
+          </h3>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { title: "No Grease", desc: "Never pour grease down the sink; dispose of it in the trash instead." },
@@ -175,7 +180,7 @@ export default function KitchenSinkPage() {
 
         {/* Other Services */}
         <section className="p-10 md:p-14 rounded-xl bg-card border border-border ">
-           <h2 className="text-2xl font-bold uppercase  mb-10 text-text text-center">Our Other Services</h2>
+           <h3 className="text-2xl font-bold uppercase  mb-10 text-text text-center">Our Other Services</h3>
            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {[
                 { title: "Bathroom Drain", href: "/bathroom-drain-cleaning-unclogging-services/" },
@@ -193,21 +198,7 @@ export default function KitchenSinkPage() {
         </section>
 
         {/* Conclusion CTA */}
-        <div className="text-center space-y-8 p-12 rounded-xl bg-gradient-to-br from-primary/10 to-accent/5 border border-primary/20  ">
-          <h2 className="text-3xl font-bold uppercase tracking-tight text-text ">Get Your Kitchen Sink Drain Fixed Today</h2>
-          <p className="text-text/80 font-bold uppercase tracking-widest text-xs max-w-2xl mx-auto leading-relaxed">
-            If your kitchen sink drain stopped or you are constantly trying to unclog kitchen sink with 
-            store-bought products, it is time to call in professional drain cleaners. 
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-             <Link href="tel:+17247506935" className="h-16 px-12 bg-accent text-text rounded-lg flex items-center justify-center gap-3 font-bold uppercase  tracking-widest shadow-md hover:scale-105 transition-all">
-                <Phone fill="currentColor" size={24} /> (724) 750-6935
-             </Link>
-          </div>
-          <p className="text-[10px] text-text/80 font-bold uppercase tracking-widest">
-            24/7 Emergency Clogged Sink Repair &middot; Same-Day Service &middot; Transparent Pricing
-          </p>
-        </div>
+        <CallConclusion />
       </div>
     </ServicePageLayout>
   );

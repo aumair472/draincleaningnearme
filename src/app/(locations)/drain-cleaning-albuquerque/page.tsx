@@ -80,10 +80,10 @@ export default function AlbuquerquePage() {
         {/* ── Why Albuquerque Needs Expert Drain Cleaning ── */}
         <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm relative overflow-hidden">
           <div className="absolute top-0 right-0 w-72 h-72 bg-primary/5 rounded-full blur-3xl opacity-50" />
-          <h2 className="text-3xl md:text-4xl font-bold uppercase  tracking-tight text-text mb-6 relative z-10">
+          <h3 className="text-3xl md:text-4xl font-bold uppercase  tracking-tight text-text mb-6 relative z-10">
             Why Albuquerque Homes Need{" "}
             <span className="text-primary">Expert Drain Cleaning</span>
-          </h2>
+          </h3>
           <div className="space-y-4 text-[11px] font-bold text-text/80 uppercase tracking-widest leading-loose relative z-10">
             <p>
               Living in Albuquerque means dealing with unique plumbing challenges from hard water mineral buildup to tree root intrusion in sewer lines. Our dry high-desert climate and extreme temperature swings; dropping to 20°F in winter, cause pipes to contract, trapping grease, hair and debris that lead to frequent clogs.
@@ -114,9 +114,9 @@ export default function AlbuquerquePage() {
 
         {/* ── Our Drain Cleaning Services ── */}
         <section className="space-y-8">
-          <h2 className="text-3xl md:text-4xl font-bold uppercase  tracking-tight text-text">
+          <h3 className="text-3xl md:text-4xl font-bold uppercase  tracking-tight text-text">
             Our Drain Cleaning Services in <span className="text-primary">Albuquerque</span>
-          </h2>
+          </h3>
           <p className="text-[11px] font-bold text-text/80 uppercase tracking-widest leading-loose max-w-4xl">
             DrainCleaningNearMe offers comprehensive drain cleaning solutions customized to Albuquerque local needs like Rio Grande Valley tree roots and monsoon storm debris. From drain snaking to high-pressure hydro jetting in Albuquerque, we cover it all.
           </p>
@@ -247,9 +247,9 @@ export default function AlbuquerquePage() {
 
         {/* ── Common Drain Problems ── */}
         <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm space-y-8">
-          <h2 className="text-3xl md:text-4xl font-bold uppercase  tracking-tight text-text">
+          <h3 className="text-3xl md:text-4xl font-bold uppercase  tracking-tight text-text">
             Common Drain Problems in <span className="text-primary">Albuquerque</span>
-          </h2>
+          </h3>
           <div className="space-y-4 text-[11px] font-bold text-text/80 uppercase tracking-widest leading-loose">
             <p>
               Albuquerque's hard water, loaded with calcium and magnesium, causes scale buildup that narrows pipes over time, leading to clogged drain scenarios. Combine this with grease from local New Mexican cooking; thick frying green chili and you get stubborn kitchen drain cleaning needs in Albuquerque.
@@ -281,9 +281,9 @@ export default function AlbuquerquePage() {
         {/* ── Signs You Need Professional Service ── */}
         <section className="grid lg:grid-cols-2 gap-8">
           <div className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm space-y-6">
-            <h2 className="text-2xl font-bold uppercase  text-text">
+            <h3 className="text-2xl font-bold uppercase text-text">
               Signs You Need <span className="text-primary">Professional Drain Cleaning</span>
-            </h2>
+            </h3>
             <p className="text-[11px] font-bold text-text/80 uppercase tracking-widest leading-loose">
               Do not ignore early warnings; acting fast saves thousands on drain repair in Albuquerque.
             </p>
@@ -308,9 +308,9 @@ export default function AlbuquerquePage() {
 
           {/* Step-by-Step Process */}
           <div className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm space-y-6">
-            <h2 className="text-2xl font-bold uppercase  text-text">
+            <h3 className="text-2xl font-bold uppercase text-text">
               Our Step-by-Step <span className="text-primary">Drain Cleaning Process</span>
-            </h2>
+            </h3>
             <p className="text-[11px] font-bold text-text/80 uppercase tracking-widest leading-loose">
               We ensure transparent, efficient service:
             </p>
@@ -341,9 +341,9 @@ export default function AlbuquerquePage() {
 
         {/* ── Residential & Commercial ── */}
         <section className="space-y-8">
-          <h2 className="text-3xl md:text-4xl font-bold uppercase  tracking-tight text-text">
+          <h3 className="text-3xl md:text-4xl font-bold uppercase  tracking-tight text-text">
             Residential & <span className="text-primary">Commercial Services</span>
-          </h2>
+          </h3>
           <div className="grid lg:grid-cols-2 gap-8">
 
             {/* Residential */}
@@ -420,9 +420,9 @@ export default function AlbuquerquePage() {
         {/* ── Service Areas ── */}
         <section className="p-10 md:p-14 rounded-xl bg-bg border border-border shadow-sm text-center space-y-8">
           <MapPin size={56} className="text-primary mx-auto opacity-50" />
-          <h2 className="text-2xl font-bold uppercase  text-text">
+          <h3 className="text-2xl font-bold uppercase text-text">
             Serving Albuquerque <span className="text-primary">NM & Surrounding Areas</span>
-          </h2>
+          </h3>
           <p className="text-[11px] font-bold text-text/80 uppercase tracking-widest leading-loose max-w-2xl mx-auto">
             Whether you are in Academy Hills Park, Los Ranchos de Albuquerque, or Ladera Heights, we provide professional services to both residential and commercial clients with 24/7 availability.
           </p>
@@ -441,9 +441,9 @@ export default function AlbuquerquePage() {
 
         {/* ── Why Choose Us ── */}
         <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm space-y-8">
-          <h2 className="text-3xl font-bold uppercase  tracking-tight text-text">
+          <h3 className="text-3xl font-bold uppercase  tracking-tight text-text">
             Why Choose <span className="text-primary">DrainCleaningNearMe</span> in Albuquerque
-          </h2>
+          </h3>
           <p className="text-[11px] font-bold text-text/80 uppercase tracking-widest leading-loose max-w-3xl">
             We are the reliable plumbing & drain cleaning service provider of Albuquerque, with licensed technicians equipped for local issues like caliche soil shifts.
           </p>
@@ -467,9 +467,9 @@ export default function AlbuquerquePage() {
 
         {/* ── FAQs ── */}
         <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm space-y-10">
-          <h2 className="text-3xl font-bold uppercase  tracking-tight text-center text-text">
+          <h3 className="text-3xl font-bold uppercase  tracking-tight text-center text-text">
             Frequently Asked <span className="text-primary">Questions</span>
-          </h2>
+          </h3>
           <div className="grid md:grid-cols-2 gap-10">
             {faqs.map((faq, i) => (
               <div key={i} className="space-y-3 border-b border-border pb-6">
@@ -482,11 +482,11 @@ export default function AlbuquerquePage() {
 
         {/* ── Final CTA ── */}
         <div className="text-center space-y-8 p-12 rounded-xl bg-gradient-to-br from-primary/10 to-accent/5 border border-primary/20 ">
-          <h2 className="text-3xl font-bold uppercase tracking-tight text-text ">
+          <h3 className="text-3xl font-bold uppercase tracking-tight text-text">
             Get Your Drains Flowing Today: Book Now!
-          </h2>
+          </h3>
           <p className="text-text/80 font-bold uppercase tracking-widest text-xs max-w-2xl mx-auto leading-relaxed">
-            Do not let clogged drains disrupt your routine life in Albuquerque. Call <strong className="text-text">(724) 750-6935</strong> for same-day drain cleaning services in Albuquerque, schedule services like hydro jetting & drain video camera inspection, or request a free estimate online. Reliable, affordable, expert guidance and consultation; your local drain professionals are ready 24/7.
+            Do not let clogged drains disrupt your routine life in Albuquerque. Call <strong className="text-text">(724) 750-6935</strong> for same-day drain cleaning services in Albuquerque, schedule services like hydro jetting & drain video camera inspection, or get a free phone estimate. Reliable, affordable, expert guidance and consultation; your local drain professionals are ready 24/7.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link

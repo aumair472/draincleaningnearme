@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Expert Hydro Jetting & Main Line Cleaning Services | Drain Cleaning Near Me",
   description: "Professional hydro jet drain cleaning for main lines & kitchen sinks; offering 24/7 high-pressure hydro jetting & sewer line cleaning near you. Fast response nationwide.",
   alternates: {
-    canonical: "https://www.draincleaningnearme.us/hydro-jetting-cleaning-services/",
+    canonical: "https://www.draincleaningnearme.us/hydro-jetting-cleaning-services",
   }
 };
 
@@ -52,9 +52,9 @@ export default function HydroJettingPage() {
         {/* Technology Section */}
         <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm  relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl opacity-50" />
-          <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-tight text-text mb-8 relative z-10">
+          <h3 className="text-3xl md:text-4xl font-bold uppercase tracking-tight text-text mb-8 relative z-10">
             Advanced <span className="text-primary ">Drain Cleaning</span> Technology
-          </h2>
+          </h3>
           <div className="grid md:grid-cols-2 gap-12 relative z-10">
             <div className="space-y-6">
               <h3 className="text-xl font-bold uppercase  tracking-tight text-primary">How Hydro Jetting Works</h3>
@@ -87,7 +87,7 @@ export default function HydroJettingPage() {
 
         {/* Comparison Table */}
         <section className="bg-bg rounded-xl p-10 md:p-14 border border-border shadow-sm ">
-          <h2 className="text-2xl font-bold uppercase  mb-10 text-text text-center">Hydro Jetting vs. Traditional Methods</h2>
+          <h3 className="text-2xl font-bold uppercase  mb-10 text-text text-center">Hydro Jetting vs. Traditional Methods</h3>
           <div className="overflow-x-auto">
             <table className="w-full text-left border-collapse">
               <thead>
@@ -115,9 +115,9 @@ export default function HydroJettingPage() {
 
         {/* FAQ Section */}
         <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
-          <h2 className="text-3xl font-bold uppercase  mb-12 text-center text-text">
+          <h3 className="text-3xl font-bold uppercase mb-12 text-center text-text">
             Hydro Jetting <span className="text-primary">FAQ</span>
-          </h2>
+          </h3>
           <div className="grid md:grid-cols-2 gap-12">
             {[
               { q: "Is hydro jetting safe for my pipes?", a: "When performed by licensed pros using proper pressure, it is safe for most plumbing. Technicians inspect pipes first to adjust PSI." },
@@ -136,7 +136,7 @@ export default function HydroJettingPage() {
 
         {/* Benefits Grid */}
         <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
-          <h2 className="text-2xl font-bold uppercase  mb-10 text-text text-center underline decoration-primary/30 underline-offset-8">Long-Term Benefits</h2>
+          <h3 className="text-2xl font-bold uppercase  mb-10 text-text text-center underline decoration-primary/30 underline-offset-8">Long-Term Benefits</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
              {[
                { t: "Deep Cleaning", d: "Removes every trace of grease and sludge from pipe walls." },
@@ -156,7 +156,7 @@ export default function HydroJettingPage() {
 
         {/* Conclusion CTA */}
         <div className="text-center space-y-8 p-12 rounded-xl bg-gradient-to-br from-primary/10 to-accent/5 border border-primary/20  ">
-          <h2 className="text-3xl font-bold uppercase tracking-tight text-text ">Upgrade to a Permanent Fix</h2>
+          <h3 className="text-3xl font-bold uppercase tracking-tight text-text">Upgrade to a Permanent Fix</h3>
           <p className="text-text/80 font-bold uppercase tracking-widest text-xs max-w-2xl mx-auto leading-relaxed">
             Stop fighting the same clogs. Upgrade from basic snaking to professional 
             hydro jet drain cleaning today and enjoy free-flowing pipes.

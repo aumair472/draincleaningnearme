@@ -2,13 +2,39 @@ import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.draincleaningnearme.us";
+  const now = new Date();
 
-  const staticRoutes = [
-    "",
-    "/about",
-    "/contact",
-    "/privacy-policy",
-    "/terms",
+  const staticRoutes: MetadataRoute.Sitemap = [
+    {
+      url: `${baseUrl}`,
+      lastModified: now,
+      changeFrequency: "daily",
+      priority: 1.0,
+    },
+    {
+      url: `${baseUrl}/about`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.5,
+    },
+    {
+      url: `${baseUrl}/contact`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/privacy-policy`,
+      lastModified: now,
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/terms`,
+      lastModified: now,
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
   ];
 
   const serviceRoutes = [
@@ -18,7 +44,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/hydro-jetting-cleaning-services",
     "/sewer-line-cleaning-repair-usa",
     "/drain-camera-inspection",
-  ];
+  ].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: now,
+    changeFrequency: "weekly" as const,
+    priority: 0.9,
+  }));
 
   const locationRoutes = [
     "/drain-cleaning-nyc",
@@ -33,14 +64,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/drain-cleaning-austin",
     "/drain-cleaning-dallas",
     "/drain-cleaning-chicago",
-  ];
-
-  const allRoutes = [...staticRoutes, ...serviceRoutes, ...locationRoutes].map((route) => ({
+  ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    lastModified: now,
     changeFrequency: "weekly" as const,
-    priority: route === "" ? 1 : 0.8,
+    priority: 0.8,
   }));
 
-  return allRoutes;
+  return [...staticRoutes, ...serviceRoutes, ...locationRoutes];
 }
+

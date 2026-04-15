@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Zap, Phone, MapPin, Building2, Trees, Droplets } from "lucide-react";
 import { ServicePageLayout } from "@/components/service-page-layout";
+import { CallConclusion } from "@/components/call-conclusion";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -46,9 +47,9 @@ export default function ChicagoPage() {
         {/* Chicago Challenges Section */}
         <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm  relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl opacity-50" />
-          <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-tight text-text mb-8 relative z-10">
+          <h3 className="text-3xl md:text-4xl font-bold uppercase tracking-tight text-text mb-8 relative z-10">
             Why Chicago Homes Need <span className="text-primary ">Expert Drain Maintenance</span>
-          </h2>
+          </h3>
           <p className="text-text/80 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8 relative z-10">
             Winter freezes and spring storms in Chicago put immense pressure on aging plumbing systems. When combined with common household habits, these older pipe networks can easily become blocked, leading to costly consequences if not addressed promptly by licensed professionals.
           </p>
@@ -70,7 +71,7 @@ export default function ChicagoPage() {
         {/* Full Range of Services & Signs */}
         <section className="grid lg:grid-cols-2 gap-8">
           <div className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
-            <h2 className="text-2xl font-bold uppercase  mb-8 text-text">Warning Signs in Your Home</h2>
+            <h3 className="text-2xl font-bold uppercase mb-8 text-text">Warning Signs in Your Home</h3>
             <div className="space-y-6 text-[11px] font-medium text-text/80 uppercase tracking-widest leading-relaxed">
               <p>Catching drainage issues early in Chicago can save you from immense property damage. Look out for:</p>
               <ul className="space-y-4">
@@ -81,7 +82,7 @@ export default function ChicagoPage() {
               </ul>
             </div>
             <div className="mt-8">
-               <h2 className="text-2xl font-bold uppercase  mb-6 text-text mt-8">Our Proven Process</h2>
+               <h3 className="text-2xl font-bold uppercase mb-6 text-text mt-8">Our Proven Process</h3>
                <ol className="list-decimal pl-4 space-y-3 text-[11px] font-medium text-text/80 uppercase tracking-widest leading-relaxed">
                   <li><strong className="text-text">Rapid Response:</strong> We arrive fast with everything needed to diagnose the issue.</li>
                   <li><strong className="text-text">Camera Check:</strong> We never guess. We scope the line to identify roots or breaks.</li>
@@ -93,7 +94,7 @@ export default function ChicagoPage() {
 
           <div className="p-10 md:p-14 rounded-xl bg-bg border border-border shadow-sm  flex flex-col justify-center text-center">
              <MapPin size={64} className="text-primary mx-auto mb-6 opacity-50" />
-             <h2 className="text-2xl font-bold uppercase  mb-4 text-text">Serving Chicagoland</h2>
+             <h3 className="text-2xl font-bold uppercase mb-4 text-text">Serving Chicagoland</h3>
              <p className="text-text/80 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8">
                 From downtown highrises to suburban homes, our plumbers cover the entire Chicago metro area 24/7.
              </p>
@@ -109,9 +110,9 @@ export default function ChicagoPage() {
 
         {/* FAQ Section */}
         <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
-          <h2 className="text-3xl font-bold uppercase  mb-12 text-center text-text">
+          <h3 className="text-3xl font-bold uppercase mb-12 text-center text-text">
             Chicago Drain <span className="text-primary">FAQ</span>
-          </h2>
+          </h3>
           <div className="grid md:grid-cols-2 gap-12">
             {[
               { q: "How much does drain cleaning cost in Chicago?", a: "Standard snaking usually costs $150-$350. Heavy-duty hydro jetting and sewer line cleaning can range from $300-$800+ depending on severity." },
@@ -131,7 +132,7 @@ export default function ChicagoPage() {
 
         {/* Conclusion CTA */}
         <div className="text-center space-y-8 p-12 rounded-xl bg-gradient-to-br from-primary/10 to-accent/5 border border-primary/20  ">
-          <h2 className="text-3xl font-bold uppercase tracking-tight text-text ">Get Professional Flow Restoration Now</h2>
+          <h3 className="text-3xl font-bold uppercase tracking-tight text-text">Get Professional Flow Restoration Now</h3>
           <p className="text-text/80 font-bold uppercase tracking-widest text-xs max-w-2xl mx-auto leading-relaxed">
             Do not wait for a small clog to become a flooded basement. Speak directly with a Chicago plumbing expert and schedule your visit in minutes. Available for same-day emergency drain cleaning.
           </p>

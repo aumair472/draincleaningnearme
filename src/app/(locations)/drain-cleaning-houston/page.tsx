@@ -46,9 +46,9 @@ export default function HoustonPage() {
         {/* Houston Challenges Section */}
         <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm  relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl opacity-50" />
-          <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-tight text-text mb-8 relative z-10">
+          <h3 className="text-3xl md:text-4xl font-bold uppercase tracking-tight text-text mb-8 relative z-10">
             Why Houston Needs <span className="text-primary ">Regular Drain Cleaning</span>
-          </h2>
+          </h3>
           <p className="text-text/80 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8 relative z-10">
             Houston's unique climate and soil make clogs and sewer issues more common than in many other cities. Because of these factors, slow drains, foul odors and backups are more common and often more serious here.
           </p>
@@ -70,7 +70,7 @@ export default function HoustonPage() {
         {/* Full Range of Services & Signs */}
         <section className="grid lg:grid-cols-2 gap-8">
           <div className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
-            <h2 className="text-2xl font-bold uppercase  mb-8 text-text">Signs You Need Immediate Service</h2>
+            <h3 className="text-2xl font-bold uppercase mb-8 text-text">Signs You Need Immediate Service</h3>
             <div className="space-y-6 text-[11px] font-medium text-text/80 uppercase tracking-widest leading-relaxed">
               <p>If you notice any of these in your Houston home or business, call for professional drain cleaning to prevent slab leaks and costly repairs.</p>
               <ul className="space-y-4">
@@ -82,7 +82,7 @@ export default function HoustonPage() {
               </ul>
             </div>
             <div className="mt-8">
-               <h2 className="text-2xl font-bold uppercase  mb-6 text-text mt-8">Our 5-Step Drain Cleaning Process</h2>
+               <h3 className="text-2xl font-bold uppercase mb-6 text-text mt-8">Our 5-Step Drain Cleaning Process</h3>
                <ol className="list-decimal pl-4 space-y-3 text-[11px] font-medium text-text/80 uppercase tracking-widest leading-relaxed">
                   <li><strong className="text-text">Inspection (Camera):</strong> See exactly where the clog or damage is.</li>
                   <li><strong className="text-text">Problem Identification:</strong> Analyze video and explain the root cause.</li>
@@ -95,7 +95,7 @@ export default function HoustonPage() {
 
           <div className="p-10 md:p-14 rounded-xl bg-bg border border-border shadow-sm  flex flex-col justify-center text-center">
              <MapPin size={64} className="text-primary mx-auto mb-6 opacity-50" />
-             <h2 className="text-2xl font-bold uppercase  mb-4 text-text">Serving Houston & Harris County</h2>
+             <h3 className="text-2xl font-bold uppercase mb-4 text-text">Serving Houston & Harris County</h3>
              <p className="text-text/80 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8">
                 Our local plumbers serve homes, apartments, restaurants, and offices across the Greater Houston area.
              </p>
@@ -111,9 +111,9 @@ export default function HoustonPage() {
 
         {/* FAQ Section */}
         <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
-          <h2 className="text-3xl font-bold uppercase  mb-12 text-center text-text">
+          <h3 className="text-3xl font-bold uppercase mb-12 text-center text-text">
             Houston Drain <span className="text-primary">FAQ</span>
-          </h2>
+          </h3>
           <div className="grid md:grid-cols-2 gap-12">
             {[
               { q: "How much does drain cleaning cost in Houston?", a: "Most jobs range from $150–$350. Sewer line cleaning and hydro jetting services run $300–$800+ for more complex jobs." },
@@ -133,7 +133,7 @@ export default function HoustonPage() {
 
         {/* Conclusion CTA */}
         <div className="text-center space-y-8 p-12 rounded-xl bg-gradient-to-br from-primary/10 to-accent/5 border border-primary/20  ">
-          <h2 className="text-3xl font-bold uppercase tracking-tight text-text ">Get Help Now in Houston</h2>
+          <h3 className="text-3xl font-bold uppercase tracking-tight text-text">Get Help Now in Houston</h3>
           <p className="text-text/80 font-bold uppercase tracking-widest text-xs max-w-2xl mx-auto leading-relaxed">
             Do not wait for a small clog to become a flooded bathroom or sewer backup. Speak directly with a Houston plumber and schedule your visit in minutes. Available for same-day emergency drain cleaning.
           </p>

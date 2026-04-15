@@ -46,9 +46,9 @@ export default function PhoenixPage() {
         {/* Phoenix Challenges Section */}
         <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm  relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl opacity-50" />
-          <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-tight text-text mb-8 relative z-10">
+          <h3 className="text-3xl md:text-4xl font-bold uppercase tracking-tight text-text mb-8 relative z-10">
             Phoenix's Unique <span className="text-primary ">Drain Problems</span>
-          </h2>
+          </h3>
           <p className="text-text/80 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8 relative z-10">
             Phoenix's arid climate and hard water create unique drain challenges. Clogs often stem from hair, grease, food waste, and extreme mineral deposits that naturally narrow your pipes over time without you even realizing.
           </p>
@@ -70,7 +70,7 @@ export default function PhoenixPage() {
         {/* Full Range of Services & Signs */}
         <section className="grid lg:grid-cols-2 gap-8">
           <div className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
-            <h2 className="text-2xl font-bold uppercase  mb-8 text-text">Signs Of Severe Clogs</h2>
+            <h3 className="text-2xl font-bold uppercase mb-8 text-text">Signs Of Severe Clogs</h3>
             <div className="space-y-6 text-[11px] font-medium text-text/80 uppercase tracking-widest leading-relaxed">
               <p>Do not ignore these red flags for clogged drains in Phoenix. Early action prevents flooding and pipe damage.</p>
               <ul className="space-y-4">
@@ -82,7 +82,7 @@ export default function PhoenixPage() {
               </ul>
             </div>
             <div className="mt-8">
-               <h2 className="text-2xl font-bold uppercase  mb-6 text-text mt-8">Our Treatment Process</h2>
+               <h3 className="text-2xl font-bold uppercase mb-6 text-text mt-8">Our Treatment Process</h3>
                <ol className="list-decimal pl-4 space-y-3 text-[11px] font-medium text-text/80 uppercase tracking-widest leading-relaxed">
                   <li><strong className="text-text">Inspection:</strong> Arrive fast and use a camera if needed to locate blockages.</li>
                   <li><strong className="text-text">Diagnosis:</strong> Identify cause (roots, minerals, grease).</li>
@@ -95,7 +95,7 @@ export default function PhoenixPage() {
 
           <div className="p-10 md:p-14 rounded-xl bg-bg border border-border shadow-sm  flex flex-col justify-center text-center">
              <MapPin size={64} className="text-primary mx-auto mb-6 opacity-50" />
-             <h2 className="text-2xl font-bold uppercase  mb-4 text-text">Proudly Serving Phoenix Area</h2>
+             <h3 className="text-2xl font-bold uppercase mb-4 text-text">Proudly Serving Phoenix Area</h3>
              <p className="text-text/80 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8">
                 We proudly serve all areas of Phoenix and nearby communities. From urban condos to desert suburbs, our Phoenix sewer hydro jetting service reaches you fast.
              </p>
@@ -111,9 +111,9 @@ export default function PhoenixPage() {
 
         {/* FAQ Section */}
         <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
-          <h2 className="text-3xl font-bold uppercase  mb-12 text-center text-text">
+          <h3 className="text-3xl font-bold uppercase mb-12 text-center text-text">
             Phoenix Drain <span className="text-primary">FAQ</span>
-          </h2>
+          </h3>
           <div className="grid md:grid-cols-2 gap-12">
             {[
               { q: "How much does drain cleaning cost in Phoenix?", a: "Basic unclogs start at $99, sewer line cleaning $250–$450, with free quotes based on inspection." },
@@ -134,7 +134,7 @@ export default function PhoenixPage() {
 
         {/* Conclusion CTA */}
         <div className="text-center space-y-8 p-12 rounded-xl bg-gradient-to-br from-primary/10 to-accent/5 border border-primary/20  ">
-          <h2 className="text-3xl font-bold uppercase tracking-tight text-text ">Call Now for Fast Drain Cleaning in Phoenix!</h2>
+          <h3 className="text-3xl font-bold uppercase tracking-tight text-text">Call Now for Fast Drain Cleaning in Phoenix!</h3>
           <p className="text-text/80 font-bold uppercase tracking-widest text-xs max-w-2xl mx-auto leading-relaxed">
             Tired of drain hassles? Book your professional drain cleaning appointment today and enjoy clear pipes tomorrow. Same-day service guaranteed!
           </p>

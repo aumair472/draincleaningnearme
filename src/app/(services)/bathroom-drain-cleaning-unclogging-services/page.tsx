@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Bathroom Drain Cleaning | Unclog Sinks, Tubs & Showers",
   description: "Professional bathroom drain cleaning services. We unclog bathroom sinks, tubs, and showers fast. Licensed 24/7 plumbers near you at DrainCleaningNearMe.",
   alternates: {
-    canonical: "https://www.draincleaningnearme.us/bathroom-drain-cleaning-unclogging-services/",
+    canonical: "https://www.draincleaningnearme.us/bathroom-drain-cleaning-unclogging-services",
   }
 };
 
@@ -52,9 +52,9 @@ export default function BathroomDrainPage() {
         {/* Why Bathroom Clogs Happen */}
         <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm  relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl opacity-50" />
-          <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-tight text-text mb-8 relative z-10">
+          <h3 className="text-3xl md:text-4xl font-bold uppercase tracking-tight text-text mb-8 relative z-10">
             Why Bathroom <span className="text-primary ">Drains Clog</span>
-          </h2>
+          </h3>
           <div className="grid md:grid-cols-2 gap-12 relative z-10">
             <div className="space-y-6">
               <p className="text-text/80 font-bold uppercase tracking-widest text-xs leading-loose">
@@ -93,7 +93,7 @@ export default function BathroomDrainPage() {
         {/* Services List */}
         <section className="grid lg:grid-cols-2 gap-8">
           <div className="p-10 md:p-14 rounded-xl bg-bg border border-border shadow-sm ">
-            <h2 className="text-2xl font-bold uppercase  mb-8 text-text">Our bathroom Services</h2>
+            <h3 className="text-2xl font-bold uppercase mb-8 text-text">Our bathroom Services</h3>
             <div className="space-y-8">
               {[
                 { title: "Sewer & Drain Cleaning", desc: "Deep cleaning for the entire bathroom line system using motorized augers to restore full flow capacity." },
@@ -111,7 +111,7 @@ export default function BathroomDrainPage() {
           </div>
 
           <div className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
-             <h2 className="text-2xl font-bold uppercase  mb-8 text-text">Signs You Need Help</h2>
+             <h3 className="text-2xl font-bold uppercase mb-8 text-text">Signs You Need Help</h3>
              <div className="space-y-6">
                 <p className="text-text/80 font-bold uppercase tracking-widest text-xs leading-loose">
                    Don&apos;t wait for a flood. Look for these bathroom drain warning signs:
@@ -134,9 +134,9 @@ export default function BathroomDrainPage() {
 
         {/* FAQ Section */}
         <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
-          <h2 className="text-3xl font-bold uppercase  mb-12 text-center text-text">
+          <h3 className="text-3xl font-bold uppercase mb-12 text-center text-text">
             Bathroom Drain <span className="text-primary">FAQs</span>
-          </h2>
+          </h3>
           <div className="grid md:grid-cols-2 gap-12">
             {[
               { q: "Can I use chemical cleaners in my bathroom?", a: "We advise against it. Harsh chemicals can damage older pipes, tile, and chrome finishes. Professional snaking is safer and more effective." },
@@ -155,9 +155,9 @@ export default function BathroomDrainPage() {
 
         {/* Prevention Tips */}
         <section className="p-10 md:p-14 rounded-xl bg-gradient-to-br from-primary/5 to-accent/5 border border-border shadow-sm  text-center">
-          <h2 className="text-2xl font-bold uppercase tracking-tight text-text mb-8 text-center uppercase ">
+          <h3 className="text-2xl font-bold uppercase tracking-tight text-text mb-8 text-center">
              Keeping Bathroom Drains Clear
-          </h2>
+          </h3>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { title: "Hair Catchers", desc: "Install strainers in every tub and shower to catch hair before it enter pipes." },
@@ -175,7 +175,7 @@ export default function BathroomDrainPage() {
 
         {/* Conclusion CTA */}
         <div className="text-center space-y-8 p-12 rounded-xl bg-gradient-to-br from-primary/10 to-accent/5 border border-primary/20  ">
-          <h2 className="text-3xl font-bold uppercase tracking-tight text-text ">Unclog Your Bathroom Drain Today</h2>
+          <h3 className="text-3xl font-bold uppercase tracking-tight text-text">Unclog Your Bathroom Drain Today</h3>
           <p className="text-text/80 font-bold uppercase tracking-widest text-xs max-w-2xl mx-auto leading-relaxed">
             Stop dealing with standing water and messy backups. Whether you need to unclog bathroom sink 
             or repair a shower line, our local experts are ready to help 24/7.

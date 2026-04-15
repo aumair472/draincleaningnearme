@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Drain Cleaning Services Los Angeles | Licensed & Insured Plumbers",
   description: "Expert drain cleaning services in Los Angeles. From clogged drain repair to hydrojetting, we offer 24/7 emergency service. Licensed & fast; Call now for a free estimate",
   alternates: {
-    canonical: "https://www.draincleaningnearme.us/drain-cleaning-los-angeles/",
+    canonical: "https://www.draincleaningnearme.us/drain-cleaning-los-angeles",
   }
 };
 
@@ -51,9 +51,9 @@ export default function LAPage() {
         {/* LA Challenges Section */}
         <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm  relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl opacity-50" />
-          <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-tight text-text mb-8 relative z-10">
+          <h3 className="text-3xl md:text-4xl font-bold uppercase tracking-tight text-text mb-8 relative z-10">
             LA <span className="text-primary ">Drain</span> Nightmares
-          </h2>
+          </h3>
           <div className="grid md:grid-cols-2 gap-12 relative z-10">
             <div className="space-y-6">
               <p className="text-text/80 font-bold uppercase tracking-widest text-xs leading-loose">
@@ -89,7 +89,7 @@ export default function LAPage() {
         {/* Full Range of LA Services */}
         <section className="grid lg:grid-cols-2 gap-8">
           <div className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
-            <h2 className="text-2xl font-bold uppercase  mb-8 text-text">Our LA Support Range</h2>
+            <h3 className="text-2xl font-bold uppercase mb-8 text-text">Our LA Support Range</h3>
             <div className="space-y-8">
               {[
                 { title: "Drain Cleaning LA", desc: "High-pressure cleaning removes grease and hair from sinks, tubs, and toilets instantly." },
@@ -109,7 +109,7 @@ export default function LAPage() {
 
           <div className="p-10 md:p-14 rounded-xl bg-bg border border-border shadow-sm  flex flex-col justify-center text-center">
              <MapPin size={64} className="text-primary mx-auto mb-6 opacity-50" />
-             <h2 className="text-2xl font-bold uppercase  mb-4 text-text">Across LA County</h2>
+             <h3 className="text-2xl font-bold uppercase mb-4 text-text">Across LA County</h3>
              <p className="text-text/80 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8">
                 From Downtown LA to Santa Monica, Hollywood to Long Beach. Local professionals 
                 mean faster response—we are often just minutes away.
@@ -126,9 +126,9 @@ export default function LAPage() {
 
         {/* FAQ Section */}
         <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
-          <h2 className="text-3xl font-bold uppercase  mb-12 text-center text-text">
+          <h3 className="text-3xl font-bold uppercase mb-12 text-center text-text">
             LA Drain <span className="text-primary">FAQ</span>
-          </h2>
+          </h3>
           <div className="grid md:grid-cols-2 gap-12">
             {[
               { q: "How much does drain cleaning cost in Los Angeles?", a: "Basic cleaning starts at $99. Sewer cleaning or hydro jetting ranges from $250–$500. We offer free estimates with no hidden surprises." },
@@ -147,7 +147,7 @@ export default function LAPage() {
 
         {/* Conclusion CTA */}
         <div className="text-center space-y-8 p-12 rounded-xl bg-gradient-to-br from-primary/10 to-accent/5 border border-primary/20  ">
-          <h2 className="text-3xl font-bold uppercase tracking-tight text-text ">Clear Your LA Drains Today</h2>
+          <h3 className="text-3xl font-bold uppercase tracking-tight text-text">Clear Your LA Drains Today</h3>
           <p className="text-text/80 font-bold uppercase tracking-widest text-xs max-w-2xl mx-auto leading-relaxed">
             Clogged drains won&apos;t fix themselves. Protecting your family, property 
             and peace of mind with licensed, 5-star rated LA professionals.

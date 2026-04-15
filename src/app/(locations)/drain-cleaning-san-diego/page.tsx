@@ -46,9 +46,9 @@ export default function SanDiegoPage() {
         {/* San Diego Challenges Section */}
         <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm  relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl opacity-50" />
-          <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-tight text-text mb-8 relative z-10">
+          <h3 className="text-3xl md:text-4xl font-bold uppercase tracking-tight text-text mb-8 relative z-10">
             Common San Diego <span className="text-primary ">Drain Problems</span>
-          </h2>
+          </h3>
           <p className="text-text/80 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8 relative z-10">
             San Diego's dry coastal climate and hard water create specific drain challenges that demand professional intervention. From aging Orangeburg pipes to invasive tree roots seeking moisture, regular maintenance saves thousands.
           </p>
@@ -70,7 +70,7 @@ export default function SanDiegoPage() {
         {/* Full Range of Services & Signs */}
         <section className="grid lg:grid-cols-2 gap-8">
           <div className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
-            <h2 className="text-2xl font-bold uppercase  mb-8 text-text">Signs You Need Immediate Service</h2>
+            <h3 className="text-2xl font-bold uppercase mb-8 text-text">Signs You Need Immediate Service</h3>
             <div className="space-y-6 text-[11px] font-medium text-text/80 uppercase tracking-widest leading-relaxed">
               <p>Do not wait for disaster; spot these clogged drain San Diego warnings early to avoid major sewer line repair.</p>
               <ul className="space-y-4">
@@ -82,7 +82,7 @@ export default function SanDiegoPage() {
               </ul>
             </div>
             <div className="mt-8">
-               <h2 className="text-2xl font-bold uppercase  mb-6 text-text mt-8">How We Solve It</h2>
+               <h3 className="text-2xl font-bold uppercase mb-6 text-text mt-8">How We Solve It</h3>
                <ol className="list-decimal pl-4 space-y-3 text-[11px] font-medium text-text/80 uppercase tracking-widest leading-relaxed">
                   <li><strong className="text-text">Inspection:</strong> Quick visual and camera check for root intrusion.</li>
                   <li><strong className="text-text">Diagnosis:</strong> Pinpoint cause; grease, minerals or roots.</li>
@@ -95,7 +95,7 @@ export default function SanDiegoPage() {
 
           <div className="p-10 md:p-14 rounded-xl bg-bg border border-border shadow-sm  flex flex-col justify-center text-center">
              <MapPin size={64} className="text-primary mx-auto mb-6 opacity-50" />
-             <h2 className="text-2xl font-bold uppercase  mb-4 text-text">Serving Coastal & Inland San Diego</h2>
+             <h3 className="text-2xl font-bold uppercase mb-4 text-text">Serving Coastal & Inland San Diego</h3>
              <p className="text-text/80 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8">
                 From luxury rentals in Pacific Beach to historic homes in Coronado, we have local coverage everywhere you need it.
              </p>
@@ -111,9 +111,9 @@ export default function SanDiegoPage() {
 
         {/* FAQ Section */}
         <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
-          <h2 className="text-3xl font-bold uppercase  mb-12 text-center text-text">
+          <h3 className="text-3xl font-bold uppercase mb-12 text-center text-text">
             San Diego Drain <span className="text-primary">FAQ</span>
-          </h2>
+          </h3>
           <div className="grid md:grid-cols-2 gap-12">
             {[
               { q: "How much does drain cleaning cost in San Diego?", a: "Single drains run around $99-$299; hydro jetting around $300-$600, depending on severity." },
@@ -133,7 +133,7 @@ export default function SanDiegoPage() {
 
         {/* Conclusion CTA */}
         <div className="text-center space-y-8 p-12 rounded-xl bg-gradient-to-br from-primary/10 to-accent/5 border border-primary/20  ">
-          <h2 className="text-3xl font-bold uppercase tracking-tight text-text ">Stop Coastal Pipe Nightmares; Act Now!</h2>
+          <h3 className="text-3xl font-bold uppercase tracking-tight text-text">Stop Coastal Pipe Nightmares; Act Now!</h3>
           <p className="text-text/80 font-bold uppercase tracking-widest text-xs max-w-2xl mx-auto leading-relaxed">
             Do not let clogged drains disrupt your San Diego life; get fast, affordable drain services today! Licensed professionals are ready 24/7. Prevent backups before it's too late.
           </p>

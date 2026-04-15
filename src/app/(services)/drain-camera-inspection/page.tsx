@@ -1,13 +1,14 @@
 import Link from "next/link";
 import { Zap, Phone, Search, Eye, ScanSearch } from "lucide-react";
 import { ServicePageLayout } from "@/components/service-page-layout";
+import { CallConclusion } from "@/components/call-conclusion";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Professional Drain & Sewer Camera Inspection | Drain Cleaning Near Me",
   description: "Expert drain camera inspection near you. Get fast 24/7 video pipe inspection for recurring clogs & sewer diagnostics. Call now for professional help nationwide.",
   alternates: {
-    canonical: "https://www.draincleaningnearme.us/drain-camera-inspection/",
+    canonical: "https://www.draincleaningnearme.us/drain-camera-inspection",
   }
 };
 
@@ -51,9 +52,9 @@ export default function CameraInspectionPage() {
         {/* Detection Section */}
         <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm  relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl opacity-50" />
-          <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-tight text-text mb-8 relative z-10">
+          <h3 className="text-3xl md:text-4xl font-bold uppercase tracking-tight text-text mb-8 relative z-10">
             What Can We <span className="text-primary ">Detect?</span>
-          </h2>
+          </h3>
           <div className="grid md:grid-cols-2 gap-12 relative z-10">
             <div className="space-y-6">
               <p className="text-text/80 font-bold uppercase tracking-widest text-xs leading-loose">
@@ -92,7 +93,7 @@ export default function CameraInspectionPage() {
              <ScanSearch className="h-32 w-32 text-primary mx-auto opacity-50" />
           </div>
           <div className="w-full md:w-2/3 space-y-6">
-            <h2 className="text-2xl font-bold uppercase  text-text">Inspections for Home Buyers</h2>
+            <h3 className="text-2xl font-bold uppercase text-text">Inspections for Home Buyers</h3>
             <p className="text-text/80 font-bold uppercase tracking-widest text-xs leading-loose">
               Before you buy or sell a home, get a sewer camera inspection. It is the only way 
               to ensure there are no hidden main line issues that could cost thousands 
@@ -106,9 +107,9 @@ export default function CameraInspectionPage() {
 
         {/* FAQ Section */}
         <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
-          <h2 className="text-3xl font-bold uppercase  mb-12 text-center text-text">
+          <h3 className="text-3xl font-bold uppercase mb-12 text-center text-text">
             Camera Inspection <span className="text-primary">FAQ</span>
-          </h2>
+          </h3>
           <div className="grid md:grid-cols-2 gap-12">
             {[
               { q: "How much does a drain camera inspection cost?", a: "Costs vary by region. We offer upfront pricing through our local network to ensure transparent, competitive rates for your inspection." },
@@ -127,7 +128,7 @@ export default function CameraInspectionPage() {
 
         {/* Conclusion CTA */}
         <div className="text-center space-y-8 p-12 rounded-xl bg-gradient-to-br from-primary/10 to-accent/5 border border-primary/20  ">
-          <h2 className="text-3xl font-bold uppercase tracking-tight text-text ">See Exactly What Is Happening</h2>
+          <h3 className="text-3xl font-bold uppercase tracking-tight text-text">See Exactly What Is Happening</h3>
           <p className="text-text/80 font-bold uppercase tracking-widest text-xs max-w-2xl mx-auto leading-relaxed">
             Stop guessing and start seeing. Whether you need a home buyer sewer inspection 
             or are solving a recurring clog, we provide the clear visual proof you need.

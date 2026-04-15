@@ -1,13 +1,14 @@
 import Link from "next/link";
 import { Zap, Phone, AlertTriangle, ShieldAlert, Clock } from "lucide-react";
 import { ServicePageLayout } from "@/components/service-page-layout";
+import { CallConclusion } from "@/components/call-conclusion";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Emergency Drain Cleaning Services | 24/7 Professional Plumbers",
   description: "Emergency drain cleaning near you. Get fast 24/7 professional service for clogged drains & sewer backups. Call now for immediate help from DrainCleaningNearMe.",
   alternates: {
-    canonical: "https://www.draincleaningnearme.us/emergency-drain-cleaning-services/",
+    canonical: "https://www.draincleaningnearme.us/emergency-drain-cleaning-services",
   }
 };
 
@@ -51,9 +52,9 @@ export default function EmergencyDrainPage() {
         {/* Indicators Section */}
         <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm  relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl opacity-50" />
-          <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-tight text-text mb-8 relative z-10">
+          <h3 className="text-3xl md:text-4xl font-bold uppercase tracking-tight text-text mb-8 relative z-10">
             When Do You Need <span className="text-primary ">Emergency Service?</span>
-          </h2>
+          </h3>
           <div className="grid md:grid-cols-2 gap-12 relative z-10">
             <div className="space-y-6">
               <p className="text-text/80 font-bold uppercase tracking-widest text-xs leading-loose">
@@ -86,7 +87,7 @@ export default function EmergencyDrainPage() {
         {/* Emergency Types Grid */}
         <section className="grid lg:grid-cols-3 gap-8">
           <div className="p-10 rounded-xl bg-bg border border-border shadow-sm  col-span-1 lg:col-span-2">
-            <h2 className="text-2xl font-bold uppercase  mb-8 text-text">Common Emergency Scenarios</h2>
+            <h3 className="text-2xl font-bold uppercase mb-8 text-text">Common Emergency Scenarios</h3>
             <div className="grid md:grid-cols-2 gap-8">
                {[
                  { title: "Overflowing Toilets", desc: "When water rises instead of draining, it indicates a main line blockage or partial sewer clog that needs immediate attention." },
@@ -105,7 +106,7 @@ export default function EmergencyDrainPage() {
           </div>
           <div className="p-10 rounded-xl bg-card border border-border shadow-sm  flex flex-col justify-center text-center">
              <AlertTriangle className="h-16 w-16 text-primary mx-auto mb-6 opacity-50" />
-             <h2 className="text-xl font-bold uppercase  mb-4 text-text">Immediate Action Critical</h2>
+             <h3 className="text-xl font-bold uppercase  mb-4 text-text">Immediate Action Critical</h3>
              <p className="text-text/80 font-bold uppercase tracking-widest text-xs leading-loose mb-6">
                 Ignoring warning signs can turn a minor clog into a major disaster involving water damage and mold.
              </p>
@@ -117,9 +118,9 @@ export default function EmergencyDrainPage() {
 
         {/* FAQ Section */}
         <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
-          <h2 className="text-3xl font-bold uppercase  mb-12 text-center text-text">
+          <h3 className="text-3xl font-bold uppercase mb-12 text-center text-text">
             Emergency Service <span className="text-primary">FAQ</span>
-          </h2>
+          </h3>
           <div className="grid md:grid-cols-2 gap-12">
             {[
               { q: "How quickly can you arrive for a clog emergency?", a: "For most calls, technicians can arrive within an hour, and we offer same-day service for severe backups nationwide." },
@@ -138,7 +139,7 @@ export default function EmergencyDrainPage() {
 
         {/* Process Steps */}
         <section className="p-10 md:p-14 rounded-xl bg-bg border border-border ">
-          <h2 className="text-2xl font-bold uppercase  mb-10 text-text text-center">Our rapid Response Process</h2>
+          <h3 className="text-2xl font-bold uppercase  mb-10 text-text text-center">Our rapid Response Process</h3>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
              {[
                { n: "01", t: "Call Anytime", d: "Describe your emergency and location. We match you with the nearest tech immediately." },
@@ -156,22 +157,9 @@ export default function EmergencyDrainPage() {
         </section>
 
         {/* Conclusion CTA */}
-        <div className="text-center space-y-8 p-12 rounded-xl bg-gradient-to-br from-primary/10 to-accent/5 border border-primary/20  ">
-          <h2 className="text-3xl font-bold uppercase tracking-tight text-text ">Get Emergency Help Now</h2>
-          <p className="text-text/80 font-bold uppercase tracking-widest text-xs max-w-2xl mx-auto leading-relaxed">
-            Early emergency drain repair can prevent water damage, health risks and huge restoration bills. 
-            Contact DrainCleaningNearMe for instant nationwide response.
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-             <Link href="tel:+17247506935" className="h-16 px-12 bg-accent text-text rounded-lg flex items-center justify-center gap-3 font-bold uppercase  tracking-widest shadow-md hover:scale-105 transition-all">
-                <Phone fill="currentColor" size={24} /> (724) 750-6935
-             </Link>
-          </div>
-          <p className="text-[10px] text-text/80 font-bold uppercase tracking-widest">
-            24/7 Nationwide Emergency Support &middot; Licensed Experts &middot; No Hidden Fees
-          </p>
-        </div>
+        <CallConclusion />
       </div>
     </ServicePageLayout>
+
   );
 }

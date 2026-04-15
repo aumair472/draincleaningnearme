@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Zap, Phone, MapPin, Building2, Trees, Droplets } from "lucide-react";
 import { ServicePageLayout } from "@/components/service-page-layout";
+import { CallConclusion } from "@/components/call-conclusion";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -46,9 +47,9 @@ export default function AustinPage() {
         {/* Austin Challenges Section */}
         <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm  relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl opacity-50" />
-          <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-tight text-text mb-8 relative z-10">
+          <h3 className="text-3xl md:text-4xl font-bold uppercase tracking-tight text-text mb-8 relative z-10">
             Austin's Unique <span className="text-primary ">Drain Problems</span>
-          </h2>
+          </h3>
           <p className="text-text/80 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8 relative z-10">
             Austin's unique environment; hard water, clay-rich soil and live oak trees; makes drain problems more common than in many other cities. Over time, mineral buildup, tree roots and grease clogs narrow your pipes.
           </p>
@@ -70,7 +71,7 @@ export default function AustinPage() {
         {/* Full Range of Services & Signs */}
         <section className="grid lg:grid-cols-2 gap-8">
           <div className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
-            <h2 className="text-2xl font-bold uppercase  mb-8 text-text">Signs You Need Drain Cleaning</h2>
+            <h3 className="text-2xl font-bold uppercase mb-8 text-text">Signs You Need Drain Cleaning</h3>
             <div className="space-y-6 text-[11px] font-medium text-text/80 uppercase tracking-widest leading-relaxed">
               <ul className="space-y-4">
                  <li><strong className="text-primary">Slow Draining:</strong> One drain is slow (1 visit), multiple drains (sewer line issue).</li>
@@ -81,7 +82,7 @@ export default function AustinPage() {
               </ul>
             </div>
             <div className="mt-8">
-               <h2 className="text-2xl font-bold uppercase  mb-6 text-text mt-8">Our Process to fix your Drains</h2>
+               <h3 className="text-2xl font-bold uppercase mb-6 text-text mt-8">Our Process to fix your Drains</h3>
                <ol className="list-decimal pl-4 space-y-3 text-[11px] font-medium text-text/80 uppercase tracking-widest leading-relaxed">
                   <li><strong className="text-text">Inspection:</strong> Camera inspection and pressure testing.</li>
                   <li><strong className="text-text">Diagnosis:</strong> Determine clog type, location, and severity.</li>
@@ -94,7 +95,7 @@ export default function AustinPage() {
 
           <div className="p-10 md:p-14 rounded-xl bg-bg border border-border shadow-sm  flex flex-col justify-center text-center">
              <MapPin size={64} className="text-primary mx-auto mb-6 opacity-50" />
-             <h2 className="text-2xl font-bold uppercase  mb-4 text-text">Local Expertise in Austin</h2>
+             <h3 className="text-2xl font-bold uppercase mb-4 text-text">Local Expertise in Austin</h3>
              <p className="text-text/80 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8">
                 Our team serves all Austin neighborhoods with advanced equipment and emergency response.
              </p>
@@ -110,9 +111,9 @@ export default function AustinPage() {
 
         {/* FAQ Section */}
         <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
-          <h2 className="text-3xl font-bold uppercase  mb-12 text-center text-text">
+          <h3 className="text-3xl font-bold uppercase mb-12 text-center text-text">
             Austin Drain <span className="text-primary">FAQ</span>
-          </h2>
+          </h3>
           <div className="grid md:grid-cols-2 gap-12">
             {[
               { q: "How often should drains be cleaned?", a: "Residential drains: 1–2 times per year. Commercial drains: every 3–6 months." },
@@ -130,20 +131,10 @@ export default function AustinPage() {
         </section>
 
         {/* Conclusion CTA */}
-        <div className="text-center space-y-8 p-12 rounded-xl bg-gradient-to-br from-primary/10 to-accent/5 border border-primary/20  ">
-          <h2 className="text-3xl font-bold uppercase tracking-tight text-text ">Call Now for Drain Cleaning in Austin</h2>
-          <p className="text-text/80 font-bold uppercase tracking-widest text-xs max-w-2xl mx-auto leading-relaxed">
-            Tired of waiting days for drain cleaning services? Our licensed Austin plumbers provide same-day, 24/7 emergency drain cleaning with upfront pricing and no hidden fees.
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-             <Link href="tel:+17247506935" className="h-16 px-12 bg-accent text-text rounded-lg flex items-center justify-center gap-3 font-bold uppercase  tracking-widest shadow-md hover:scale-105 transition-all">
-                <Phone fill="currentColor" size={24} /> (724) 750-6935
-             </Link>
-          </div>
-          <p className="text-[10px] text-text/80 font-bold uppercase tracking-widest">
-            Licensed Austin Experts &middot; 24/7 Priority Emergency Dispatch &middot; Free City-Wide Estimates
-          </p>
-        </div>
+        <CallConclusion 
+          title="Call Now for Drain Cleaning in Austin"
+          subtitle="Tired of waiting days for drain cleaning services? Our licensed Austin plumbers provide same-day, 24/7 emergency drain cleaning with upfront pricing and no hidden fees."
+        />
 
         {/* Schema Markup */}
         <script

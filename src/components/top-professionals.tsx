@@ -60,7 +60,7 @@ export function TopProfessionals() {
             >
               <div className="flex items-start gap-4 mb-6">
                 <div className="relative w-16 h-16 rounded-full overflow-hidden border border-border/50 shrink-0">
-                  <Image src={pro.image} alt={pro.name} fill className="object-cover" />
+                  <Image src={pro.image} alt={pro.name} fill sizes="64px" className="object-cover" />
                 </div>
                 <div>
                   <div className="flex items-center gap-1 mb-1">

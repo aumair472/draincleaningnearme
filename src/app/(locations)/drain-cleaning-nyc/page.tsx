@@ -1,13 +1,14 @@
 import Link from "next/link";
 import { Zap, Phone, MapPin, Building2, Utensils, Construction, Search } from "lucide-react";
 import { ServicePageLayout } from "@/components/service-page-layout";
+import { CallConclusion } from "@/components/call-conclusion";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Emergency Drain Cleaning Services NYC | Licensed & Insured Plumbers",
   description: "Expert drain cleaning New York services. Our NYC drain cleaning pros handle sewer cleaning & clogged drain repair; Manhattan to Bronx. Reliable, licensed & 5-star rated. Book today",
   alternates: {
-    canonical: "https://www.draincleaningnearme.us/drain-cleaning-nyc/",
+    canonical: "https://www.draincleaningnearme.us/drain-cleaning-nyc",
   }
 };
 
@@ -51,9 +52,9 @@ export default function NYCPage() {
         {/* NYC Challenges Section */}
         <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm  relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl opacity-50" />
-          <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-tight text-text mb-8 relative z-10">
+          <h3 className="text-3xl md:text-4xl font-bold uppercase tracking-tight text-text mb-8 relative z-10">
             NYC <span className="text-primary ">Plumbing</span> Challenges
-          </h2>
+          </h3>
           <div className="grid md:grid-cols-3 gap-8 relative z-10">
             {[
               { icon: Utensils, title: "Grease & Food", text: "A top cause in Manhattan. We remove hardened grease that traps debris." },
@@ -72,7 +73,7 @@ export default function NYCPage() {
         {/* Full Range of NYC Services */}
         <section className="grid lg:grid-cols-2 gap-8">
           <div className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
-            <h2 className="text-2xl font-bold uppercase  mb-8 text-text">Our Drain Solutions in NYC</h2>
+            <h3 className="text-2xl font-bold uppercase mb-8 text-text">Our Drain Solutions in NYC</h3>
             <div className="space-y-8">
               {[
                 { title: "Drain Unclogging", desc: "Fast relief from bathroom and kitchen blockages in Manhattan & Brooklyn apartments." },
@@ -92,7 +93,7 @@ export default function NYCPage() {
 
           <div className="p-10 md:p-14 rounded-xl bg-bg border border-border shadow-sm  flex flex-col justify-center text-center">
              <MapPin size={64} className="text-primary mx-auto mb-6 opacity-50" />
-             <h2 className="text-2xl font-bold uppercase  mb-4 text-text">Serving All 5 Boroughs</h2>
+             <h3 className="text-2xl font-bold uppercase mb-4 text-text">Serving All 5 Boroughs</h3>
              <p className="text-text/80 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8">
                 From the Financial District to Harlem, Astoria to Long Island City, and beyond. 
                 Our local NYC experts provide same-day or next-dispatch service.
@@ -109,9 +110,9 @@ export default function NYCPage() {
 
         {/* FAQ Section */}
         <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
-          <h2 className="text-3xl font-bold uppercase  mb-12 text-center text-text">
+          <h3 className="text-3xl font-bold uppercase mb-12 text-center text-text">
             NYC Drain <span className="text-primary">FAQ</span>
-          </h2>
+          </h3>
           <div className="grid md:grid-cols-2 gap-12">
             {[
               { q: "How much does drain cleaning cost in NYC?", a: "Pricing depends on severity and line length. Simple clogs are often quoted fairly over the phone. Sewer cleaning and hydro jetting range slightly higher." },
@@ -128,21 +129,10 @@ export default function NYCPage() {
         </section>
 
         {/* Conclusion CTA */}
-        <div className="text-center space-y-8 p-12 rounded-xl bg-gradient-to-br from-primary/10 to-accent/5 border border-primary/20  ">
-          <h2 className="text-3xl font-bold uppercase tracking-tight text-text ">Emergency Help Across New York</h2>
-          <p className="text-text/80 font-bold uppercase tracking-widest text-xs max-w-2xl mx-auto leading-relaxed">
-            Protect your property and your health. Whether it&apos;s a quick sink repair or a major 
-            sewer overflow, our local licensed NYC experts are available 24/7.
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-             <Link href="tel:+17247506935" className="h-16 px-12 bg-accent text-text rounded-lg flex items-center justify-center gap-3 font-bold uppercase  tracking-widest shadow-md hover:scale-105 transition-all">
-                <Phone fill="currentColor" size={24} /> (724) 750-6935
-             </Link>
-          </div>
-          <p className="text-[10px] text-text/80 font-bold uppercase tracking-widest">
-            Licensed NYC Experts &middot; 24/7 Priority Emergency Dispatch &middot; Free City-Wide Estimates
-          </p>
-        </div>
+        <CallConclusion 
+          title="Emergency Help Across New York"
+          subtitle="Protect your property and your health. Whether it's a quick sink repair or a major sewer overflow, our local licensed NYC experts are available 24/7."
+        />
       </div>
     </ServicePageLayout>
   );

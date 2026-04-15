@@ -46,9 +46,9 @@ export default function DallasPage() {
         {/* Dallas Challenges Section */}
         <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm  relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl opacity-50" />
-          <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-tight text-text mb-8 relative z-10">
+          <h3 className="text-3xl md:text-4xl font-bold uppercase tracking-tight text-text mb-8 relative z-10">
             Why Dallas Homes face <span className="text-primary ">Frequent Drain Issues</span>
-          </h2>
+          </h3>
           <p className="text-text/80 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8 relative z-10">
             Dallas's unique climate and soil create perfect conditions for plumbing nightmares. With hard water averaging 8.9 grains per gallon, mineral buildup clogs pipes quickly, reducing water pressure and damaging fixtures.
           </p>
@@ -70,7 +70,7 @@ export default function DallasPage() {
         {/* Full Range of Services & Signs */}
         <section className="grid lg:grid-cols-2 gap-8">
           <div className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
-            <h2 className="text-2xl font-bold uppercase  mb-8 text-text">Signs You Need Professional Help</h2>
+            <h3 className="text-2xl font-bold uppercase mb-8 text-text">Signs You Need Professional Help</h3>
             <div className="space-y-6 text-[11px] font-medium text-text/80 uppercase tracking-widest leading-relaxed">
               <p>Ignore these signs at your peril; DIY chemicals roughen pipes, worsening clogs over time.</p>
               <ul className="space-y-4">
@@ -82,7 +82,7 @@ export default function DallasPage() {
               </ul>
             </div>
             <div className="mt-8">
-               <h2 className="text-2xl font-bold uppercase  mb-6 text-text mt-8">Our Proven Process</h2>
+               <h3 className="text-2xl font-bold uppercase mb-6 text-text mt-8">Our Proven Process</h3>
                <ol className="list-decimal pl-4 space-y-3 text-[11px] font-medium text-text/80 uppercase tracking-widest leading-relaxed">
                   <li><strong className="text-text">Inspection:</strong> Arrive fast, assess visible signs in your home.</li>
                   <li><strong className="text-text">Diagnosis:</strong> Camera inspection reveals hidden roots or scaling.</li>
@@ -95,7 +95,7 @@ export default function DallasPage() {
 
           <div className="p-10 md:p-14 rounded-xl bg-bg border border-border shadow-sm  flex flex-col justify-center text-center">
              <MapPin size={64} className="text-primary mx-auto mb-6 opacity-50" />
-             <h2 className="text-2xl font-bold uppercase  mb-4 text-text">Serving Dallas Neighborhoods</h2>
+             <h3 className="text-2xl font-bold uppercase mb-4 text-text">Serving Dallas Neighborhoods</h3>
              <p className="text-text/80 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8">
                 We are your Dallas drain experts with local know-how, serving everywhere from Oak Lawn to South Dallas.
              </p>
@@ -111,9 +111,9 @@ export default function DallasPage() {
 
         {/* FAQ Section */}
         <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
-          <h2 className="text-3xl font-bold uppercase  mb-12 text-center text-text">
+          <h3 className="text-3xl font-bold uppercase mb-12 text-center text-text">
             Dallas Drain <span className="text-primary">FAQ</span>
-          </h2>
+          </h3>
           <div className="grid md:grid-cols-2 gap-12">
             {[
               { q: "How Much Does Drain Cleaning Cost in Dallas TX?", a: "Expect $137-$341 for standard jobs; hydro jetting $250-$600. Factors include location and severity." },
@@ -134,7 +134,7 @@ export default function DallasPage() {
 
         {/* Conclusion CTA */}
         <div className="text-center space-y-8 p-12 rounded-xl bg-gradient-to-br from-primary/10 to-accent/5 border border-primary/20  ">
-          <h2 className="text-3xl font-bold uppercase tracking-tight text-text ">Stop Dallas Drain Disasters; Act Now!</h2>
+          <h3 className="text-3xl font-bold uppercase tracking-tight text-text">Stop Dallas Drain Disasters; Act Now!</h3>
           <p className="text-text/80 font-bold uppercase tracking-widest text-xs max-w-2xl mx-auto leading-relaxed">
             Do not let clogs turn into sewer line repair Dallas nightmares amid shifting soils and hard water. Call today for hydro jetting, rooter services or any emergency drain repair.
           </p>

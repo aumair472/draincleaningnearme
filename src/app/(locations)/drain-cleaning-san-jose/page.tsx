@@ -46,9 +46,9 @@ export default function SanJosePage() {
         {/* San Jose Challenges Section */}
         <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm  relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl opacity-50" />
-          <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-tight text-text mb-8 relative z-10">
+          <h3 className="text-3xl md:text-4xl font-bold uppercase tracking-tight text-text mb-8 relative z-10">
             Why San Jose Needs <span className="text-primary ">Expert Drain Cleaning</span>
-          </h2>
+          </h3>
           <p className="text-text/80 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8 relative z-10">
             San Jose's booming tech hub status means packed neighborhoods like Willow Glen, Almaden Valley and Evergreen face unique plumbing woes. Homeowners in older homes near downtown deal with aging clay pipes crumbling under tree root intrusion, exacerbated by our dry California summers. Businesses in Santa Clara Valley battle grease clogs from high-volume kitchens.
           </p>
@@ -70,7 +70,7 @@ export default function SanJosePage() {
         {/* Full Range of Services & Signs */}
         <section className="grid lg:grid-cols-2 gap-8">
           <div className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
-            <h2 className="text-2xl font-bold uppercase  mb-8 text-text">Signs You Need Immediate Drain Cleaning</h2>
+            <h3 className="text-2xl font-bold uppercase mb-8 text-text">Signs You Need Immediate Drain Cleaning</h3>
             <div className="space-y-6 text-[11px] font-medium text-text/80 uppercase tracking-widest leading-relaxed">
               <p>Do not ignore these red flags in your San Jose home or business areas. Ignoring slow drains leads to 70% more repair costs.</p>
               <ul className="space-y-4">
@@ -82,7 +82,7 @@ export default function SanJosePage() {
               </ul>
             </div>
             <div className="mt-8">
-               <h2 className="text-2xl font-bold uppercase  mb-6 text-text mt-8">Our Proven Process</h2>
+               <h3 className="text-2xl font-bold uppercase mb-6 text-text mt-8">Our Proven Process</h3>
                <ol className="list-decimal pl-4 space-y-3 text-[11px] font-medium text-text/80 uppercase tracking-widest leading-relaxed">
                   <li><strong className="text-text">Inspection:</strong> Free camera scope for detecting sewer line issues.</li>
                   <li><strong className="text-text">Diagnosis:</strong> Pinpoint cause (tree roots in sewer or grease clogging).</li>
@@ -95,7 +95,7 @@ export default function SanJosePage() {
 
           <div className="p-10 md:p-14 rounded-xl bg-bg border border-border shadow-sm  flex flex-col justify-center text-center">
              <MapPin size={64} className="text-primary mx-auto mb-6 opacity-50" />
-             <h2 className="text-2xl font-bold uppercase  mb-4 text-text">San Jose & Beyond</h2>
+             <h3 className="text-2xl font-bold uppercase mb-4 text-text">San Jose & Beyond</h3>
              <p className="text-text/80 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8">
                 Proudly offering fast, effective drain services in San Jose and across the greater Santa Clara Valley to keep lines flowing smoothly.
              </p>
@@ -111,9 +111,9 @@ export default function SanJosePage() {
 
         {/* FAQ Section */}
         <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
-          <h2 className="text-3xl font-bold uppercase  mb-12 text-center text-text">
+          <h3 className="text-3xl font-bold uppercase mb-12 text-center text-text">
             San Jose Drain <span className="text-primary">FAQ</span>
-          </h2>
+          </h3>
           <div className="grid md:grid-cols-2 gap-12">
             {[
               { q: "How much does drain cleaning cost in San Jose?", a: "$150–$400 depending on method (snaking cheapest, hydro jetting $300+). Free estimates! Factors: Location and severity." },
@@ -133,7 +133,7 @@ export default function SanJosePage() {
 
         {/* Conclusion CTA */}
         <div className="text-center space-y-8 p-12 rounded-xl bg-gradient-to-br from-primary/10 to-accent/5 border border-primary/20  ">
-          <h2 className="text-3xl font-bold uppercase tracking-tight text-text ">Call Now for Fast Drain Cleaning in San Jose</h2>
+          <h3 className="text-3xl font-bold uppercase tracking-tight text-text">Call Now for Fast Drain Cleaning in San Jose</h3>
           <p className="text-text/80 font-bold uppercase tracking-widest text-xs max-w-2xl mx-auto leading-relaxed">
             Do not let a clogged drain in San Jose ruin your day. With our 24/7 team, advanced hydro jetting and local know-how, we restore flow in San Jose today. Join 5,000+ satisfied customers!
           </p>

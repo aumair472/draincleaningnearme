@@ -46,9 +46,9 @@ export default function PhiladelphiaPage() {
         {/* Philly Challenges Section */}
         <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm  relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl opacity-50" />
-          <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-tight text-text mb-8 relative z-10">
+          <h3 className="text-3xl md:text-4xl font-bold uppercase tracking-tight text-text mb-8 relative z-10">
             Philadelphia's Local <span className="text-primary ">Drain Problems</span>
-          </h2>
+          </h3>
           <p className="text-text/80 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8 relative z-10">
             Philly's urban density and historic plumbing breed specific woes. Slow drains often start subtly but signal building grease or soap residue in aging pipes, common in row-homes where multiple users strain the systems.
           </p>
@@ -70,7 +70,7 @@ export default function PhiladelphiaPage() {
         {/* Full Range of Services & Signs */}
         <section className="grid lg:grid-cols-2 gap-8">
           <div className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
-            <h2 className="text-2xl font-bold uppercase  mb-8 text-text">Signs & Solutions Breakdown</h2>
+            <h3 className="text-2xl font-bold uppercase mb-8 text-text">Signs & Solutions Breakdown</h3>
             <div className="space-y-6 text-[11px] font-medium text-text/80 uppercase tracking-widest leading-relaxed">
               <ul className="space-y-4">
                  <li><strong className="text-primary">Slow Drains:</strong> Grease buildup in kitchens, soap/hair in bathrooms (Gurgling, sluggish flow). Fix: Snaking + tips.</li>
@@ -81,7 +81,7 @@ export default function PhiladelphiaPage() {
               </ul>
             </div>
             <div className="mt-8">
-               <h2 className="text-2xl font-bold uppercase  mb-6 text-text mt-8">Our Proven Process</h2>
+               <h3 className="text-2xl font-bold uppercase mb-6 text-text mt-8">Our Proven Process</h3>
                <ol className="list-decimal pl-4 space-y-3 text-[11px] font-medium text-text/80 uppercase tracking-widest leading-relaxed">
                   <li><strong className="text-text">Inspection:</strong> Arrive, assess visible signs, deploy camera for hidden issues.</li>
                   <li><strong className="text-text">Diagnosis:</strong> Pinpoint cause using Philly-specific knowledge.</li>
@@ -94,7 +94,7 @@ export default function PhiladelphiaPage() {
 
           <div className="p-10 md:p-14 rounded-xl bg-bg border border-border shadow-sm  flex flex-col justify-center text-center">
              <MapPin size={64} className="text-primary mx-auto mb-6 opacity-50" />
-             <h2 className="text-2xl font-bold uppercase  mb-4 text-text">Serving Philadelphia & Beyond</h2>
+             <h3 className="text-2xl font-bold uppercase mb-4 text-text">Serving Philadelphia & Beyond</h3>
              <p className="text-text/80 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8">
                 From Manayunk to Fishtown, we are there. Full coverage for your "drain unclogging near me" searches.
              </p>
@@ -110,9 +110,9 @@ export default function PhiladelphiaPage() {
 
         {/* FAQ Section */}
         <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
-          <h2 className="text-3xl font-bold uppercase  mb-12 text-center text-text">
+          <h3 className="text-3xl font-bold uppercase mb-12 text-center text-text">
             Philadelphia Drain <span className="text-primary">FAQ</span>
-          </h2>
+          </h3>
           <div className="grid md:grid-cols-2 gap-12">
             {[
               { q: "How much does drain cleaning cost in Philadelphia?", a: "Typical drain cleaning costs range from $160–$410 depending on clog severity and pipe access. Hydro jetting varies but gets it done right." },
@@ -132,7 +132,7 @@ export default function PhiladelphiaPage() {
 
         {/* Conclusion CTA */}
         <div className="text-center space-y-8 p-12 rounded-xl bg-gradient-to-br from-primary/10 to-accent/5 border border-primary/20  ">
-          <h2 className="text-3xl font-bold uppercase tracking-tight text-text ">Call Now for Same-Day Drain Cleaning!</h2>
+          <h3 className="text-3xl font-bold uppercase tracking-tight text-text">Call Now for Same-Day Drain Cleaning!</h3>
           <p className="text-text/80 font-bold uppercase tracking-widest text-xs max-w-2xl mx-auto leading-relaxed">
             Emergency? Standing water rising? Licensed team guarantees fast relief; do not let clogs ruin your day in Philadelphia.
           </p>

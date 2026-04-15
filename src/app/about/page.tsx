@@ -54,7 +54,7 @@ const usps = [
 ];
 
 const processes = [
-  { step: "1", title: "Call or Book", description: "Contact us anytime for instant matching." },
+  { step: "1", title: "Call Now", description: "Contact us anytime at (724) 750-6935 for instant matching." },
   { step: "2", title: "Expert Match", description: "We connect you to a nearby, verified technician." },
   { step: "3", title: "Rapid Service", description: "Pro arrives, assesses, and fixes efficiently." },
   { step: "4", title: "Done & Satisfied", description: "Enjoy clear drains with follow-up support." },
@@ -224,7 +224,7 @@ export default function AboutPage() {
         <TrustBar />
         <CTASection 
           title="Ready for Clear Drains? Call Now!"
-          subtitle="Do not let clogs ruin your day. Get your drains cleared today with emergency drain cleaning from top pros. Call now for immediate assistance or book online; 24/7 service starts here!"
+          subtitle="Do not let clogs ruin your day. Get your drains cleared today with emergency drain cleaning from top pros. Call now for immediate assistance; 24/7 service starts here!"
           variant="accent"
         />
       </main>

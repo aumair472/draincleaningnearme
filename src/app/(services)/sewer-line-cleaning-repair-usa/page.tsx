@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Professional Sewer Line Cleaning & Main Line Repair | Drain Cleaning Near Me",
   description: "Expert sewer line cleaning & repair services nationwide. Professional main line drain cleaning near me. 24/7 licensed local experts for sewer backups & tree root removal.",
   alternates: {
-    canonical: "https://www.draincleaningnearme.us/sewer-line-cleaning-repair-usa/",
+    canonical: "https://www.draincleaningnearme.us/sewer-line-cleaning-repair-usa",
   }
 };
 
@@ -51,9 +51,9 @@ export default function SewerLinePage() {
         {/* Understanding Section */}
         <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm  relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl opacity-50" />
-          <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-tight text-text mb-8 relative z-10">
+          <h3 className="text-3xl md:text-4xl font-bold uppercase tracking-tight text-text mb-8 relative z-10">
             Understanding <span className="text-primary ">Sewer Line</span> Problems
-          </h2>
+          </h3>
           <div className="grid md:grid-cols-2 gap-12 relative z-10">
             <div className="space-y-6">
               <p className="text-text/80 font-bold uppercase tracking-widest text-xs leading-loose">
@@ -89,7 +89,7 @@ export default function SewerLinePage() {
         {/* Causes & Solutions */}
         <section className="grid lg:grid-cols-2 gap-8">
           <div className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
-            <h2 className="text-2xl font-bold uppercase  mb-8 text-text">Common Causes of Sewer Blocks</h2>
+            <h3 className="text-2xl font-bold uppercase mb-8 text-text">Common Causes of Sewer Blocks</h3>
             <div className="space-y-8">
               {[
                 { title: "Tree Root Intrusion", desc: "Roots naturally seek moisture and grow into small cracks, expanding and creating massive blockages." },
@@ -108,7 +108,7 @@ export default function SewerLinePage() {
           </div>
 
           <div className="p-10 md:p-14 rounded-xl bg-bg border border-border shadow-sm ">
-             <h2 className="text-2xl font-bold uppercase  mb-8 text-text">Our Professional Methods</h2>
+             <h3 className="text-2xl font-bold uppercase mb-8 text-text">Our Professional Methods</h3>
              <div className="space-y-8">
                {[
                  { title: "Mechanical Cleaning", desc: "Use heavy-duty motorized augers to cut through roots and dislodge deep main line clogs safely." },
@@ -129,9 +129,9 @@ export default function SewerLinePage() {
 
         {/* FAQ Section */}
         <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
-          <h2 className="text-3xl font-bold uppercase  mb-12 text-center text-text">
+          <h3 className="text-3xl font-bold uppercase mb-12 text-center text-text">
             Sewer Line <span className="text-primary">FAQ</span>
-          </h2>
+          </h3>
           <div className="grid md:grid-cols-2 gap-12">
             {[
               { q: "How do I know if the main sewer line is blocked?", a: "The #1 sign is multiple drains backing up at once. If your shower fills up when you flush the toilet, the main line is the likely culprit." },
@@ -150,7 +150,7 @@ export default function SewerLinePage() {
 
         {/* Conclusion CTA */}
         <div className="text-center space-y-8 p-12 rounded-xl bg-gradient-to-br from-primary/10 to-accent/5 border border-primary/20  ">
-          <h2 className="text-3xl font-bold uppercase tracking-tight text-text ">Restoring Your Sewer Flow Today</h2>
+          <h3 className="text-3xl font-bold uppercase tracking-tight text-text">Restoring Your Sewer Flow Today</h3>
           <p className="text-text/80 font-bold uppercase tracking-widest text-xs max-w-2xl mx-auto leading-relaxed">
             A main line backup is a serious risk. Whether you need expert tree root removal or emergency 
             sewer cleaning near you, our local licensed professionals are ready to help.

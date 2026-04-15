@@ -6,16 +6,20 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 const areas = [
-  { name: "New York", href: "/drain-cleaning-nyc" },
-  { name: "Los Angeles", href: "/drain-cleaning-los-angeles" },
-  { name: "Chicago", href: "/#" },
-  { name: "Houston", href: "/#" },
-  { name: "Phoenix", href: "/#" },
-  { name: "Philadelphia", href: "/#" },
-  { name: "San Antonio", href: "/#" },
-  { name: "San Diego", href: "/#" },
-  { name: "Dallas", href: "/#" },
+  { name: "Drain Cleaning New York City", href: "/drain-cleaning-nyc" },
+  { name: "Drain Cleaning Los Angeles", href: "/drain-cleaning-los-angeles" },
+  { name: "Drain Cleaning Chicago", href: "/drain-cleaning-chicago" },
+  { name: "Drain Cleaning Houston", href: "/drain-cleaning-houston" },
+  { name: "Drain Cleaning Phoenix", href: "/drain-cleaning-phoenix" },
+  { name: "Drain Cleaning Philadelphia", href: "/drain-cleaning-philadelphia" },
+  { name: "Drain Cleaning San Antonio", href: "/drain-cleaning-san-antonio" },
+  { name: "Drain Cleaning San Diego", href: "/drain-cleaning-san-diego" },
+  { name: "Drain Cleaning Dallas", href: "/drain-cleaning-dallas" },
+  { name: "Drain Cleaning Austin", href: "/drain-cleaning-austin" },
+  { name: "Drain Cleaning San Jose", href: "/drain-cleaning-san-jose" },
+  { name: "Drain Cleaning Albuquerque", href: "/drain-cleaning-albuquerque" },
 ];
+
 
 export function ServiceAreas() {
   return (

@@ -46,9 +46,9 @@ export default function SanAntonioPage() {
         {/* San Antonio Challenges Section */}
         <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm  relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl opacity-50" />
-          <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-tight text-text mb-8 relative z-10">
+          <h3 className="text-3xl md:text-4xl font-bold uppercase tracking-tight text-text mb-8 relative z-10">
             San Antonio's Local <span className="text-primary ">Drain Problems</span>
-          </h2>
+          </h3>
           <p className="text-text/80 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8 relative z-10">
             San Antonio homeowners face unique plumbing woes due to the Edwards Aquifer's hard water, which causes mineral scaling in pipes, leading to slow drains and reduced flow. Grease from Tex-Mex cooking, hair, and soap scum exacerbate clogs.
           </p>
@@ -70,7 +70,7 @@ export default function SanAntonioPage() {
         {/* Full Range of Services & Signs */}
         <section className="grid lg:grid-cols-2 gap-8">
           <div className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
-            <h2 className="text-2xl font-bold uppercase  mb-8 text-text">Signs You Need Immediate Service</h2>
+            <h3 className="text-2xl font-bold uppercase mb-8 text-text">Signs You Need Immediate Service</h3>
             <div className="space-y-6 text-[11px] font-medium text-text/80 uppercase tracking-widest leading-relaxed">
               <p>Watch for these red flags indicating clogged drains in San Antonio to prevent sewer backups and pipe damage.</p>
               <ul className="space-y-4">
@@ -82,7 +82,7 @@ export default function SanAntonioPage() {
               </ul>
             </div>
             <div className="mt-8">
-               <h2 className="text-2xl font-bold uppercase  mb-6 text-text mt-8">Our Proven Process</h2>
+               <h3 className="text-2xl font-bold uppercase mb-6 text-text mt-8">Our Proven Process</h3>
                <ol className="list-decimal pl-4 space-y-3 text-[11px] font-medium text-text/80 uppercase tracking-widest leading-relaxed">
                   <li><strong className="text-text">Inspection:</strong> Arrive quickly and assess the issue visually.</li>
                   <li><strong className="text-text">Diagnosis:</strong> Use camera for accurate identification of clogs or roots.</li>
@@ -95,7 +95,7 @@ export default function SanAntonioPage() {
 
           <div className="p-10 md:p-14 rounded-xl bg-bg border border-border shadow-sm  flex flex-col justify-center text-center">
              <MapPin size={64} className="text-primary mx-auto mb-6 opacity-50" />
-             <h2 className="text-2xl font-bold uppercase  mb-4 text-text">Serving San Antonio & Beyond</h2>
+             <h3 className="text-2xl font-bold uppercase mb-4 text-text">Serving San Antonio & Beyond</h3>
              <p className="text-text/80 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8">
                 Fast arrival guaranteed for drain unclogging in San Antonio and surrounding Texas communities. We know hard water and rooter issues intimately.
              </p>
@@ -111,9 +111,9 @@ export default function SanAntonioPage() {
 
         {/* FAQ Section */}
         <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
-          <h2 className="text-3xl font-bold uppercase  mb-12 text-center text-text">
+          <h3 className="text-3xl font-bold uppercase mb-12 text-center text-text">
             San Antonio Drain <span className="text-primary">FAQ</span>
-          </h2>
+          </h3>
           <div className="grid md:grid-cols-2 gap-12">
             {[
               { q: "How often should drains be cleaned in San Antonio?", a: "Quarterly for high-use homes, annually for prevention – combats hard water buildup common in San Antonio's mineral-rich water supply." },
@@ -133,7 +133,7 @@ export default function SanAntonioPage() {
 
         {/* Conclusion CTA */}
         <div className="text-center space-y-8 p-12 rounded-xl bg-gradient-to-br from-primary/10 to-accent/5 border border-primary/20  ">
-          <h2 className="text-3xl font-bold uppercase tracking-tight text-text ">Get Fast & Reliable Drain Cleaning Today!</h2>
+          <h3 className="text-3xl font-bold uppercase tracking-tight text-text">Get Fast & Reliable Drain Cleaning Today!</h3>
           <p className="text-text/80 font-bold uppercase tracking-widest text-xs max-w-2xl mx-auto leading-relaxed">
             Do not let San Antonio sewer cleaning issues flood your day; our sewer cleaning experts resolve clogged drain issues for a long period of time. With same-day emergency assistance.
           </p>

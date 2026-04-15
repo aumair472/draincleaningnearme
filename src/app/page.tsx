@@ -5,6 +5,7 @@ import { Footer } from "@/components/footer";
 import { Hero } from "@/components/hero";
 import { HowItWorks } from "@/components/how-it-works";
 import { ServicesGrid } from "@/components/services-grid";
+import { ServiceAreas } from "@/components/service-areas";
 import { TopProfessionals } from "@/components/top-professionals";
 import { Testimonials } from "@/components/testimonials";
 import { CTASection } from "@/components/cta-section";
@@ -15,23 +16,25 @@ export default function Home() {
     <>
       <Navbar />
       <main className="flex-1 bg-card">
-        {/* HOMEPAGE STRUCTURE (STRICT — NO EXTRA SECTIONS) */}
-        {/* 1. HERO (Search + Trust) */}
+        {/* 1. HERO — H1 lives here */}
         <Hero />
 
-        {/* 2. HOW IT WORKS (3 steps only) */}
+        {/* 2. HOW IT WORKS */}
         <HowItWorks />
 
-        {/* 3. SERVICE CATEGORIES (Grid) */}
+        {/* 3. SERVICE CATEGORIES */}
         <ServicesGrid />
 
-        {/* 5. TESTIMONIALS */}
+        {/* 4. SERVICE AREAS — Internal links to all city pages */}
+        <ServiceAreas />
+
+        {/* 6. TESTIMONIALS */}
         <Testimonials />
 
-        {/* 6. STRONG CTA SECTION */}
+        {/* 7. STRONG CTA */}
         <CTASection />
 
-        {/* 7. FAQ */}
+        {/* 8. FAQ */}
         <FAQ />
       </main>
       <Footer />
