@@ -65,64 +65,56 @@ const services = [
 
 export function ServicesGrid() {
   return (
-    <section id="services" className="py-24 bg-[#0B1120] relative">
-      <div className="container px-10 relative z-10">
-        <div className="text-center mb-16 italic">
-          <h2 className="text-3xl sm:text-5xl font-black uppercase tracking-tight mb-4 text-white">
-            Our <span className="text-primary italic">Drain Cleaning</span> Services
+    <section id="services" className="py-20 bg-card relative">
+      <div className="container relative z-10">
+        <div className="text-center mb-16">
+          <h2 className="text-[36px] sm:text-[44px] font-bold tracking-tight mb-4 text-text">
+            Our Drain Cleaning Services
           </h2>
-          <p className="text-slate-400 font-medium max-w-2xl mx-auto">
+          <p className="text-text/80 font-medium max-w-2xl mx-auto text-lg">
             We offer a complete range of drain cleaning services near you fast so you can get the
             right solution without delay. Available 24/7.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto px-4">
           {services.map((service, index) => (
             <motion.article
               key={service.id}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
+              transition={{ delay: index * 0.1, duration: 0.4 }}
               className={cn(
-                "group relative p-10 rounded-[2.5rem] bg-[#111827]/70 backdrop-blur-md border border-white/5 transition-all overflow-hidden",
-                "hover:border-primary/50 hover:shadow-[0_0_50px_rgba(0,163,255,0.15)]",
-                service.isEmergency && "hover:border-accent/50 hover:shadow-[0_0_50px_rgba(255,107,53,0.15)]"
+                "group relative p-6 rounded-xl bg-card border border-border transition-all duration-300 flex flex-col h-full",
+                "shadow-sm hover:shadow-lg hover:scale-[1.02]",
+                service.isEmergency && "border-accent/30 hover:border-accent"
               )}
             >
-              {/* Dynamic Glow Background */}
-              <div
-                className={cn(
-                  "absolute -bottom-10 -right-10 w-24 h-24 blur-[60px] opacity-0 group-hover:opacity-40 transition-opacity",
-                  service.isEmergency ? "bg-accent" : "bg-primary"
-                )}
-              />
-
               <div className={cn(
-                "w-16 h-16 rounded-2xl flex items-center justify-center mb-8 bg-white/5 border border-white/10 transition-transform group-hover:scale-110 group-hover:bg-white/10",
-                service.color
+                "w-14 h-14 rounded-lg flex items-center justify-center mb-6 transition-colors",
+                service.isEmergency ? "bg-accent/10 text-accent group-hover:bg-accent group-hover:text-white" : "bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white"
               )}>
-                <service.icon size={32} strokeWidth={1.5} />
+                <service.icon size={28} strokeWidth={2} />
               </div>
 
-              <h3 className="text-2xl font-black uppercase italic tracking-tight mb-4 text-white leading-tight">
+              <h3 className="text-xl font-bold tracking-tight mb-3 text-text group-hover:text-primary transition-colors">
                 {service.title}
               </h3>
 
-              <p className="text-slate-400 font-medium text-sm leading-relaxed mb-8 line-clamp-4">
+              <p className="text-text/80 text-sm leading-relaxed mb-6 line-clamp-3 grow">
                 {service.description}
               </p>
 
               <Link
                 href={service.href}
                 className={cn(
-                  "inline-flex items-center gap-2 text-xs font-black uppercase tracking-widest transition-colors",
-                  service.isEmergency ? "text-accent hover:text-white" : "text-primary hover:text-white"
+                  "inline-flex items-center gap-2 text-sm font-bold transition-all mt-auto",
+                  service.isEmergency ? "text-accent" : "text-primary group-hover:translate-x-1"
                 )}
               >
                 Learn more
-                <MoveRight size={14} className="group-hover:translate-x-2 transition-transform" />
+                <MoveRight size={16} />
               </Link>
             </motion.article>
           ))}

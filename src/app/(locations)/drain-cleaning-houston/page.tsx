@@ -22,7 +22,7 @@ export default function HoustonPage() {
             If your kitchen drain is backing up, your bathroom smells foul or your floor is flooded, you need professional drain cleaning in Houston, not a temporary fix. Our licensed, insured Houston plumbers respond fast, diagnose the real problem and clear the blockage.
           </p>
           <p>
-            We are available 24/7 for fast, affordable clogged drain repair, sewer line cleaning and hydro jetting in Houston, Texas. Call Now: <span className="font-bold text-white">(724) 750-6935</span>
+            We are available 24/7 for fast, affordable clogged drain repair, sewer line cleaning and hydro jetting in Houston, Texas. Call Now: <span className="font-bold text-text">(724) 750-6935</span>
           </p>
         </>
       }
@@ -44,12 +44,12 @@ export default function HoustonPage() {
     >
       <div className="space-y-24">
         {/* Houston Challenges Section */}
-        <section className="p-10 md:p-14 rounded-[3rem] bg-[#111827]/80 border border-white/5 shadow-2xl italic relative overflow-hidden">
+        <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm  relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl opacity-50" />
-          <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight text-white mb-8 relative z-10">
-            Why Houston Needs <span className="text-primary italic">Regular Drain Cleaning</span>
+          <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-tight text-text mb-8 relative z-10">
+            Why Houston Needs <span className="text-primary ">Regular Drain Cleaning</span>
           </h2>
-          <p className="text-slate-400 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8 relative z-10">
+          <p className="text-text/80 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8 relative z-10">
             Houston's unique climate and soil make clogs and sewer issues more common than in many other cities. Because of these factors, slow drains, foul odors and backups are more common and often more serious here.
           </p>
           <div className="grid md:grid-cols-3 gap-8 relative z-10">
@@ -58,10 +58,10 @@ export default function HoustonPage() {
               { icon: Droplets, title: "Heavy Rainfall & Floods", text: "Frequent storms and intense downpours overwhelm storm drains and French drains if already partially clogged." },
               { icon: Trees, title: "Tree Root Intrusion", text: "Houston's lush trees aggressively seek water, sending roots into tiny cracks in sewer and drain lines." }
             ].map((item, i) => (
-              <div key={i} className="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-primary/50 transition-all group">
+              <div key={i} className="p-6 rounded-lg bg-bg border-border/50 border border-border hover:border-primary/20 transition-all hover:shadow-md transition-all group">
                 <item.icon className="text-primary mb-4 group-hover:scale-110 transition-transform" size={32} />
-                <h4 className="font-black uppercase italic tracking-tight mb-2 text-sm text-white group-hover:text-primary transition-colors">{item.title}</h4>
-                <p className="text-[10px] font-bold text-slate-500 uppercase tracking-widest leading-relaxed">{item.text}</p>
+                <h4 className="font-bold uppercase  tracking-tight mb-2 text-sm text-text group-hover:text-primary transition-colors">{item.title}</h4>
+                <p className="text-[10px] font-bold text-text/80 uppercase tracking-widest leading-relaxed">{item.text}</p>
               </div>
             ))}
           </div>
@@ -69,9 +69,9 @@ export default function HoustonPage() {
 
         {/* Full Range of Services & Signs */}
         <section className="grid lg:grid-cols-2 gap-8">
-          <div className="p-10 md:p-14 rounded-[3rem] bg-[#111827]/80 border border-white/5 shadow-2xl italic">
-            <h2 className="text-2xl font-black uppercase italic mb-8 text-white">Signs You Need Immediate Service</h2>
-            <div className="space-y-6 text-[11px] font-medium text-slate-400 uppercase tracking-widest leading-relaxed">
+          <div className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
+            <h2 className="text-2xl font-bold uppercase  mb-8 text-text">Signs You Need Immediate Service</h2>
+            <div className="space-y-6 text-[11px] font-medium text-text/80 uppercase tracking-widest leading-relaxed">
               <p>If you notice any of these in your Houston home or business, call for professional drain cleaning to prevent slab leaks and costly repairs.</p>
               <ul className="space-y-4">
                  <li><strong className="text-primary">Slow-Moving Water:</strong> In sinks, showers or tubs, likely from grease, food waste, or soap scum.</li>
@@ -82,26 +82,26 @@ export default function HoustonPage() {
               </ul>
             </div>
             <div className="mt-8">
-               <h2 className="text-2xl font-black uppercase italic mb-6 text-white mt-8">Our 5-Step Drain Cleaning Process</h2>
-               <ol className="list-decimal pl-4 space-y-3 text-[11px] font-medium text-slate-400 uppercase tracking-widest leading-relaxed">
-                  <li><strong className="text-white">Inspection (Camera):</strong> See exactly where the clog or damage is.</li>
-                  <li><strong className="text-white">Problem Identification:</strong> Analyze video and explain the root cause.</li>
-                  <li><strong className="text-white">Method Selection:</strong> Choose auger, snake, hydro jetting, or repair.</li>
-                  <li><strong className="text-white">Drain Cleaning:</strong> Clear the blockage completely.</li>
-                  <li><strong className="text-white">Final Testing:</strong> Run water tests and cameras again to confirm full flow.</li>
+               <h2 className="text-2xl font-bold uppercase  mb-6 text-text mt-8">Our 5-Step Drain Cleaning Process</h2>
+               <ol className="list-decimal pl-4 space-y-3 text-[11px] font-medium text-text/80 uppercase tracking-widest leading-relaxed">
+                  <li><strong className="text-text">Inspection (Camera):</strong> See exactly where the clog or damage is.</li>
+                  <li><strong className="text-text">Problem Identification:</strong> Analyze video and explain the root cause.</li>
+                  <li><strong className="text-text">Method Selection:</strong> Choose auger, snake, hydro jetting, or repair.</li>
+                  <li><strong className="text-text">Drain Cleaning:</strong> Clear the blockage completely.</li>
+                  <li><strong className="text-text">Final Testing:</strong> Run water tests and cameras again to confirm full flow.</li>
                </ol>
             </div>
           </div>
 
-          <div className="p-10 md:p-14 rounded-[3rem] bg-gradient-to-br from-[#111827] to-[#0B1120] border border-white/5 shadow-2xl italic flex flex-col justify-center text-center">
+          <div className="p-10 md:p-14 rounded-xl bg-bg border border-border shadow-sm  flex flex-col justify-center text-center">
              <MapPin size={64} className="text-primary mx-auto mb-6 opacity-50" />
-             <h2 className="text-2xl font-black uppercase italic mb-4 text-white">Serving Houston & Harris County</h2>
-             <p className="text-slate-400 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8">
+             <h2 className="text-2xl font-bold uppercase  mb-4 text-text">Serving Houston & Harris County</h2>
+             <p className="text-text/80 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8">
                 Our local plumbers serve homes, apartments, restaurants, and offices across the Greater Houston area.
              </p>
              <div className="flex flex-wrap justify-center gap-3">
                 {["Houston", "Spring", "The Woodlands", "Katy", "Sugar Land", "Pearland", "Missouri City", "Cypress", "Clear Lake"].map((area) => (
-                  <span key={area} className="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-[10px] font-black uppercase tracking-widest text-primary italic">
+                  <span key={area} className="px-4 py-2 bg-bg border-border/50 border border-border rounded-full text-[10px] font-bold uppercase tracking-widest text-primary ">
                     {area}
                   </span>
                 ))}
@@ -110,8 +110,8 @@ export default function HoustonPage() {
         </section>
 
         {/* FAQ Section */}
-        <section className="p-10 md:p-14 rounded-[3rem] bg-[#111827]/80 border border-white/5 shadow-2xl italic">
-          <h2 className="text-3xl font-black uppercase italic mb-12 text-center text-white">
+        <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
+          <h2 className="text-3xl font-bold uppercase  mb-12 text-center text-text">
             Houston Drain <span className="text-primary">FAQ</span>
           </h2>
           <div className="grid md:grid-cols-2 gap-12">
@@ -124,25 +124,25 @@ export default function HoustonPage() {
               { q: "Do you service commercial kitchens in Houston?", a: "Yes, we remove thick grease and food buildup in restaurants and food trucks using high-pressure hydro jetting." }
             ].map((faq, i) => (
               <div key={i} className="space-y-3">
-                 <h4 className="text-xs font-black uppercase tracking-widest text-white italic">Q: {faq.q}</h4>
-                 <p className="text-[11px] font-bold text-slate-500 uppercase tracking-widest leading-relaxed">A: {faq.a}</p>
+                 <h4 className="text-xs font-bold uppercase tracking-widest text-text ">Q: {faq.q}</h4>
+                 <p className="text-[11px] font-bold text-text/80 uppercase tracking-widest leading-relaxed">A: {faq.a}</p>
               </div>
             ))}
           </div>
         </section>
 
         {/* Conclusion CTA */}
-        <div className="text-center space-y-8 p-12 rounded-[3.5rem] bg-gradient-to-br from-primary/10 to-accent/5 border border-primary/20 italic shadow-primary-glow/20">
-          <h2 className="text-3xl font-black uppercase tracking-tight text-white italic">Get Help Now in Houston</h2>
-          <p className="text-slate-400 font-bold uppercase tracking-widest text-xs max-w-2xl mx-auto leading-relaxed">
+        <div className="text-center space-y-8 p-12 rounded-xl bg-gradient-to-br from-primary/10 to-accent/5 border border-primary/20  ">
+          <h2 className="text-3xl font-bold uppercase tracking-tight text-text ">Get Help Now in Houston</h2>
+          <p className="text-text/80 font-bold uppercase tracking-widest text-xs max-w-2xl mx-auto leading-relaxed">
             Do not wait for a small clog to become a flooded bathroom or sewer backup. Speak directly with a Houston plumber and schedule your visit in minutes. Available for same-day emergency drain cleaning.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-             <Link href="tel:+17247506935" className="h-16 px-12 bg-accent text-white rounded-2xl flex items-center justify-center gap-3 font-black uppercase italic tracking-widest shadow-accent-glow hover:scale-105 transition-all">
+             <Link href="tel:+17247506935" className="h-16 px-12 bg-accent text-text rounded-lg flex items-center justify-center gap-3 font-bold uppercase  tracking-widest shadow-md hover:scale-105 transition-all">
                 <Phone fill="currentColor" size={24} /> (724) 750-6935
              </Link>
           </div>
-          <p className="text-[10px] text-slate-500 font-black uppercase tracking-widest">
+          <p className="text-[10px] text-text/80 font-bold uppercase tracking-widest">
             Licensed Houston Experts &middot; 24/7 Priority Emergency Dispatch &middot; Free Estimates
           </p>
         </div>

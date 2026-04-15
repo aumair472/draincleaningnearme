@@ -22,7 +22,7 @@ export default function PhiladelphiaPage() {
             In Philadelphia's tight row-homes from South Philly to Northeast neighborhoods, a simple slow drain can escalate to foul-smelling backups flooding your basement; especially with the city's aging cast iron and clay pipes vulnerable to corrosion and tree root intrusion.
           </p>
           <p>
-            Grease from grease traps clogs kitchens, hair mats bathrooms, and winter freezes stress pipes leading to blockages. DrainCleaningNearMe connects you instantly to local professionals for drain cleaning services in Philadelphia, ensuring same-day relief before costly sewer line repair. Call now: <span className="font-bold text-white">(724) 750-6935</span>
+            Grease from grease traps clogs kitchens, hair mats bathrooms, and winter freezes stress pipes leading to blockages. DrainCleaningNearMe connects you instantly to local professionals for drain cleaning services in Philadelphia, ensuring same-day relief before costly sewer line repair. Call now: <span className="font-bold text-text">(724) 750-6935</span>
           </p>
         </>
       }
@@ -44,12 +44,12 @@ export default function PhiladelphiaPage() {
     >
       <div className="space-y-24">
         {/* Philly Challenges Section */}
-        <section className="p-10 md:p-14 rounded-[3rem] bg-[#111827]/80 border border-white/5 shadow-2xl italic relative overflow-hidden">
+        <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm  relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl opacity-50" />
-          <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight text-white mb-8 relative z-10">
-            Philadelphia's Local <span className="text-primary italic">Drain Problems</span>
+          <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-tight text-text mb-8 relative z-10">
+            Philadelphia's Local <span className="text-primary ">Drain Problems</span>
           </h2>
-          <p className="text-slate-400 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8 relative z-10">
+          <p className="text-text/80 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8 relative z-10">
             Philly's urban density and historic plumbing breed specific woes. Slow drains often start subtly but signal building grease or soap residue in aging pipes, common in row-homes where multiple users strain the systems.
           </p>
           <div className="grid md:grid-cols-3 gap-8 relative z-10">
@@ -58,10 +58,10 @@ export default function PhiladelphiaPage() {
               { icon: Trees, title: "Tree Root Intrusion", text: "Roots from mature trees along narrow streets invade older sewer lines causing frequent backups." },
               { icon: Settings, title: "Combined Sewer Overflows", text: "Heavy rainfall overwhelms Philly's combined sewer system, leading to water backups flooding basements." }
             ].map((item, i) => (
-              <div key={i} className="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-primary/50 transition-all group">
+              <div key={i} className="p-6 rounded-lg bg-bg border-border/50 border border-border hover:border-primary/20 transition-all hover:shadow-md transition-all group">
                 <item.icon className="text-primary mb-4 group-hover:scale-110 transition-transform" size={32} />
-                <h4 className="font-black uppercase italic tracking-tight mb-2 text-sm text-white group-hover:text-primary transition-colors">{item.title}</h4>
-                <p className="text-[10px] font-bold text-slate-500 uppercase tracking-widest leading-relaxed">{item.text}</p>
+                <h4 className="font-bold uppercase  tracking-tight mb-2 text-sm text-text group-hover:text-primary transition-colors">{item.title}</h4>
+                <p className="text-[10px] font-bold text-text/80 uppercase tracking-widest leading-relaxed">{item.text}</p>
               </div>
             ))}
           </div>
@@ -69,9 +69,9 @@ export default function PhiladelphiaPage() {
 
         {/* Full Range of Services & Signs */}
         <section className="grid lg:grid-cols-2 gap-8">
-          <div className="p-10 md:p-14 rounded-[3rem] bg-[#111827]/80 border border-white/5 shadow-2xl italic">
-            <h2 className="text-2xl font-black uppercase italic mb-8 text-white">Signs & Solutions Breakdown</h2>
-            <div className="space-y-6 text-[11px] font-medium text-slate-400 uppercase tracking-widest leading-relaxed">
+          <div className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
+            <h2 className="text-2xl font-bold uppercase  mb-8 text-text">Signs & Solutions Breakdown</h2>
+            <div className="space-y-6 text-[11px] font-medium text-text/80 uppercase tracking-widest leading-relaxed">
               <ul className="space-y-4">
                  <li><strong className="text-primary">Slow Drains:</strong> Grease buildup in kitchens, soap/hair in bathrooms (Gurgling, sluggish flow). Fix: Snaking + tips.</li>
                  <li><strong className="text-primary">Recurring Clogs:</strong> Corrosion in cast iron/clay pipes (Frequent backups). Fix: Hydro jetting Philadelphia.</li>
@@ -81,26 +81,26 @@ export default function PhiladelphiaPage() {
               </ul>
             </div>
             <div className="mt-8">
-               <h2 className="text-2xl font-black uppercase italic mb-6 text-white mt-8">Our Proven Process</h2>
-               <ol className="list-decimal pl-4 space-y-3 text-[11px] font-medium text-slate-400 uppercase tracking-widest leading-relaxed">
-                  <li><strong className="text-white">Inspection:</strong> Arrive, assess visible signs, deploy camera for hidden issues.</li>
-                  <li><strong className="text-white">Diagnosis:</strong> Pinpoint cause using Philly-specific knowledge.</li>
-                  <li><strong className="text-white">Selection:</strong> Customized snaking for minor, hydro jetting for severe cases.</li>
-                  <li><strong className="text-white">Testing:</strong> Run water to verify flow, check for backups.</li>
-                  <li><strong className="text-white">Prevention Tips:</strong> Advise on grease traps, root barriers for row-homes.</li>
+               <h2 className="text-2xl font-bold uppercase  mb-6 text-text mt-8">Our Proven Process</h2>
+               <ol className="list-decimal pl-4 space-y-3 text-[11px] font-medium text-text/80 uppercase tracking-widest leading-relaxed">
+                  <li><strong className="text-text">Inspection:</strong> Arrive, assess visible signs, deploy camera for hidden issues.</li>
+                  <li><strong className="text-text">Diagnosis:</strong> Pinpoint cause using Philly-specific knowledge.</li>
+                  <li><strong className="text-text">Selection:</strong> Customized snaking for minor, hydro jetting for severe cases.</li>
+                  <li><strong className="text-text">Testing:</strong> Run water to verify flow, check for backups.</li>
+                  <li><strong className="text-text">Prevention Tips:</strong> Advise on grease traps, root barriers for row-homes.</li>
                </ol>
             </div>
           </div>
 
-          <div className="p-10 md:p-14 rounded-[3rem] bg-gradient-to-br from-[#111827] to-[#0B1120] border border-white/5 shadow-2xl italic flex flex-col justify-center text-center">
+          <div className="p-10 md:p-14 rounded-xl bg-bg border border-border shadow-sm  flex flex-col justify-center text-center">
              <MapPin size={64} className="text-primary mx-auto mb-6 opacity-50" />
-             <h2 className="text-2xl font-black uppercase italic mb-4 text-white">Serving Philadelphia & Beyond</h2>
-             <p className="text-slate-400 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8">
+             <h2 className="text-2xl font-bold uppercase  mb-4 text-text">Serving Philadelphia & Beyond</h2>
+             <p className="text-text/80 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8">
                 From Manayunk to Fishtown, we are there. Full coverage for your "drain unclogging near me" searches.
              </p>
              <div className="flex flex-wrap justify-center gap-3">
                 {["South Philly", "West Philadelphia", "Northeast Philadelphia", "Center City", "Bucks County", "Montgomery County", "Delaware County"].map((area) => (
-                  <span key={area} className="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-[10px] font-black uppercase tracking-widest text-primary italic">
+                  <span key={area} className="px-4 py-2 bg-bg border-border/50 border border-border rounded-full text-[10px] font-bold uppercase tracking-widest text-primary ">
                     {area}
                   </span>
                 ))}
@@ -109,8 +109,8 @@ export default function PhiladelphiaPage() {
         </section>
 
         {/* FAQ Section */}
-        <section className="p-10 md:p-14 rounded-[3rem] bg-[#111827]/80 border border-white/5 shadow-2xl italic">
-          <h2 className="text-3xl font-black uppercase italic mb-12 text-center text-white">
+        <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
+          <h2 className="text-3xl font-bold uppercase  mb-12 text-center text-text">
             Philadelphia Drain <span className="text-primary">FAQ</span>
           </h2>
           <div className="grid md:grid-cols-2 gap-12">
@@ -123,25 +123,25 @@ export default function PhiladelphiaPage() {
               { q: "How to prevent slow drains in Philadelphia rowhomes?", a: "Use drain screens, avoid pouring grease, schedule annual professional cleaning, and consider root barriers for tree-heavy areas." }
             ].map((faq, i) => (
               <div key={i} className="space-y-3">
-                 <h4 className="text-xs font-black uppercase tracking-widest text-white italic">Q: {faq.q}</h4>
-                 <p className="text-[11px] font-bold text-slate-500 uppercase tracking-widest leading-relaxed">A: {faq.a}</p>
+                 <h4 className="text-xs font-bold uppercase tracking-widest text-text ">Q: {faq.q}</h4>
+                 <p className="text-[11px] font-bold text-text/80 uppercase tracking-widest leading-relaxed">A: {faq.a}</p>
               </div>
             ))}
           </div>
         </section>
 
         {/* Conclusion CTA */}
-        <div className="text-center space-y-8 p-12 rounded-[3.5rem] bg-gradient-to-br from-primary/10 to-accent/5 border border-primary/20 italic shadow-primary-glow/20">
-          <h2 className="text-3xl font-black uppercase tracking-tight text-white italic">Call Now for Same-Day Drain Cleaning!</h2>
-          <p className="text-slate-400 font-bold uppercase tracking-widest text-xs max-w-2xl mx-auto leading-relaxed">
+        <div className="text-center space-y-8 p-12 rounded-xl bg-gradient-to-br from-primary/10 to-accent/5 border border-primary/20  ">
+          <h2 className="text-3xl font-bold uppercase tracking-tight text-text ">Call Now for Same-Day Drain Cleaning!</h2>
+          <p className="text-text/80 font-bold uppercase tracking-widest text-xs max-w-2xl mx-auto leading-relaxed">
             Emergency? Standing water rising? Licensed team guarantees fast relief; do not let clogs ruin your day in Philadelphia.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-             <Link href="tel:+17247506935" className="h-16 px-12 bg-accent text-white rounded-2xl flex items-center justify-center gap-3 font-black uppercase italic tracking-widest shadow-accent-glow hover:scale-105 transition-all">
+             <Link href="tel:+17247506935" className="h-16 px-12 bg-accent text-text rounded-lg flex items-center justify-center gap-3 font-bold uppercase  tracking-widest shadow-md hover:scale-105 transition-all">
                 <Phone fill="currentColor" size={24} /> (724) 750-6935
              </Link>
           </div>
-          <p className="text-[10px] text-slate-500 font-black uppercase tracking-widest">
+          <p className="text-[10px] text-text/80 font-bold uppercase tracking-widest">
             Licensed Experts &middot; 24/7 Priority Emergency Dispatch &middot; Free City-Wide Estimates
           </p>
         </div>

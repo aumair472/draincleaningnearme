@@ -28,21 +28,21 @@ export function FAQ() {
   const [openIndex, setOpenIndex] = React.useState<number | null>(0);
 
   return (
-    <section id="faq" className="py-24 bg-[#111827] relative italic overflow-hidden border-y border-white/5">
-      <div className="container relative z-10 italic">
+    <section id="faq" className="py-20 bg-bg border-y border-border">
+      <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="inline-flex items-center gap-2.5 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-[10px] font-black uppercase tracking-widest text-primary mb-6"
+            className="inline-flex items-center gap-2.5 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-xs font-bold uppercase tracking-widest text-primary mb-6"
           >
-            <HelpCircle size={14} className="fill-primary text-white" /> Frequently Asked Questions
+            <HelpCircle size={14} className="text-primary" /> Frequently Asked Questions
           </motion.div>
-          <h2 className="text-3xl sm:text-5xl font-black uppercase tracking-tight text-white leading-none mb-6">
-             Common <span className="text-primary italic">Questions</span> 
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-text mb-4">
+             Common Questions
           </h2>
-          <p className="text-slate-400 font-medium max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base font-medium text-text/80 max-w-2xl mx-auto">
             Get answers to the most common drain cleaning questions and prepare for your service appointment.
           </p>
         </div>
@@ -55,27 +55,27 @@ export function FAQ() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="group overflow-hidden rounded-[2rem] bg-[#0B1120] border border-white/5 transition-all hover:border-primary/30"
+              className="group overflow-hidden rounded-xl bg-card border border-border transition-all shadow-sm hover:shadow-md"
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="flex items-center justify-between w-full p-8 text-left transition-colors"
-              >
+                className="flex items-center justify-between w-full p-6 text-left transition-colors"
+               >
                 <div className="flex items-center gap-4">
                    <div className={cn(
-                     "w-10 h-10 rounded-xl flex items-center justify-center transition-all",
-                     openIndex === index ? "bg-primary text-white shadow-glow" : "bg-white/5 text-slate-500"
+                     "w-10 h-10 rounded-lg flex items-center justify-center transition-all",
+                     openIndex === index ? "bg-primary text-white shadow-sm" : "bg-bg text-text/60"
                    )}>
-                      <span className="text-xs font-black">{index + 1}</span>
+                      <span className="text-sm font-bold">{index + 1}</span>
                    </div>
-                   <span className="text-lg font-black uppercase tracking-tight text-white leading-tight">
+                   <span className="text-lg font-bold tracking-tight text-text leading-tight">
                     {faq.question}
                   </span>
                 </div>
                 {openIndex === index ? (
                   <Minus className="shrink-0 text-primary" size={24} />
                 ) : (
-                  <Plus className="shrink-0 text-slate-600 group-hover:text-primary transition-colors" size={24} />
+                  <Plus className="shrink-0 text-slate-400 group-hover:text-primary transition-colors" size={24} />
                 )}
               </button>
               
@@ -87,7 +87,7 @@ export function FAQ() {
                     exit={{ height: 0, opacity: 0 }}
                     transition={{ duration: 0.3, ease: "easeInOut" }}
                   >
-                    <div className="px-8 pb-8 text-base font-medium leading-relaxed text-slate-400 border-t border-white/5 pt-6">
+                    <div className="px-6 pb-6 pt-2 text-text/80 leading-relaxed border-t border-border/50 mx-6 font-medium text-base">
                       {faq.answer}
                     </div>
                   </motion.div>
@@ -101,16 +101,16 @@ export function FAQ() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-16 p-10 rounded-[2.5rem] bg-gradient-to-br from-primary/5 via-[#0B1120] to-accent/5 border border-white/5 text-center max-w-xl mx-auto italic"
+          className="mt-16 p-10 rounded-2xl bg-card border border-border text-center max-w-xl mx-auto shadow-sm"
         >
           <div className="flex justify-center mb-6">
              <MessageCircleQuestion size={48} className="text-primary opacity-20" />
           </div>
-          <p className="text-lg font-black uppercase tracking-tight text-white mb-6 leading-none">Still have questions?</p>
-          <p className="text-sm font-medium text-slate-500 mb-8 max-w-xs mx-auto">
+          <p className="text-2xl font-bold tracking-tight text-text mb-4 leading-none">Still have questions?</p>
+          <p className="text-base font-medium text-text/80 mb-8 max-w-sm mx-auto">
             Our experts are standing by 24/7 to help you with any plumbing needs.
           </p>
-          <a href="tel:+17247506935" className="inline-flex items-center gap-3 px-10 py-5 bg-primary text-white rounded-2xl font-black uppercase italic tracking-widest shadow-glow hover:scale-105 transition-transform">
+          <a href="tel:+17247506935" className="inline-flex items-center justify-center gap-3 w-full sm:w-auto px-8 py-4 bg-primary text-white rounded-lg font-bold shadow-sm hover:shadow-md transition-all">
              Call (724) 750-6935
           </a>
         </motion.div>

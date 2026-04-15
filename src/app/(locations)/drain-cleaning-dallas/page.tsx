@@ -22,7 +22,7 @@ export default function DallasPage() {
             Tired of slow drains, foul odors or sudden backups disrupting your Dallas home or business? DrainCleaningNearMe delivers fast, reliable drain cleaning services in Dallas, TX; using advanced hydro jetting and rooter services to restore flow instantly; guaranteed.
           </p>
           <p>
-            Licensed, Insured & 24/7 Emergency Response in Dallas Neighborhoods like Lakewood, Oak Lawn, Highland Park, and Dixon Circle. Call Now for Same-Day Service: <span className="font-bold text-white">(724) 750-6935</span> | Get Your Free Estimate.
+            Licensed, Insured & 24/7 Emergency Response in Dallas Neighborhoods like Lakewood, Oak Lawn, Highland Park, and Dixon Circle. Call Now for Same-Day Service: <span className="font-bold text-text">(724) 750-6935</span> | Get Your Free Estimate.
           </p>
         </>
       }
@@ -44,12 +44,12 @@ export default function DallasPage() {
     >
       <div className="space-y-24">
         {/* Dallas Challenges Section */}
-        <section className="p-10 md:p-14 rounded-[3rem] bg-[#111827]/80 border border-white/5 shadow-2xl italic relative overflow-hidden">
+        <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm  relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl opacity-50" />
-          <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight text-white mb-8 relative z-10">
-            Why Dallas Homes face <span className="text-primary italic">Frequent Drain Issues</span>
+          <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-tight text-text mb-8 relative z-10">
+            Why Dallas Homes face <span className="text-primary ">Frequent Drain Issues</span>
           </h2>
-          <p className="text-slate-400 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8 relative z-10">
+          <p className="text-text/80 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8 relative z-10">
             Dallas's unique climate and soil create perfect conditions for plumbing nightmares. With hard water averaging 8.9 grains per gallon, mineral buildup clogs pipes quickly, reducing water pressure and damaging fixtures.
           </p>
           <div className="grid md:grid-cols-3 gap-8 relative z-10">
@@ -58,10 +58,10 @@ export default function DallasPage() {
               { icon: Building2, title: "Shifting Clay Soil", text: "Swelling in heavy rains and shrinking in scorching summers cracks sewer lines." },
               { icon: Trees, title: "Aggressive Tree Roots", text: "Cedar elms and Mexican sycamores common in Lakewood aggressively seek cracked pipes." }
             ].map((item, i) => (
-              <div key={i} className="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-primary/50 transition-all group">
+              <div key={i} className="p-6 rounded-lg bg-bg border-border/50 border border-border hover:border-primary/20 transition-all hover:shadow-md transition-all group">
                 <item.icon className="text-primary mb-4 group-hover:scale-110 transition-transform" size={32} />
-                <h4 className="font-black uppercase italic tracking-tight mb-2 text-sm text-white group-hover:text-primary transition-colors">{item.title}</h4>
-                <p className="text-[10px] font-bold text-slate-500 uppercase tracking-widest leading-relaxed">{item.text}</p>
+                <h4 className="font-bold uppercase  tracking-tight mb-2 text-sm text-text group-hover:text-primary transition-colors">{item.title}</h4>
+                <p className="text-[10px] font-bold text-text/80 uppercase tracking-widest leading-relaxed">{item.text}</p>
               </div>
             ))}
           </div>
@@ -69,9 +69,9 @@ export default function DallasPage() {
 
         {/* Full Range of Services & Signs */}
         <section className="grid lg:grid-cols-2 gap-8">
-          <div className="p-10 md:p-14 rounded-[3rem] bg-[#111827]/80 border border-white/5 shadow-2xl italic">
-            <h2 className="text-2xl font-black uppercase italic mb-8 text-white">Signs You Need Professional Help</h2>
-            <div className="space-y-6 text-[11px] font-medium text-slate-400 uppercase tracking-widest leading-relaxed">
+          <div className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
+            <h2 className="text-2xl font-bold uppercase  mb-8 text-text">Signs You Need Professional Help</h2>
+            <div className="space-y-6 text-[11px] font-medium text-text/80 uppercase tracking-widest leading-relaxed">
               <p>Ignore these signs at your peril; DIY chemicals roughen pipes, worsening clogs over time.</p>
               <ul className="space-y-4">
                  <li><strong className="text-primary">Slow Draining:</strong> Water draining slowly from sinks or tubs.</li>
@@ -82,26 +82,26 @@ export default function DallasPage() {
               </ul>
             </div>
             <div className="mt-8">
-               <h2 className="text-2xl font-black uppercase italic mb-6 text-white mt-8">Our Proven Process</h2>
-               <ol className="list-decimal pl-4 space-y-3 text-[11px] font-medium text-slate-400 uppercase tracking-widest leading-relaxed">
-                  <li><strong className="text-white">Inspection:</strong> Arrive fast, assess visible signs in your home.</li>
-                  <li><strong className="text-white">Diagnosis:</strong> Camera inspection reveals hidden roots or scaling.</li>
-                  <li><strong className="text-white">Cleaning:</strong> Hydro jetting or snaking clears 99% of blockages.</li>
-                  <li><strong className="text-white">Testing:</strong> Run water to verify full unclogged flow.</li>
-                  <li><strong className="text-white">Prevention:</strong> Custom advice, like strainers for grease-prone kitchens.</li>
+               <h2 className="text-2xl font-bold uppercase  mb-6 text-text mt-8">Our Proven Process</h2>
+               <ol className="list-decimal pl-4 space-y-3 text-[11px] font-medium text-text/80 uppercase tracking-widest leading-relaxed">
+                  <li><strong className="text-text">Inspection:</strong> Arrive fast, assess visible signs in your home.</li>
+                  <li><strong className="text-text">Diagnosis:</strong> Camera inspection reveals hidden roots or scaling.</li>
+                  <li><strong className="text-text">Cleaning:</strong> Hydro jetting or snaking clears 99% of blockages.</li>
+                  <li><strong className="text-text">Testing:</strong> Run water to verify full unclogged flow.</li>
+                  <li><strong className="text-text">Prevention:</strong> Custom advice, like strainers for grease-prone kitchens.</li>
                </ol>
             </div>
           </div>
 
-          <div className="p-10 md:p-14 rounded-[3rem] bg-gradient-to-br from-[#111827] to-[#0B1120] border border-white/5 shadow-2xl italic flex flex-col justify-center text-center">
+          <div className="p-10 md:p-14 rounded-xl bg-bg border border-border shadow-sm  flex flex-col justify-center text-center">
              <MapPin size={64} className="text-primary mx-auto mb-6 opacity-50" />
-             <h2 className="text-2xl font-black uppercase italic mb-4 text-white">Serving Dallas Neighborhoods</h2>
-             <p className="text-slate-400 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8">
+             <h2 className="text-2xl font-bold uppercase  mb-4 text-text">Serving Dallas Neighborhoods</h2>
+             <p className="text-text/80 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8">
                 We are your Dallas drain experts with local know-how, serving everywhere from Oak Lawn to South Dallas.
              </p>
              <div className="flex flex-wrap justify-center gap-3">
                 {["Dallas", "Oak Lawn", "Highland Park", "Lakewood", "Dixon Circle", "University Park", "South Dallas"].map((area) => (
-                  <span key={area} className="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-[10px] font-black uppercase tracking-widest text-primary italic">
+                  <span key={area} className="px-4 py-2 bg-bg border-border/50 border border-border rounded-full text-[10px] font-bold uppercase tracking-widest text-primary ">
                     {area}
                   </span>
                 ))}
@@ -110,8 +110,8 @@ export default function DallasPage() {
         </section>
 
         {/* FAQ Section */}
-        <section className="p-10 md:p-14 rounded-[3rem] bg-[#111827]/80 border border-white/5 shadow-2xl italic">
-          <h2 className="text-3xl font-black uppercase italic mb-12 text-center text-white">
+        <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
+          <h2 className="text-3xl font-bold uppercase  mb-12 text-center text-text">
             Dallas Drain <span className="text-primary">FAQ</span>
           </h2>
           <div className="grid md:grid-cols-2 gap-12">
@@ -125,25 +125,25 @@ export default function DallasPage() {
               { q: "What's Emergency Drain Service Response Time?", a: "1-2 hours, 24/7 for backups anywhere in Dallas TX." }
             ].map((faq, i) => (
               <div key={i} className="space-y-3">
-                 <h4 className="text-xs font-black uppercase tracking-widest text-white italic">Q: {faq.q}</h4>
-                 <p className="text-[11px] font-bold text-slate-500 uppercase tracking-widest leading-relaxed">A: {faq.a}</p>
+                 <h4 className="text-xs font-bold uppercase tracking-widest text-text ">Q: {faq.q}</h4>
+                 <p className="text-[11px] font-bold text-text/80 uppercase tracking-widest leading-relaxed">A: {faq.a}</p>
               </div>
             ))}
           </div>
         </section>
 
         {/* Conclusion CTA */}
-        <div className="text-center space-y-8 p-12 rounded-[3.5rem] bg-gradient-to-br from-primary/10 to-accent/5 border border-primary/20 italic shadow-primary-glow/20">
-          <h2 className="text-3xl font-black uppercase tracking-tight text-white italic">Stop Dallas Drain Disasters; Act Now!</h2>
-          <p className="text-slate-400 font-bold uppercase tracking-widest text-xs max-w-2xl mx-auto leading-relaxed">
+        <div className="text-center space-y-8 p-12 rounded-xl bg-gradient-to-br from-primary/10 to-accent/5 border border-primary/20  ">
+          <h2 className="text-3xl font-bold uppercase tracking-tight text-text ">Stop Dallas Drain Disasters; Act Now!</h2>
+          <p className="text-text/80 font-bold uppercase tracking-widest text-xs max-w-2xl mx-auto leading-relaxed">
             Do not let clogs turn into sewer line repair Dallas nightmares amid shifting soils and hard water. Call today for hydro jetting, rooter services or any emergency drain repair.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-             <Link href="tel:+17247506935" className="h-16 px-12 bg-accent text-white rounded-2xl flex items-center justify-center gap-3 font-black uppercase italic tracking-widest shadow-accent-glow hover:scale-105 transition-all">
+             <Link href="tel:+17247506935" className="h-16 px-12 bg-accent text-text rounded-lg flex items-center justify-center gap-3 font-bold uppercase  tracking-widest shadow-md hover:scale-105 transition-all">
                 <Phone fill="currentColor" size={24} /> (724) 750-6935
              </Link>
           </div>
-          <p className="text-[10px] text-slate-500 font-black uppercase tracking-widest">
+          <p className="text-[10px] text-text/80 font-bold uppercase tracking-widest">
             Licensed Experts &middot; 24/7 Priority Emergency Dispatch &middot; Free City-Wide Estimates
           </p>
         </div>

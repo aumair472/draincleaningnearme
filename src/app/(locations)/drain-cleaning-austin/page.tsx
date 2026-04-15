@@ -22,7 +22,7 @@ export default function AustinPage() {
             Tired of slow drains, foul odors and water backups in your Austin home or business? Our licensed local plumbers specialize in fast, same-day drain cleaning and sewer line repair across Austin, Texas. From clogged kitchen sinks to sewer backups caused by tree roots and Texas clay soil, we clear your pipes and restore flow.
           </p>
           <p>
-            DrainCleaningNearMe provides 24/7 emergency drain cleaning services across Austin because backups do not wait for daytime. Call Now for a Free Estimate with no hidden fees: <span className="font-bold text-white">(724) 750-6935</span>
+            DrainCleaningNearMe provides 24/7 emergency drain cleaning services across Austin because backups do not wait for daytime. Call Now for a Free Estimate with no hidden fees: <span className="font-bold text-text">(724) 750-6935</span>
           </p>
         </>
       }
@@ -44,12 +44,12 @@ export default function AustinPage() {
     >
       <div className="space-y-24">
         {/* Austin Challenges Section */}
-        <section className="p-10 md:p-14 rounded-[3rem] bg-[#111827]/80 border border-white/5 shadow-2xl italic relative overflow-hidden">
+        <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm  relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl opacity-50" />
-          <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight text-white mb-8 relative z-10">
-            Austin's Unique <span className="text-primary italic">Drain Problems</span>
+          <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-tight text-text mb-8 relative z-10">
+            Austin's Unique <span className="text-primary ">Drain Problems</span>
           </h2>
-          <p className="text-slate-400 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8 relative z-10">
+          <p className="text-text/80 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8 relative z-10">
             Austin's unique environment; hard water, clay-rich soil and live oak trees; makes drain problems more common than in many other cities. Over time, mineral buildup, tree roots and grease clogs narrow your pipes.
           </p>
           <div className="grid md:grid-cols-3 gap-8 relative z-10">
@@ -58,10 +58,10 @@ export default function AustinPage() {
               { icon: Trees, title: "Tree Root Intrusion", text: "Live oak trees are common in Austin. Their roots seek moisture and can invade sewer lines, causing cracks." },
               { icon: Building2, title: "Soil Movement & Clay", text: "Central Texas's clay-rich soil expands and contracts with temperature changes, stressing underground pipes." }
             ].map((item, i) => (
-              <div key={i} className="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-primary/50 transition-all group">
+              <div key={i} className="p-6 rounded-lg bg-bg border-border/50 border border-border hover:border-primary/20 transition-all hover:shadow-md transition-all group">
                 <item.icon className="text-primary mb-4 group-hover:scale-110 transition-transform" size={32} />
-                <h4 className="font-black uppercase italic tracking-tight mb-2 text-sm text-white group-hover:text-primary transition-colors">{item.title}</h4>
-                <p className="text-[10px] font-bold text-slate-500 uppercase tracking-widest leading-relaxed">{item.text}</p>
+                <h4 className="font-bold uppercase  tracking-tight mb-2 text-sm text-text group-hover:text-primary transition-colors">{item.title}</h4>
+                <p className="text-[10px] font-bold text-text/80 uppercase tracking-widest leading-relaxed">{item.text}</p>
               </div>
             ))}
           </div>
@@ -69,9 +69,9 @@ export default function AustinPage() {
 
         {/* Full Range of Services & Signs */}
         <section className="grid lg:grid-cols-2 gap-8">
-          <div className="p-10 md:p-14 rounded-[3rem] bg-[#111827]/80 border border-white/5 shadow-2xl italic">
-            <h2 className="text-2xl font-black uppercase italic mb-8 text-white">Signs You Need Drain Cleaning</h2>
-            <div className="space-y-6 text-[11px] font-medium text-slate-400 uppercase tracking-widest leading-relaxed">
+          <div className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
+            <h2 className="text-2xl font-bold uppercase  mb-8 text-text">Signs You Need Drain Cleaning</h2>
+            <div className="space-y-6 text-[11px] font-medium text-text/80 uppercase tracking-widest leading-relaxed">
               <ul className="space-y-4">
                  <li><strong className="text-primary">Slow Draining:</strong> One drain is slow (1 visit), multiple drains (sewer line issue).</li>
                  <li><strong className="text-primary">Recurring Clogs:</strong> Clogs that return after plunging indicate deep blockages.</li>
@@ -81,26 +81,26 @@ export default function AustinPage() {
               </ul>
             </div>
             <div className="mt-8">
-               <h2 className="text-2xl font-black uppercase italic mb-6 text-white mt-8">Our Process to fix your Drains</h2>
-               <ol className="list-decimal pl-4 space-y-3 text-[11px] font-medium text-slate-400 uppercase tracking-widest leading-relaxed">
-                  <li><strong className="text-white">Inspection:</strong> Camera inspection and pressure testing.</li>
-                  <li><strong className="text-white">Diagnosis:</strong> Determine clog type, location, and severity.</li>
-                  <li><strong className="text-white">Cleaning:</strong> Snaking for minor, hydro jetting for stubborn clogs.</li>
-                  <li><strong className="text-white">Final Testing:</strong> Flow tests to ensure proper drainage and integrity.</li>
-                  <li><strong className="text-white">Prevention:</strong> Water softener and structural advice.</li>
+               <h2 className="text-2xl font-bold uppercase  mb-6 text-text mt-8">Our Process to fix your Drains</h2>
+               <ol className="list-decimal pl-4 space-y-3 text-[11px] font-medium text-text/80 uppercase tracking-widest leading-relaxed">
+                  <li><strong className="text-text">Inspection:</strong> Camera inspection and pressure testing.</li>
+                  <li><strong className="text-text">Diagnosis:</strong> Determine clog type, location, and severity.</li>
+                  <li><strong className="text-text">Cleaning:</strong> Snaking for minor, hydro jetting for stubborn clogs.</li>
+                  <li><strong className="text-text">Final Testing:</strong> Flow tests to ensure proper drainage and integrity.</li>
+                  <li><strong className="text-text">Prevention:</strong> Water softener and structural advice.</li>
                </ol>
             </div>
           </div>
 
-          <div className="p-10 md:p-14 rounded-[3rem] bg-gradient-to-br from-[#111827] to-[#0B1120] border border-white/5 shadow-2xl italic flex flex-col justify-center text-center">
+          <div className="p-10 md:p-14 rounded-xl bg-bg border border-border shadow-sm  flex flex-col justify-center text-center">
              <MapPin size={64} className="text-primary mx-auto mb-6 opacity-50" />
-             <h2 className="text-2xl font-black uppercase italic mb-4 text-white">Local Expertise in Austin</h2>
-             <p className="text-slate-400 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8">
+             <h2 className="text-2xl font-bold uppercase  mb-4 text-text">Local Expertise in Austin</h2>
+             <p className="text-text/80 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8">
                 Our team serves all Austin neighborhoods with advanced equipment and emergency response.
              </p>
              <div className="flex flex-wrap justify-center gap-3">
                 {["Downtown", "South Austin", "Westlake", "Lakeline", "Round Rock", "Pflugerville"].map((area) => (
-                  <span key={area} className="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-[10px] font-black uppercase tracking-widest text-primary italic">
+                  <span key={area} className="px-4 py-2 bg-bg border-border/50 border border-border rounded-full text-[10px] font-bold uppercase tracking-widest text-primary ">
                     {area}
                   </span>
                 ))}
@@ -109,8 +109,8 @@ export default function AustinPage() {
         </section>
 
         {/* FAQ Section */}
-        <section className="p-10 md:p-14 rounded-[3rem] bg-[#111827]/80 border border-white/5 shadow-2xl italic">
-          <h2 className="text-3xl font-black uppercase italic mb-12 text-center text-white">
+        <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
+          <h2 className="text-3xl font-bold uppercase  mb-12 text-center text-text">
             Austin Drain <span className="text-primary">FAQ</span>
           </h2>
           <div className="grid md:grid-cols-2 gap-12">
@@ -122,25 +122,25 @@ export default function AustinPage() {
               { q: "Typical drain cleaning costs in Austin?", a: "Emergency: $150–$300, Sewer Line: $300–$800, Hydro Jetting: $250–$500. Free estimates included." }
             ].map((faq, i) => (
               <div key={i} className="space-y-3">
-                 <h4 className="text-xs font-black uppercase tracking-widest text-white italic">Q: {faq.q}</h4>
-                 <p className="text-[11px] font-bold text-slate-500 uppercase tracking-widest leading-relaxed">A: {faq.a}</p>
+                 <h4 className="text-xs font-bold uppercase tracking-widest text-text ">Q: {faq.q}</h4>
+                 <p className="text-[11px] font-bold text-text/80 uppercase tracking-widest leading-relaxed">A: {faq.a}</p>
               </div>
             ))}
           </div>
         </section>
 
         {/* Conclusion CTA */}
-        <div className="text-center space-y-8 p-12 rounded-[3.5rem] bg-gradient-to-br from-primary/10 to-accent/5 border border-primary/20 italic shadow-primary-glow/20">
-          <h2 className="text-3xl font-black uppercase tracking-tight text-white italic">Call Now for Drain Cleaning in Austin</h2>
-          <p className="text-slate-400 font-bold uppercase tracking-widest text-xs max-w-2xl mx-auto leading-relaxed">
+        <div className="text-center space-y-8 p-12 rounded-xl bg-gradient-to-br from-primary/10 to-accent/5 border border-primary/20  ">
+          <h2 className="text-3xl font-bold uppercase tracking-tight text-text ">Call Now for Drain Cleaning in Austin</h2>
+          <p className="text-text/80 font-bold uppercase tracking-widest text-xs max-w-2xl mx-auto leading-relaxed">
             Tired of waiting days for drain cleaning services? Our licensed Austin plumbers provide same-day, 24/7 emergency drain cleaning with upfront pricing and no hidden fees.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-             <Link href="tel:+17247506935" className="h-16 px-12 bg-accent text-white rounded-2xl flex items-center justify-center gap-3 font-black uppercase italic tracking-widest shadow-accent-glow hover:scale-105 transition-all">
+             <Link href="tel:+17247506935" className="h-16 px-12 bg-accent text-text rounded-lg flex items-center justify-center gap-3 font-bold uppercase  tracking-widest shadow-md hover:scale-105 transition-all">
                 <Phone fill="currentColor" size={24} /> (724) 750-6935
              </Link>
           </div>
-          <p className="text-[10px] text-slate-500 font-black uppercase tracking-widest">
+          <p className="text-[10px] text-text/80 font-bold uppercase tracking-widest">
             Licensed Austin Experts &middot; 24/7 Priority Emergency Dispatch &middot; Free City-Wide Estimates
           </p>
         </div>

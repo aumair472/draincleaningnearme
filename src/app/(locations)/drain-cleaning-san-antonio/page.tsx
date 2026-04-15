@@ -22,7 +22,7 @@ export default function SanAntonioPage() {
             Clogged drains disrupt daily life in San Antonio homes and businesses, but DrainCleaningNearMe Services delivers fast, reliable solutions customized to local challenges like hard water buildup and tree root intrusions. Our expert team uses advanced hydro jetting and inspection tools to clear blockages permanently.
           </p>
           <p>
-            Tired of gurgling toilets, foul odors or standing water in your kitchen sink? San Antonio's hard water minerals, grease clogs and shifting clay soils make drain problems common. Let us fix them fast. Call Now: <span className="font-bold text-white">(724) 750-6935</span>
+            Tired of gurgling toilets, foul odors or standing water in your kitchen sink? San Antonio's hard water minerals, grease clogs and shifting clay soils make drain problems common. Let us fix them fast. Call Now: <span className="font-bold text-text">(724) 750-6935</span>
           </p>
         </>
       }
@@ -44,12 +44,12 @@ export default function SanAntonioPage() {
     >
       <div className="space-y-24">
         {/* San Antonio Challenges Section */}
-        <section className="p-10 md:p-14 rounded-[3rem] bg-[#111827]/80 border border-white/5 shadow-2xl italic relative overflow-hidden">
+        <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm  relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl opacity-50" />
-          <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight text-white mb-8 relative z-10">
-            San Antonio's Local <span className="text-primary italic">Drain Problems</span>
+          <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-tight text-text mb-8 relative z-10">
+            San Antonio's Local <span className="text-primary ">Drain Problems</span>
           </h2>
-          <p className="text-slate-400 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8 relative z-10">
+          <p className="text-text/80 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8 relative z-10">
             San Antonio homeowners face unique plumbing woes due to the Edwards Aquifer's hard water, which causes mineral scaling in pipes, leading to slow drains and reduced flow. Grease from Tex-Mex cooking, hair, and soap scum exacerbate clogs.
           </p>
           <div className="grid md:grid-cols-3 gap-8 relative z-10">
@@ -58,10 +58,10 @@ export default function SanAntonioPage() {
               { icon: Building2, title: "Grease & Tex-Mex Cooking", text: "Grease and food waste from kitchens solidify in pipes, worsened by hard water across the downtown area." },
               { icon: Trees, title: "Clay Soils & Root Intrusion", text: "Tree roots seek moisture in sewer lines of mature neighborhoods like Alamo Heights and Boerne properties." }
             ].map((item, i) => (
-              <div key={i} className="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-primary/50 transition-all group">
+              <div key={i} className="p-6 rounded-lg bg-bg border-border/50 border border-border hover:border-primary/20 transition-all hover:shadow-md transition-all group">
                 <item.icon className="text-primary mb-4 group-hover:scale-110 transition-transform" size={32} />
-                <h4 className="font-black uppercase italic tracking-tight mb-2 text-sm text-white group-hover:text-primary transition-colors">{item.title}</h4>
-                <p className="text-[10px] font-bold text-slate-500 uppercase tracking-widest leading-relaxed">{item.text}</p>
+                <h4 className="font-bold uppercase  tracking-tight mb-2 text-sm text-text group-hover:text-primary transition-colors">{item.title}</h4>
+                <p className="text-[10px] font-bold text-text/80 uppercase tracking-widest leading-relaxed">{item.text}</p>
               </div>
             ))}
           </div>
@@ -69,9 +69,9 @@ export default function SanAntonioPage() {
 
         {/* Full Range of Services & Signs */}
         <section className="grid lg:grid-cols-2 gap-8">
-          <div className="p-10 md:p-14 rounded-[3rem] bg-[#111827]/80 border border-white/5 shadow-2xl italic">
-            <h2 className="text-2xl font-black uppercase italic mb-8 text-white">Signs You Need Immediate Service</h2>
-            <div className="space-y-6 text-[11px] font-medium text-slate-400 uppercase tracking-widest leading-relaxed">
+          <div className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
+            <h2 className="text-2xl font-bold uppercase  mb-8 text-text">Signs You Need Immediate Service</h2>
+            <div className="space-y-6 text-[11px] font-medium text-text/80 uppercase tracking-widest leading-relaxed">
               <p>Watch for these red flags indicating clogged drains in San Antonio to prevent sewer backups and pipe damage.</p>
               <ul className="space-y-4">
                  <li><strong className="text-primary">Slow Drains:</strong> In sinks or showers, often from hard water minerals.</li>
@@ -82,26 +82,26 @@ export default function SanAntonioPage() {
               </ul>
             </div>
             <div className="mt-8">
-               <h2 className="text-2xl font-black uppercase italic mb-6 text-white mt-8">Our Proven Process</h2>
-               <ol className="list-decimal pl-4 space-y-3 text-[11px] font-medium text-slate-400 uppercase tracking-widest leading-relaxed">
-                  <li><strong className="text-white">Inspection:</strong> Arrive quickly and assess the issue visually.</li>
-                  <li><strong className="text-white">Diagnosis:</strong> Use camera for accurate identification of clogs or roots.</li>
-                  <li><strong className="text-white">Cleaning:</strong> Apply snaking, hydro jetting or root cutting based on finding.</li>
-                  <li><strong className="text-white">Testing:</strong> Run water to verify full flow and check for issues.</li>
-                  <li><strong className="text-white">Prevention Tips:</strong> Free advice like hot water flushes to avoid recurrence.</li>
+               <h2 className="text-2xl font-bold uppercase  mb-6 text-text mt-8">Our Proven Process</h2>
+               <ol className="list-decimal pl-4 space-y-3 text-[11px] font-medium text-text/80 uppercase tracking-widest leading-relaxed">
+                  <li><strong className="text-text">Inspection:</strong> Arrive quickly and assess the issue visually.</li>
+                  <li><strong className="text-text">Diagnosis:</strong> Use camera for accurate identification of clogs or roots.</li>
+                  <li><strong className="text-text">Cleaning:</strong> Apply snaking, hydro jetting or root cutting based on finding.</li>
+                  <li><strong className="text-text">Testing:</strong> Run water to verify full flow and check for issues.</li>
+                  <li><strong className="text-text">Prevention Tips:</strong> Free advice like hot water flushes to avoid recurrence.</li>
                </ol>
             </div>
           </div>
 
-          <div className="p-10 md:p-14 rounded-[3rem] bg-gradient-to-br from-[#111827] to-[#0B1120] border border-white/5 shadow-2xl italic flex flex-col justify-center text-center">
+          <div className="p-10 md:p-14 rounded-xl bg-bg border border-border shadow-sm  flex flex-col justify-center text-center">
              <MapPin size={64} className="text-primary mx-auto mb-6 opacity-50" />
-             <h2 className="text-2xl font-black uppercase italic mb-4 text-white">Serving San Antonio & Beyond</h2>
-             <p className="text-slate-400 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8">
+             <h2 className="text-2xl font-bold uppercase  mb-4 text-text">Serving San Antonio & Beyond</h2>
+             <p className="text-text/80 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8">
                 Fast arrival guaranteed for drain unclogging in San Antonio and surrounding Texas communities. We know hard water and rooter issues intimately.
              </p>
              <div className="flex flex-wrap justify-center gap-3">
                 {["San Antonio", "Alamo Heights", "Stone Oak", "Helotes", "Boerne", "New Braunfels"].map((area) => (
-                  <span key={area} className="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-[10px] font-black uppercase tracking-widest text-primary italic">
+                  <span key={area} className="px-4 py-2 bg-bg border-border/50 border border-border rounded-full text-[10px] font-bold uppercase tracking-widest text-primary ">
                     {area}
                   </span>
                 ))}
@@ -110,8 +110,8 @@ export default function SanAntonioPage() {
         </section>
 
         {/* FAQ Section */}
-        <section className="p-10 md:p-14 rounded-[3rem] bg-[#111827]/80 border border-white/5 shadow-2xl italic">
-          <h2 className="text-3xl font-black uppercase italic mb-12 text-center text-white">
+        <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
+          <h2 className="text-3xl font-bold uppercase  mb-12 text-center text-text">
             San Antonio Drain <span className="text-primary">FAQ</span>
           </h2>
           <div className="grid md:grid-cols-2 gap-12">
@@ -124,25 +124,25 @@ export default function SanAntonioPage() {
               { q: "Can tree roots be removed without digging?", a: "Yes, via hydro jetting or cutting tools after camera inspection – perfect for San Antonio's mature neighborhoods." }
             ].map((faq, i) => (
               <div key={i} className="space-y-3">
-                 <h4 className="text-xs font-black uppercase tracking-widest text-white italic">Q: {faq.q}</h4>
-                 <p className="text-[11px] font-bold text-slate-500 uppercase tracking-widest leading-relaxed">A: {faq.a}</p>
+                 <h4 className="text-xs font-bold uppercase tracking-widest text-text ">Q: {faq.q}</h4>
+                 <p className="text-[11px] font-bold text-text/80 uppercase tracking-widest leading-relaxed">A: {faq.a}</p>
               </div>
             ))}
           </div>
         </section>
 
         {/* Conclusion CTA */}
-        <div className="text-center space-y-8 p-12 rounded-[3.5rem] bg-gradient-to-br from-primary/10 to-accent/5 border border-primary/20 italic shadow-primary-glow/20">
-          <h2 className="text-3xl font-black uppercase tracking-tight text-white italic">Get Fast & Reliable Drain Cleaning Today!</h2>
-          <p className="text-slate-400 font-bold uppercase tracking-widest text-xs max-w-2xl mx-auto leading-relaxed">
+        <div className="text-center space-y-8 p-12 rounded-xl bg-gradient-to-br from-primary/10 to-accent/5 border border-primary/20  ">
+          <h2 className="text-3xl font-bold uppercase tracking-tight text-text ">Get Fast & Reliable Drain Cleaning Today!</h2>
+          <p className="text-text/80 font-bold uppercase tracking-widest text-xs max-w-2xl mx-auto leading-relaxed">
             Do not let San Antonio sewer cleaning issues flood your day; our sewer cleaning experts resolve clogged drain issues for a long period of time. With same-day emergency assistance.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-             <Link href="tel:+17247506935" className="h-16 px-12 bg-accent text-white rounded-2xl flex items-center justify-center gap-3 font-black uppercase italic tracking-widest shadow-accent-glow hover:scale-105 transition-all">
+             <Link href="tel:+17247506935" className="h-16 px-12 bg-accent text-text rounded-lg flex items-center justify-center gap-3 font-bold uppercase  tracking-widest shadow-md hover:scale-105 transition-all">
                 <Phone fill="currentColor" size={24} /> (724) 750-6935
              </Link>
           </div>
-          <p className="text-[10px] text-slate-500 font-black uppercase tracking-widest">
+          <p className="text-[10px] text-text/80 font-bold uppercase tracking-widest">
             Licensed Experts &middot; 24/7 Priority Emergency Dispatch &middot; Limited same-day slots available
           </p>
         </div>

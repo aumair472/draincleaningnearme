@@ -12,13 +12,13 @@ const reasons = [
 
 export function WhyCallUs() {
   return (
-    <section className="py-24 bg-[#0B1120] relative italic">
-      <div className="container relative z-10 mx-auto px-4 italic">
+    <section className="py-20 bg-card relative">
+      <div className="container relative z-10 mx-auto px-4">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl sm:text-5xl font-black uppercase tracking-tight text-white mb-10 leading-none">
-            Why <span className="text-primary italic">Homeowners</span> Call Us
+          <h2 className="text-[36px] sm:text-[44px] font-bold tracking-tight text-text mb-10 leading-tight">
+            Why Homeowners Call Us
           </h2>
-          <ul className="grid gap-6">
+          <ul className="grid gap-4">
             {reasons.map((reason, i) => (
               <motion.li
                 key={i}
@@ -26,12 +26,12 @@ export function WhyCallUs() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="flex items-start gap-4 p-6 rounded-2xl bg-[#111827]/50 border border-white/5 hover:border-primary/30 transition-all group"
+                className="flex items-start gap-4 p-6 rounded-xl bg-bg border border-border/50 hover:border-border hover:shadow-sm transition-all group"
               >
-                <div className="p-2 rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-all shrink-0">
+                <div className="p-2 rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-all shrink-0 mt-0.5">
                   <CheckCircle2 size={24} strokeWidth={3} />
                 </div>
-                <span className="text-lg sm:text-xl font-black uppercase tracking-tight text-slate-300 group-hover:text-white transition-colors leading-tight">
+                <span className="text-lg font-bold text-slate-800 transition-colors leading-relaxed">
                   {reason}
                 </span>
               </motion.li>

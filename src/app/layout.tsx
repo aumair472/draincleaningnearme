@@ -1,18 +1,18 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Outfit } from "next/font/google";
+import { Manrope, Poppins } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "@/components/theme-provider";
 import { JsonLd } from "@/components/json-ld";
 import { cn } from "@/lib/utils";
 
-const inter = Inter({
+const manrope = Manrope({
   subsets: ["latin"],
   variable: "--font-sans",
   display: "swap",
 });
 
-const outfit = Outfit({
+const poppins = Poppins({
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800", "900"],
   variable: "--font-heading",
   display: "swap",
 });
@@ -80,21 +80,13 @@ export default function RootLayout({
       <body
         suppressHydrationWarning
         className={cn(
-          "min-h-screen bg-background font-sans antialiased flex flex-col",
-          inter.variable,
-          outfit.variable
+          "min-h-screen bg-bg text-text font-sans antialiased flex flex-col",
+          manrope.variable,
+          poppins.variable
         )}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          forcedTheme="dark"
-          enableSystem={false}
-          disableTransitionOnChange
-        >
-          <JsonLd />
-          {children}
-        </ThemeProvider>
+        <JsonLd />
+        {children}
       </body>
     </html>
   );

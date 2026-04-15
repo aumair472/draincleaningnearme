@@ -64,25 +64,21 @@ export default function AboutPage() {
   return (
     <>
       <Navbar />
-      <main className="flex-1 pt-32 bg-[#0B1120] relative italic overflow-hidden">
-        {/* Decorative Gradients */}
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-0 left-0 w-full h-[500px] bg-primary/5 blur-[120px] opacity-30" />
-        </div>
-
-        <section className="container relative z-10 mx-auto px-4 pb-16">
+      <main className="flex-1 pt-32 bg-bg relative overflow-hidden">
+        {/* Intro Section */}
+        <section className="container relative z-10 mx-auto px-4 pb-20">
           <div className="max-w-4xl mx-auto text-center mb-16">
-            <span className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-[10px] font-black uppercase tracking-widest text-primary mb-8">
+            <span className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-xs font-bold uppercase tracking-widest text-primary mb-6">
               About DrainCleaningNearMe.us
             </span>
-            <h1 className="text-4xl md:text-7xl font-black tracking-tight mb-8 leading-[1] uppercase italic text-white">
-              Reliable Help When <span className="text-primary italic">Drains Fail</span>
+            <h1 className="text-[40px] md:text-[56px] font-bold tracking-tight mb-8 leading-tight text-text">
+              Reliable Help When Drains Fail
             </h1>
-            <div className="space-y-6 text-base md:text-lg text-slate-400 font-medium leading-relaxed max-w-3xl mx-auto italic">
+            <div className="space-y-6 text-lg text-text/80 font-medium leading-relaxed max-w-3xl mx-auto">
               <p>
                 When a clogged drain strikes, you need ”drain cleaning near me” fast. At Drain 
                 Cleaning Near Me, we are the trusted nationwide platform connecting you with licensed, 
-                local drain cleaning experts across the United States. We deliver <strong>24/7 emergency 
+                local drain cleaning experts across the United States. We deliver <strong className="text-text">24/7 emergency 
                 drain cleaning services</strong>, ensuring reliable help arrives quickly.
               </p>
               <p>
@@ -92,129 +88,136 @@ export default function AboutPage() {
               </p>
             </div>
             
-            <div className="mt-12 flex flex-col sm:flex-row justify-center gap-4">
+            <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
               <Link
                 href="tel:+17247506935" 
-                className="h-16 px-10 md:px-14 bg-accent text-white rounded-2xl flex items-center justify-center gap-3 font-black uppercase italic tracking-widest shadow-accent-glow hover:scale-105 transition-all"
+                className="h-14 px-8 bg-accent text-white rounded-lg flex items-center justify-center gap-3 font-bold shadow-sm hover:shadow-md hover:bg-accent/90 transition-all text-lg"
               >
-                <Phone fill="currentColor" size={24} />
+                <Phone fill="currentColor" size={20} />
                 (724) 750-6935
               </Link>
             </div>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-24">
+          {/* Stats */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20 max-w-5xl mx-auto">
             {stats.map((stat, i) => (
-              <div key={i} className="flex flex-col items-center gap-2 p-8 rounded-[2.5rem] bg-[#111827]/80 backdrop-blur-md border border-white/5 group hover:border-primary/50 transition-all text-center">
-                <stat.icon className="h-8 w-8 text-primary mb-4 group-hover:scale-110 transition-transform" />
-                <span className="text-2xl font-black italic text-white">{stat.value}</span>
-                <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest">{stat.label}</span>
+              <div key={i} className="flex flex-col items-center gap-3 p-6 rounded-xl bg-card border border-border shadow-sm transition-all hover:shadow-md text-center group">
+                <stat.icon className="h-8 w-8 text-primary mb-2 group-hover:scale-110 transition-transform" />
+                <span className="text-2xl font-bold text-text">{stat.value}</span>
+                <span className="text-xs font-bold text-text/60 uppercase tracking-wider">{stat.label}</span>
               </div>
             ))}
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-8 items-start mb-24">
-            <div className="space-y-8">
-              <div className="p-10 rounded-[3rem] bg-[#111827]/80 border border-white/5 space-y-6">
-                <h2 className="text-3xl font-black tracking-tight italic uppercase text-white flex items-center gap-3">
-                   <Target className="text-primary" /> Our Mission
-                </h2>
-                <p className="text-slate-400 leading-relaxed font-bold uppercase tracking-widest text-[13px] leading-loose">
-                  We exist to tackle urgent plumbing issues head-on. Our mission centers on
-                  lightning-fast response times, top-tier customer satisfaction and dependable
-                  service from vetted experts. Whether it is a midnight clog or a weekend backup, we
-                  make emergency drain cleaning simple and stress-free.
-                </p>
-              </div>
-
-              <div className="p-10 rounded-[3rem] bg-[#111827]/80 border border-white/5 space-y-6">
-                <h2 className="text-3xl font-black tracking-tight italic uppercase text-white flex items-center gap-3">
-                   <Users className="text-primary" /> Who We Are
-                </h2>
-                <p className="text-slate-400 leading-relaxed font-bold uppercase tracking-widest text-[13px] leading-loose">
-                  <strong>Drain Cleaning Near Me</strong> is more than a service; it is your go-to
-                  platform for local drain cleaning experts nationwide. Backed by a vast network of
-                  licensed, insured and experienced technicians, we bridge the gap between you and
-                  the right pro.
-                </p>
-              </div>
+          {/* Mission & Identity */}
+          <div className="grid lg:grid-cols-2 gap-8 mb-20">
+            <div className="p-10 rounded-xl bg-card border border-border shadow-sm transition-all hover:shadow-md">
+              <h2 className="text-2xl font-bold tracking-tight text-text flex items-center gap-3 mb-6">
+                <Target className="text-primary" size={28} /> Our Mission
+              </h2>
+              <p className="text-text/80 leading-relaxed font-medium">
+                We exist to tackle urgent plumbing issues head-on. Our mission centers on
+                lightning-fast response times, top-tier customer satisfaction and dependable
+                service from vetted experts. Whether it is a midnight clog or a weekend backup, we
+                make emergency drain cleaning simple and stress-free.
+              </p>
             </div>
 
-            <div className="bg-gradient-to-br from-[#111827] to-[#0B1120] rounded-[3rem] p-10 md:p-14 border border-white/5 text-white space-y-10 shadow-2xl relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl opacity-50" />
-              <h2 className="text-3xl font-black tracking-tight relative z-10 italic uppercase">What Makes Us Different</h2>
-              <div className="grid gap-8 relative z-10">
+            <div className="p-10 rounded-xl bg-card border border-border shadow-sm transition-all hover:shadow-md">
+              <h2 className="text-2xl font-bold tracking-tight text-text flex items-center gap-3 mb-6">
+                <Users className="text-primary" size={28} /> Who We Are
+              </h2>
+              <p className="text-text/80 leading-relaxed font-medium">
+                <strong className="text-text">Drain Cleaning Near Me</strong> is more than a service; it is your go-to
+                platform for local drain cleaning experts nationwide. Backed by a vast network of
+                licensed, insured and experienced technicians, we bridge the gap between you and
+                the right pro.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Why Choose Us & Process (Alternate Background) */}
+        <section className="py-20 bg-card border-y border-border">
+          <div className="container mx-auto px-4">
+            
+            {/* USPS Container */}
+            <div className="mb-24">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl font-bold tracking-tight text-text">What Makes Us Different</h2>
+              </div>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
                 {usps.map((usp, i) => (
-                  <div key={i} className="flex items-start gap-4 group italic">
-                    <div className="p-3 rounded-xl bg-white/5 text-primary group-hover:bg-primary group-hover:text-white transition-all">
+                  <div key={i} className="flex flex-col gap-4 p-8 bg-bg rounded-xl border border-border/50 group transition-all hover:shadow-md hover:border-primary/20 items-center text-center">
+                    <div className="p-4 rounded-lg bg-card text-primary shadow-sm group-hover:bg-primary group-hover:text-white transition-colors">
                       <usp.icon className="h-6 w-6" />
                     </div>
-                    <div>
-                        <h3 className="font-black uppercase tracking-tight italic text-sm mb-1">{usp.title}</h3>
-                        <p className="text-[11px] text-slate-500 font-bold uppercase tracking-widest leading-relaxed">{usp.description}</p>
-                    </div>
+                    <h3 className="font-bold text-text group-hover:text-primary transition-colors text-lg">{usp.title}</h3>
+                    <p className="text-sm text-text/80 font-medium leading-relaxed">{usp.description}</p>
                   </div>
                 ))}
               </div>
             </div>
-          </div>
 
-          {/* Services Overview Section - 100% Content Parity */}
-          <section className="mb-24 p-10 md:p-14 rounded-[3rem] bg-[#111827]/80 border border-white/5 italic">
-            <h2 className="text-3xl sm:text-4xl font-black uppercase tracking-tight text-white mb-10 text-center">
-               Our <span className="text-primary italic">Services</span> Overview
-            </h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {[
-                { title: "Emergency Drain Cleaning", href: "/emergency-drain-cleaning-services/", desc: "Immediate relief for sudden clogs." },
-                { title: "Kitchen Sink Drain Cleaning", href: "/kitchen-sink-drain-cleaning-unclogging-services/", desc: "Clear grease and food buildup fast." },
-                { title: "Bathroom Drain Cleaning", href: "/bathroom-drain-cleaning-unclogging-services/", desc: "Expert removal of hair and soap scum." },
-                { title: "Hydro Jetting Services", href: "/hydro-jetting-cleaning-services/", desc: "High-pressure cleaning for deep, lasting results." },
-                { title: "Sewer Line Cleaning & Repair", href: "/sewer-line-cleaning-repair-usa/", desc: "Fix blockages and prevent future issues." },
-                { title: "Drain Camera Inspection", href: "/drain-camera-inspection/", desc: "Pinpoint problems without guesswork." },
-              ].map((service, i) => (
-                <Link key={i} href={service.href} className="group p-6 rounded-2xl bg-[#0B1120]/50 border border-white/5 hover:border-primary/30 transition-all">
-                   <h3 className="text-sm font-black uppercase tracking-widest text-white group-hover:text-primary transition-colors mb-2 italic">
-                      {service.title}
-                   </h3>
-                   <p className="text-[11px] font-medium text-slate-500 uppercase tracking-widest">
-                      {service.desc}
-                   </p>
-                </Link>
-              ))}
+            {/* Process Section */}
+            <div className="mb-20">
+               <div className="text-center mb-12">
+                  <h2 className="text-3xl font-bold tracking-tight text-text mb-4">Our Process</h2>
+                  <p className="text-text/80 font-medium text-lg">Getting unclogged is straightforward and fast:</p>
+               </div>
+               <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+                  {processes.map((p, i) => (
+                      <div key={i} className="p-8 rounded-xl bg-card border border-border text-center group hover:shadow-md transition-all flex flex-col items-center">
+                          <div className="w-12 h-12 rounded-lg bg-primary/10 text-primary font-bold text-lg flex items-center justify-center mb-6 transition-transform group-hover:scale-110 group-hover:bg-primary group-hover:text-white">
+                              {p.step}
+                          </div>
+                          <h3 className="text-xl font-bold tracking-tight mb-3 text-text">{p.title}</h3>
+                          <p className="text-sm text-text/80 font-medium leading-relaxed">{p.description}</p>
+                      </div>
+                  ))}
+               </div>
             </div>
-          </section>
 
-          {/* Process Section */}
-          <div className="mb-24">
-             <div className="text-center mb-12 italic">
-                <h2 className="text-3xl sm:text-5xl font-black uppercase tracking-tight text-white mb-4">Our <span className="text-primary italic">Process</span></h2>
-                <p className="text-slate-400 font-medium">Getting unclogged is straightforward and fast:</p>
-             </div>
-             <div className="grid md:grid-cols-4 gap-6">
-                {processes.map((p, i) => (
-                    <div key={i} className="p-10 rounded-[2.5rem] bg-[#111827]/80 backdrop-blur-md border border-white/5 text-center group hover:border-primary transition-all">
-                        <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary to-[#0077CC] text-white font-black text-xl flex items-center justify-center mx-auto mb-8 shadow-glow transition-transform group-hover:scale-110">
-                            {p.step}
-                        </div>
-                        <h3 className="text-xl font-black uppercase italic tracking-tight mb-4 text-white">{p.title}</h3>
-                        <p className="text-xs text-slate-500 font-bold uppercase tracking-widest leading-relaxed">{p.description}</p>
-                    </div>
+            {/* Services Overview */}
+            <div className="mb-16">
+              <h2 className="text-3xl font-bold tracking-tight text-text mb-10 text-center">
+                 Our Services Overview
+              </h2>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                {[
+                  { title: "Emergency Drain Cleaning", href: "/emergency-drain-cleaning-services/", desc: "Immediate relief for sudden clogs." },
+                  { title: "Kitchen Sink Drain Cleaning", href: "/kitchen-sink-drain-cleaning-unclogging-services/", desc: "Clear grease and food buildup fast." },
+                  { title: "Bathroom Drain Cleaning", href: "/bathroom-drain-cleaning-unclogging-services/", desc: "Expert removal of hair and soap scum." },
+                  { title: "Hydro Jetting Services", href: "/hydro-jetting-cleaning-services/", desc: "High-pressure cleaning for deep, lasting results." },
+                  { title: "Sewer Line Cleaning & Repair", href: "/sewer-line-cleaning-repair-usa/", desc: "Fix blockages and prevent future issues." },
+                  { title: "Drain Camera Inspection", href: "/drain-camera-inspection/", desc: "Pinpoint problems without guesswork." },
+                ].map((service, i) => (
+                  <Link key={i} href={service.href} className="group p-6 rounded-xl bg-card border border-border hover:shadow-md hover:border-primary/20 transition-all">
+                     <h3 className="text-[15px] font-bold tracking-tight text-text group-hover:text-primary transition-colors mb-2">
+                        {service.title}
+                     </h3>
+                     <p className="text-sm font-medium text-text/80">
+                        {service.desc}
+                     </p>
+                  </Link>
                 ))}
-             </div>
-          </div>
+              </div>
+            </div>
 
-          {/* Trust Section */}
-          <div className="max-w-4xl mx-auto text-center p-12 rounded-[3.5rem] bg-gradient-to-br from-[#111827] to-[#0B1120] border border-white/5 relative overflow-hidden">
-            <div className="absolute top-0 right-0 p-10 opacity-5">
-               <Heart size={120} className="text-primary" />
+            {/* Trust Section */}
+            <div className="max-w-4xl mx-auto text-center p-12 rounded-2xl bg-primary/10 border border-primary/20 relative overflow-hidden">
+              <div className="absolute top-0 right-0 p-8 opacity-[0.05]">
+                 <Heart size={120} className="text-primary" />
+              </div>
+              <h2 className="text-3xl font-bold tracking-tight mb-6 text-text relative z-10">Why Customers Trust Us</h2>
+              <div className="space-y-4 text-lg text-text/80 font-medium leading-relaxed relative z-10">
+                  <p>Homeowners nationwide choose us for verified professionals who deliver.</p>
+                  <p className="text-primary font-bold">Our quick response times often under an hour.</p>
+                  <p>Combined with glowing reviews and strict service standards, we build lasting trust and turn plumbing panic into peace of mind.</p>
+              </div>
             </div>
-            <h2 className="text-3xl font-black tracking-tight italic uppercase mb-8 text-white relative z-10">Why Customers Trust Us</h2>
-            <div className="space-y-6 text-base md:text-lg text-slate-400 font-medium leading-relaxed italic relative z-10">
-                <p>Homeowners nationwide choose us for verified professionals who deliver.</p>
-                <p className="text-primary font-black uppercase tracking-widest">Our quick response times often under an hour.</p>
-                <p>Combined with glowing reviews and strict service standards, we build lasting trust and turn plumbing panic into peace of mind.</p>
-            </div>
+            
           </div>
         </section>
 

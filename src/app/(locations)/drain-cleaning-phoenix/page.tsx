@@ -22,7 +22,7 @@ export default function PhoenixPage() {
             Phoenix homes often battle stubborn drain issues due to hard water minerals that build up inside pipes, trapping grease, hair and debris for frequent clogs. At DrainCleaningNearMe, our drain cleaning services Phoenix team tackles these with professional expertise, using advanced tools like hydro jetting to restore flow fast and prevent costly damage.
           </p>
           <p>
-            Our licensed plumbers deliver 24/7 emergency drain cleaning Phoenix-wide services, ensuring same-day service with no hidden charges. Call early to avoid water damage and health hazards: <span className="font-bold text-white">(724) 750-6935</span>
+            Our licensed plumbers deliver 24/7 emergency drain cleaning Phoenix-wide services, ensuring same-day service with no hidden charges. Call early to avoid water damage and health hazards: <span className="font-bold text-text">(724) 750-6935</span>
           </p>
         </>
       }
@@ -44,12 +44,12 @@ export default function PhoenixPage() {
     >
       <div className="space-y-24">
         {/* Phoenix Challenges Section */}
-        <section className="p-10 md:p-14 rounded-[3rem] bg-[#111827]/80 border border-white/5 shadow-2xl italic relative overflow-hidden">
+        <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm  relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl opacity-50" />
-          <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight text-white mb-8 relative z-10">
-            Phoenix's Unique <span className="text-primary italic">Drain Problems</span>
+          <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-tight text-text mb-8 relative z-10">
+            Phoenix's Unique <span className="text-primary ">Drain Problems</span>
           </h2>
-          <p className="text-slate-400 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8 relative z-10">
+          <p className="text-text/80 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8 relative z-10">
             Phoenix's arid climate and hard water create unique drain challenges. Clogs often stem from hair, grease, food waste, and extreme mineral deposits that naturally narrow your pipes over time without you even realizing.
           </p>
           <div className="grid md:grid-cols-3 gap-8 relative z-10">
@@ -58,10 +58,10 @@ export default function PhoenixPage() {
               { icon: Building2, title: "Tree Roots Intrusion", text: "Mesquite or ficus tree roots aggressively seek pipe moisture in mature Phoenix neighborhoods." },
               { icon: ThermometerSun, title: "Grease Solidification", text: "Cooled grease from food waste hardens quickly, worsening with Phoenix's mineral-rich water." }
             ].map((item, i) => (
-              <div key={i} className="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-primary/50 transition-all group">
+              <div key={i} className="p-6 rounded-lg bg-bg border-border/50 border border-border hover:border-primary/20 transition-all hover:shadow-md transition-all group">
                 <item.icon className="text-primary mb-4 group-hover:scale-110 transition-transform" size={32} />
-                <h4 className="font-black uppercase italic tracking-tight mb-2 text-sm text-white group-hover:text-primary transition-colors">{item.title}</h4>
-                <p className="text-[10px] font-bold text-slate-500 uppercase tracking-widest leading-relaxed">{item.text}</p>
+                <h4 className="font-bold uppercase  tracking-tight mb-2 text-sm text-text group-hover:text-primary transition-colors">{item.title}</h4>
+                <p className="text-[10px] font-bold text-text/80 uppercase tracking-widest leading-relaxed">{item.text}</p>
               </div>
             ))}
           </div>
@@ -69,9 +69,9 @@ export default function PhoenixPage() {
 
         {/* Full Range of Services & Signs */}
         <section className="grid lg:grid-cols-2 gap-8">
-          <div className="p-10 md:p-14 rounded-[3rem] bg-[#111827]/80 border border-white/5 shadow-2xl italic">
-            <h2 className="text-2xl font-black uppercase italic mb-8 text-white">Signs Of Severe Clogs</h2>
-            <div className="space-y-6 text-[11px] font-medium text-slate-400 uppercase tracking-widest leading-relaxed">
+          <div className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
+            <h2 className="text-2xl font-bold uppercase  mb-8 text-text">Signs Of Severe Clogs</h2>
+            <div className="space-y-6 text-[11px] font-medium text-text/80 uppercase tracking-widest leading-relaxed">
               <p>Do not ignore these red flags for clogged drains in Phoenix. Early action prevents flooding and pipe damage.</p>
               <ul className="space-y-4">
                  <li><strong className="text-primary">Water Backups:</strong> Sinks, tubs or toilets backing up signals main line issues.</li>
@@ -82,26 +82,26 @@ export default function PhoenixPage() {
               </ul>
             </div>
             <div className="mt-8">
-               <h2 className="text-2xl font-black uppercase italic mb-6 text-white mt-8">Our Treatment Process</h2>
-               <ol className="list-decimal pl-4 space-y-3 text-[11px] font-medium text-slate-400 uppercase tracking-widest leading-relaxed">
-                  <li><strong className="text-white">Inspection:</strong> Arrive fast and use a camera if needed to locate blockages.</li>
-                  <li><strong className="text-white">Diagnosis:</strong> Identify cause (roots, minerals, grease).</li>
-                  <li><strong className="text-white">Clearing Blockage:</strong> Select hydro jetting or physical tools for extraction.</li>
-                  <li><strong className="text-white">Flow Testing:</strong> Run water everywhere to confirm drainage and no gurgling.</li>
-                  <li><strong className="text-white">Prevention Advice:</strong> Customized maintenance guidance to prevent slow drains.</li>
+               <h2 className="text-2xl font-bold uppercase  mb-6 text-text mt-8">Our Treatment Process</h2>
+               <ol className="list-decimal pl-4 space-y-3 text-[11px] font-medium text-text/80 uppercase tracking-widest leading-relaxed">
+                  <li><strong className="text-text">Inspection:</strong> Arrive fast and use a camera if needed to locate blockages.</li>
+                  <li><strong className="text-text">Diagnosis:</strong> Identify cause (roots, minerals, grease).</li>
+                  <li><strong className="text-text">Clearing Blockage:</strong> Select hydro jetting or physical tools for extraction.</li>
+                  <li><strong className="text-text">Flow Testing:</strong> Run water everywhere to confirm drainage and no gurgling.</li>
+                  <li><strong className="text-text">Prevention Advice:</strong> Customized maintenance guidance to prevent slow drains.</li>
                </ol>
             </div>
           </div>
 
-          <div className="p-10 md:p-14 rounded-[3rem] bg-gradient-to-br from-[#111827] to-[#0B1120] border border-white/5 shadow-2xl italic flex flex-col justify-center text-center">
+          <div className="p-10 md:p-14 rounded-xl bg-bg border border-border shadow-sm  flex flex-col justify-center text-center">
              <MapPin size={64} className="text-primary mx-auto mb-6 opacity-50" />
-             <h2 className="text-2xl font-black uppercase italic mb-4 text-white">Proudly Serving Phoenix Area</h2>
-             <p className="text-slate-400 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8">
+             <h2 className="text-2xl font-bold uppercase  mb-4 text-text">Proudly Serving Phoenix Area</h2>
+             <p className="text-text/80 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8">
                 We proudly serve all areas of Phoenix and nearby communities. From urban condos to desert suburbs, our Phoenix sewer hydro jetting service reaches you fast.
              </p>
              <div className="flex flex-wrap justify-center gap-3">
                 {["Downtown Phoenix", "Scottsdale", "Glendale", "Tempe", "Mesa", "Paradise Valley", "Central City", "Camelback East"].map((area) => (
-                  <span key={area} className="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-[10px] font-black uppercase tracking-widest text-primary italic">
+                  <span key={area} className="px-4 py-2 bg-bg border-border/50 border border-border rounded-full text-[10px] font-bold uppercase tracking-widest text-primary ">
                     {area}
                   </span>
                 ))}
@@ -110,8 +110,8 @@ export default function PhoenixPage() {
         </section>
 
         {/* FAQ Section */}
-        <section className="p-10 md:p-14 rounded-[3rem] bg-[#111827]/80 border border-white/5 shadow-2xl italic">
-          <h2 className="text-3xl font-black uppercase italic mb-12 text-center text-white">
+        <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
+          <h2 className="text-3xl font-bold uppercase  mb-12 text-center text-text">
             Phoenix Drain <span className="text-primary">FAQ</span>
           </h2>
           <div className="grid md:grid-cols-2 gap-12">
@@ -125,25 +125,25 @@ export default function PhoenixPage() {
               { q: "Do you service storm drain cleaning or french drains in Phoenix?", a: "Yes, we clear storm and french drains from roots and debris safely." }
             ].map((faq, i) => (
               <div key={i} className="space-y-3">
-                 <h4 className="text-xs font-black uppercase tracking-widest text-white italic">Q: {faq.q}</h4>
-                 <p className="text-[11px] font-bold text-slate-500 uppercase tracking-widest leading-relaxed">A: {faq.a}</p>
+                 <h4 className="text-xs font-bold uppercase tracking-widest text-text ">Q: {faq.q}</h4>
+                 <p className="text-[11px] font-bold text-text/80 uppercase tracking-widest leading-relaxed">A: {faq.a}</p>
               </div>
             ))}
           </div>
         </section>
 
         {/* Conclusion CTA */}
-        <div className="text-center space-y-8 p-12 rounded-[3.5rem] bg-gradient-to-br from-primary/10 to-accent/5 border border-primary/20 italic shadow-primary-glow/20">
-          <h2 className="text-3xl font-black uppercase tracking-tight text-white italic">Call Now for Fast Drain Cleaning in Phoenix!</h2>
-          <p className="text-slate-400 font-bold uppercase tracking-widest text-xs max-w-2xl mx-auto leading-relaxed">
+        <div className="text-center space-y-8 p-12 rounded-xl bg-gradient-to-br from-primary/10 to-accent/5 border border-primary/20  ">
+          <h2 className="text-3xl font-bold uppercase tracking-tight text-text ">Call Now for Fast Drain Cleaning in Phoenix!</h2>
+          <p className="text-text/80 font-bold uppercase tracking-widest text-xs max-w-2xl mx-auto leading-relaxed">
             Tired of drain hassles? Book your professional drain cleaning appointment today and enjoy clear pipes tomorrow. Same-day service guaranteed!
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-             <Link href="tel:+17247506935" className="h-16 px-12 bg-accent text-white rounded-2xl flex items-center justify-center gap-3 font-black uppercase italic tracking-widest shadow-accent-glow hover:scale-105 transition-all">
+             <Link href="tel:+17247506935" className="h-16 px-12 bg-accent text-text rounded-lg flex items-center justify-center gap-3 font-bold uppercase  tracking-widest shadow-md hover:scale-105 transition-all">
                 <Phone fill="currentColor" size={24} /> (724) 750-6935
              </Link>
           </div>
-          <p className="text-[10px] text-slate-500 font-black uppercase tracking-widest">
+          <p className="text-[10px] text-text/80 font-bold uppercase tracking-widest">
             Licensed Experts &middot; 24/7 Priority Emergency Dispatch &middot; 100% Satisfaction Guarantee
           </p>
         </div>

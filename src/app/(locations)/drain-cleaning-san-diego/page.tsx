@@ -22,7 +22,7 @@ export default function SanDiegoPage() {
             Tired of slow drains, foul odors or sewer backups ruining your day in San Diego? DrainCleaningNearMe delivers fast, professional drain cleaning services for San Diego residents for clogged drain repair during emergencies.
           </p>
           <p>
-            Licensed, insured, 24/7 availability; trusted by La Jolla and Pacific Beach homeowners for hydro jetting local solutions that last longer. Call Now for Same-Day Service: <span className="font-bold text-white">(724) 750-6935</span>
+            Licensed, insured, 24/7 availability; trusted by La Jolla and Pacific Beach homeowners for hydro jetting local solutions that last longer. Call Now for Same-Day Service: <span className="font-bold text-text">(724) 750-6935</span>
           </p>
         </>
       }
@@ -44,12 +44,12 @@ export default function SanDiegoPage() {
     >
       <div className="space-y-24">
         {/* San Diego Challenges Section */}
-        <section className="p-10 md:p-14 rounded-[3rem] bg-[#111827]/80 border border-white/5 shadow-2xl italic relative overflow-hidden">
+        <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm  relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl opacity-50" />
-          <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight text-white mb-8 relative z-10">
-            Common San Diego <span className="text-primary italic">Drain Problems</span>
+          <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-tight text-text mb-8 relative z-10">
+            Common San Diego <span className="text-primary ">Drain Problems</span>
           </h2>
-          <p className="text-slate-400 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8 relative z-10">
+          <p className="text-text/80 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8 relative z-10">
             San Diego's dry coastal climate and hard water create specific drain challenges that demand professional intervention. From aging Orangeburg pipes to invasive tree roots seeking moisture, regular maintenance saves thousands.
           </p>
           <div className="grid md:grid-cols-3 gap-8 relative z-10">
@@ -58,10 +58,10 @@ export default function SanDiegoPage() {
               { icon: Trees, title: "Tree Root Intrusion", text: "Water-seeking roots invade clay pipes in Escondido yards, causing 30% of sewer issues here." },
               { icon: Building2, title: "Sewer Line Backups", text: "Aging pipes in Chula Vista crack, leading to backups from soil shifts in canyons during coastal rains." }
             ].map((item, i) => (
-              <div key={i} className="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-primary/50 transition-all group">
+              <div key={i} className="p-6 rounded-lg bg-bg border-border/50 border border-border hover:border-primary/20 transition-all hover:shadow-md transition-all group">
                 <item.icon className="text-primary mb-4 group-hover:scale-110 transition-transform" size={32} />
-                <h4 className="font-black uppercase italic tracking-tight mb-2 text-sm text-white group-hover:text-primary transition-colors">{item.title}</h4>
-                <p className="text-[10px] font-bold text-slate-500 uppercase tracking-widest leading-relaxed">{item.text}</p>
+                <h4 className="font-bold uppercase  tracking-tight mb-2 text-sm text-text group-hover:text-primary transition-colors">{item.title}</h4>
+                <p className="text-[10px] font-bold text-text/80 uppercase tracking-widest leading-relaxed">{item.text}</p>
               </div>
             ))}
           </div>
@@ -69,9 +69,9 @@ export default function SanDiegoPage() {
 
         {/* Full Range of Services & Signs */}
         <section className="grid lg:grid-cols-2 gap-8">
-          <div className="p-10 md:p-14 rounded-[3rem] bg-[#111827]/80 border border-white/5 shadow-2xl italic">
-            <h2 className="text-2xl font-black uppercase italic mb-8 text-white">Signs You Need Immediate Service</h2>
-            <div className="space-y-6 text-[11px] font-medium text-slate-400 uppercase tracking-widest leading-relaxed">
+          <div className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
+            <h2 className="text-2xl font-bold uppercase  mb-8 text-text">Signs You Need Immediate Service</h2>
+            <div className="space-y-6 text-[11px] font-medium text-text/80 uppercase tracking-widest leading-relaxed">
               <p>Do not wait for disaster; spot these clogged drain San Diego warnings early to avoid major sewer line repair.</p>
               <ul className="space-y-4">
                  <li><strong className="text-primary">Multiple Slow Drains:</strong> Kitchen and bathroom simultaneously slowing.</li>
@@ -82,26 +82,26 @@ export default function SanDiegoPage() {
               </ul>
             </div>
             <div className="mt-8">
-               <h2 className="text-2xl font-black uppercase italic mb-6 text-white mt-8">How We Solve It</h2>
-               <ol className="list-decimal pl-4 space-y-3 text-[11px] font-medium text-slate-400 uppercase tracking-widest leading-relaxed">
-                  <li><strong className="text-white">Inspection:</strong> Quick visual and camera check for root intrusion.</li>
-                  <li><strong className="text-white">Diagnosis:</strong> Pinpoint cause; grease, minerals or roots.</li>
-                  <li><strong className="text-white">Method Selection:</strong> Snaking for minor, hydro jetting for tough clogs.</li>
-                  <li><strong className="text-white">Execution:</strong> Safe, efficient cleaning with minimal disruption.</li>
-                  <li><strong className="text-white">Final Testing:</strong> Run water to confirm clear flow and no backups.</li>
+               <h2 className="text-2xl font-bold uppercase  mb-6 text-text mt-8">How We Solve It</h2>
+               <ol className="list-decimal pl-4 space-y-3 text-[11px] font-medium text-text/80 uppercase tracking-widest leading-relaxed">
+                  <li><strong className="text-text">Inspection:</strong> Quick visual and camera check for root intrusion.</li>
+                  <li><strong className="text-text">Diagnosis:</strong> Pinpoint cause; grease, minerals or roots.</li>
+                  <li><strong className="text-text">Method Selection:</strong> Snaking for minor, hydro jetting for tough clogs.</li>
+                  <li><strong className="text-text">Execution:</strong> Safe, efficient cleaning with minimal disruption.</li>
+                  <li><strong className="text-text">Final Testing:</strong> Run water to confirm clear flow and no backups.</li>
                </ol>
             </div>
           </div>
 
-          <div className="p-10 md:p-14 rounded-[3rem] bg-gradient-to-br from-[#111827] to-[#0B1120] border border-white/5 shadow-2xl italic flex flex-col justify-center text-center">
+          <div className="p-10 md:p-14 rounded-xl bg-bg border border-border shadow-sm  flex flex-col justify-center text-center">
              <MapPin size={64} className="text-primary mx-auto mb-6 opacity-50" />
-             <h2 className="text-2xl font-black uppercase italic mb-4 text-white">Serving Coastal & Inland San Diego</h2>
-             <p className="text-slate-400 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8">
+             <h2 className="text-2xl font-bold uppercase  mb-4 text-text">Serving Coastal & Inland San Diego</h2>
+             <p className="text-text/80 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8">
                 From luxury rentals in Pacific Beach to historic homes in Coronado, we have local coverage everywhere you need it.
              </p>
              <div className="flex flex-wrap justify-center gap-3">
                 {["Downtown San Diego", "La Jolla", "Pacific Beach", "Chula Vista", "El Cajon", "Oceanside", "Escondido", "Rancho Bernardo", "Coronado"].map((area) => (
-                  <span key={area} className="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-[10px] font-black uppercase tracking-widest text-primary italic">
+                  <span key={area} className="px-4 py-2 bg-bg border-border/50 border border-border rounded-full text-[10px] font-bold uppercase tracking-widest text-primary ">
                     {area}
                   </span>
                 ))}
@@ -110,8 +110,8 @@ export default function SanDiegoPage() {
         </section>
 
         {/* FAQ Section */}
-        <section className="p-10 md:p-14 rounded-[3rem] bg-[#111827]/80 border border-white/5 shadow-2xl italic">
-          <h2 className="text-3xl font-black uppercase italic mb-12 text-center text-white">
+        <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
+          <h2 className="text-3xl font-bold uppercase  mb-12 text-center text-text">
             San Diego Drain <span className="text-primary">FAQ</span>
           </h2>
           <div className="grid md:grid-cols-2 gap-12">
@@ -124,25 +124,25 @@ export default function SanDiegoPage() {
               { q: "Can you fix French drains in San Diego?", a: "Yes, plus storm drain cleaning in San Diego for coastal rains." }
             ].map((faq, i) => (
               <div key={i} className="space-y-3">
-                 <h4 className="text-xs font-black uppercase tracking-widest text-white italic">Q: {faq.q}</h4>
-                 <p className="text-[11px] font-bold text-slate-500 uppercase tracking-widest leading-relaxed">A: {faq.a}</p>
+                 <h4 className="text-xs font-bold uppercase tracking-widest text-text ">Q: {faq.q}</h4>
+                 <p className="text-[11px] font-bold text-text/80 uppercase tracking-widest leading-relaxed">A: {faq.a}</p>
               </div>
             ))}
           </div>
         </section>
 
         {/* Conclusion CTA */}
-        <div className="text-center space-y-8 p-12 rounded-[3.5rem] bg-gradient-to-br from-primary/10 to-accent/5 border border-primary/20 italic shadow-primary-glow/20">
-          <h2 className="text-3xl font-black uppercase tracking-tight text-white italic">Stop Coastal Pipe Nightmares; Act Now!</h2>
-          <p className="text-slate-400 font-bold uppercase tracking-widest text-xs max-w-2xl mx-auto leading-relaxed">
+        <div className="text-center space-y-8 p-12 rounded-xl bg-gradient-to-br from-primary/10 to-accent/5 border border-primary/20  ">
+          <h2 className="text-3xl font-bold uppercase tracking-tight text-text ">Stop Coastal Pipe Nightmares; Act Now!</h2>
+          <p className="text-text/80 font-bold uppercase tracking-widest text-xs max-w-2xl mx-auto leading-relaxed">
             Do not let clogged drains disrupt your San Diego life; get fast, affordable drain services today! Licensed professionals are ready 24/7. Prevent backups before it's too late.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-             <Link href="tel:+17247506935" className="h-16 px-12 bg-accent text-white rounded-2xl flex items-center justify-center gap-3 font-black uppercase italic tracking-widest shadow-accent-glow hover:scale-105 transition-all">
+             <Link href="tel:+17247506935" className="h-16 px-12 bg-accent text-text rounded-lg flex items-center justify-center gap-3 font-bold uppercase  tracking-widest shadow-md hover:scale-105 transition-all">
                 <Phone fill="currentColor" size={24} /> (724) 750-6935
              </Link>
           </div>
-          <p className="text-[10px] text-slate-500 font-black uppercase tracking-widest">
+          <p className="text-[10px] text-text/80 font-bold uppercase tracking-widest">
             Licensed Experts &middot; 24/7 Priority Emergency Dispatch &middot; Free On-Site Estimates
           </p>
         </div>

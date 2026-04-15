@@ -22,7 +22,7 @@ export default function SanJosePage() {
             Tired of slow drains, gurgling toilets or sewer backups flooding your San Jose home? Our expert team at DrainCleaningNearMe delivers fast, reliable drain cleaning services which San Jose homeowners and businesses trust; stopping clogs before they cause costly damage.
           </p>
           <p>
-            We offer 24/7 emergency availability, licensed and insured technicians, same-day response, and a 100% satisfaction guarantee. Call Now for a <span className="font-bold text-white">Free Estimate: (724) 750-6935</span>
+            We offer 24/7 emergency availability, licensed and insured technicians, same-day response, and a 100% satisfaction guarantee. Call Now for a <span className="font-bold text-text">Free Estimate: (724) 750-6935</span>
           </p>
         </>
       }
@@ -44,12 +44,12 @@ export default function SanJosePage() {
     >
       <div className="space-y-24">
         {/* San Jose Challenges Section */}
-        <section className="p-10 md:p-14 rounded-[3rem] bg-[#111827]/80 border border-white/5 shadow-2xl italic relative overflow-hidden">
+        <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm  relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl opacity-50" />
-          <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight text-white mb-8 relative z-10">
-            Why San Jose Needs <span className="text-primary italic">Expert Drain Cleaning</span>
+          <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-tight text-text mb-8 relative z-10">
+            Why San Jose Needs <span className="text-primary ">Expert Drain Cleaning</span>
           </h2>
-          <p className="text-slate-400 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8 relative z-10">
+          <p className="text-text/80 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8 relative z-10">
             San Jose's booming tech hub status means packed neighborhoods like Willow Glen, Almaden Valley and Evergreen face unique plumbing woes. Homeowners in older homes near downtown deal with aging clay pipes crumbling under tree root intrusion, exacerbated by our dry California summers. Businesses in Santa Clara Valley battle grease clogs from high-volume kitchens.
           </p>
           <div className="grid md:grid-cols-3 gap-8 relative z-10">
@@ -58,10 +58,10 @@ export default function SanJosePage() {
               { icon: Droplets, title: "Storm Drain Floods", text: "Winter rains trigger backups in storm and French drains. Hard water from local sources causes mineral buildup over time." },
               { icon: Building2, title: "Commercial Grease", text: "Restaurants and tech campuses in Santa Clara Valley see frequent grease and debris clogs from high-volume usage." }
             ].map((item, i) => (
-              <div key={i} className="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-primary/50 transition-all group">
+              <div key={i} className="p-6 rounded-lg bg-bg border-border/50 border border-border hover:border-primary/20 transition-all hover:shadow-md transition-all group">
                 <item.icon className="text-primary mb-4 group-hover:scale-110 transition-transform" size={32} />
-                <h4 className="font-black uppercase italic tracking-tight mb-2 text-sm text-white group-hover:text-primary transition-colors">{item.title}</h4>
-                <p className="text-[10px] font-bold text-slate-500 uppercase tracking-widest leading-relaxed">{item.text}</p>
+                <h4 className="font-bold uppercase  tracking-tight mb-2 text-sm text-text group-hover:text-primary transition-colors">{item.title}</h4>
+                <p className="text-[10px] font-bold text-text/80 uppercase tracking-widest leading-relaxed">{item.text}</p>
               </div>
             ))}
           </div>
@@ -69,9 +69,9 @@ export default function SanJosePage() {
 
         {/* Full Range of Services & Signs */}
         <section className="grid lg:grid-cols-2 gap-8">
-          <div className="p-10 md:p-14 rounded-[3rem] bg-[#111827]/80 border border-white/5 shadow-2xl italic">
-            <h2 className="text-2xl font-black uppercase italic mb-8 text-white">Signs You Need Immediate Drain Cleaning</h2>
-            <div className="space-y-6 text-[11px] font-medium text-slate-400 uppercase tracking-widest leading-relaxed">
+          <div className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
+            <h2 className="text-2xl font-bold uppercase  mb-8 text-text">Signs You Need Immediate Drain Cleaning</h2>
+            <div className="space-y-6 text-[11px] font-medium text-text/80 uppercase tracking-widest leading-relaxed">
               <p>Do not ignore these red flags in your San Jose home or business areas. Ignoring slow drains leads to 70% more repair costs.</p>
               <ul className="space-y-4">
                  <li><strong className="text-primary">Water Backing Up:</strong> Standing water in sinks or tubs signals a main line clog.</li>
@@ -82,26 +82,26 @@ export default function SanJosePage() {
               </ul>
             </div>
             <div className="mt-8">
-               <h2 className="text-2xl font-black uppercase italic mb-6 text-white mt-8">Our Proven Process</h2>
-               <ol className="list-decimal pl-4 space-y-3 text-[11px] font-medium text-slate-400 uppercase tracking-widest leading-relaxed">
-                  <li><strong className="text-white">Inspection:</strong> Free camera scope for detecting sewer line issues.</li>
-                  <li><strong className="text-white">Diagnosis:</strong> Pinpoint cause (tree roots in sewer or grease clogging).</li>
-                  <li><strong className="text-white">Selection:</strong> Snake, Hydro jet or combo based on blockage severity.</li>
-                  <li><strong className="text-white">Clearing:</strong> Powerful, safe blockage removal using modern tools.</li>
-                  <li><strong className="text-white">Final Testing:</strong> Run water to confirm flow and provide future prevention tips.</li>
+               <h2 className="text-2xl font-bold uppercase  mb-6 text-text mt-8">Our Proven Process</h2>
+               <ol className="list-decimal pl-4 space-y-3 text-[11px] font-medium text-text/80 uppercase tracking-widest leading-relaxed">
+                  <li><strong className="text-text">Inspection:</strong> Free camera scope for detecting sewer line issues.</li>
+                  <li><strong className="text-text">Diagnosis:</strong> Pinpoint cause (tree roots in sewer or grease clogging).</li>
+                  <li><strong className="text-text">Selection:</strong> Snake, Hydro jet or combo based on blockage severity.</li>
+                  <li><strong className="text-text">Clearing:</strong> Powerful, safe blockage removal using modern tools.</li>
+                  <li><strong className="text-text">Final Testing:</strong> Run water to confirm flow and provide future prevention tips.</li>
                </ol>
             </div>
           </div>
 
-          <div className="p-10 md:p-14 rounded-[3rem] bg-gradient-to-br from-[#111827] to-[#0B1120] border border-white/5 shadow-2xl italic flex flex-col justify-center text-center">
+          <div className="p-10 md:p-14 rounded-xl bg-bg border border-border shadow-sm  flex flex-col justify-center text-center">
              <MapPin size={64} className="text-primary mx-auto mb-6 opacity-50" />
-             <h2 className="text-2xl font-black uppercase italic mb-4 text-white">San Jose & Beyond</h2>
-             <p className="text-slate-400 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8">
+             <h2 className="text-2xl font-bold uppercase  mb-4 text-text">San Jose & Beyond</h2>
+             <p className="text-text/80 font-bold uppercase tracking-widest text-[11px] leading-loose mb-8">
                 Proudly offering fast, effective drain services in San Jose and across the greater Santa Clara Valley to keep lines flowing smoothly.
              </p>
              <div className="flex flex-wrap justify-center gap-3">
                 {["San Jose", "Santa Clara", "Sunnyvale", "Cupertino", "Milpitas", "Campbell", "Willow Glen", "Almaden Valley", "Evergreen"].map((area) => (
-                  <span key={area} className="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-[10px] font-black uppercase tracking-widest text-primary italic">
+                  <span key={area} className="px-4 py-2 bg-bg border-border/50 border border-border rounded-full text-[10px] font-bold uppercase tracking-widest text-primary ">
                     {area}
                   </span>
                 ))}
@@ -110,8 +110,8 @@ export default function SanJosePage() {
         </section>
 
         {/* FAQ Section */}
-        <section className="p-10 md:p-14 rounded-[3rem] bg-[#111827]/80 border border-white/5 shadow-2xl italic">
-          <h2 className="text-3xl font-black uppercase italic mb-12 text-center text-white">
+        <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
+          <h2 className="text-3xl font-bold uppercase  mb-12 text-center text-text">
             San Jose Drain <span className="text-primary">FAQ</span>
           </h2>
           <div className="grid md:grid-cols-2 gap-12">
@@ -124,25 +124,25 @@ export default function SanJosePage() {
               { q: "What if I have a sewer backup?", a: "Call our emergency plumber San Jose immediately to prevent bacteria spread and flooding." }
             ].map((faq, i) => (
               <div key={i} className="space-y-3">
-                 <h4 className="text-xs font-black uppercase tracking-widest text-white italic">Q: {faq.q}</h4>
-                 <p className="text-[11px] font-bold text-slate-500 uppercase tracking-widest leading-relaxed">A: {faq.a}</p>
+                 <h4 className="text-xs font-bold uppercase tracking-widest text-text ">Q: {faq.q}</h4>
+                 <p className="text-[11px] font-bold text-text/80 uppercase tracking-widest leading-relaxed">A: {faq.a}</p>
               </div>
             ))}
           </div>
         </section>
 
         {/* Conclusion CTA */}
-        <div className="text-center space-y-8 p-12 rounded-[3.5rem] bg-gradient-to-br from-primary/10 to-accent/5 border border-primary/20 italic shadow-primary-glow/20">
-          <h2 className="text-3xl font-black uppercase tracking-tight text-white italic">Call Now for Fast Drain Cleaning in San Jose</h2>
-          <p className="text-slate-400 font-bold uppercase tracking-widest text-xs max-w-2xl mx-auto leading-relaxed">
+        <div className="text-center space-y-8 p-12 rounded-xl bg-gradient-to-br from-primary/10 to-accent/5 border border-primary/20  ">
+          <h2 className="text-3xl font-bold uppercase tracking-tight text-text ">Call Now for Fast Drain Cleaning in San Jose</h2>
+          <p className="text-text/80 font-bold uppercase tracking-widest text-xs max-w-2xl mx-auto leading-relaxed">
             Do not let a clogged drain in San Jose ruin your day. With our 24/7 team, advanced hydro jetting and local know-how, we restore flow in San Jose today. Join 5,000+ satisfied customers!
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-             <Link href="tel:+17247506935" className="h-16 px-12 bg-accent text-white rounded-2xl flex items-center justify-center gap-3 font-black uppercase italic tracking-widest shadow-accent-glow hover:scale-105 transition-all">
+             <Link href="tel:+17247506935" className="h-16 px-12 bg-accent text-text rounded-lg flex items-center justify-center gap-3 font-bold uppercase  tracking-widest shadow-md hover:scale-105 transition-all">
                 <Phone fill="currentColor" size={24} /> (724) 750-6935
              </Link>
           </div>
-          <p className="text-[10px] text-slate-500 font-black uppercase tracking-widest">
+          <p className="text-[10px] text-text/80 font-bold uppercase tracking-widest">
             Licensed Experts &middot; 24/7 Priority Emergency Dispatch &middot; Free On-Site Estimates
           </p>
         </div>

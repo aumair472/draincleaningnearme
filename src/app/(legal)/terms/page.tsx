@@ -15,18 +15,18 @@ export default function TermsOfServicePage() {
           <h1 className="text-4xl md:text-6xl font-black uppercase italic tracking-tighter mb-8 leading-none">
             Terms of <span className="text-orange-600 italic">Service</span>
           </h1>
-          <p className="text-slate-500 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-text/60 max-w-2xl mx-auto leading-relaxed">
             Effective Date: March 30, 2026. Welcome to DrainCleaningNearMe. These terms govern 
             your access to and use of our website and services.
           </p>
         </div>
 
         <div className="space-y-12">
-            <section className="p-10 rounded-[3rem] bg-white dark:bg-slate-900 border shadow-xl">
+            <section className="p-10 rounded-[3rem] bg-card dark:bg-slate-900 border shadow-xl">
                <h2 className="text-2xl font-black uppercase italic tracking-tight mb-8 flex items-center gap-3">
                  <ShieldAlert className="text-orange-600" /> Lead Generation Disclaimer
                </h2>
-               <p className="text-slate-500 mb-6 font-medium leading-relaxed">
+               <p className="text-text/60 mb-6 font-medium leading-relaxed">
                  DrainCleaningNearMe is NOT the direct provider of plumbing or drain cleaning services. 
                  We act as a lead generation platform that connects users with independent contractors. 
                  We do not employ, supervise, or control the professionals who perform the work.
@@ -47,9 +47,9 @@ export default function TermsOfServicePage() {
                      <li className="flex items-start gap-2"><CheckCircle2 size={16} className="text-primary mt-[-2px]" /> Lawful System Usage</li>
                   </ul>
                </section>
-               <section className="p-8 rounded-3xl bg-white dark:bg-slate-900 border shadow-xl">
+               <section className="p-8 rounded-3xl bg-card dark:bg-slate-900 border shadow-xl">
                   <h3 className="text-xl font-black uppercase italic text-slate-800 dark:text-white mb-6">Service Overview</h3>
-                  <ul className="space-y-4 text-[11px] text-slate-500 font-black uppercase tracking-widest">
+                  <ul className="space-y-4 text-[11px] text-text/60 font-black uppercase tracking-widest">
                      <li className="border-b pb-2">Drain Cleaning Referrals</li>
                      <li className="border-b pb-2">Sewer Inspection Connections</li>
                      <li className="border-b pb-2">Emergency Dispatch Support</li>
@@ -57,18 +57,18 @@ export default function TermsOfServicePage() {
                </section>
             </div>
 
-            <section className="p-10 rounded-[3rem] bg-white dark:bg-slate-900 border shadow-xl">
+            <section className="p-10 rounded-[3rem] bg-card dark:bg-slate-900 border shadow-xl">
                <h2 className="text-2xl font-black uppercase italic tracking-tight mb-8">Legal Provisos</h2>
-               <div className="space-y-8 text-slate-500 font-medium leading-relaxed">
+               <div className="space-y-8 text-text/60 font-medium leading-relaxed">
                   <div>
-                    <h4 className="text-slate-900 dark:text-white font-black uppercase italic text-sm mb-2">9. Intellectual Property</h4>
+                    <h4 className="text-text dark:text-white font-black uppercase italic text-sm mb-2">9. Intellectual Property</h4>
                     <p>
                         All website content, design, and logos are owned by DrainCleaningNearMe. 
                         Unauthorized copying or commercial use is strictly prohibited.
                     </p>
                   </div>
                   <div>
-                    <h4 className="text-slate-900 dark:text-white font-black uppercase italic text-sm mb-2">12. Limitation of Liability</h4>
+                    <h4 className="text-text dark:text-white font-black uppercase italic text-sm mb-2">12. Limitation of Liability</h4>
                     <p>
                         To the fullest extent permitted by law, DrainCleaningNearMe shall not be liable 
                         for direct, incidental, or consequential damages arising from your use of 
@@ -76,7 +76,7 @@ export default function TermsOfServicePage() {
                     </p>
                   </div>
                   <div>
-                    <h4 className="text-slate-900 dark:text-white font-black uppercase italic text-sm mb-2">16. Governing Law</h4>
+                    <h4 className="text-text dark:text-white font-black uppercase italic text-sm mb-2">16. Governing Law</h4>
                     <p>
                         These Terms are governed by the laws of the State of New Mexico. Any disputes 
                         will be handled in accordance with the arbitration guidelines in Section 17.

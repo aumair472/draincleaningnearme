@@ -19,8 +19,8 @@ export default function SewerLinePage() {
       description={
         <>
           <p>
-            Facing a main sewer line clog or a stubborn backup? When you need <span className="text-white font-bold italic">&quot;sewer cleaning near me&quot;</span> 
-            or <span className="text-white font-bold italic">&quot;main line drain cleaning&quot;</span> services, you need licensed experts who can handle 
+            Facing a main sewer line clog or a stubborn backup? When you need <span className="text-text font-bold ">&quot;sewer cleaning near me&quot;</span> 
+            or <span className="text-text font-bold ">&quot;main line drain cleaning&quot;</span> services, you need licensed experts who can handle 
             the big jobs. A blocked sewer line is a serious issue that requires professional equipment 
             to resolve safely.
           </p>
@@ -49,19 +49,19 @@ export default function SewerLinePage() {
     >
       <div className="space-y-24">
         {/* Understanding Section */}
-        <section className="p-10 md:p-14 rounded-[3rem] bg-[#111827]/80 border border-white/5 shadow-2xl italic relative overflow-hidden">
+        <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm  relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl opacity-50" />
-          <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight text-white mb-8 relative z-10">
-            Understanding <span className="text-primary italic">Sewer Line</span> Problems
+          <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-tight text-text mb-8 relative z-10">
+            Understanding <span className="text-primary ">Sewer Line</span> Problems
           </h2>
           <div className="grid md:grid-cols-2 gap-12 relative z-10">
             <div className="space-y-6">
-              <p className="text-slate-400 font-bold uppercase tracking-widest text-xs leading-loose">
+              <p className="text-text/80 font-bold uppercase tracking-widest text-xs leading-loose">
                 Your home&apos;s main sewer line carries wastewater from every fixture out to the city sewer or septic system. 
                 When this line is blocked, your entire plumbing system is affected at once.
               </p>
               <div className="space-y-6">
-                <h3 className="text-xl font-black uppercase italic tracking-tight text-primary">Key Indicators</h3>
+                <h3 className="text-xl font-bold uppercase  tracking-tight text-primary">Key Indicators</h3>
                 <ul className="space-y-4">
                   {[
                     "Multiple drains backing up at the same time.",
@@ -69,16 +69,16 @@ export default function SewerLinePage() {
                     "Foul sewage odors inside or outside the home.",
                     "Water rising in shower/tub when you flush a toilet."
                   ].map((item, i) => (
-                    <li key={i} className="flex gap-3 text-[11px] font-black uppercase italic text-slate-500 tracking-widest leading-relaxed">
+                    <li key={i} className="flex gap-3 text-[11px] font-bold uppercase  text-text/80 tracking-widest leading-relaxed">
                        <Search size={14} className="text-primary shrink-0" /> {item}
                     </li>
                   ))}
                 </ul>
               </div>
             </div>
-            <div className="p-10 rounded-[2.5rem] bg-primary/5 border border-primary/20 flex flex-col justify-center text-center">
-               <h3 className="text-lg font-black uppercase italic text-white mb-4">Immediate Action Required</h3>
-               <p className="text-slate-400 font-bold uppercase tracking-widest text-[11px] leading-loose">
+            <div className="p-10 rounded-xl bg-primary/5 border border-primary/20 flex flex-col justify-center text-center">
+               <h3 className="text-lg font-bold uppercase  text-text mb-4">Immediate Action Required</h3>
+               <p className="text-text/80 font-bold uppercase tracking-widest text-[11px] leading-loose">
                   A blocked sewer is an emergency. It can lead to property damage, health risks 
                   from bacteria, and structural weakening.
                </p>
@@ -88,8 +88,8 @@ export default function SewerLinePage() {
 
         {/* Causes & Solutions */}
         <section className="grid lg:grid-cols-2 gap-8">
-          <div className="p-10 md:p-14 rounded-[3rem] bg-[#111827]/80 border border-white/5 shadow-2xl italic">
-            <h2 className="text-2xl font-black uppercase italic mb-8 text-white">Common Causes of Sewer Blocks</h2>
+          <div className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
+            <h2 className="text-2xl font-bold uppercase  mb-8 text-text">Common Causes of Sewer Blocks</h2>
             <div className="space-y-8">
               {[
                 { title: "Tree Root Intrusion", desc: "Roots naturally seek moisture and grow into small cracks, expanding and creating massive blockages." },
@@ -98,8 +98,8 @@ export default function SewerLinePage() {
                 { title: "Foreign Objects", desc: "Flushable wipes, toys, or hygiene items that do not break down properly in the waste stream." }
               ].map((cause, i) => (
                 <div key={i} className="group">
-                  <h4 className="text-xs font-black uppercase tracking-widest text-primary mb-2 italic underline decoration-primary/30 underline-offset-4">{cause.title}</h4>
-                  <p className="text-[11px] font-medium text-slate-500 uppercase tracking-widest leading-relaxed group-hover:text-slate-400 transition-colors">
+                  <h4 className="text-xs font-bold uppercase tracking-widest text-primary mb-2  underline decoration-primary/30 underline-offset-4">{cause.title}</h4>
+                  <p className="text-[11px] font-medium text-text/80 uppercase tracking-widest leading-relaxed group-hover:text-text/80 transition-colors">
                     {cause.desc}
                   </p>
                 </div>
@@ -107,8 +107,8 @@ export default function SewerLinePage() {
             </div>
           </div>
 
-          <div className="p-10 md:p-14 rounded-[3rem] bg-gradient-to-br from-[#111827] to-[#0B1120] border border-white/5 shadow-2xl italic">
-             <h2 className="text-2xl font-black uppercase italic mb-8 text-white">Our Professional Methods</h2>
+          <div className="p-10 md:p-14 rounded-xl bg-bg border border-border shadow-sm ">
+             <h2 className="text-2xl font-bold uppercase  mb-8 text-text">Our Professional Methods</h2>
              <div className="space-y-8">
                {[
                  { title: "Mechanical Cleaning", desc: "Use heavy-duty motorized augers to cut through roots and dislodge deep main line clogs safely." },
@@ -118,8 +118,8 @@ export default function SewerLinePage() {
                  <div key={i} className="flex gap-4 group">
                     <Drill className="text-primary shrink-0 group-hover:scale-110 transition-transform" />
                     <div>
-                      <h4 className="font-black uppercase italic tracking-tight text-sm mb-1 text-white group-hover:text-primary transition-colors">{item.title}</h4>
-                      <p className="text-[11px] font-bold text-slate-500 uppercase tracking-widest leading-relaxed">{item.desc}</p>
+                      <h4 className="font-bold uppercase  tracking-tight text-sm mb-1 text-text group-hover:text-primary transition-colors">{item.title}</h4>
+                      <p className="text-[11px] font-bold text-text/80 uppercase tracking-widest leading-relaxed">{item.desc}</p>
                     </div>
                  </div>
                ))}
@@ -128,8 +128,8 @@ export default function SewerLinePage() {
         </section>
 
         {/* FAQ Section */}
-        <section className="p-10 md:p-14 rounded-[3rem] bg-[#111827]/80 border border-white/5 shadow-2xl italic">
-          <h2 className="text-3xl font-black uppercase italic mb-12 text-center text-white">
+        <section className="p-10 md:p-14 rounded-xl bg-card border border-border shadow-sm ">
+          <h2 className="text-3xl font-bold uppercase  mb-12 text-center text-text">
             Sewer Line <span className="text-primary">FAQ</span>
           </h2>
           <div className="grid md:grid-cols-2 gap-12">
@@ -141,26 +141,26 @@ export default function SewerLinePage() {
               { q: "Why hire DrainCleaningNearMe for sewer issues?", a: "We match you with licensed local experts who have the heavy-duty equipment needed for main line work." }
             ].map((faq, i) => (
               <div key={i} className="space-y-3">
-                 <h4 className="text-xs font-black uppercase tracking-widest text-white italic">Q: {faq.q}</h4>
-                 <p className="text-[11px] font-bold text-slate-500 uppercase tracking-widest leading-relaxed">A: {faq.a}</p>
+                 <h4 className="text-xs font-bold uppercase tracking-widest text-text ">Q: {faq.q}</h4>
+                 <p className="text-[11px] font-bold text-text/80 uppercase tracking-widest leading-relaxed">A: {faq.a}</p>
               </div>
             ))}
           </div>
         </section>
 
         {/* Conclusion CTA */}
-        <div className="text-center space-y-8 p-12 rounded-[3.5rem] bg-gradient-to-br from-primary/10 to-accent/5 border border-primary/20 italic shadow-primary-glow/20">
-          <h2 className="text-3xl font-black uppercase tracking-tight text-white italic">Restoring Your Sewer Flow Today</h2>
-          <p className="text-slate-400 font-bold uppercase tracking-widest text-xs max-w-2xl mx-auto leading-relaxed">
+        <div className="text-center space-y-8 p-12 rounded-xl bg-gradient-to-br from-primary/10 to-accent/5 border border-primary/20  ">
+          <h2 className="text-3xl font-bold uppercase tracking-tight text-text ">Restoring Your Sewer Flow Today</h2>
+          <p className="text-text/80 font-bold uppercase tracking-widest text-xs max-w-2xl mx-auto leading-relaxed">
             A main line backup is a serious risk. Whether you need expert tree root removal or emergency 
             sewer cleaning near you, our local licensed professionals are ready to help.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-             <Link href="tel:+17247506935" className="h-16 px-12 bg-accent text-white rounded-2xl flex items-center justify-center gap-3 font-black uppercase italic tracking-widest shadow-accent-glow hover:scale-105 transition-all">
+             <Link href="tel:+17247506935" className="h-16 px-12 bg-accent text-text rounded-lg flex items-center justify-center gap-3 font-bold uppercase  tracking-widest shadow-md hover:scale-105 transition-all">
                 <Phone fill="currentColor" size={24} /> (724) 750-6935
              </Link>
           </div>
-          <p className="text-[10px] text-slate-500 font-black uppercase tracking-widest">
+          <p className="text-[10px] text-text/80 font-bold uppercase tracking-widest">
             Licensed Experts &middot; 24/7 Emergency Dispatch &middot; Full Diagnostic Camera Analysis
           </p>
         </div>

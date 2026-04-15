@@ -15,7 +15,7 @@ export default function PrivacyPolicyPage() {
           <h1 className="text-4xl md:text-6xl font-black uppercase italic tracking-tighter mb-8 leading-none">
             Privacy <span className="text-primary italic">Policy</span>
           </h1>
-          <p className="text-slate-500 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-text/60 max-w-2xl mx-auto leading-relaxed">
             Effective date: March 26, 2026. This Privacy Policy explains how DrainCleaningNearMe 
             collects, uses, shares and protects information when you visit our website or interact 
             with our services.
@@ -23,9 +23,9 @@ export default function PrivacyPolicyPage() {
         </div>
 
         <div className="space-y-12">
-            <section className="p-10 rounded-[3rem] bg-white dark:bg-slate-900 border shadow-xl">
+            <section className="p-10 rounded-[3rem] bg-card dark:bg-slate-900 border shadow-xl">
                <h2 className="text-2xl font-black uppercase italic tracking-tight mb-6">1. Who We Are</h2>
-               <p className="text-slate-500 mb-6 font-medium">
+               <p className="text-text/60 mb-6 font-medium">
                  DrainCleaningNearMe is responsible for collecting and using your personal information. 
                  We act as the data controller for the information covered by this policy.
                </p>
@@ -50,7 +50,7 @@ export default function PrivacyPolicyPage() {
                      </ul>
                   </div>
                   <div className="p-8 rounded-3xl bg-primary text-white shadow-2xl relative overflow-hidden">
-                     <div className="absolute top-0 right-0 w-24 h-24 bg-white/10 rounded-full blur-2xl" />
+                     <div className="absolute top-0 right-0 w-24 h-24 bg-card/10 rounded-full blur-2xl" />
                      <h3 className="text-xl font-black uppercase italic mb-4">3. Usage</h3>
                      <ul className="space-y-2 text-xs text-white/50 font-bold uppercase tracking-widest">
                         <li>Service Delivery & Matching</li>
@@ -62,18 +62,18 @@ export default function PrivacyPolicyPage() {
                </div>
             </section>
 
-            <section className="p-10 rounded-[3rem] bg-white dark:bg-slate-900 border shadow-xl">
+            <section className="p-10 rounded-[3rem] bg-card dark:bg-slate-900 border shadow-xl">
                <h2 className="text-2xl font-black uppercase italic tracking-tight mb-8">Detailed Disclosures</h2>
-               <div className="space-y-8 text-slate-500 font-medium leading-relaxed">
+               <div className="space-y-8 text-text/60 font-medium leading-relaxed">
                   <div>
-                    <h4 className="text-slate-900 dark:text-white font-black uppercase italic text-sm mb-2">4. Sharing Information</h4>
+                    <h4 className="text-text dark:text-white font-black uppercase italic text-sm mb-2">4. Sharing Information</h4>
                     <p>
                         We do not sell personal information for money. We share data only with service providers, 
                         marketing platforms, and trusted local service partners to fulfill your requests.
                     </p>
                   </div>
                   <div>
-                    <h4 className="text-slate-900 dark:text-white font-black uppercase italic text-sm mb-2">5. California Privacy Rights (CCPA)</h4>
+                    <h4 className="text-text dark:text-white font-black uppercase italic text-sm mb-2">5. California Privacy Rights (CCPA)</h4>
                     <p>
                         California residents have the right to know, delete, correct, and opt-out of the 
                         sale or sharing of personal information. Contact us with the subject 
@@ -81,14 +81,14 @@ export default function PrivacyPolicyPage() {
                     </p>
                   </div>
                   <div>
-                    <h4 className="text-slate-900 dark:text-white font-black uppercase italic text-sm mb-2">6. Cookies & Tracking</h4>
+                    <h4 className="text-text dark:text-white font-black uppercase italic text-sm mb-2">6. Cookies & Tracking</h4>
                     <p>
                         We use essential, analytics, and marketing cookies to help our website function 
                         and measure performance. You can manage these through your browser settings.
                     </p>
                   </div>
                   <div>
-                    <h4 className="text-slate-900 dark:text-white font-black uppercase italic text-sm mb-2">7. Data Retention & Security</h4>
+                    <h4 className="text-text dark:text-white font-black uppercase italic text-sm mb-2">7. Data Retention & Security</h4>
                     <p>
                         We keep personal information only as long as necessary for business, legal, or 
                         regulatory purposes. We use SSL encryption and secure servers to protect your data.

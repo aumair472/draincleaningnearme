@@ -24,35 +24,35 @@ const causes = [
 
 export function CommonCauses() {
   return (
-    <section className="py-24 bg-[#111827] relative border-y border-white/5 italic">
-      <div className="container px-20 relative z-10 italic">
-        <div className="text-center mb-16 px-4 sm:px-0">
-          <h2 className="text-3xl sm:text-5xl font-black uppercase tracking-tight text-white leading-none mb-6">
-            Common Causes of <span className="text-primary italic">Clogged Drains</span>
+    <section className="py-20 bg-card relative border-y border-border">
+      <div className="container px-4 sm:px-10 relative z-10">
+        <div className="text-center mb-16">
+          <h2 className="text-[36px] sm:text-[44px] font-bold tracking-tight text-text leading-tight mb-6">
+            Common Causes of Clogged Drains
           </h2>
-          <p className="text-slate-400 font-medium max-w-2xl mx-auto leading-relaxed">
+          <p className="text-text/80 font-medium max-w-2xl mx-auto leading-relaxed text-lg">
             Drain problems usually build up over time. Some of the most common causes include
             grease, hair, and foreign objects.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {causes.map((cause, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
-              className="p-8 rounded-[2.5rem] bg-[#0B1120] border border-white/5 text-center transition-all hover:border-primary/30 group"
+              transition={{ delay: i * 0.1, duration: 0.4 }}
+              className="p-8 rounded-xl bg-card border border-border text-center transition-all hover:shadow-md hover:border-primary/20 group flex flex-col items-center h-full"
             >
-              <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-primary/5 text-primary mb-6 transition-transform group-hover:scale-110">
+              <div className="inline-flex items-center justify-center w-14 h-14 rounded-lg bg-primary/10 text-primary mb-6 transition-transform group-hover:scale-110 group-hover:bg-primary group-hover:text-white">
                 <cause.icon size={28} />
               </div>
-              <h3 className="text-xl font-black uppercase italic tracking-tight mb-4 text-white">
+              <h3 className="text-xl font-bold tracking-tight mb-3 text-text group-hover:text-primary transition-colors">
                 {cause.title}
               </h3>
-              <p className="text-sm text-slate-500 leading-relaxed font-bold uppercase tracking-widest">
+              <p className="text-sm text-text/80 leading-relaxed">
                 {cause.description}
               </p>
             </motion.div>
