@@ -33,7 +33,7 @@ export default function ContactPage() {
              <div className="absolute top-0 w-full h-[500px] bg-primary/5 blur-[120px] rounded-full opacity-50" />
           </div>
 
-          <div className="max-w-7xl mx-auto px-4 relative z-10">
+          <div className="container relative z-10">
             <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight mb-8 text-text leading-tight">
                 Get Immediate Drain Cleaning Help Near You – <span className="text-primary italic">Call Now!</span>
@@ -66,7 +66,7 @@ export default function ContactPage() {
 
         {/* 2. QUICK CONTACT OPTIONS */}
         <section className="py-20 border-t border-border">
-          <div className="max-w-7xl mx-auto px-4">
+          <div className="container">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight text-text">
                 Quick Contact Options
@@ -119,7 +119,7 @@ export default function ContactPage() {
 
         {/* 3. WHY CONTACT US (CARD GRID) */}
         <section className="py-20 bg-card/30 border-y border-border">
-          <div className="max-w-7xl mx-auto px-4">
+          <div className="container">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight text-text">
                 Why Contact Us Today
@@ -147,7 +147,7 @@ export default function ContactPage() {
 
         {/* 4. SERVICE AVAILABILITY */}
         <section className="py-20">
-          <div className="max-w-7xl mx-auto px-4">
+          <div className="container">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight text-text mb-12">
                 Our Service Availability
@@ -177,7 +177,7 @@ export default function ContactPage() {
 
         {/* 5. EMERGENCY SECTION (URGENT) */}
         <section className="py-20 bg-red-600">
-           <div className="max-w-5xl mx-auto px-4 text-center text-white">
+           <div className="container-narrow px-4 text-center text-white">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 rounded-full text-xs font-bold uppercase tracking-widest mb-8">
                 <AlertTriangle size={14} /> Urgent Assistance Required
               </div>
@@ -213,7 +213,7 @@ export default function ContactPage() {
 
         {/* 6. FINAL CTA SECTION */}
         <section className="py-20 px-4">
-          <div className="max-w-5xl mx-auto bg-card border border-border p-12 md:p-20 rounded-[3rem] text-center shadow-2xl relative overflow-hidden">
+          <div className="container-narrow bg-card border border-border p-12 md:p-20 rounded-[3rem] text-center shadow-2xl relative overflow-hidden">
              {/* bg elements */}
              <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 blur-[100px] rounded-full -translate-y-1/2 translate-x-1/2" />
              <div className="absolute bottom-0 left-0 w-64 h-64 bg-accent/5 blur-[100px] rounded-full translate-y-1/2 -translate-x-1/2" />

@@ -16,7 +16,7 @@ export function UrgencySection() {
       {/* Red Glow Background Effect */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[500px] bg-red-600/5 blur-[120px] rounded-full opacity-50 -z-10" />
 
-      <div className="max-w-7xl mx-auto px-4 relative z-10">
+      <div className="container relative z-10">
         <div className="text-center mb-20 space-y-6">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}

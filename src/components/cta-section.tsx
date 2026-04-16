@@ -14,7 +14,7 @@ export function CTASection() {
          <div className="absolute bottom-0 right-1/4 w-[600px] h-[600px] bg-secondary/5 blur-[120px] rounded-full" />
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 relative z-10">
+      <div className="container relative z-10">
         <motion.div
            initial={{ opacity: 0, y: 30 }}
            whileInView={{ opacity: 1, y: 0 }}
@@ -24,7 +24,7 @@ export function CTASection() {
           {/* Internal background glow */}
           <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/20 blur-[150px] -translate-y-1/2 translate-x-1/2 rounded-full" />
           
-          <div className="max-w-4xl mx-auto relative z-10 space-y-12">
+          <div className="container-narrow relative z-10 space-y-12">
             <div className="space-y-6 text-center">
                 <motion.div
                   initial={{ opacity: 0, scale: 0.9 }}

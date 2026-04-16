@@ -32,8 +32,8 @@ export function ChicagoClient() {
             <div className="absolute top-0 w-full h-[600px] bg-primary/5 blur-[120px] rounded-full opacity-60" />
           </div>
 
-          <div className="max-w-7xl mx-auto px-4 relative z-10 w-full">
-            <div className="flex flex-col items-center text-center max-w-5xl mx-auto">
+          <div className="container relative z-10 w-full">
+            <div className="flex flex-col items-center text-center container-narrow">
               <motion.div
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -50,7 +50,7 @@ export function ChicagoClient() {
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight mb-8 text-text leading-[1.1]"
+                className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight mb-8 text-text leading-[1.1]"
               >
                 Professional Chicago Drain Cleaning & <span className="text-primary">Rooter Services</span>
               </motion.h1>
@@ -102,7 +102,7 @@ export function ChicagoClient() {
 
         {/* 2. WHY CHICAGO NEEDS EXPERTS (LOCAL AUTHORITY) */}
         <section className="py-24 bg-card border-b border-border">
-          <div className="max-w-7xl mx-auto px-4">
+          <div className="container">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="space-y-8">
                 <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text leading-tight">
@@ -144,7 +144,7 @@ export function ChicagoClient() {
 
         {/* 3. SERVICES GRID (HIGH VALUE + SEO) */}
         <section className="py-24 bg-bg border-b border-border">
-          <div className="max-w-7xl mx-auto px-4">
+          <div className="container">
              <div className="text-center mb-20 space-y-4">
                 <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text">
                   Our drain cleaning services in Chicago
@@ -187,7 +187,7 @@ export function ChicagoClient() {
 
         {/* 4. COMMON PROBLEMS (SEO BOOST) */}
         <section className="py-24 bg-card border-b border-border">
-          <div className="max-w-7xl mx-auto px-4">
+          <div className="container">
              <div className="grid lg:grid-cols-2 gap-16 items-center">
                 <div className="space-y-8">
                    <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text leading-tight">
@@ -236,7 +236,7 @@ export function ChicagoClient() {
 
         {/* 5. WHY CHOOSE US (CONVERSION DRIVER) */}
         <section className="py-24 bg-bg border-b border-border">
-          <div className="max-w-7xl mx-auto px-4">
+          <div className="container">
              <div className="text-center mb-20 space-y-4">
                 <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text">
                   Why choose DrainCleaningNearMe in Chicago
@@ -272,7 +272,7 @@ export function ChicagoClient() {
 
         {/* 6. PROCESS (AIRTASKER FLOW) */}
         <section className="py-24 bg-card border-y border-border">
-           <div className="max-w-7xl mx-auto px-4">
+           <div className="container">
               <div className="text-center mb-20 space-y-4">
                  <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text">
                     Our 5-step drain cleaning process
@@ -304,7 +304,7 @@ export function ChicagoClient() {
 
         {/* 7. SERVICE AREAS (LOCAL SEO BOOST) */}
         <section className="py-24 bg-bg border-b border-border">
-          <div className="max-w-7xl mx-auto px-4 text-center">
+          <div className="container text-center">
              <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text mb-4">
                Drain cleaning services across Chicago
              </h2>
@@ -324,7 +324,7 @@ export function ChicagoClient() {
 
         {/* 8. FAQ SECTION */}
         <section className="py-24 bg-card border-b border-border">
-           <div className="max-w-4xl mx-auto px-4">
+           <div className="container-narrow">
               <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-center text-text mb-20 uppercase">
                 Frequently asked questions
               </h2>
@@ -361,7 +361,7 @@ export function ChicagoClient() {
         {/* 9. URGENCY SECTION */}
         <section className="py-24 bg-bg overflow-hidden relative border-y border-border">
            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[400px] bg-red-600/5 blur-[120px] rounded-full opacity-60" />
-           <div className="max-w-5xl mx-auto px-4 text-center space-y-12 relative z-10">
+           <div className="container-narrow text-center space-y-12 relative z-10">
               <h2 className="text-4xl md:text-7xl font-bold tracking-tight text-text leading-tight">
                  Do not wait – drain problems get worse fast
               </h2>
@@ -383,7 +383,7 @@ export function ChicagoClient() {
 
         {/* 10. FINAL CTA */}
         <section className="py-24 bg-card">
-           <div className="max-w-5xl mx-auto px-4">
+           <div className="container-narrow">
               <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}

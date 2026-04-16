@@ -29,7 +29,7 @@ export function FAQ() {
 
   return (
     <section className="py-24 bg-card border-y border-border relative overflow-hidden font-body">
-      <div className="max-w-7xl mx-auto px-4 relative z-10">
+      <div className="container relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           <div className="space-y-8 text-center lg:text-left">
             <motion.div

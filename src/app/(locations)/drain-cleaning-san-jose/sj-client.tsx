@@ -32,8 +32,8 @@ export function SJClient() {
             <div className="absolute top-0 w-full h-[600px] bg-primary/5 blur-[120px] rounded-full opacity-60" />
           </div>
 
-          <div className="max-w-7xl mx-auto px-4 relative z-10 w-full">
-            <div className="flex flex-col items-center text-center max-w-5xl mx-auto">
+          <div className="container relative z-10 w-full">
+            <div className="flex flex-col items-center text-center container-narrow">
               <motion.div
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -50,7 +50,7 @@ export function SJClient() {
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight mb-8 text-text leading-[1.1] font-black"
+                className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight mb-8 text-text leading-[1.1] font-black"
               >
                 Professional Drain Cleaning Services in <span className="text-primary italic">San Jose</span>
               </motion.h1>
@@ -102,7 +102,7 @@ export function SJClient() {
 
         {/* 2. WHY SAN JOSE NEEDS EXPERTS (LOCAL AUTHORITY) */}
         <section className="py-24 bg-card border-b border-border font-black tracking-tight">
-          <div className="max-w-7xl mx-auto px-4">
+          <div className="container">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="space-y-8">
                 <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text leading-tight uppercase italic">
@@ -144,7 +144,7 @@ export function SJClient() {
 
         {/* 3. OUR SERVICES (HIGH VALUE + SEO) */}
         <section className="py-24 bg-bg border-b border-border">
-          <div className="max-w-7xl mx-auto px-4 text-center">
+          <div className="container text-center">
              <div className="mb-20 space-y-4">
                 <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text uppercase font-black uppercase">
                   Our Drain Cleaning Services in San Jose
@@ -187,7 +187,7 @@ export function SJClient() {
 
         {/* 4. COMMON PROBLEMS (LOCAL AUTHORITY) */}
         <section className="py-24 bg-card border-b border-border">
-           <div className="max-w-7xl mx-auto px-4">
+           <div className="container">
               <div className="text-center mb-20 space-y-4">
                  <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text leading-tight max-w-4xl mx-auto uppercase font-black uppercase">
                     Common Drain Problems in San Jose & Santa Clara
@@ -225,7 +225,7 @@ export function SJClient() {
 
         {/* 5. SIGNS YOU NEED SERVICE (SEO BOOST) */}
         <section className="py-24 bg-bg border-b border-border text-center">
-           <div className="max-w-4xl mx-auto px-4 space-y-16">
+           <div className="container-narrow space-y-16">
               <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text leading-tight uppercase font-black uppercase">
                 Signs You Need Professional Help
               </h2>
@@ -248,7 +248,7 @@ export function SJClient() {
 
         {/* 6. OUR STEP-BY-STEP PROCESS */}
         <section className="py-24 bg-card border-y border-border">
-           <div className="max-w-7xl mx-auto px-4 text-center">
+           <div className="container text-center">
               <div className="mb-20 space-y-4">
                  <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text uppercase font-black uppercase">
                     Our Step-by-Step Process
@@ -279,7 +279,7 @@ export function SJClient() {
 
         {/* 7. WHY CHOOSE US (TRUST DRIVER) */}
         <section className="py-24 bg-bg border-b border-border">
-          <div className="max-w-7xl mx-auto px-4 text-center">
+          <div className="container text-center">
              <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text mb-16 uppercase font-black uppercase">
                Why Choose DrainCleaningNearMe
              </h2>
@@ -304,7 +304,7 @@ export function SJClient() {
 
         {/* 8. COMMERCIAL SERVICES (TECH HUB SEO) */}
         <section className="py-24 bg-card border-b border-border text-center">
-           <div className="max-w-5xl mx-auto px-4 space-y-12">
+           <div className="container-narrow space-y-12">
               <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text leading-tight uppercase font-black uppercase">
                 Commercial Drain Services for Tech Hubs
               </h2>
@@ -331,7 +331,7 @@ export function SJClient() {
 
         {/* 9. SERVICE AREAS (LOCAL SEO BOOST) */}
         <section className="py-24 bg-bg border-b border-border text-center">
-          <div className="max-w-7xl mx-auto px-4">
+          <div className="container">
              <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text mb-4 uppercase font-black uppercase">
                Service Areas
              </h2>
@@ -351,7 +351,7 @@ export function SJClient() {
 
         {/* 10. FAQ SECTION */}
         <section className="py-24 bg-card border-b border-border">
-           <div className="max-w-4xl mx-auto px-4">
+           <div className="container-narrow">
               <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-center text-text mb-20 uppercase font-black">
                 Frequently Asked Questions
               </h2>
@@ -388,7 +388,7 @@ export function SJClient() {
         {/* 11. FINAL CTA / URGENCY (SAN JOSE) */}
         <section className="py-24 bg-bg overflow-hidden relative border-y border-border">
            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[400px] bg-primary/5 blur-[150px] rounded-full opacity-60" />
-           <div className="max-w-5xl mx-auto px-4 text-center space-y-12 relative z-10">
+           <div className="container-narrow text-center space-y-12 relative z-10">
               <h2 className="text-4xl md:text-7xl font-bold tracking-tight text-text leading-tight uppercase font-black uppercase">
                  Do not let clogged drains disrupt your tech life!
               </h2>

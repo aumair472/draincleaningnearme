@@ -35,8 +35,8 @@ export function PhiladelphiaClient() {
             <div className="absolute top-0 w-full h-[600px] bg-primary/5 blur-[120px] rounded-full opacity-60" />
           </div>
 
-          <div className="max-w-7xl mx-auto px-4 relative z-10 w-full">
-            <div className="flex flex-col items-center text-center max-w-5xl mx-auto">
+          <div className="container relative z-10 w-full">
+            <div className="flex flex-col items-center text-center container-narrow">
               <motion.div
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -53,7 +53,7 @@ export function PhiladelphiaClient() {
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight mb-8 text-text leading-[1.1]"
+                className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight mb-8 text-text leading-[1.1]"
               >
                 Fast, Professional Drain Cleaning Services in <span className="text-primary italic font-black">Philadelphia</span>
               </motion.h1>
@@ -104,7 +104,7 @@ export function PhiladelphiaClient() {
 
         {/* 2. LOCAL HOOK & AUTHORITY (PHILLY CONTEXT) */}
         <section className="py-24 bg-card border-b border-border">
-          <div className="max-w-7xl mx-auto px-4">
+          <div className="container">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="space-y-8">
                 <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text leading-tight">
@@ -146,7 +146,7 @@ export function PhiladelphiaClient() {
 
         {/* 3. OUR SERVICES (ROW-HOME FOCUS) */}
         <section className="py-24 bg-bg border-b border-border">
-          <div className="max-w-7xl mx-auto px-4">
+          <div className="container">
              <div className="text-center mb-20 space-y-4">
                 <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text">
                   Our Drain Cleaning Services in Philadelphia
@@ -194,7 +194,7 @@ export function PhiladelphiaClient() {
 
         {/* 4. COMMON PROBLEMS TABLE (SEO AUTHORITY) */}
         <section className="py-24 bg-card border-b border-border">
-          <div className="max-w-7xl mx-auto px-4">
+          <div className="container">
              <div className="text-center mb-20 space-y-4">
                 <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text">
                   Common Drain Problems in Philadelphia
@@ -241,7 +241,7 @@ export function PhiladelphiaClient() {
 
         {/* 5. WHY CHOOSE US (CONVERSION) */}
         <section className="py-24 bg-bg border-b border-border">
-          <div className="max-w-7xl mx-auto px-4">
+          <div className="container">
              <div className="grid lg:grid-cols-2 gap-16 items-center">
                 <div className="space-y-8">
                    <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text">
@@ -282,7 +282,7 @@ export function PhiladelphiaClient() {
 
         {/* 6. OUR STEP-BY-STEP PROCESS */}
         <section className="py-24 bg-card border-y border-border">
-           <div className="max-w-7xl mx-auto px-4">
+           <div className="container">
               <div className="text-center mb-20 space-y-4">
                  <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text">
                     Our Step-by-Step Process
@@ -314,7 +314,7 @@ export function PhiladelphiaClient() {
 
         {/* 7. EMERGENCY & SERVICE AREAS (PHILLY FOCUS) */}
         <section className="py-24 bg-bg border-b border-border">
-          <div className="max-w-7xl mx-auto px-4">
+          <div className="container">
              <div className="grid lg:grid-cols-2 gap-16">
                 <div className="space-y-12">
                    <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text leading-tight uppercase font-black">
@@ -360,7 +360,7 @@ export function PhiladelphiaClient() {
 
         {/* 8. PRICING TRANSPARENCY & FAQ SECTION */}
         <section className="py-24 bg-card border-b border-border">
-           <div className="max-w-4xl mx-auto px-4">
+           <div className="container-narrow">
               <div className="text-center mb-20 space-y-4">
                  <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text uppercase font-black">
                    Frequently Asked Questions
@@ -401,7 +401,7 @@ export function PhiladelphiaClient() {
         {/* 9. FINAL CTA (HIGH CONVERSION) */}
         <section className="py-24 bg-bg overflow-hidden relative border-y border-border">
            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[400px] bg-primary/5 blur-[150px] rounded-full opacity-60" />
-           <div className="max-w-5xl mx-auto px-4">
+           <div className="container-narrow">
               <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}

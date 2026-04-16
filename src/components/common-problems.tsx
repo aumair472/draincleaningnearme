@@ -15,7 +15,7 @@ const problems = [
 export function CommonProblems() {
   return (
     <section className="py-24 bg-bg border-y border-border overflow-hidden font-body">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="container">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -20 }}

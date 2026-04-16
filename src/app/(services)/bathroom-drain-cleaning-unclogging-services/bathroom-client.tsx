@@ -103,7 +103,7 @@ export function BathroomClient() {
           <div className="absolute top-0 w-full h-[500px] bg-primary/5 blur-[120px] rounded-full opacity-50" />
         </div>
         
-        <div className="max-w-7xl mx-auto px-4 relative z-10">
+        <div className="container relative z-10">
           <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
              <motion.div 
                initial={{ opacity: 0, y: -10 }}
@@ -187,7 +187,7 @@ export function BathroomClient() {
 
       {/* 🔹 INTRO / VALUE SECTION */}
       <section className="py-24 bg-bg">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="container">
           <div className="max-w-4xl mx-auto text-center space-y-8 text-xl md:text-2xl text-text/80 font-medium leading-relaxed">
             <p>
                From <span className="text-primary font-bold">unclog bathroom sink</span> issues to toilet blockage cleaner near me emergencies, our team delivers 24/7 emergency drain cleaning near me so you can get your bathroom back to normal.
@@ -201,7 +201,7 @@ export function BathroomClient() {
 
       {/* 🔹 COMMON PROBLEMS */}
       <section className="py-24 bg-card/30 border-y border-border">
-        <div className="max-w-7xl mx-auto px-4 text-center">
+        <div className="container text-center">
            <h2 className="text-3xl md:text-5xl font-black mb-8 tracking-tighter text-text">
              The Most Common Bathroom Drain Problems <br />
              <span className="text-text/60">(And Why They Happen)</span>
@@ -241,7 +241,7 @@ export function BathroomClient() {
 
       {/* 🔹 SERVICES SECTION */}
       <section className="py-24">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="container">
            <div className="text-center mb-20">
               <h2 className="text-3xl md:text-5xl font-black text-text mb-4 tracking-tighter">
                 Our Bathroom Drain Cleaning Services
@@ -300,7 +300,7 @@ export function BathroomClient() {
 
       {/* 🔹 WHY CHOOSE US */}
       <section className="py-24 bg-card/50 border-y border-border">
-        <div className="max-w-7xl mx-auto px-4 text-center">
+        <div className="container text-center">
            <h2 className="text-3xl md:text-5xl font-black text-text mb-16 tracking-tighter">
              Why Choose DrainCleaningNearMe for Bathroom Drains?
            </h2>
@@ -326,7 +326,7 @@ export function BathroomClient() {
 
       {/* 🔹 PROCESS (AIRTASKER FLOW) */}
       <section className="py-24 bg-bg">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="container">
            <div className="text-center mb-20">
               <h2 className="text-3xl md:text-5xl font-black text-text mb-4 tracking-tighter">
                 Our Simple Bathroom Drain Cleaning Process
@@ -367,7 +367,7 @@ export function BathroomClient() {
         <div className="absolute top-0 right-0 p-24 opacity-5 pointer-events-none">
            <Heart size={300} className="text-primary" />
         </div>
-        <div className="max-w-7xl mx-auto px-4 text-center">
+        <div className="container text-center">
            <h2 className="text-3xl md:text-5xl font-black text-text mb-16 tracking-tighter">
              Expert Service, <span className="text-primary italic underline decoration-primary/20 italic">Visualized</span>
            </h2>
@@ -386,7 +386,7 @@ export function BathroomClient() {
 
       {/* 🔹 FAQ SECTION */}
       <section className="py-24">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="container">
            <div className="text-center mb-20">
               <h2 className="text-3xl md:text-5xl font-black text-text mb-4 tracking-tighter uppercase leading-[0.8]">FAQs</h2>
               <p className="text-text/60 text-lg font-medium">Common Bathroom Drain Questions</p>
@@ -397,7 +397,7 @@ export function BathroomClient() {
 
       {/* 🔹 PREVENTION TIPS */}
       <section className="py-24 bg-primary/5 border-t border-border">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="container">
            <div className="text-center mb-20">
               <h2 className="text-3xl md:text-5xl font-black text-text mb-12 tracking-tighter">
                 Actionable Tips to Prevent Clogged Bathroom Drains
@@ -433,7 +433,7 @@ export function BathroomClient() {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="max-w-5xl mx-auto rounded-[3.5rem] bg-card border border-border p-12 md:p-24 text-center relative overflow-hidden shadow-2xl"
+          className="container-narrow rounded-[3.5rem] bg-card border border-border p-12 md:p-24 text-center relative overflow-hidden shadow-2xl"
         >
            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 blur-[120px] rounded-full -translate-y-1/2 translate-x-1/2 -z-10" />
            <div className="relative z-10">

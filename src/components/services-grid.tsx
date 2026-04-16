@@ -62,7 +62,7 @@ export function ServicesGrid() {
 
   return (
     <section id="services" className="py-24 bg-card relative font-body">
-      <div className="max-w-7xl mx-auto px-4 relative z-10 text-center">
+      <div className="container relative z-10 text-center">
         <div className="text-center mb-20 space-y-4">
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text leading-tight">
             Our Drain Cleaning Services

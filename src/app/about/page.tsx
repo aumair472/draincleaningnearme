@@ -50,7 +50,7 @@ export default function AboutPage() {
 
         {/* 2. ABOUT SECTION */}
         <section className="py-20 border-t border-border">
-          <div className="max-w-7xl mx-auto px-4">
+          <div className="container">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-[32px] md:text-[44px] font-bold tracking-tight text-text mb-8">
                 About Us (DrainCleaningNearMe)
@@ -76,7 +76,7 @@ export default function AboutPage() {
 
         {/* 3. MISSION (CARD UI) */}
         <section className="py-20 bg-card/30 border-y border-border">
-          <div className="max-w-7xl mx-auto px-4">
+          <div className="container">
             <div className="text-center mb-16">
               <h2 className="text-[32px] md:text-[44px] font-bold tracking-tight text-text">
                 Our Mission
@@ -124,7 +124,7 @@ export default function AboutPage() {
 
         {/* 4. WHO WE ARE */}
         <section className="py-20">
-          <div className="max-w-7xl mx-auto px-4">
+          <div className="container">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-[32px] md:text-[44px] font-bold tracking-tight text-text mb-10 text-center">
                 Who We Are
@@ -162,7 +162,7 @@ export default function AboutPage() {
 
         {/* 5. WHAT MAKES US DIFFERENT */}
         <section className="py-20 bg-card border-y border-border">
-          <div className="max-w-7xl mx-auto px-4">
+          <div className="container">
             <div className="text-center mb-16">
               <h2 className="text-[32px] md:text-[44px] font-bold tracking-tight text-text">
                 What Makes Us Different
@@ -191,7 +191,7 @@ export default function AboutPage() {
 
         {/* 6. SERVICES OVERVIEW */}
         <section className="py-20">
-          <div className="max-w-7xl mx-auto px-4">
+          <div className="container">
             <div className="text-center mb-16 max-w-3xl mx-auto">
               <h2 className="text-[32px] md:text-[44px] font-bold tracking-tight text-text mb-4">
                 Our Services Overview
@@ -225,7 +225,7 @@ export default function AboutPage() {
 
         {/* 7. PROCESS */}
         <section className="py-20 border-t border-border bg-card/10">
-          <div className="max-w-7xl mx-auto px-4">
+          <div className="container">
             <div className="text-center mb-16">
               <h2 className="text-[32px] md:text-[44px] font-bold tracking-tight text-text">
                 Our Process
@@ -255,7 +255,7 @@ export default function AboutPage() {
 
         {/* 8. TRUST SECTION */}
         <section className="py-20 bg-bg">
-          <div className="max-w-7xl mx-auto px-4">
+          <div className="container">
              <div className="grid lg:grid-cols-2 gap-12 items-center">
                <div className="relative">
                   <div className="absolute -inset-4 bg-primary/10 blur-3xl rounded-full opacity-50 -z-10" />
@@ -301,7 +301,7 @@ export default function AboutPage() {
 
         {/* 9. FINAL CTA */}
         <section className="py-20 px-4">
-          <div className="max-w-5xl mx-auto rounded-[2rem] bg-card border border-border p-12 md:p-20 text-center relative overflow-hidden shadow-2xl">
+          <div className="container-narrow rounded-[2rem] bg-card border border-border p-12 md:p-20 text-center relative overflow-hidden shadow-2xl">
             {/* Background elements */}
             <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 blur-[80px] rounded-full -translate-y-1/2 translate-x-1/2" />
             <div className="absolute bottom-0 left-0 w-64 h-64 bg-accent/5 blur-[80px] rounded-full translate-y-1/2 -translate-x-1/2" />

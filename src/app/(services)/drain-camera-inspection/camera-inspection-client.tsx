@@ -106,7 +106,7 @@ export function CameraInspectionClient() {
           <div className="absolute top-0 w-full h-[500px] bg-primary/5 blur-[120px] rounded-full opacity-50" />
         </div>
         
-        <div className="max-w-7xl mx-auto px-4 relative z-10">
+        <div className="container relative z-10">
           <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
              <motion.div 
                initial={{ opacity: 0, scale: 0.9 }}
@@ -193,7 +193,7 @@ export function CameraInspectionClient() {
 
       {/* 🔹 WHY CAMERA INSPECTION MATTERS */}
       <section className="py-24 bg-bg border-b border-border text-left">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="container">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
              <div className="space-y-8">
                 <h2 className="text-3xl md:text-5xl font-black tracking-tighter text-text">
@@ -247,7 +247,7 @@ export function CameraInspectionClient() {
 
       {/* 🔹 WHAT IT DETECTS (CARD GRID) */}
       <section className="py-24 bg-card/30 border-y border-border">
-        <div className="max-w-7xl mx-auto px-4 text-center">
+        <div className="container text-center">
            <h2 className="text-3xl md:text-5xl font-black mb-16 tracking-tighter text-text uppercase leading-none pr-12">
              What a Camera Inspection Can Detect
            </h2>
@@ -281,7 +281,7 @@ export function CameraInspectionClient() {
 
       {/* 🔹 BENEFITS (TRUST SECTION) */}
       <section className="py-24 bg-bg">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="container">
            <div className="text-center mb-20 text-center">
               <h2 className="text-3xl md:text-5xl font-black text-text mb-4 tracking-tighter uppercase leading-[0.8] pr-12">Benefits of Camera Inspection</h2>
            </div>
@@ -308,7 +308,7 @@ export function CameraInspectionClient() {
 
       {/* 🔹 WHEN YOU NEED INSPECTION */}
       <section className="py-24 bg-card/30 border-y border-border text-center">
-        <div className="max-w-5xl mx-auto px-4">
+        <div className="container-narrow px-4">
            <h2 className="text-3xl md:text-5xl font-black text-text mb-16 tracking-tighter uppercase leading-[0.8]">
              When You Need a Drain Inspection
            </h2>
@@ -337,7 +337,7 @@ export function CameraInspectionClient() {
 
       {/* 🔹 SERVICES SECTION (CATEGORIZED) */}
       <section className="py-24 bg-bg">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="container">
            <div className="text-center mb-20 text-center">
               <h2 className="text-3xl md:text-6xl font-black text-text mb-4 tracking-tighter uppercase leading-[0.8] pr-12">Our Inspection Services</h2>
            </div>
@@ -367,7 +367,7 @@ export function CameraInspectionClient() {
 
       {/* 🔹 WHY CHOOSE US (5 PILLARS) */}
       <section className="py-24 bg-card/30 border-y border-border">
-        <div className="max-w-7xl mx-auto px-4 text-center">
+        <div className="container text-center">
            <h2 className="text-3xl md:text-5xl font-black text-text mb-16 tracking-tighter">
              Why Choose DrainCleaningNearMe?
            </h2>
@@ -393,7 +393,7 @@ export function CameraInspectionClient() {
 
       {/* 🔹 PROCESS (AIRTASKER FLOW) */}
       <section className="py-24 bg-bg border-b border-border">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="container">
            <div className="text-center mb-20 text-center">
               <h2 className="text-3xl md:text-5xl font-black text-text mb-4 tracking-tighter uppercase leading-[0.8] pr-12">How the Process Works</h2>
            </div>
@@ -428,7 +428,7 @@ export function CameraInspectionClient() {
 
       {/* 🔹 PRACTICAL TIPS GRID */}
       <section className="py-24 bg-card/30 border-y border-border">
-        <div className="max-w-7xl mx-auto px-4 text-center">
+        <div className="container text-center">
            <h2 className="text-3xl md:text-5xl font-black text-text mb-16 tracking-tighter uppercase leading-[0.8]">
              Practical Tips for Homeowners
            </h2>
@@ -458,7 +458,7 @@ export function CameraInspectionClient() {
 
       {/* 🔹 VISUAL / UX SECTION (PLACEHOLDERS) */}
       <section className="py-24 bg-bg overflow-hidden text-center text-center">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="container">
            <h2 className="text-3xl md:text-5xl font-black text-text mb-16 tracking-tighter uppercase leading-[0.8] pr-12">
              Technical Sight, <span className="text-primary italic underline decoration-primary/20 italic">Visualized</span>
            </h2>
@@ -476,7 +476,7 @@ export function CameraInspectionClient() {
 
       {/* 🔹 FAQ SECTION */}
       <section className="py-24 bg-card/30 border-y border-border">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="container">
            <div className="text-center mb-20">
               <h2 className="text-3xl md:text-5xl font-black text-text mb-4 tracking-tighter uppercase leading-[0.8]">FAQ</h2>
               <p className="text-text/60 text-lg font-medium">Clear answers about professional drain camera inspection services.</p>
@@ -491,7 +491,7 @@ export function CameraInspectionClient() {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="max-w-5xl mx-auto rounded-[3.5rem] bg-card border border-border p-12 md:p-24 text-center relative overflow-hidden shadow-2xl"
+          className="container-narrow rounded-[3.5rem] bg-card border border-border p-12 md:p-24 text-center relative overflow-hidden shadow-2xl"
         >
            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/10 blur-[120px] rounded-full -translate-y-1/2 translate-x-1/2 -z-10" />
            <div className="relative z-10 text-center">

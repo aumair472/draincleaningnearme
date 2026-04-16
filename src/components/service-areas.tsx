@@ -21,7 +21,7 @@ export function ServiceAreas() {
 
   return (
     <section className="py-24 bg-bg border-b border-border text-left font-body">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="container">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8 text-center lg:text-left">
             <motion.div

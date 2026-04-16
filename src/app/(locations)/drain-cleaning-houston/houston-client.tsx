@@ -32,8 +32,8 @@ export function HoustonClient() {
             <div className="absolute top-0 w-full h-[600px] bg-primary/5 blur-[120px] rounded-full opacity-60" />
           </div>
 
-          <div className="max-w-7xl mx-auto px-4 relative z-10 w-full">
-            <div className="flex flex-col items-center text-center max-w-5xl mx-auto">
+          <div className="container relative z-10 w-full">
+            <div className="flex flex-col items-center text-center container-narrow">
               <motion.div
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -50,7 +50,7 @@ export function HoustonClient() {
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight mb-8 text-text leading-[1.1]"
+                className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight mb-8 text-text leading-[1.1]"
               >
                 Professional Drain Cleaning & <span className="text-primary italic font-black">Rooter Services</span> in Houston – 24/7
               </motion.h1>
@@ -102,7 +102,7 @@ export function HoustonClient() {
 
         {/* 2. WHY HOUSTON NEEDS EXPERTS (LOCAL AUTHORITY) */}
         <section className="py-24 bg-card border-b border-border">
-          <div className="max-w-7xl mx-auto px-4">
+          <div className="container">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="space-y-8">
                 <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text leading-tight">
@@ -150,7 +150,7 @@ export function HoustonClient() {
 
         {/* 3. SIGNS YOU NEED SERVICE (HIGH INTENT) */}
         <section className="py-24 bg-bg border-b border-border text-center">
-           <div className="max-w-4xl mx-auto px-4 space-y-16">
+           <div className="container-narrow space-y-16">
               <div className="space-y-4">
                  <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text">
                     Signs you need drain cleaning in Houston
@@ -183,7 +183,7 @@ export function HoustonClient() {
 
         {/* 4. SERVICES GRID (HIGH VALUE + SEO) */}
         <section className="py-24 bg-card border-b border-border">
-          <div className="max-w-7xl mx-auto px-4">
+          <div className="container">
              <div className="text-center mb-20 space-y-4">
                 <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text">
                   Our drain cleaning services in Houston
@@ -226,7 +226,7 @@ export function HoustonClient() {
 
         {/* 5. COMMON CAUSES (SEO BOOST) */}
         <section className="py-24 bg-bg border-b border-border">
-          <div className="max-w-7xl mx-auto px-4">
+          <div className="container">
              <div className="grid lg:grid-cols-2 gap-16 items-center">
                 <div className="space-y-8">
                    <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text leading-tight text-center lg:text-left">
@@ -268,7 +268,7 @@ export function HoustonClient() {
 
         {/* 6. WHY CHOOSE US (CONVERSION) */}
         <section className="py-24 bg-card border-b border-border">
-          <div className="max-w-7xl mx-auto px-4">
+          <div className="container">
              <div className="text-center mb-20 space-y-4">
                 <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text">
                   Why choose DrainCleaningNearMe in Houston
@@ -295,7 +295,7 @@ export function HoustonClient() {
 
         {/* 7. PROCESS (AIRTASKER FLOW) */}
         <section className="py-24 bg-bg border-y border-border">
-           <div className="max-w-7xl mx-auto px-4">
+           <div className="container">
               <div className="text-center mb-20 space-y-4">
                  <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text">
                     Our 5-step drain cleaning process
@@ -327,7 +327,7 @@ export function HoustonClient() {
 
         {/* 8. SERVICE AREAS (SUBURB GRID) */}
         <section className="py-24 bg-card border-b border-border">
-          <div className="max-w-7xl mx-auto px-4 text-center">
+          <div className="container text-center">
              <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text mb-12">
                Drain cleaning services across Houston
              </h2>
@@ -345,7 +345,7 @@ export function HoustonClient() {
 
         {/* 9. RESIDENTIAL & COMMERCIAL */}
         <section className="py-24 bg-bg border-b border-border">
-           <div className="max-w-7xl mx-auto px-4">
+           <div className="container">
               <div className="grid md:grid-cols-3 gap-8">
                  {[
                    { t: "Homes & Apartments", d: "Bathroom & kitchen relief.", icon: Building2 },
@@ -366,7 +366,7 @@ export function HoustonClient() {
 
         {/* 10. PREVENTION TIPS */}
         <section className="py-24 bg-card border-b border-border">
-           <div className="max-w-4xl mx-auto px-4 text-center space-y-16">
+           <div className="container-narrow text-center space-y-16">
               <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text leading-tight uppercase">
                 Houston drain prevention tips
               </h2>
@@ -391,7 +391,7 @@ export function HoustonClient() {
 
         {/* 11. FAQ SECTION */}
         <section className="py-24 bg-bg border-b border-border">
-           <div className="max-w-4xl mx-auto px-4">
+           <div className="container-narrow">
               <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-center text-text mb-20 uppercase">
                 Frequently asked questions
               </h2>
@@ -427,7 +427,7 @@ export function HoustonClient() {
         {/* 12. URGENCY SECTION */}
         <section className="py-24 bg-card overflow-hidden relative border-y border-border">
            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[400px] bg-red-600/5 blur-[120px] rounded-full opacity-60" />
-           <div className="max-w-5xl mx-auto px-4 text-center space-y-12 relative z-10">
+           <div className="container-narrow text-center space-y-12 relative z-10">
               <h2 className="text-4xl md:text-7xl font-bold tracking-tight text-text leading-tight">
                  Do not wait – drain problems get worse fast
               </h2>
@@ -450,7 +450,7 @@ export function HoustonClient() {
 
         {/* 13. FINAL CTA */}
         <section className="py-24 bg-bg">
-           <div className="max-w-5xl mx-auto px-4">
+           <div className="container-narrow">
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}

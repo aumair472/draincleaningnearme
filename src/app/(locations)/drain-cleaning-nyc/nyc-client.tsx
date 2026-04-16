@@ -31,8 +31,8 @@ export function NYCClient() {
             <div className="absolute top-0 w-full h-[600px] bg-primary/5 blur-[120px] rounded-full opacity-60" />
           </div>
 
-          <div className="max-w-7xl mx-auto px-4 relative z-10 w-full">
-            <div className="flex flex-col items-center text-center max-w-5xl mx-auto">
+          <div className="container relative z-10 w-full">
+            <div className="flex flex-col items-center text-center container-narrow">
               <motion.div
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -49,7 +49,7 @@ export function NYCClient() {
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight mb-8 text-text leading-[1.1]"
+                className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight mb-8 text-text leading-[1.1]"
               >
                 Professional Drain Cleaning & <span className="text-primary italic font-black">Rooter Services</span> in New York City
               </motion.h1>
@@ -101,7 +101,7 @@ export function NYCClient() {
 
         {/* 2. WHY NYC NEEDS EXPERTS (LOCAL AUTHORITY) */}
         <section className="py-24 bg-card border-b border-border">
-          <div className="max-w-7xl mx-auto px-4">
+          <div className="container">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="space-y-8">
                 <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text leading-tight">
@@ -142,7 +142,7 @@ export function NYCClient() {
 
         {/* 3. SERVICES GRID (LOCAL SEO) */}
         <section className="py-24 bg-bg border-b border-border">
-          <div className="max-w-7xl mx-auto px-4">
+          <div className="container">
              <div className="text-center mb-20 space-y-4">
                 <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text">
                   Our drain cleaning services in New York
@@ -184,7 +184,7 @@ export function NYCClient() {
 
         {/* 4. COMMON NYC PROBLEMS (SEO BOOST) */}
         <section className="py-24 bg-card border-b border-border">
-          <div className="max-w-7xl mx-auto px-4">
+          <div className="container">
              <div className="grid lg:grid-cols-2 gap-16 items-center">
                 <div className="relative order-2 lg:order-1">
                    <div className="grid grid-cols-2 gap-4">
@@ -225,7 +225,7 @@ export function NYCClient() {
 
         {/* 5. WARNING SIGNS (HIGH INTENT) */}
         <section className="py-24 bg-bg border-b border-border text-center">
-           <div className="max-w-4xl mx-auto px-4 space-y-16">
+           <div className="container-narrow space-y-16">
               <div className="space-y-4">
                  <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text">
                     Signs you need drain cleaning in New York
@@ -258,7 +258,7 @@ export function NYCClient() {
 
         {/* 6. RESIDENTIAL & COMMERCIAL */}
         <section className="py-24 bg-card border-b border-border">
-          <div className="max-w-7xl mx-auto px-4">
+          <div className="container">
              <div className="grid md:grid-cols-2 gap-8">
                 <div className="p-12 rounded-[3.5rem] bg-bg border border-border shadow-sm flex flex-col items-center text-center space-y-8">
                    <div className="w-20 h-20 rounded-3xl bg-primary/5 text-primary flex items-center justify-center shadow-inner">
@@ -292,7 +292,7 @@ export function NYCClient() {
 
         {/* 7. WHY CHOOSE US (CONVERSION) */}
         <section className="py-24 bg-bg border-b border-border">
-          <div className="max-w-7xl mx-auto px-4">
+          <div className="container">
              <div className="text-center mb-20">
                 <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text leading-tight mb-4">
                   Why choose DrainCleaningNearMe in New York?
@@ -319,7 +319,7 @@ export function NYCClient() {
 
         {/* 8. PROCESS (AIRTASKER FLOW) */}
         <section className="py-24 bg-card border-y border-border">
-           <div className="max-w-7xl mx-auto px-4">
+           <div className="container">
               <div className="text-center mb-20 space-y-4">
                  <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text">
                     Our 5-step NYC drain cleaning process
@@ -352,7 +352,7 @@ export function NYCClient() {
         {/* 9. EMERGENCY SECTION (URGENT) */}
         <section className="py-24 bg-bg overflow-hidden relative">
            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[400px] bg-red-600/5 blur-[120px] rounded-full opacity-60" />
-           <div className="max-w-5xl mx-auto px-4 text-center space-y-12 relative z-10">
+           <div className="container-narrow text-center space-y-12 relative z-10">
               <h2 className="text-4xl md:text-7xl font-bold tracking-tight text-text">
                  Emergency drain cleaning NYC – 24/7
               </h2>
@@ -381,11 +381,11 @@ export function NYCClient() {
 
         {/* 10. SERVICE AREAS (BOROUGH GRID) */}
         <section className="py-24 bg-card border-y border-border">
-          <div className="max-w-7xl mx-auto px-4 text-center">
+          <div className="container text-center">
              <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text mb-12">
                Drain cleaning services across NYC
              </h2>
-             <div className="grid grid-cols-2 lg:grid-cols-5 gap-4 max-w-5xl mx-auto">
+             <div className="grid grid-cols-2 lg:grid-cols-5 gap-4 container-narrow">
                {boroughs.map(b => (
                  <div key={b} className="p-8 rounded-[2rem] bg-bg border border-border shadow-sm flex flex-col items-center gap-4 group hover:border-primary/30 transition-all">
                     <MapPin size={24} className="text-primary" />
@@ -399,7 +399,7 @@ export function NYCClient() {
 
         {/* 11. FAQ SECTION */}
         <section className="py-24 bg-bg border-b border-border">
-           <div className="max-w-4xl mx-auto px-4">
+           <div className="container-narrow">
               <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-center text-text mb-20 uppercase">
                 Frequently asked questions
               </h2>
@@ -434,7 +434,7 @@ export function NYCClient() {
 
         {/* 12. FINAL CTA */}
         <section className="py-24 bg-card">
-           <div className="max-w-5xl mx-auto px-4">
+           <div className="container-narrow">
               <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}

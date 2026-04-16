@@ -104,7 +104,7 @@ export function EmergencyClient() {
           <div className="absolute top-0 w-full h-[500px] bg-red-500/5 blur-[120px] rounded-full opacity-50" />
         </div>
         
-        <div className="max-w-7xl mx-auto px-4 relative z-10">
+        <div className="container relative z-10">
           <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
              <motion.div 
                initial={{ opacity: 0, scale: 0.9 }}
@@ -191,8 +191,8 @@ export function EmergencyClient() {
 
       {/* 🔹 WHEN YOU NEED EMERGENCY SERVICE */}
       <section className="py-24 bg-bg">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
+        <div className="container">
+          <div className="container-narrow">
              <div className="text-center mb-16">
                <h2 className="text-3xl md:text-5xl font-black text-text mb-6 tracking-tighter">
                  When Do You Need Emergency Drain Cleaning?
@@ -233,7 +233,7 @@ export function EmergencyClient() {
 
       {/* 🔹 COMMON TYPES OF EMERGENCIES (CARD GRID) */}
       <section className="py-24 bg-card/30 border-y border-border">
-        <div className="max-w-7xl mx-auto px-4 text-center">
+        <div className="container text-center">
            <h2 className="text-3xl md:text-5xl font-black mb-16 tracking-tighter text-text">
              Common Types of Drain Emergencies
            </h2>
@@ -265,7 +265,7 @@ export function EmergencyClient() {
 
       {/* 🔹 CAUSES OF EMERGENCIES */}
       <section className="py-24 bg-bg">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="container">
            <div className="text-center mb-16">
               <h2 className="text-3xl md:text-5xl font-black text-text tracking-tighter">
                 What Causes Drain & Sewer Emergencies?
@@ -293,7 +293,7 @@ export function EmergencyClient() {
 
       {/* 🔹 WHY IMMEDIATE ACTION IS CRITICAL */}
       <section className="py-24">
-         <div className="max-w-5xl mx-auto px-4">
+         <div className="container-narrow px-4">
             <div className="bg-card border border-border rounded-[3rem] p-12 md:p-20 relative overflow-hidden shadow-2xl">
                <div className="absolute top-0 right-0 w-80 h-80 bg-red-600/5 blur-[100px] rounded-full translate-x-1/2 -translate-y-1/2" />
                <h2 className="text-3xl md:text-5xl font-black text-text mb-12 tracking-tighter text-center">
@@ -329,7 +329,7 @@ export function EmergencyClient() {
 
       {/* 🔹 OUR EMERGENCY SERVICES */}
       <section className="py-24 bg-card/30 border-y border-border">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="container">
            <div className="text-center mb-20">
               <h2 className="text-3xl md:text-5xl font-black text-text mb-4 tracking-tighter uppercase leading-[0.8] pr-12">Our Emergency Services</h2>
            </div>
@@ -377,7 +377,7 @@ export function EmergencyClient() {
 
       {/* 🔹 WHY CHOOSE US */}
       <section className="py-24">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="container">
            <div className="text-center mb-20">
               <h2 className="text-3xl md:text-5xl font-black text-text tracking-tighter">
                 Why Choose DrainCleaningNearMe for Emergencies?
@@ -404,7 +404,7 @@ export function EmergencyClient() {
 
       {/* 🔹 PROCESS (AIRTASKER FLOW) */}
       <section className="py-24 bg-card/30 border-y border-border">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="container">
            <div className="text-center mb-20">
               <h2 className="text-3xl md:text-5xl font-black text-text mb-4 tracking-tighter uppercase leading-[0.8] pr-12">Our Rapid Response Process</h2>
            </div>
@@ -440,7 +440,7 @@ export function EmergencyClient() {
 
       {/* 🔹 VISUAL / UX SECTION */}
       <section className="py-24 bg-bg overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 text-center">
+        <div className="container text-center">
            <h2 className="text-3xl md:text-5xl font-black text-text mb-16 tracking-tighter">
              Expert Emergency Care, <span className="text-primary italic underline decoration-primary/20 italic">Visualized</span>
            </h2>
@@ -458,7 +458,7 @@ export function EmergencyClient() {
 
       {/* 🔹 PREVENTION TIPS */}
       <section className="py-24 bg-card/50 border-y border-border">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="container">
            <div className="text-center mb-20">
               <h2 className="text-3xl md:text-5xl font-black text-text mb-12 tracking-tighter">
                 Tips to Prevent Future Emergencies
@@ -490,7 +490,7 @@ export function EmergencyClient() {
 
       {/* 🔹 FAQ SECTION */}
       <section className="py-24">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="container">
            <div className="text-center mb-20">
               <h2 className="text-3xl md:text-5xl font-black text-text mb-4 tracking-tighter uppercase leading-[0.8]">Emergency FAQs</h2>
               <p className="text-text/60 text-lg font-medium">Common Emergency Drain Questions Answered</p>
@@ -505,7 +505,7 @@ export function EmergencyClient() {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="max-w-5xl mx-auto rounded-[3.5rem] bg-card border border-border p-12 md:p-24 text-center relative overflow-hidden shadow-2xl"
+          className="container-narrow rounded-[3.5rem] bg-card border border-border p-12 md:p-24 text-center relative overflow-hidden shadow-2xl"
         >
            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-red-600/5 blur-[120px] rounded-full -translate-y-1/2 translate-x-1/2 -z-10" />
            <div className="relative z-10">

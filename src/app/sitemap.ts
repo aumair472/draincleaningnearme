@@ -71,6 +71,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/drain-cleaning-fort-worth",
     "/drain-cleaning-columbus",
     "/drain-cleaning-charlotte",
+    "/drain-cleaning-detroit",
+    "/drain-cleaning-el-paso",
+    "/drain-cleaning-seattle",
+    "/drain-cleaning-denver",
+    "/drain-cleaning-memphis",
+    "/drain-cleaning-nashville",
+    "/drain-cleaning-baltimore",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: now,

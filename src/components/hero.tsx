@@ -17,7 +17,7 @@ export function Hero() {
         <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-secondary/5 blur-[100px] rounded-full opacity-40 translate-x-1/4 translate-y-1/4" />
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 relative z-10 w-full">
+      <div className="container relative z-10">
         <div className="flex flex-col items-center text-center max-w-5xl mx-auto">
           
           {/* 🔹 TRUST BADGE */}
@@ -43,7 +43,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-5xl md:text-7xl font-extrabold tracking-tight mb-8 text-text leading-[1.1]"
+            className="text-3xl sm:text-5xl md:text-7xl font-extrabold tracking-tight mb-8 text-text leading-[1.1]"
           >
             Emergency Drain Cleaning Near You <br className="hidden md:block" />
             <span className="text-primary">24/7 Fast Local Service</span>

@@ -20,7 +20,7 @@ export default function BlogsListingPage() {
     <div className="flex flex-col min-h-screen bg-bg font-body font-black">
       <Navbar />
       <main className="flex-1 pt-32 pb-24">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="container">
           <div className="text-center mb-16 space-y-4">
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-text uppercase font-black">
               Plumbing Insights &amp; Guides

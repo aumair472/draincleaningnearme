@@ -32,6 +32,13 @@ const locationLinks = [
   { name: "Drain Cleaning in Fort Worth", href: "/drain-cleaning-fort-worth" },
   { name: "Drain Cleaning in Columbus", href: "/drain-cleaning-columbus" },
   { name: "Drain Cleaning in Charlotte", href: "/drain-cleaning-charlotte" },
+  { name: "Drain Cleaning in Detroit", href: "/drain-cleaning-detroit" },
+  { name: "Drain Cleaning in El Paso", href: "/drain-cleaning-el-paso" },
+  { name: "Drain Cleaning in Seattle", href: "/drain-cleaning-seattle" },
+  { name: "Drain Cleaning in Denver", href: "/drain-cleaning-denver" },
+  { name: "Drain Cleaning in Memphis", href: "/drain-cleaning-memphis" },
+  { name: "Drain Cleaning in Nashville", href: "/drain-cleaning-nashville" },
+  { name: "Drain Cleaning in Baltimore", href: "/drain-cleaning-baltimore" },
 ];
 
 const companyLinks = [
@@ -65,7 +72,7 @@ function FooterLinkList({ links }: { links: { name: string; href: string }[] }) 
 export function Footer() {
   return (
     <footer className="bg-slate-900 relative pt-20 pb-12 overflow-hidden text-slate-300">
-      <div className="container px-4 sm:px-10 relative z-10">
+      <div className="container relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-12 mb-16">
 
           {/* Brand Column — spans 2 cols on xl */}

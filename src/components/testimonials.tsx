@@ -35,7 +35,7 @@ export function Testimonials() {
         <Quote size={300} className="text-primary" />
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 relative z-10">
+      <div className="container relative z-10">
         <div className="text-center mb-20 space-y-4">
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text leading-tight">
             Real customer experiences

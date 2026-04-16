@@ -33,8 +33,8 @@ export function LAClient() {
             <div className="absolute top-0 w-full h-[600px] bg-primary/5 blur-[120px] rounded-full opacity-60" />
           </div>
 
-          <div className="max-w-7xl mx-auto px-4 relative z-10 w-full">
-            <div className="flex flex-col items-center text-center max-w-5xl mx-auto">
+          <div className="container relative z-10 w-full">
+            <div className="flex flex-col items-center text-center container-narrow">
               <motion.div
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -51,7 +51,7 @@ export function LAClient() {
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight mb-8 text-text leading-[1.1]"
+                className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight mb-8 text-text leading-[1.1]"
               >
                 Professional Drain Cleaning & Repair in <span className="text-primary">Los Angeles</span> – Available 24/7
               </motion.h1>
@@ -103,7 +103,7 @@ export function LAClient() {
 
         {/* 2. WHY LA NEEDS EXPERTS (LOCAL CONTEXT) */}
         <section className="py-24 bg-card border-b border-border">
-          <div className="max-w-7xl mx-auto px-4">
+          <div className="container">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="space-y-8">
                 <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text leading-tight">
@@ -150,7 +150,7 @@ export function LAClient() {
 
         {/* 3. SERVICES GRID (HIGH VALUE) */}
         <section className="py-24 bg-bg border-b border-border">
-          <div className="max-w-7xl mx-auto px-4">
+          <div className="container">
              <div className="text-center mb-20 space-y-4">
                 <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text">
                   Our drain cleaning services in Los Angeles
@@ -192,7 +192,7 @@ export function LAClient() {
 
         {/* 4. COMMON PROBLEMS (LOCAL SEO BOOST) */}
         <section className="py-24 bg-card border-b border-border">
-          <div className="max-w-7xl mx-auto px-4">
+          <div className="container">
              <div className="grid lg:grid-cols-2 gap-16 items-center">
                 <div className="relative order-2 lg:order-1">
                    <div className="p-10 bg-bg border border-border rounded-[3rem] shadow-2xl space-y-8 relative overflow-hidden">
@@ -243,7 +243,7 @@ export function LAClient() {
 
         {/* 5. WARNING SIGNS (HIGH INTENT) */}
         <section className="py-24 bg-bg border-b border-border text-center">
-           <div className="max-w-4xl mx-auto px-4 space-y-16">
+           <div className="container-narrow space-y-16">
               <div className="space-y-4">
                  <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text">
                     Signs you need drain cleaning in Los Angeles
@@ -273,7 +273,7 @@ export function LAClient() {
 
         {/* 6. WHY CHOOSE US (CONVERSION) */}
         <section className="py-24 bg-card border-b border-border">
-          <div className="max-w-7xl mx-auto px-4">
+          <div className="container">
              <div className="text-center mb-20 space-y-4">
                 <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text">
                   Why choose DrainCleaningNearMe Los Angeles?
@@ -301,7 +301,7 @@ export function LAClient() {
 
         {/* 7. PROCESS (AIRTASKER FLOW) */}
         <section className="py-24 bg-bg border-y border-border">
-           <div className="max-w-7xl mx-auto px-4">
+           <div className="container">
               <div className="text-center mb-20 space-y-4">
                  <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text">
                     Our 5-step drain cleaning process
@@ -333,7 +333,7 @@ export function LAClient() {
 
         {/* 8. SERVICE AREAS (NEIGHBORHOOD GRID) */}
         <section className="py-24 bg-card border-b border-border">
-          <div className="max-w-7xl mx-auto px-4 text-center">
+          <div className="container text-center">
              <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text mb-4">
                Drain cleaning services across Los Angeles
              </h2>
@@ -353,7 +353,7 @@ export function LAClient() {
 
         {/* 9. FAQ SECTION */}
         <section className="py-24 bg-bg border-b border-border">
-           <div className="max-w-4xl mx-auto px-4">
+           <div className="container-narrow">
               <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-center text-text mb-20 uppercase">
                 Frequently asked questions
               </h2>
@@ -389,7 +389,7 @@ export function LAClient() {
         {/* 10. URGENCY SECTION */}
         <section className="py-24 bg-card overflow-hidden relative border-y border-border">
            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[400px] bg-red-600/5 blur-[120px] rounded-full opacity-60" />
-           <div className="max-w-5xl mx-auto px-4 text-center space-y-12 relative z-10">
+           <div className="container-narrow text-center space-y-12 relative z-10">
               <h2 className="text-4xl md:text-7xl font-bold tracking-tight text-text leading-tight">
                  Do not wait – drain problems get worse fast
               </h2>
@@ -411,7 +411,7 @@ export function LAClient() {
 
         {/* 11. FINAL CTA */}
         <section className="py-24 bg-bg">
-           <div className="max-w-5xl mx-auto px-4">
+           <div className="container-narrow">
               <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
