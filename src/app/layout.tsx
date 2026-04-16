@@ -79,10 +79,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className="scroll-smooth" data-scroll-behavior="smooth">
       <head>
-        <Script
+        <script
           src="https://analytics.ahrefs.com/analytics.js"
           data-key="AcSfxemdyD0ITz347dazdw"
-          strategy="afterInteractive"
+          async
         />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-1BB42WJ866"
