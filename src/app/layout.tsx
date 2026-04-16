@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import { Manrope, Poppins } from "next/font/google";
 import "./globals.css";
 import { JsonLd } from "@/components/json-ld";
@@ -77,6 +78,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning className="scroll-smooth" data-scroll-behavior="smooth">
+      <head>
+        <Script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="AcSfxemdyD0ITz347dazdw"
+          strategy="afterInteractive"
+        />
+      </head>
       <body
         suppressHydrationWarning
         className={cn(
