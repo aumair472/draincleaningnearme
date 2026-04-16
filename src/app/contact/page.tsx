@@ -8,6 +8,13 @@ import { cn } from "@/lib/utils";
 export const metadata: Metadata = {
   title: "Contact Drain Cleaning Near Me | 24/7 Emergency Drain Cleaning USA",
   description: "Talk DrainCleaningNearMe and get 24/7 drain cleaning throughout USA. We connect you to local professional for emergency drain cleaning. Contact us for same-day service. Call now!",
+  alternates: {
+    canonical: "https://www.draincleaningnearme.us/contact",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function ContactPage() {

@@ -22,8 +22,8 @@ export function AboutHero() {
             transition={{ duration: 0.5 }}
             className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight mb-6 text-text leading-[1.1]"
           >
-            Drain Cleaning <br className="hidden md:block" />
-            <span className="text-primary">Near Me</span>
+            About <br className="hidden md:block" />
+            <span className="text-primary">DrainCleaningNearMe</span>
           </motion.h1>
 
           {/* Subheading */}

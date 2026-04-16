@@ -37,9 +37,6 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Drain Cleaning Near Me" }],
   metadataBase: new URL("https://www.draincleaningnearme.us"),
-  alternates: {
-    canonical: "/",
-  },
   openGraph: {
     title: "Drain Cleaning Services Near Me | 24/7 Emergency Plumbers",
     description: "Professional Drain Cleaning & Emergency Service Nationwide. Available 24/7.",

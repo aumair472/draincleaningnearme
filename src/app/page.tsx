@@ -24,6 +24,9 @@ export const metadata: Metadata = {
     "sewer cleaning",
     "24/7 drain service"
   ],
+  alternates: {
+    canonical: "https://www.draincleaningnearme.us",
+  },
 };
 
 export default function Home() {
