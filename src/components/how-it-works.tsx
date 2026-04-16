@@ -1,62 +1,74 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Phone, Droplets, CheckCircle2 } from "lucide-react";
+import { Phone, MessageSquare, UserCheck, CheckCircle2 } from "lucide-react";
 
 const steps = [
   {
-    title: "Describe the Issue",
-    id: "1",
-    description: "Tell us what you need. From kitchen sinks to main line sewer blockages, our dispatchers instantly analyze the best fit.",
+    number: "1",
+    title: "Call us anytime (24/7)",
+    description: "Speak with our professional coordination team instantly for immediate support across the USA.",
     icon: Phone,
   },
   {
-    title: "Get Matched Instantly",
-    id: "2",
-    description: "We connect you within seconds to a highly-rated, verified local professional who is fully equipped to handle your specific clog.",
-    icon: Droplets,
+    number: "2",
+    title: "Describe your problem",
+    description: "Tell us exactly what’s happening – from minor kitchen clogs to major sewer line backups.",
+    icon: MessageSquare,
   },
   {
-    title: "Problem Solved Fast",
-    id: "3",
-    description: "Your local expert arrives rapidly, clears the drain safely with upfront pricing, and leaves the work area spotless.",
+    number: "3",
+    title: "Get matched instantly",
+    description: "We instantly connect you with a verified local drain expert who is closest to your location.",
+    icon: UserCheck,
+  },
+  {
+    number: "4",
+    title: "Problem solved fast",
+    description: "Technician arrives with HD cameras and professional gear to fix the issue on the spot.",
     icon: CheckCircle2,
   },
 ];
 
 export function HowItWorks() {
   return (
-    <section className="py-20 bg-card border-b border-border">
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-text mb-4">
-            How It Works
+    <section className="py-24 bg-card border-y border-border relative overflow-hidden font-body">
+      <div className="max-w-7xl mx-auto px-4 relative z-10">
+        <div className="text-center mb-20 space-y-4">
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text leading-tight">
+            How it works – simple & fast
           </h2>
-          <p className="text-base font-medium text-text/80 max-w-2xl mx-auto">
-            Getting your drain fixed is easier than you think. Available across the USA 24/7.
+          <p className="text-text/70 font-medium max-w-2xl mx-auto text-lg leading-relaxed">
+            Connecting you with top-tier local expertise shouldn't be complicated. We've streamlined the process for maximum speed.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {steps.map((step, index) => (
-            <motion.div
-              key={step.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1, duration: 0.4 }}
-              className="p-8 rounded-xl bg-card border border-border shadow-sm hover:shadow-lg hover:scale-[1.02] transition-all duration-300 relative text-center group flex flex-col items-center"
-            >
-              <div className="w-16 h-16 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
-                <step.icon size={28} />
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-text">
-                {step.id}. {step.title}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 relative items-start">
+          {/* Connecting line for desktop */}
+          <div className="hidden lg:block absolute top-12 left-[10%] right-[10%] h-0.5 bg-border -z-10" />
+
+          {steps.map((step, i) => (
+            <div key={i} className="flex flex-col items-center text-center group">
+              <motion.div
+                initial={{ scale: 0.8, opacity: 0 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="w-24 h-24 rounded-3xl bg-card border-2 border-border text-primary flex items-center justify-center shadow-xl mb-8 relative group-hover:bg-primary group-hover:text-white group-hover:border-primary transition-all duration-300"
+              >
+                <div className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-primary text-white text-xs font-bold flex items-center justify-center border-4 border-card group-hover:bg-white group-hover:text-primary transition-colors">
+                  {step.number}
+                </div>
+                <step.icon size={36} strokeWidth={1.5} />
+              </motion.div>
+              
+              <h3 className="text-xl font-bold text-text mb-4 leading-tight tracking-tight px-2 group-hover:text-primary transition-colors">
+                {step.title}
               </h3>
-              <p className="text-base text-text/80 leading-relaxed font-medium">
+              <p className="text-sm text-text/60 font-medium leading-relaxed">
                 {step.description}
               </p>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

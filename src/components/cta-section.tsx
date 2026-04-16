@@ -1,64 +1,81 @@
 "use client";
 
-import { Phone, Clock, ShieldCheck } from "lucide-react";
-import Link from "next/link";
-import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
+import { Phone, CheckCircle2, MapPin, Zap } from "lucide-react";
 
-interface CTASectionProps {
-  title?: string;
-  subtitle?: string;
-  variant?: "primary" | "accent" | "alert";
-  showStats?: boolean;
-}
-
-export function CTASection({ 
-  title = "Ready for Immediate Drain Cleaning?", 
-  subtitle = "Our local experts are ready to fix your clog in 30-60 minutes.",
-  variant = "accent"
-}: CTASectionProps) {
-  const phoneNumber = "(724) 750-6935";
-  const telLink = "tel:+17247506935";
+export function CTASection() {
+  const mainTelLink = "tel:+17247506935";
 
   return (
-    <section className="py-20 bg-accent/10 border-y border-accent/20 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-12 text-center lg:text-left bg-card p-10 md:p-14 rounded-2xl shadow-sm border border-accent/20">
-          <div className="flex-1 space-y-4">
-            <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text leading-tight">
-               {title}
-            </h2>
-            <div className="flex flex-col sm:flex-row items-center gap-4 text-primary font-bold uppercase tracking-wider text-xs">
-               <div className="flex items-center gap-2"><Clock size={16} /> 24/7 Priority Support</div>
-               <span className="hidden sm:inline w-1.5 h-1.5 rounded-full bg-border" />
-               <div className="flex items-center gap-2"><ShieldCheck size={16} /> Licensed & Insured</div>
-            </div>
-            <p className="text-xl text-text/80 font-medium">
-              {subtitle}
-            </p>
-          </div>
+    <section className="py-24 bg-bg relative overflow-hidden font-body">
+      {/* Background decoration */}
+      <div className="absolute inset-0 pointer-events-none -z-10">
+         <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-primary/5 blur-[120px] rounded-full" />
+         <div className="absolute bottom-0 right-1/4 w-[600px] h-[600px] bg-secondary/5 blur-[120px] rounded-full" />
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 relative z-10">
+        <motion.div
+           initial={{ opacity: 0, y: 30 }}
+           whileInView={{ opacity: 1, y: 0 }}
+           viewport={{ once: true }}
+           className="p-12 md:p-20 rounded-[3rem] bg-slate-900 border border-border shadow-2xl relative overflow-hidden group"
+        >
+          {/* Internal background glow */}
+          <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/20 blur-[150px] -translate-y-1/2 translate-x-1/2 rounded-full" />
           
-          <div className="flex flex-col items-center lg:items-end gap-6 w-full lg:w-auto">
-            <a 
-              href={telLink} 
-              className={cn(
-                "flex items-center justify-center gap-4 px-10 py-6 rounded-xl w-full sm:w-auto shadow-lg hover:shadow-xl transition-all font-bold text-2xl hover:-translate-y-1 active:scale-95 group",
-                "bg-accent hover:bg-accent/90 text-white"
-              )}
-            >
-              <Phone fill="currentColor" size={28} className="group-hover:rotate-12 transition-transform" />
-              <div className="text-left">
-                <span className="block text-xs uppercase tracking-[0.2em] font-black opacity-80 mb-0.5">Call Now 24/7</span>
-                {phoneNumber}
-              </div>
-            </a>
-            
-            <p className="text-sm font-bold text-text/60 italic">
-               *Connect with a local pro in minutes
-            </p>
+          <div className="max-w-4xl mx-auto relative z-10 space-y-12">
+            <div className="space-y-6 text-center">
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ delay: 0.1 }}
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 border border-white/20 rounded-full text-[10px] font-bold uppercase tracking-widest text-primary"
+                >
+                  <Zap size={12} className="fill-primary" /> Active response network
+                </motion.div>
+                
+                <h2 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight text-white px-4">
+                  Get your drains cleared today
+                </h2>
+                
+                <p className="text-lg md:text-xl text-white/60 font-medium max-w-2xl mx-auto leading-relaxed">
+                  Whether it’s a minor clog or major emergency, we’re standing by to connect you with a local expert within minutes. Available 24/7 across the USA.
+                </p>
+            </div>
+
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+               <a
+                  href={mainTelLink}
+                  className="w-full sm:w-auto flex items-center justify-center gap-4 px-12 py-6 bg-primary text-white rounded-2xl font-bold text-2xl shadow-xl hover:bg-blue-700 hover:-translate-y-1 transition-all active:scale-95 group tracking-tight"
+               >
+                  <Phone size={28} fill="currentColor" className="group-hover:rotate-12 transition-transform" />
+                  Call now (free estimate)
+               </a>
+               <a
+                  href={mainTelLink}
+                  className="w-full sm:w-auto flex items-center justify-center gap-4 px-12 py-6 bg-white/10 text-white border-2 border-white/20 rounded-2xl font-bold text-2xl hover:bg-white hover:text-slate-900 transition-all active:scale-95 tracking-tight"
+               >
+                  Available 24/7
+               </a>
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-12 border-t border-white/10">
+               {[
+                 { t: "Expert match", Icon: CheckCircle2 },
+                 { t: "Fast dispatch", Icon: Zap },
+                 { t: "Licensed pros", Icon: MapPin },
+                 { t: "No mess", Icon: CheckCircle2 }
+               ].map((item, i) => (
+                 <div key={i} className="flex flex-col items-center gap-2 group">
+                    <item.Icon size={24} className="text-primary opacity-50 group-hover:opacity-100 transition-opacity" />
+                    <span className="text-[10px] font-bold uppercase tracking-widest text-white/40 group-hover:text-white/60 transition-colors">{item.t}</span>
+                 </div>
+               ))}
+            </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
 }
-

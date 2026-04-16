@@ -136,7 +136,7 @@ export function JsonLd() {
         "name": "How much does drain cleaning cost?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Pricing depends on the severity of the clog and the service required. Most standard drain cleanings range from $100–$300. Call for a free fast estimate.",
+          "text": "Pricing depends on the severity of the clog and the location – call (724) 750-6935 for a fast free estimate.",
         },
       },
       {
@@ -144,15 +144,15 @@ export function JsonLd() {
         "name": "How fast can service arrive?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "In many cases, technicians can arrive within 60 minutes. We have a nationwide network of pros ready to be dispatched any time, day or night.",
+          "text": "In many cases, local experts can arrive within 30–60 minutes. We provide nationwide dispatch across the USA 24/7.",
         },
       },
       {
         "@type": "Question",
-        "name": "Do you offer emergency drain cleaning services?",
+        "name": "Do you offer emergency services?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, we provide 24/7 emergency drain cleaning nationwide. Whether it is a weekend, holiday, or 2 AM, we are ready to help.",
+          "text": "Yes, we provide 24/7 emergency service nationwide for all types of drain and sewer backups.",
         },
       },
       {
@@ -160,15 +160,7 @@ export function JsonLd() {
         "name": "What causes clogged drains?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The most common causes are grease buildup, hair, soap residue, food scraps, and foreign objects. Recurring clogs may indicate a deeper sewer line issue.",
-        },
-      },
-      {
-        "@type": "Question",
-        "name": "What is hydro jetting drain cleaning?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Hydro jetting uses high-pressure water to blast away grease, roots, and debris from inside your pipes. It is safe, eco-friendly, and highly effective for stubborn blockages.",
+          "text": "Grease, hair, soap residue, and foreign objects are the most common causes of stubborrn drain blockages.",
         },
       },
     ],

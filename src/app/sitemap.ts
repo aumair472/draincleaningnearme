@@ -1,4 +1,5 @@
 import { MetadataRoute } from "next";
+import { blogs } from "@/data/blogs";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.draincleaningnearme.us";
@@ -64,6 +65,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/drain-cleaning-austin",
     "/drain-cleaning-dallas",
     "/drain-cleaning-chicago",
+    "/drain-cleaning-jacksonville",
+    "/drain-cleaning-san-francisco",
+    "/drain-cleaning-indianapolis",
+    "/drain-cleaning-fort-worth",
+    "/drain-cleaning-columbus",
+    "/drain-cleaning-charlotte",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: now,
@@ -71,6 +78,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticRoutes, ...serviceRoutes, ...locationRoutes];
+  const blogRoutes = blogs.map((blog) => ({
+    url: `${baseUrl}/blogs/${blog.slug}`,
+    lastModified: now,
+    changeFrequency: "weekly" as const,
+    priority: 0.7,
+  }));
+
+  const blogListingRoute = {
+    url: `${baseUrl}/blogs`,
+    lastModified: now,
+    changeFrequency: "weekly" as const,
+    priority: 0.8,
+  };
+
+  return [...staticRoutes, ...serviceRoutes, ...locationRoutes, blogListingRoute, ...blogRoutes];
 }
 

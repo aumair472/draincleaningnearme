@@ -6,13 +6,14 @@ import { cn } from "@/lib/utils";
 
 const manrope = Manrope({
   subsets: ["latin"],
-  variable: "--font-sans",
+  weight: ["400", "500", "600"],
+  variable: "--font-body",
   display: "swap",
 });
 
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800", "900"],
+  weight: ["500", "600", "700", "800"],
   variable: "--font-heading",
   display: "swap",
 });

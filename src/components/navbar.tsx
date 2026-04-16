@@ -16,26 +16,6 @@ const serviceLinks = [
   { name: "Drain Camera Inspection", href: "/drain-camera-inspection" },
 ];
 
-const locationLinks = [
-  { name: "Drain Cleaning in New York City", href: "/drain-cleaning-nyc" },
-  { name: "Drain Cleaning in Los Angeles", href: "/drain-cleaning-los-angeles" },
-  { name: "Drain Cleaning in Chicago", href: "/drain-cleaning-chicago" },
-  { name: "Drain Cleaning in Houston", href: "/drain-cleaning-houston" },
-  { name: "Drain Cleaning in Dallas", href: "/drain-cleaning-dallas" },
-  { name: "Drain Cleaning in Phoenix", href: "/drain-cleaning-phoenix" },
-  { name: "Drain Cleaning in San Antonio", href: "/drain-cleaning-san-antonio" },
-  { name: "Drain Cleaning in San Diego", href: "/drain-cleaning-san-diego" },
-  { name: "Drain Cleaning in Philadelphia", href: "/drain-cleaning-philadelphia" },
-  { name: "Drain Cleaning in Austin", href: "/drain-cleaning-austin" },
-  { name: "Drain Cleaning in San Jose", href: "/drain-cleaning-san-jose" },
-  { name: "Drain Cleaning in Albuquerque", href: "/drain-cleaning-albuquerque" },
-];
-
-const companyLinks = [
-  { name: "About Us", href: "/about" },
-  { name: "Contact Us", href: "/contact" },
-];
-
 function DropdownMenu({
   label,
   links,
@@ -150,10 +130,11 @@ export function Navbar() {
           />
         </Link>
 
-        <nav className="flex items-center gap-1" aria-label="Main navigation">
+        <nav className="flex items-center gap-2" aria-label="Main navigation">
           <DropdownMenu label="Services" links={serviceLinks} />
-          <DropdownMenu label="Locations" links={locationLinks} columns={2} />
-          <DropdownMenu label="Company" links={companyLinks} />
+          <Link href="/blogs" className="px-3 py-2 rounded-lg text-sm font-semibold text-text/80 hover:text-text hover:bg-card transition-colors">Blog</Link>
+          <Link href="/about" className="px-3 py-2 rounded-lg text-sm font-semibold text-text/80 hover:text-text hover:bg-card transition-colors">About Us</Link>
+          <Link href="/contact" className="px-3 py-2 rounded-lg text-sm font-semibold text-text/80 hover:text-text hover:bg-card transition-colors">Contact</Link>
         </nav>
 
         <Link
@@ -167,7 +148,6 @@ export function Navbar() {
           <Phone size={18} className="fill-current group-hover:rotate-12 transition-transform" />
           <span>Call Now: (724) 750-6935</span>
         </Link>
-
       </div>
 
       {/* Mobile Nav Bar */}
@@ -250,54 +230,28 @@ export function Navbar() {
                 </AnimatePresence>
               </div>
 
-              {/* Locations Accordion */}
-              <div>
-                <button
-                  onClick={() => setMobileSection(mobileSection === "locations" ? null : "locations")}
-                  className="w-full flex items-center justify-between px-4 py-3 rounded-lg font-semibold text-sm text-text hover:bg-card transition-colors"
-                  aria-expanded={mobileSection === "locations"}
-                >
-                  Locations
-                  <ChevronDown
-                    size={14}
-                    className={cn("transition-transform", mobileSection === "locations" && "rotate-180")}
-                  />
-                </button>
-                <AnimatePresence>
-                  {mobileSection === "locations" && (
-                    <motion.div
-                      initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: "auto", opacity: 1 }}
-                      exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.2 }}
-                      className="overflow-hidden pl-4 space-y-1 mt-1"
-                    >
-                      {locationLinks.map((link) => (
-                        <Link
-                          key={link.href}
-                          href={link.href}
-                          onClick={() => setIsOpen(false)}
-                          className="flex items-center gap-2 px-4 py-2.5 rounded-lg text-sm font-medium text-text/80 hover:text-text hover:bg-card transition-colors"
-                        >
-                          {link.name}
-                        </Link>
-                      ))}
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </div>
-
-              {/* Company Links */}
-              {companyLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setIsOpen(false)}
-                  className="flex items-center px-4 py-3 rounded-lg font-semibold text-sm text-text hover:bg-card transition-colors"
-                >
-                  {link.name}
-                </Link>
-              ))}
+              {/* Direct Links */}
+              <Link 
+                href="/blogs" 
+                onClick={() => setIsOpen(false)}
+                className="flex items-center px-4 py-3 rounded-lg font-semibold text-sm text-text hover:bg-card transition-colors"
+              >
+                Blog
+              </Link>
+              <Link 
+                href="/about" 
+                onClick={() => setIsOpen(false)}
+                className="flex items-center px-4 py-3 rounded-lg font-semibold text-sm text-text hover:bg-card transition-colors"
+              >
+                About Us
+              </Link>
+              <Link 
+                href="/contact" 
+                onClick={() => setIsOpen(false)}
+                className="flex items-center px-4 py-3 rounded-lg font-semibold text-sm text-text hover:bg-card transition-colors"
+              >
+                Contact
+              </Link>
 
               <div className="pt-2 pb-1">
                 <Link

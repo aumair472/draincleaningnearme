@@ -26,6 +26,12 @@ const locationLinks = [
   { name: "Drain Cleaning in Austin", href: "/drain-cleaning-austin" },
   { name: "Drain Cleaning in San Jose", href: "/drain-cleaning-san-jose" },
   { name: "Drain Cleaning in Albuquerque", href: "/drain-cleaning-albuquerque" },
+  { name: "Drain Cleaning in Jacksonville", href: "/drain-cleaning-jacksonville" },
+  { name: "Drain Cleaning in San Francisco", href: "/drain-cleaning-san-francisco" },
+  { name: "Drain Cleaning in Indianapolis", href: "/drain-cleaning-indianapolis" },
+  { name: "Drain Cleaning in Fort Worth", href: "/drain-cleaning-fort-worth" },
+  { name: "Drain Cleaning in Columbus", href: "/drain-cleaning-columbus" },
+  { name: "Drain Cleaning in Charlotte", href: "/drain-cleaning-charlotte" },
 ];
 
 const companyLinks = [
