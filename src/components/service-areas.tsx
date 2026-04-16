@@ -5,7 +5,7 @@ import { MapPin, Phone, ChevronRight } from "lucide-react";
 import Link from "next/link";
 
 const cities = [
-  "New York",
+  "NYC",
   "Los Angeles",
   "Chicago",
   "Houston",
@@ -60,7 +60,7 @@ export function ServiceAreas() {
                 transition={{ delay: i * 0.05 }}
               >
                 <Link
-                  href={`/locations/${city.toLowerCase().replace(/\s+/g, "-")}`}
+                  href={`/drain-cleaning-${city.toLowerCase().replace(/\s+/g, "-")}`}
                   className="group flex flex-col p-6 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all hover:shadow-lg h-full shadow-sm"
                 >
                   <div className="w-10 h-10 rounded-xl bg-primary/5 text-primary flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-all shadow-inner">
