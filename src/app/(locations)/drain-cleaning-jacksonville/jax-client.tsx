@@ -160,36 +160,37 @@ export function JAXClient() {
                     title: "Kitchen Drain Cleaning Jacksonville", 
                     desc: "Food scraps and grease cause 30% of home clogs here. Restores flow in 60 minutes typically.", 
                     icon: Utensils,
-                    link: "/services/kitchen-drain-cleaning"
+                    link: "/kitchen-sink-drain-cleaning-unclogging-services"
                   },
                   { 
                     title: "Bathroom Drain Unclogging", 
                     desc: "Soap, hair and toothpaste buildup. Safe for septic systems common in Mandarin outskirts.", 
                     icon: Bath,
-                    link: "/services/bathroom-drain-cleaning"
+                    link: "/bathroom-drain-cleaning-unclogging-services"
                   },
                   { 
                     title: "Toilet & Sewer Line Cleaning", 
                     desc: "Root intrusion in sewer lines affect 25% of Duval calls. Handles sewer line unclogging.", 
                     icon: Droplets,
-                    link: "/services/sewer-line-cleaning"
+                    link: "/sewer-line-cleaning-repair-usa"
                   },
                   { 
                     title: "Main Line Blockage Removal", 
                     desc: "Whole-house backups signal main sewer line issues. Pipe blockage removal via high-powered tools.", 
                     icon: Waves,
-                    link: "/services/main-drain-repair"
+                    link: "/hydro-jetting-cleaning-services"
                   },
                   { 
                     title: "Commercial Drain Cleaning", 
                     desc: "High-volume clogs in restaurants/offices. Scheduled hydro jetting services Jacksonville FL.", 
-                    icon: Building2 
+                    icon: Building2,
+                    link: "/hydro-jetting-cleaning-services"
                   },
                   { 
                     title: "Emergency Drain Cleaning", 
                     desc: "24/7 response. Arrives in under 60 minutes for severe plumbing crises.", 
                     icon: Zap,
-                    link: "/services/emergency-drain-cleaning"
+                    link: "/emergency-drain-cleaning-services"
                   }
                 ].map((s, i) => (
                   <motion.div

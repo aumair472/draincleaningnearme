@@ -13,7 +13,12 @@ const cities = [
   "Philadelphia",
   "San Antonio",
   "San Diego",
-  "Dallas"
+  "Dallas",
+  "Boston",
+  "Oklahoma City",
+  "Las Vegas",
+  "Portland",
+  "Washington DC"
 ];
 
 export function ServiceAreas() {

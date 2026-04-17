@@ -39,6 +39,11 @@ const locationLinks = [
   { name: "Drain Cleaning in Memphis", href: "/drain-cleaning-memphis" },
   { name: "Drain Cleaning in Nashville", href: "/drain-cleaning-nashville" },
   { name: "Drain Cleaning in Baltimore", href: "/drain-cleaning-baltimore" },
+  { name: "Drain Cleaning in Boston", href: "/drain-cleaning-boston" },
+  { name: "Drain Cleaning in Oklahoma City", href: "/drain-cleaning-oklahoma-city" },
+  { name: "Drain Cleaning in Las Vegas", href: "/drain-cleaning-las-vegas" },
+  { name: "Drain Cleaning in Portland", href: "/drain-cleaning-portland" },
+  { name: "Drain Cleaning in Washington DC", href: "/drain-cleaning-washington-dc" },
 ];
 
 const companyLinks = [
