@@ -3,7 +3,7 @@ import { JAXClient } from "./jax-client";
 
 export const metadata: Metadata = {
   title: "Expert Drain Cleaning in Jacksonville | Emergency Rooter Services",
-  description: "Top-rated drain cleaning services in Jacksonville. Expert clogged drain repair, sewer line cleaning & hydro jetting; Residential & commercial services available. Book a free estimate!",
+  description: "Clogged drain in Jacksonville? Get fast, reliable and affordable emergency drain cleaning residents trust. Same-day service for backups & odors. Licensed & 24/7. Book your fix today!",
   keywords: [
     "drain cleaning services Jacksonville",
     "clogged drain repair Jacksonville",
