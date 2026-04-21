@@ -83,6 +83,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/drain-cleaning-las-vegas",
     "/drain-cleaning-portland",
     "/drain-cleaning-washington-dc",
+    "/drain-cleaning-louisville",
+    "/drain-cleaning-milwaukee",
+    "/drain-cleaning-tucson",
+    "/drain-cleaning-fresno",
+    "/drain-cleaning-sacramento",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: now,

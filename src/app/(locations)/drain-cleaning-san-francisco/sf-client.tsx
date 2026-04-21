@@ -5,15 +5,18 @@ import {
   Phone, Star, CheckCircle2, ShieldCheck, Clock, MapPin, 
   ChevronRight, Utensils, Building2, Search, 
   Activity, Waves, Droplets, Trash2, ShieldAlert,
-  Plus, Minus, HelpCircle, Zap, Bath, Hammer, ThermometerSun
+  Plus, Minus, HelpCircle, Zap, Bath, Hammer, ThermometerSun,
+  AlertTriangle, ArrowRight, MousePointerClick, TrendingUp,
+  Leaf, Info, Heart
 } from "lucide-react";
 import React from "react";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import Link from "next/link";
 
 const serviceAreas = [
-  "Sunset District", "Richmond District", "Mission District", 
-  "Pacific Heights", "SOMA", "North Beach", "The Marina"
+  "North Beach", "Japantown", "Jackson Square", "Mission District", 
+  "Noe Valley", "Haight-Ashbury", "Daly City", "South SF"
 ];
 
 const mainTelLink = "tel:+17247506935";
@@ -26,7 +29,7 @@ export function SFClient() {
       <Navbar />
       <main className="flex-1 pt-20">
         
-        {/* 1. HERO SECTION (SAN FRANCISCO LOCAL) */}
+        {/* 1. HERO SECTION */}
         <section className="relative min-h-[85vh] flex flex-col justify-center py-20 overflow-hidden bg-bg border-b border-border">
           <div className="absolute inset-0 pointer-events-none overflow-hidden -z-10">
             <div className="absolute top-0 w-full h-[600px] bg-primary/5 blur-[120px] rounded-full opacity-60" />
@@ -43,7 +46,7 @@ export function SFClient() {
                    {[1,2,3].map(i => <div key={i} className="w-5 h-5 rounded-full border-2 border-card bg-primary/20 flex items-center justify-center text-[8px] font-bold">SF</div>)}
                 </div>
                 <span className="text-sm font-semibold text-text/60 font-black">
-                   Licensed and Insured San Francisco Plumbers
+                   Licensed, Insured & Available 24/7 Across San Francisco
                 </span>
               </motion.div>
 
@@ -52,7 +55,7 @@ export function SFClient() {
                 animate={{ opacity: 1, y: 0 }}
                 className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight mb-8 text-text leading-[1.1] font-black"
               >
-                Professional Drain Cleaning & <span className="text-primary italic">Rooter Services</span> in San Francisco
+                Expert Drain Cleaning & <span className="text-primary italic">Clogged Pipe</span> Solutions in San Francisco
               </motion.h1>
 
               <motion.div
@@ -61,7 +64,7 @@ export function SFClient() {
                 transition={{ delay: 0.1 }}
                 className="text-lg md:text-xl text-text/70 font-medium max-w-3xl mx-auto mb-12 leading-relaxed italic"
               >
-                Tired of slow drains or sewer backups in the City? We specialize in San Francisco's historic plumbing challenges, from aging clay pipes to seismic pipe stress.
+                DrainCleaningNearMe delivers fast, reliable drain cleaning services San Francisco residents trust for clogged drain repair and emergency needs. Our team, available 24/7, tackles sewer line cleaning with hydro jetting and rooter services across San Francisco, ensuring clear pipes quickly.
               </motion.div>
 
               <motion.div
@@ -78,10 +81,10 @@ export function SFClient() {
                   Call Now: (724) 750-6935
                 </a>
                 <a
-                  href={mainTelLink}
+                  href="#quote"
                   className="flex items-center justify-center gap-4 px-10 py-6 bg-card border-2 border-border text-text rounded-2xl font-bold text-xl hover:border-primary transition-all active:scale-95"
                 >
-                  Book Online
+                  Free Estimate
                 </a>
               </motion.div>
 
@@ -92,36 +95,35 @@ export function SFClient() {
                  className="flex flex-wrap justify-center gap-8 py-6 px-10 bg-card/50 border border-border rounded-full text-sm font-semibold text-text/60 uppercase tracking-widest font-black"
               >
                  <div className="flex items-center gap-2"><ShieldCheck size={18} className="text-primary" /> Licensed & Insured</div>
-                 <div className="flex items-center gap-2"><Clock size={18} className="text-primary" /> 24/7 Availability</div>
-                 <div className="flex items-center gap-2"><Zap size={18} className="text-primary" /> Fast Response</div>
-                 <div className="flex items-center gap-2"><Star size={18} className="text-accent fill-accent" /> SF Local Solutions</div>
+                 <div className="flex items-center gap-2"><Clock size={18} className="text-primary" /> 24/7 Available</div>
+                 <div className="flex items-center gap-2"><Star size={18} className="text-accent fill-accent" /> Over 4.6/5 Stars</div>
               </motion.div>
             </div>
           </div>
         </section>
 
-        {/* 2. LOCAL PLUMBING CONTEXT (LOCAL AUTHORITY) */}
+        {/* 2. SAN FRANCISCO DRAIN CHALLENGES */}
         <section className="py-24 bg-card border-b border-border">
           <div className="container">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="space-y-8">
                 <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text leading-tight uppercase font-black underline decoration-primary decoration-4 underline-offset-8">
-                   San Francisco's Historic Infrastructure
+                   San Francisco Drain Challenges
                 </h2>
                 <div className="text-lg text-text/70 leading-relaxed font-medium space-y-6 italic">
                    <p>
-                    San Francisco's high-density neighborhoods; from the Sunset to Richmond; rely on a complex network of aging clay and cast iron pipes. Seismic activity and soil shifting place unique stress on these systems, often leading to offsets, cracks and severe blockages.
+                    San Francisco's aging infrastructure, tree roots and grease buildup create frequent plumbing issues like slow drains and sewer backups. In this hilly city with old clay pipes, root intrusions from nearby trees seek water, causing pipe blockages, while urban runoff adds debris during rains.
                    </p>
                    <p>
-                    Our expert team understands the City's specific challenges, including fog-related moisture acceleration of pipe corrosion and the intense grease traps required for our world-class restaurants in SOMA and the Mission.
+                    Regular drain cleaning in San Francisco prevents these issues, as clogs from grease, hair and debris affect 1 in 5 households yearly. Foul odors from drains signal early problems; professional intervention stops costly sewer line repair in San Francisco.
                    </p>
                 </div>
                 <div className="grid sm:grid-cols-2 gap-4">
                    {[
-                     { t: "Aging Clay Pipes", d: "Historic districts prone to offsets and collapse.", icon: Activity },
-                     { t: "Seismic Pipe Stress", d: "Soil shifts cause joints to crack and leak.", icon: Droplets },
-                     { t: "High-Density FOG", d: "Fats, oils and grease in multi-unit buildings.", icon: Utensils },
-                     { t: "Fog Moisture", d: "Accelerated external corrosion on older mains.", icon: ThermometerSun }
+                     { t: "Aging Infrastructure", d: "Old clay and iron pipes prone to collapse.", icon: Activity },
+                     { t: "Tree Root Intrusion", d: "Roots seeking water penetrate older pipe joints.", icon: Droplets },
+                     { t: "Grease Buildup", d: "Major cause of clogs in high-density areas.", icon: Utensils },
+                     { t: "Hilly Terrain", d: "Gravity-fed systems face unique flow challenges.", icon: TrendingUp }
                    ].map((item, i) => (
                       <div key={i} className="flex gap-4 p-5 rounded-2xl bg-bg border border-border group hover:border-primary/20 transition-all shadow-sm">
                          <item.icon className="text-primary shrink-0 group-hover:scale-110 transition-transform" />
@@ -136,13 +138,13 @@ export function SFClient() {
               <div className="relative">
                  <div className="aspect-square bg-bg border border-border rounded-[3rem] p-12 shadow-2xl relative overflow-hidden flex flex-col justify-center items-center text-center">
                     <Activity size={80} className="text-primary mb-8 animate-pulse" />
-                    <h3 className="text-2xl font-bold text-text mb-4 tracking-tight uppercase font-black">Seismic Restoration pros</h3>
+                    <h3 className="text-2xl font-bold text-text mb-4 tracking-tight uppercase font-black">Local SF Experts</h3>
                     <p className="text-sm text-text/50 font-bold max-w-xs leading-relaxed uppercase tracking-widest italic">
-                       Specializing in Sunset and Richmond District infrastructure.
+                       Specializing in the City's unique plumbing landscape.
                     </p>
                     <div className="mt-8">
                        <p className="text-xs font-black text-primary uppercase tracking-widest bg-primary/5 px-6 py-3 rounded-full border border-primary/20 shadow-inner">
-                          Hydro Jetting: Tech-Hub Standard
+                          (724) 750-6935
                        </p>
                     </div>
                  </div>
@@ -151,166 +153,320 @@ export function SFClient() {
           </div>
         </section>
 
-        {/* 3. OUR SERVICES (HIGH VALUE + SEO) */}
+        {/* 3. OUR DRAIN CLEANING SERVICES */}
         <section className="py-24 bg-bg border-b border-border">
-          <div className="container text-center">
-             <div className="mb-20 space-y-4">
+          <div className="container">
+             <div className="text-center mb-20 space-y-4">
                 <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text uppercase font-black">
-                  Our San Francisco Drain Services
+                  Our Drain Cleaning Services
                 </h2>
-                <p className="text-text/70 font-medium text-lg max-w-2xl mx-auto italic">
-                    Comprehensive rooter and cleaning solutions for the modern City.
+                <p className="text-text/70 font-medium text-lg max-w-3xl mx-auto italic">
+                    We offer comprehensive professional drain cleaning services in San Francisco, from residential to commercial needs.
                 </p>
              </div>
 
-             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+             <div className="grid md:grid-cols-2 gap-8">
                 {[
-                  { title: "Residential Drain Unclogging", desc: "Fast removal of hair, soap scum and grease in compact SF apartments.", icon: Bath },
-                  { title: "Hydro Jetting Services", desc: "Low-impact, high-pressure 4,000 PSI cleaning for Silicon Valley-grade results.", icon: Waves },
-                  { title: "Sewer Line Cleaning", desc: "Restoring capacity to main lines affected by roots and seismic misalignment.", icon: Droplets },
-                  { title: "Commercial Drain Care", desc: "Grease trap and main line maintenance for SOMA and Mission restaurants.", icon: Building2 },
-                  { title: "HD Camera Inspection", desc: "Diagnose seismic pipe shifts and aging collapses without tearing up floors.", icon: Search },
-                  { title: "24/7 Emergency Response", desc: "Rapid dispatch for sudden overflows and severe City line backups.", icon: Zap }
+                  { 
+                    title: "Residential Drain Cleaning", 
+                    desc: "Handle kitchen drain cleaning, bathroom drain unclogging and shower clogs with our targeted approach. Hair, soap scum and food waste cause most backups; we clear them fast. Enjoy improved flow and no standing water in your home.",
+                    link: "/bathroom-drain-cleaning-unclogging-services",
+                    icon: Bath 
+                  },
+                  { 
+                    title: "Commercial Drain Cleaning", 
+                    desc: "Restaurants and offices face high grease buildup; our commercial drain cleaning in San Francisco keeps operations smooth. Bi-annual cleanings prevent downtime in high-traffic spots.",
+                    link: "/kitchen-sink-drain-cleaning-unclogging-services",
+                    icon: Building2 
+                  },
+                  { 
+                    title: "Emergency Drain Cleaning", 
+                    desc: "For sewer backup or urgent unclog drain in San Francisco, our 24/7 emergency technician responds same-day. No more flooding; get reliable plumbing and drain cleaning now.",
+                    link: "/emergency-drain-cleaning-services",
+                    icon: Zap 
+                  },
+                  { 
+                    title: "Sewer Line Cleaning", 
+                    desc: "Address deep blockages, root intrusion sewer lines and main line issues with sewer cleaning San Francisco expertise. Tree roots plague Bay Area pipes, but we remove them effectively.",
+                    link: "/sewer-line-cleaning-repair-usa",
+                    icon: Droplets 
+                  }
                 ].map((s, i) => (
                   <motion.div
                     key={i}
-                    initial={{ opacity: 0, scale: 0.95 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: i * 0.1 }}
-                    className="p-10 rounded-[2.5rem] bg-card border border-border hover:border-primary/20 transition-all group flex flex-col items-center text-center shadow-sm hover:shadow-2xl"
+                    className="p-10 rounded-[2.5rem] bg-card border border-border hover:border-primary/20 transition-all group flex flex-col shadow-sm"
                   >
                     <div className="w-16 h-16 rounded-2xl bg-bg text-primary flex items-center justify-center mb-8 transition-colors group-hover:bg-primary group-hover:text-white shadow-inner">
                        <s.icon size={32} />
                     </div>
-                    <h3 className="text-xl font-bold text-text mb-4 tracking-tight group-hover:text-primary transition-colors uppercase font-black">{s.title}</h3>
-                    <p className="text-sm text-text/60 font-medium leading-relaxed grow italic">{s.desc}</p>
-                    <a href={mainTelLink} className="mt-8 text-primary font-bold text-xs flex items-center gap-2 group/link uppercase tracking-widest font-black">
-                       Learn more <ChevronRight size={14} className="group-hover/link:translate-x-1 transition-transform" />
-                    </a>
+                    <h3 className="text-2xl font-bold text-text mb-4 tracking-tight group-hover:text-primary transition-colors uppercase font-black">{s.title}</h3>
+                    <p className="text-base text-text/60 font-medium leading-relaxed grow italic mb-8">{s.desc}</p>
+                    <Link href={s.link} className="text-primary font-bold text-sm flex items-center gap-2 group/link uppercase tracking-widest font-black border-t border-border pt-6">
+                       View Service Details <ChevronRight size={14} className="group-hover/link:translate-x-1 transition-transform" />
+                    </Link>
                   </motion.div>
                 ))}
              </div>
           </div>
         </section>
 
-        {/* 4. COMMON PROBLEMS (LOCAL AUTHORITY) */}
+        {/* 4. ADVANCED SOLUTIONS */}
         <section className="py-24 bg-card border-b border-border">
            <div className="container">
               <div className="text-center mb-20 space-y-4">
-                 <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text leading-tight max-w-4xl mx-auto uppercase font-black italic underline decoration-primary decoration-4 underline-offset-8">
-                    Common SF Drain Problems
+                 <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text uppercase font-black italic underline decoration-primary decoration-4 underline-offset-8">
+                    Advanced Solutions
                  </h2>
                  <p className="text-lg text-text/70 font-medium max-w-3xl mx-auto italic">
-                    Density and age create a perfect storm for plumbing failures.
+                    Utilizing state-of-the-art technology for lasting results.
                  </p>
               </div>
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 font-black uppercase tracking-tight">
+              <div className="grid md:grid-cols-3 gap-8">
                  {[
-                   { t: "Seismic Cracks", d: "Joint leaks caused by frequent earth shifts.", icon: Activity },
-                   { t: "Slow Multi-Unit Drains", d: "Shared line grease clogs in SOMA buildings.", icon: Utensils },
-                   { t: "Fog-Induced Rust", d: "External corrosion on historic iron pipes.", icon: Droplets },
-                   { t: "Foul Sewage Odors", d: "Organic waste decay in slow-moving City mains.", icon: Activity }
+                   { 
+                     t: "Hydro Jetting Service", 
+                     d: "High-pressure water cleans pipes fully, outperforming snaking for long-term results; no use of chemicals, eco-friendly cleaning method.",
+                     link: "/hydro-jetting-cleaning-services",
+                     icon: Waves 
+                   },
+                   { 
+                     t: "Drain Snaking Services", 
+                     d: "Quick solution for removing simple clogs in PVC pipes. Mechanical removal for tight clogs and blockages.",
+                     link: "#",
+                     icon: Hammer 
+                   },
+                   { 
+                     t: "Camera Inspection", 
+                     d: "Sewer line inspection through video camera reveals hidden issues like cracks and blockage. HD inspection reveals root removal needs with 100% diagnostic accuracy.",
+                     link: "/drain-camera-inspection",
+                     icon: Search 
+                   }
                  ].map((item, i) => (
-                    <div key={i} className="p-10 rounded-[2.5rem] bg-bg border border-border group hover:border-primary/20 transition-all shadow-sm text-center">
-                       <div className="w-14 h-14 rounded-2xl bg-card text-primary flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-all shadow-inner mx-auto">
+                    <div key={i} className="p-10 rounded-[2.5rem] bg-bg border border-border group hover:border-primary/20 transition-all shadow-sm text-center flex flex-col items-center">
+                       <div className="w-14 h-14 rounded-2xl bg-card text-primary flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-all shadow-inner">
                           <item.icon size={28} />
                        </div>
-                       <h3 className="text-xl font-bold text-text mb-4 tracking-tight group-hover:text-primary transition-colors">{item.t}</h3>
-                       <p className="text-[10px] text-text/40 font-bold tracking-widest leading-relaxed italic">{item.d}</p>
+                       <h3 className="text-xl font-bold text-text mb-4 tracking-tight group-hover:text-primary transition-colors uppercase font-black">{item.t}</h3>
+                       <p className="text-sm text-text/50 font-bold leading-relaxed grow italic mb-6">{item.d}</p>
+                       <Link href={item.link} className="text-[10px] font-black text-primary uppercase tracking-widest flex items-center gap-2 hover:underline">
+                          Learn More <ArrowRight size={12} />
+                       </Link>
                     </div>
                  ))}
               </div>
            </div>
         </section>
 
-        {/* 5. OUR STEP-BY-STEP PROCESS (AIRTASKER FLOW) */}
-        <section className="py-24 bg-bg border-y border-border">
-           <div className="container text-center">
-              <div className="mb-20 space-y-4">
-                 <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text uppercase font-black uppercase italic">
-                    The SF Restoration Process
-                 </h2>
-                 <p className="text-text/70 font-medium text-lg max-w-2xl mx-auto italic">High-tech diagnostics meeting old-world reliability.</p>
+        {/* 5. SIGNS YOU NEED DRAIN CLEANING */}
+        <section className="py-24 bg-bg border-b border-border">
+           <div className="container">
+              <div className="grid lg:grid-cols-2 gap-16 items-center">
+                 <div className="order-2 lg:order-1">
+                    <div className="space-y-6">
+                       {[
+                         { t: "Slow Draining", d: "Sinks or tubs taking forever to empty due to buildup.", icon: Clock },
+                         { t: "Foul Odors", d: "Smells coming from drains caused by grease clogs.", icon: AlertTriangle },
+                         { t: "Gurgling Sounds", d: "Standing water or odd noises indicating pipe blockages.", icon: Activity },
+                         { t: "Multiple Backups", d: "Multiple fixtures affected signals major sewer problems.", icon: Trash2 }
+                       ].map((sign, i) => (
+                          <div key={i} className="flex gap-6 p-6 bg-card border border-border rounded-2xl hover:border-primary/30 transition-all group">
+                             <div className="w-12 h-12 rounded-xl bg-bg border border-border text-primary flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white transition-all">
+                                <sign.icon size={20} />
+                             </div>
+                             <div>
+                                <h4 className="text-lg font-black text-text uppercase tracking-tight">{sign.t}</h4>
+                                <p className="text-sm text-text/50 font-medium italic">{sign.d}</p>
+                             </div>
+                          </div>
+                       ))}
+                    </div>
+                 </div>
+                 <div className="order-1 lg:order-2 space-y-8">
+                    <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text leading-tight uppercase font-black">
+                       Signs You Need Drain Cleaning
+                    </h2>
+                    <p className="text-xl text-text/70 leading-relaxed font-medium italic">
+                       Spot issues early to avoid major repairs. These early indicators prevent sewer backups; call for drain unclogging near you.
+                    </p>
+                    <a href={mainTelLink} className="inline-flex items-center gap-4 px-8 py-4 bg-primary text-white rounded-xl font-black uppercase tracking-widest text-sm hover:bg-blue-700 transition-all shadow-lg shadow-primary/20">
+                       <Phone size={18} fill="currentColor" /> Call for Inspection
+                    </a>
+                 </div>
               </div>
-              <div className="grid md:grid-cols-5 gap-8 uppercase italic font-black">
+           </div>
+        </section>
+
+        {/* 6. WHY CHOOSE DRAIN CLEANING NEAR ME */}
+        <section className="py-24 bg-card border-b border-border">
+           <div className="container">
+              <div className="text-center mb-20 space-y-4">
+                 <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text uppercase font-black">
+                    Why Choose DrainCleaningNearMe
+                 </h2>
+                 <p className="text-lg text-text/70 font-medium max-w-3xl mx-auto italic">
+                    As San Francisco drain experts, we stand out with our commitment to quality and local expertise.
+                 </p>
+              </div>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                  {[
-                   { t: "Assessment", d: "Identify the pipe material and age.", icon: Search },
-                   { t: "Camera Diagnosis", d: "Check for seismic shifts and roots.", icon: Activity },
-                   { t: "Targeted Cleaning", d: "Snaking or hydro jetting execution.", icon: Waves },
-                   { t: "Testing", d: "Confirm flow across share lines.", icon: CheckCircle2 },
-                   { t: "Reporting", d: "Documented proof for insurers/landlords.", icon: ShieldAlert }
+                   { t: "Licensed & Insured", d: "Professionals with deep local knowledge of SF plumbing codes.", icon: ShieldCheck },
+                   { t: "24/7 Availability", d: "Emergency plumbers ready across San Francisco anytime.", icon: Clock },
+                   { t: "Latest Tools", d: "Hydro jetting and drain camera inspection services in San Francisco, CA.", icon: Zap },
+                   { t: "Affordable Rates", d: "Average $250 for residential cleaning; competitive pricing.", icon: CheckCircle2 },
+                   { t: "Experienced Techs", d: "Handling residential and commercial services efficiently.", icon: Star },
+                   { t: "Eco-Friendly", d: "Protecting the Bay with safe cleaning methods.", icon: Leaf }
+                 ].map((f, i) => (
+                    <div key={i} className="p-8 rounded-[2rem] bg-bg border border-border shadow-sm flex items-start gap-6 group hover:border-primary/50 transition-all">
+                       <div className="w-12 h-12 rounded-xl bg-card border border-border text-primary flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white transition-all shadow-inner">
+                          <f.icon size={24} />
+                       </div>
+                       <div>
+                          <h4 className="text-base font-black text-text uppercase tracking-widest mb-2">{f.t}</h4>
+                          <p className="text-xs text-text/50 font-bold leading-relaxed italic">{f.d}</p>
+                       </div>
+                    </div>
+                 ))}
+              </div>
+              <div className="mt-16 p-8 bg-primary/5 border border-primary/20 rounded-[2rem] flex flex-col md:flex-row items-center justify-between gap-8">
+                 <div className="flex items-center gap-4 text-primary font-black uppercase tracking-widest text-sm">
+                    <Info size={24} />
+                    <span>See EPA guidelines on proper FOG disposal</span>
+                 </div>
+                 <a href="https://www.epa.gov" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-xl font-bold uppercase text-[10px] tracking-widest hover:bg-blue-700 transition-all shadow-md">
+                    Visit EPA Site <MousePointerClick size={14} />
+                 </a>
+              </div>
+           </div>
+        </section>
+
+        {/* 7. OUR CLEANING PROCESS */}
+        <section className="py-24 bg-bg border-y border-border">
+           <div className="container">
+              <div className="text-center mb-20 space-y-4">
+                 <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text uppercase font-black uppercase italic">
+                    Our Cleaning Process
+                 </h2>
+                 <p className="text-text/70 font-medium text-lg max-w-2xl mx-auto italic">We ensure thorough, efficient service using advanced tools.</p>
+              </div>
+              <div className="grid md:grid-cols-4 gap-8">
+                 {[
+                   { t: "1. Inspection", d: "Camera technology spots issues instantly.", icon: Search },
+                   { t: "2. Diagnosis", d: "Identify root causes like root intrusion.", icon: Activity },
+                   { t: "3. Cleaning", d: "Hydro jetting or snaking removes blockages.", icon: Waves },
+                   { t: "4. Testing", d: "Verify flow and prevent future clogs.", icon: CheckCircle2 }
                  ].map((s, i) => (
-                   <div key={i} className="flex flex-col items-center text-center space-y-6 group">
-                      <div className="w-16 h-16 rounded-2xl bg-card border border-border flex items-center justify-center text-primary font-bold shadow-sm relative group-hover:bg-primary group-hover:text-white transition-all">
-                         <div className="absolute -top-2 -right-2 w-7 h-7 bg-primary text-white text-[10px] flex items-center justify-center rounded-full border-4 border-bg font-black italic">
-                            {i+1}
-                         </div>
-                         <s.icon size={24} />
-                      </div>
-                      <h4 className="text-[10px] font-black text-text tracking-widest group-hover:text-primary transition-colors">{s.t}</h4>
-                   </div>
+                    <div key={i} className="flex flex-col items-center text-center space-y-6 group p-10 bg-card border border-border rounded-[2.5rem] shadow-sm hover:shadow-xl transition-all">
+                       <div className="w-20 h-20 rounded-3xl bg-bg border border-border flex items-center justify-center text-primary font-bold shadow-inner relative group-hover:bg-primary group-hover:text-white transition-all">
+                          <s.icon size={32} />
+                       </div>
+                       <h4 className="text-xl font-black text-text uppercase tracking-tight group-hover:text-primary transition-colors">{s.t}</h4>
+                       <p className="text-sm text-text/50 font-bold italic leading-relaxed">{s.d}</p>
+                    </div>
                  ))}
               </div>
            </div>
         </section>
 
-        {/* 6. WHY CHOOSE US (TRUST DRIVER) */}
-        <section className="py-24 bg-card border-b border-border">
-          <div className="container text-center">
-             <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text mb-16 uppercase font-black">
-               Why Choose DrainCleaningNearMe
-             </h2>
-             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                {[
-                  { t: "Licensed & Insured", icon: ShieldCheck, d: "Fully compliant for Bay Area standards." },
-                  { t: "Same-Day Response", icon: Clock, d: "Rapid dispatch across all SF hills." },
-                  { t: "HD Camera Included", icon: Search, d: "Diagnose before we dig or jet." },
-                  { t: "City Specialists", icon: MapPin, d: "Experts in historic SF infrastructure." }
-                ].map((f, i) => (
-                  <div key={i} className="p-8 rounded-[2rem] bg-bg border border-border shadow-sm flex flex-col items-center text-center space-y-4 group hover:border-primary/50 transition-all font-black uppercase text-[10px] tracking-widest text-text">
-                     <f.icon size={32} className="text-primary group-hover:scale-110 transition-transform" />
-                     {f.t}
-                  </div>
-                ))}
-             </div>
-          </div>
-        </section>
-
-        {/* 7. SERVICE AREAS (LOCAL SEO BOOST) */}
-        <section className="py-24 bg-bg border-b border-border text-center">
+        {/* 8. SERVICE AREAS */}
+        <section className="py-24 bg-card border-b border-border text-center">
           <div className="container">
              <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text mb-4 uppercase font-black">
                Service Areas
              </h2>
-             <p className="text-text/70 font-medium text-lg mb-16 italic italic">From the Sunset to SOMA, we cover the whole City.</p>
-             <div className="grid grid-cols-2 lg:grid-cols-7 gap-4">
+             <p className="text-text/70 font-medium text-lg mb-16 italic">Proudly serving San Francisco and Bay Area neighborhoods.</p>
+             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
                {serviceAreas.map(n => (
-                 <div key={n} className="p-6 rounded-2xl bg-card border border-border shadow-sm flex flex-col items-center gap-4 group hover:border-primary/20 transition-all font-black uppercase text-[10px] tracking-widest text-text">
-                    <div className="w-10 h-10 rounded-xl bg-bg border border-border text-primary flex items-center justify-center shrink-0 shadow-inner group-hover:bg-primary group-hover:text-white transition-all">
+                 <div key={n} className="p-6 rounded-2xl bg-bg border border-border shadow-sm flex flex-col items-center gap-4 group hover:border-primary/20 transition-all font-black uppercase text-[10px] tracking-widest text-text">
+                    <div className="w-10 h-10 rounded-xl bg-card border border-border text-primary flex items-center justify-center shrink-0 shadow-inner group-hover:bg-primary group-hover:text-white transition-all">
                        <MapPin size={18} />
                     </div>
                     {n}
                  </div>
                ))}
              </div>
+             <p className="mt-12 text-sm text-text/40 font-bold uppercase tracking-widest italic">Fast response for storm or French drain cleaning services in San Francisco. Learn more at our <Link href="/" className="text-primary underline">drain cleaning City Landing pages</Link>.</p>
           </div>
         </section>
 
-        {/* 8. FAQ SECTION */}
+        {/* 9. CUSTOMER BENEFITS */}
+        <section className="py-24 bg-bg border-b border-border">
+           <div className="container">
+              <div className="text-center mb-20 space-y-4">
+                 <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text uppercase font-black">
+                    Customer Benefits
+                 </h2>
+                 <p className="text-lg text-text/70 font-medium max-w-3xl mx-auto italic">
+                    Why regular professional maintenance is worth it. Read our <Link href="/blogs/drain-cleaning-guide-tips-usa" className="text-primary underline">Sewer & Drain Cleaning Guide</Link> for more tips.
+                 </p>
+              </div>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                 {[
+                   { t: "Prevent Repairs", d: "Regular maintenance saves thousands in the long run.", icon: ShieldCheck },
+                   { t: "Restore Flow", d: "Eliminate slow drains and foul odors permanently.", icon: Waves },
+                   { t: "Extend Lifespan", d: "Protect your pipes against corrosion and damage.", icon: TrendingUp },
+                   { t: "Eco-Friendly", d: "Methods that protect San Francisco's local environment.", icon: Leaf },
+                   { t: "Home Value", d: "Clean, reliable plumbing boosts your property value.", icon: Star },
+                   { t: "Peace of Mind", d: "24/7 support means you're never alone in an emergency.", icon: Heart }
+                 ].map((b, i) => (
+                    <div key={i} className="p-8 rounded-[2rem] bg-card border border-border flex gap-6 items-center group hover:bg-primary/5 transition-all">
+                       <div className="text-primary group-hover:scale-110 transition-transform">
+                          <b.icon size={28} />
+                       </div>
+                       <div>
+                          <h4 className="text-lg font-black text-text uppercase tracking-tight">{b.t}</h4>
+                          <p className="text-xs text-text/50 font-bold italic">{b.d}</p>
+                       </div>
+                    </div>
+                 ))}
+              </div>
+              <div className="mt-16 text-center">
+                 <a href={mainTelLink} className="px-10 py-5 bg-primary text-white rounded-2xl font-black uppercase tracking-widest text-lg hover:bg-blue-700 transition-all shadow-xl shadow-primary/30 inline-flex items-center gap-4">
+                    Book Service Now <MousePointerClick size={24} />
+                 </a>
+              </div>
+           </div>
+        </section>
+
+        {/* 10. FAQ SECTION */}
         <section className="py-24 bg-card border-b border-border">
            <div className="container-narrow">
-              <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-center text-text mb-20 uppercase font-black uppercase italic underline decoration-primary decoration-4 underline-offset-8 text-sm">
-                San Francisco Drain FAQs
+              <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-center text-text mb-20 uppercase font-black uppercase italic underline decoration-primary decoration-4 underline-offset-8">
+                Frequently Asked Questions
               </h2>
               <div className="space-y-4 font-black uppercase italic">
                 {[
-                  { q: "How much does drain cleaning cost in San Francisco?", a: "Residential rates start at $99-$299; seismic camera inspections and hydro-jetting vary based on pipe age and material." },
-                  { q: "How often should I clean my drains in an older SF home?", a: "Every 12-18 months to prevent historic clay tiles from collapsing due to stress and root intrusion." },
-                  { q: "Is hydro jetting safe for cast iron pipes?", a: "Yes, but we always perform an HD camera inspection first to check for internal rust and scale levels." },
-                  { q: "Do you offer emergency services in the Sunset District?", a: "24/7 emergency response available across all SF districts, including the Sunset and Richmond." },
-                  { q: "Why are my drains slow after every seismic tremor?", a: "Minor shifts can cause pipe offsets or cracks. We recommend a camera inspection after any noticeable activity." },
-                  { q: "Can multi-unit buildings be jetted simultaneously?", a: "Yes, we specialize in shared-line restoration for SOMA and Mission residential complexes." }
+                  { 
+                    q: "How much does drain cleaning cost in San Francisco?", 
+                    a: "Average $100–$400 for sinks/toilets, $400–$700 for hydro jetting, plus $50 fee. Varies by clog severity." 
+                  },
+                  { 
+                    q: "How often should drains be cleaned?", 
+                    a: "Residential drains should be cleaned on a yearly basis. Commercial: Twice yearly or more for grease-heavy spots." 
+                  },
+                  { 
+                    q: "What is hydro jetting?", 
+                    a: "High-pressure water blasts pipes clean, removing grease and roots better than snaking for lasting results." 
+                  },
+                  { 
+                    q: "Do you offer emergency service?", 
+                    a: "Yes, 24/7 plumbers are available for emergency service in San Francisco with same-day response." 
+                  },
+                  { 
+                    q: "DIY vs. professional drain cleaning?", 
+                    a: "DIY risks pipe damage; professionals use cameras and Hydro-jetting for safe, complete fixes." 
+                  },
+                  { 
+                    q: "What causes most San Francisco clogs?", 
+                    a: "Grease, tree roots, hair, aging pipes etc. The hilly terrain and old infrastructure also play major roles." 
+                  },
+                  { 
+                    q: "Can you handle sewer line repair in San Francisco?", 
+                    a: "Yes, we can handle sewer line repair in San Francisco, from cleaning to trenchless repairs." 
+                  }
                 ].map((faq, index) => (
                   <div key={index} className="bg-bg border border-border rounded-2xl overflow-hidden shadow-sm hover:border-primary/20 transition-all">
                     <button
@@ -333,15 +489,15 @@ export function SFClient() {
            </div>
         </section>
 
-        {/* 9. FINAL CTA / URGENCY (SAN FRANCISCO) */}
-        <section className="py-24 bg-bg overflow-hidden relative border-y border-border">
+        {/* 11. FINAL CTA */}
+        <section className="py-24 bg-bg overflow-hidden relative border-y border-border" id="quote">
            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[400px] bg-primary/5 blur-[150px] rounded-full opacity-60" />
            <div className="container-narrow text-center space-y-12 relative z-10">
               <h2 className="text-4xl md:text-7xl font-bold tracking-tight text-text leading-tight uppercase font-black uppercase">
-                 Stop SF Drain Backups Now!
+                 Get Clog-Free Pipes Today
               </h2>
-              <p className="text-xl text-text/60 font-medium max-w-2xl mx-auto italic italic font-black uppercase underline decoration-primary decoration-4">
-                 Licensed Bay Area Professionals Ready 24/7. Same-Day Relief.
+              <p className="text-xl text-text/60 font-medium max-w-2xl mx-auto italic font-black uppercase underline decoration-primary decoration-4">
+                 Do not let clogged drains disrupt your day; DrainCleaningNearMe offers plumbing services across San Francisco, CA you can trust.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
                  <a
@@ -355,11 +511,11 @@ export function SFClient() {
                     href={mainTelLink}
                     className="w-full sm:w-auto flex items-center justify-center gap-4 px-12 py-6 bg-card border-2 border-border text-text rounded-2xl font-bold text-2xl hover:border-primary transition-all active:scale-95 tracking-tight font-black"
                  >
-                    Book Now
+                    Free Quote
                  </a>
               </div>
               <p className="text-xs font-bold text-text/30 tracking-widest uppercase">
-                 Authorized San Francisco Sewer Experts &middot; Licensed, Insured, Guaranteed.
+                 Same-Day Service Available &middot; Licensed, Insured, Guaranteed.
               </p>
            </div>
         </section>
