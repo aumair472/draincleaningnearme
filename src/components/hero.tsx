@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Phone, Star, CheckCircle2, ShieldCheck, Clock, MapPin } from "lucide-react";
+import { TrustBadge } from "@/components/ui/trust-badge";
 
 export function Hero() {
   const mainTelLink = "tel:+17247506935";
@@ -20,24 +21,6 @@ export function Hero() {
       <div className="container relative z-10">
         <div className="flex flex-col items-center text-center max-w-5xl mx-auto">
           
-          {/* 🔹 TRUST BADGE */}
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="inline-flex items-center gap-2.5 px-5 py-2.5 bg-card border border-border rounded-full shadow-sm mb-10"
-          >
-            <div className="flex -space-x-2">
-               {[1,2,3].map(i => (
-                 <div key={i} className="w-6 h-6 rounded-full border-2 border-card bg-primary/20 flex items-center justify-center text-[10px] font-bold">
-                    {String.fromCharCode(64 + i)}
-                 </div>
-               ))}
-            </div>
-            <span className="text-sm font-semibold text-text/60">
-               <span className="text-primary font-bold">#1</span> Drain cleaning network in the USA
-            </span>
-          </motion.div>
-
           {/* 🔹 H1 (CLEAN & BOLD) */}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}

@@ -49,6 +49,16 @@ const locationLinks = [
   { name: "Drain Cleaning in Tucson", href: "/drain-cleaning-tucson" },
   { name: "Drain Cleaning in Fresno", href: "/drain-cleaning-fresno" },
   { name: "Drain Cleaning in Sacramento", href: "/drain-cleaning-sacramento" },
+  { name: "Drain Cleaning in Atlanta", href: "/drain-cleaning-atlanta" },
+  { name: "Drain Cleaning in Mesa", href: "/drain-cleaning-mesa" },
+  { name: "Drain Cleaning in Kansas City", href: "/drain-cleaning-kansas-city" },
+  { name: "Drain Cleaning in Colorado Springs", href: "/drain-cleaning-colorado-springs" },
+  { name: "Drain Cleaning in Omaha", href: "/drain-cleaning-omaha" },
+  { name: "Drain Cleaning in Raleigh", href: "/drain-cleaning-raleigh" },
+  { name: "Drain Cleaning in Miami", href: "/drain-cleaning-miami" },
+  { name: "Drain Cleaning in Virginia Beach", href: "/drain-cleaning-virginia-beach" },
+  { name: "Drain Cleaning in Long Beach", href: "/drain-cleaning-long-beach" },
+  { name: "Drain Cleaning in Oakland", href: "/drain-cleaning-oakland" },
 ];
 
 const companyLinks = [

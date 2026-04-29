@@ -285,7 +285,7 @@ export function TermsClient() {
                 <h3 className="text-xl font-black text-text uppercase italic mb-6">9. Intellectual Property</h3>
                 <p className="text-sm text-text/60 font-medium leading-relaxed mb-6">Website content, design, and proprietary code are owned by DrainCleaningNearMe. Unauthorized copying is strictly prohibited.</p>
                 <div className="flex gap-2">
-                   {[1,2,3].map(i => <div key={i} className="w-8 h-8 rounded-lg bg-primary/20" />)}
+                   <div className="w-8 h-8 rounded-lg bg-primary/20" />
                 </div>
              </div>
              <div className="p-10 rounded-[2.5rem] bg-card border border-border">

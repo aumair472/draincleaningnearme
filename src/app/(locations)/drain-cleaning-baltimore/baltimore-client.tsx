@@ -10,6 +10,7 @@ import {
 import React from "react";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import { TrustBadge } from "@/components/ui/trust-badge";
 
 const serviceAreas = [
   "Federal Hill", "Fells Point", "Canton", "Hampden", 
@@ -34,18 +35,10 @@ export function BaltimoreClient() {
 
           <div className="container relative z-10 w-full">
             <div className="flex flex-col items-center text-center container-narrow">
-              <motion.div
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                className="inline-flex items-center gap-2.5 px-5 py-2.5 bg-card border border-border rounded-full shadow-sm mb-10"
-              >
-                <div className="flex -space-x-1.5">
-                   {[1,2,3].map(i => <div key={i} className="w-5 h-5 rounded-full border-2 border-card bg-primary/20 flex items-center justify-center text-[8px] font-bold">BWI</div>)}
-                </div>
-                <span className="text-sm font-semibold text-text/60">
-                   Licensed and Insured Baltimore Plumbers
-                </span>
-              </motion.div>
+              <TrustBadge 
+                badgeText="BWI"
+                text="Licensed and Insured Baltimore Plumbers"
+              />
 
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
