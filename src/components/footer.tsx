@@ -1,16 +1,32 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { Phone, MapPin, ShieldCheck, Zap, Heart, ChevronRight } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Phone, MapPin, ShieldCheck, Zap, Heart, ChevronRight, Plus, Minus } from "lucide-react";
 import Link from "next/link";
+import React from "react";
 
-const serviceLinks = [
-  { name: "Kitchen Sink Drain Cleaning Services", href: "/kitchen-sink-drain-cleaning-unclogging-services" },
-  { name: "Bathroom Drain Cleaning Services", href: "/bathroom-drain-cleaning-unclogging-services" },
-  { name: "Emergency Drain Cleaning Services", href: "/emergency-drain-cleaning-services" },
-  { name: "Hydro Jetting Drain Cleaning", href: "/hydro-jetting-cleaning-services" },
-  { name: "Sewer Line Cleaning & Repair", href: "/sewer-line-cleaning-repair-usa" },
-  { name: "Drain Camera Inspection Services", href: "/drain-camera-inspection" },
+const serviceGroups = [
+  {
+    title: "Drain Cleaning",
+    links: [
+      { name: "Kitchen Sink Drain Cleaning Services", href: "/kitchen-sink-drain-cleaning-unclogging-services" },
+      { name: "Bathroom Drain Cleaning Services", href: "/bathroom-drain-cleaning-unclogging-services" },
+    ]
+  },
+  {
+    title: "Emergency Services",
+    links: [
+      { name: "Emergency Drain Cleaning Services", href: "/emergency-drain-cleaning-services" },
+      { name: "Sewer Line Cleaning & Repair", href: "/sewer-line-cleaning-repair-usa" },
+    ]
+  },
+  {
+    title: "Inspection & Maintenance",
+    links: [
+      { name: "Hydro Jetting Drain Cleaning", href: "/hydro-jetting-cleaning-services" },
+      { name: "Drain Camera Inspection Services", href: "/drain-camera-inspection" },
+    ]
+  }
 ];
 
 const locationLinks = [
@@ -59,6 +75,16 @@ const locationLinks = [
   { name: "Drain Cleaning in Virginia Beach", href: "/drain-cleaning-virginia-beach" },
   { name: "Drain Cleaning in Long Beach", href: "/drain-cleaning-long-beach" },
   { name: "Drain Cleaning in Oakland", href: "/drain-cleaning-oakland" },
+  { name: "Drain Cleaning in Arlington", href: "/drain-cleaning-arlington" },
+  { name: "Drain Cleaning in Wichita", href: "/drain-cleaning-wichita" },
+  { name: "Drain Cleaning in Bakersfield", href: "/drain-cleaning-bakersfield" },
+  { name: "Drain Cleaning in New Orleans", href: "/drain-cleaning-new-orleans" },
+  { name: "Drain Cleaning in Anaheim", href: "/drain-cleaning-anaheim" },
+  { name: "Drain Cleaning in Tampa", href: "/drain-cleaning-tampa" },
+  { name: "Drain Cleaning in Aurora", href: "/drain-cleaning-aurora" },
+  { name: "Drain Cleaning in Santa Ana", href: "/drain-cleaning-santa-ana" },
+  { name: "Drain Cleaning in Riverside", href: "/drain-cleaning-riverside" },
+  { name: "Drain Cleaning in Corpus Christi", href: "/drain-cleaning-corpus-christi" },
 ];
 
 const companyLinks = [
@@ -68,106 +94,213 @@ const companyLinks = [
   { name: "Terms of Service", href: "/terms" },
 ];
 
-function FooterLinkList({ links }: { links: { name: string; href: string }[] }) {
+function LinkItem({ link }: { link: { name: string; href: string } }) {
   return (
-    <ul className="space-y-3">
-      {links.map((link) => (
-        <li key={link.name}>
-          <Link
-            href={link.href}
-            className="text-sm font-medium text-slate-400 hover:text-white transition-colors flex items-center gap-2 group"
-          >
-            <ChevronRight
-              size={13}
-              className="text-primary opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0 shrink-0"
-            />
-            {link.name}
-          </Link>
-        </li>
-      ))}
-    </ul>
+    <li key={link.name}>
+      <Link
+        href={link.href}
+        className="text-[13px] font-medium text-slate-400 hover:text-primary transition-all flex items-center gap-2 group"
+      >
+        <ChevronRight
+          size={12}
+          className="text-primary opacity-0 group-hover:opacity-100 transition-all -translate-x-1 group-hover:translate-x-0 shrink-0"
+        />
+        <span className="group-hover:translate-x-0.5 transition-transform">{link.name}</span>
+      </Link>
+    </li>
   );
 }
 
 export function Footer() {
+  const [showAllLocations, setShowAllLocations] = React.useState(false);
+  
+  // Split locations into chunks of 8 for columns, but we'll manage them in a responsive grid
+  const initialVisibleCount = 16;
+  const visibleLocations = showAllLocations ? locationLinks : locationLinks.slice(0, initialVisibleCount);
+
   return (
-    <footer className="bg-slate-900 relative pt-20 pb-12 overflow-hidden text-slate-300">
+    <footer className="bg-slate-900 relative pt-20 pb-12 overflow-hidden text-slate-300 border-t border-white/5">
       <div className="container relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-12 mb-16">
+        
+        {/* Top Section: Brand & Main Services */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20">
+          
+          {/* Brand Column */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
 
-          {/* Brand Column — spans 2 cols on xl */}
-          <div className="space-y-6 xl:col-span-2">
-            <Link href="/" className="text-xl font-bold tracking-tight text-white inline-block" aria-label="Drain Cleaning Near Me — Home">
-              DrainCleaning<span className="text-primary font-normal">NearMe</span>
-            </Link>
-            <p className="text-sm font-medium leading-relaxed max-w-sm text-slate-400">
-              We connect you with licensed local drain cleaning and sewer cleaning professionals across the
-              United States. We are a lead generation service — not a plumbing contractor.
-            </p>
-            <div className="flex items-center gap-6">
-              <div className="flex items-center gap-2 text-primary font-bold text-xs uppercase tracking-wider">
-                <ShieldCheck size={16} className="text-primary" /> Licensed
-              </div>
-              <div className="flex items-center gap-2 text-primary font-bold text-xs uppercase tracking-wider">
-                <Zap size={16} className="text-primary" /> Verified
-              </div>
+  {/* LEFT SIDE */}
+  <div className="space-y-6">
+    <Link
+      href="/"
+      className="text-2xl font-bold tracking-tight text-white inline-block"
+    >
+      DrainCleaning
+      <span className="text-primary font-normal">NearMe</span>
+    </Link>
+
+    <p className="text-[14px] font-medium leading-relaxed max-w-sm text-slate-400">
+      Connecting you with licensed local drain cleaning and sewer experts across the USA.
+      Fast response, professional results, 24/7 availability.
+    </p>
+
+    <div className="flex items-center gap-4 flex-wrap">
+      <div className="flex items-center gap-2 text-primary font-bold text-[11px] uppercase tracking-wider bg-primary/5 px-3 py-1 rounded-full border border-primary/10">
+        <ShieldCheck size={14} /> Licensed & Insured
+      </div>
+
+      <div className="flex items-center gap-2 text-primary font-bold text-[11px] uppercase tracking-wider bg-primary/5 px-3 py-1 rounded-full border border-primary/10">
+        <Zap size={14} /> 24/7 Verified
+      </div>
+    </div>
+  </div>
+
+  {/* RIGHT SIDE (CTA + ADDRESS) */}
+  <div className="space-y-6 lg:pl-10">
+
+    {/* CALL CARD */}
+    <a
+      href="tel:+17247506935"
+      className="flex items-center gap-4 group bg-white/5 hover:bg-white/10 p-5 rounded-2xl border border-white/10 transition-all shadow-lg"
+    >
+      <div className="p-3 bg-primary/20 rounded-xl text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+        <Phone size={22} fill="currentColor" />
+      </div>
+
+      <div>
+        <p className="text-[11px] font-bold uppercase tracking-widest text-primary">
+          Emergency Dispatch
+        </p>
+        <p className="text-2xl font-black text-white tracking-tight">
+          (724) 750-6935
+        </p>
+      </div>
+    </a>
+
+    {/* ADDRESS */}
+    <div className="flex items-start gap-3">
+      <MapPin size={18} className="text-primary mt-1" />
+      <p className="text-sm font-medium text-slate-400 leading-relaxed">
+        209 Mountain Rd PL NE Ste R <br />
+        Albuquerque, NM 87110, USA
+      </p>
+    </div>
+
+  </div>
+
+</div>
+
+          {/* Grouped Services Grid */}
+          <div className="lg:col-span-8">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+    {serviceGroups.map((group) => (
+      <div key={group.title} className="space-y-6">
+        <div className="relative">
+          <h3 className="text-[12px] font-bold uppercase tracking-[0.2em] text-white">
+            {group.title}
+          </h3>
+          <div className="absolute -bottom-3 left-0 w-8 h-0.5 bg-primary rounded-full" />
+        </div>
+
+        <ul className="space-y-4">
+          {group.links.map((link) => (
+            <LinkItem key={link.name} link={link} />
+          ))}
+        </ul>
+      </div>
+    ))}
+
+    {/* Company Column */}
+    <div className="space-y-6">
+      <div className="relative">
+        <h3 className="text-[12px] font-bold uppercase tracking-[0.2em] text-white">
+          Company
+        </h3>
+        <div className="absolute -bottom-3 left-0 w-8 h-0.5 bg-primary rounded-full" />
+      </div>
+
+      <ul className="space-y-4">
+        {companyLinks.map((link) => (
+          <LinkItem key={link.name} link={link} />
+        ))}
+      </ul>
+    </div>
+
+  </div>
+</div>
+        </div>
+
+        {/* Middle Section: Service Areas Grid */}
+        <div className="pt-16 border-t border-white/5">
+          <div className="flex flex-col sm:flex-row items-baseline justify-between gap-4 mb-10">
+            <div className="space-y-2">
+              <h3 className="text-[16px] font-bold text-white tracking-tight">Service Areas</h3>
+              <p className="text-[13px] text-slate-500 font-medium">Licensed drain cleaning experts across major US cities.</p>
             </div>
-
-            {/* Contact Block */}
-            <div className="space-y-4 pt-2">
-              <a
-                href="tel:+17247506935"
-                aria-label="Call Drain Cleaning Near Me at (724) 750-6935"
-                className="flex items-center gap-4 group hover:bg-white/5 p-4 rounded-xl border border-white/10 transition-all w-fit"
+            {!showAllLocations && (
+              <button 
+                onClick={() => setShowAllLocations(true)}
+                className="text-[13px] font-bold text-primary hover:text-white transition-colors flex items-center gap-1 group"
               >
-                <div className="p-3 bg-primary/20 rounded-lg text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                  <Phone size={22} fill="currentColor" />
-                </div>
-                <div>
-                  <p className="text-xs font-bold uppercase tracking-widest text-primary mb-1">Call Anytime 24/7</p>
-                  <p className="text-xl font-black text-white tracking-tight">(724) 750-6935</p>
-                </div>
-              </a>
+                View All Locations <ChevronRight size={14} className="group-hover:translate-x-1 transition-transform" />
+              </button>
+            )}
+          </div>
 
-              <div className="flex items-start gap-3 px-1">
-                <MapPin size={18} className="text-primary shrink-0 mt-0.5" />
-                <p className="text-sm font-medium text-slate-400 leading-relaxed">
-                  209 Mountain Rd PL NE Ste R<br />
-                  Albuquerque, NM 87110, USA
-                </p>
-              </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-4">
+            {visibleLocations.map((link) => (
+              <LinkItem key={link.name} link={link} />
+            ))}
+          </div>
+
+          <AnimatePresence>
+            {!showAllLocations && (
+              <motion.div 
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className="mt-10 flex justify-center"
+              >
+                <button
+                  onClick={() => setShowAllLocations(true)}
+                  className="px-8 py-3 bg-white/5 border border-white/10 rounded-xl text-[13px] font-bold text-white hover:bg-white/10 hover:border-primary/50 transition-all flex items-center gap-2 group"
+                >
+                  <Plus size={16} className="text-primary group-hover:scale-110 transition-transform" />
+                  Show More Locations ({locationLinks.length - initialVisibleCount} Cities)
+                </button>
+              </motion.div>
+            )}
+          </AnimatePresence>
+
+          {showAllLocations && (
+            <div className="mt-10 flex justify-center">
+              <button
+                onClick={() => setShowAllLocations(false)}
+                className="px-8 py-3 bg-white/5 border border-white/10 rounded-xl text-[13px] font-bold text-white hover:bg-white/10 hover:border-primary/50 transition-all flex items-center gap-2 group"
+              >
+                <Minus size={16} className="text-primary group-hover:scale-110 transition-transform" />
+                Show Less
+              </button>
             </div>
-
-          </div>
-
-          {/* Services Column */}
-          <div>
-            <h3 className="text-sm font-bold uppercase tracking-wider text-white mb-6">Our Services</h3>
-            <FooterLinkList links={serviceLinks} />
-          </div>
-
-          {/* Locations Column */}
-          <div>
-            <h3 className="text-sm font-bold uppercase tracking-wider text-white mb-6">Service Areas</h3>
-            <FooterLinkList links={locationLinks} />
-          </div>
-
-          {/* Company Column */}
-          <div>
-            <h3 className="text-sm font-bold uppercase tracking-wider text-white mb-6">Company</h3>
-            <FooterLinkList links={companyLinks} />
-          </div>
+          )}
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-white/10">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-sm font-medium text-slate-500">
-              &copy; {new Date().getFullYear()} DrainCleaningNearMe.us &mdash; All Rights Reserved.
-            </p>
-            <p className="text-sm font-medium text-slate-500 flex items-center gap-2">
-              Developed with <Heart size={13} className="text-primary fill-primary" /> in the USA
-            </p>
+        <div className="mt-20 pt-8 border-t border-white/5">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+            <div className="flex flex-col items-center md:items-start gap-1">
+              <p className="text-[12px] font-medium text-slate-500">
+                &copy; {new Date().getFullYear()} DrainCleaningNearMe.us &mdash; Professional Lead Generation Service.
+              </p>
+              <p className="text-[10px] text-slate-600 font-medium">
+                Not a plumbing contractor. We connect you with local licensed professionals.
+              </p>
+            </div>
+            <div className="flex items-center gap-6">
+              <p className="text-[12px] font-medium text-slate-500 flex items-center gap-2">
+                Built with <Heart size={12} className="text-primary fill-primary" /> for American Homeowners
+              </p>
+            </div>
           </div>
         </div>
       </div>
