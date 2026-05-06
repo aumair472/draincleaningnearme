@@ -126,7 +126,7 @@ export function Footer() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20">
           
           {/* Brand Column */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+          <div className="lg:col-span-4 grid grid-cols-1 sm:grid-cols-2 gap-10 items-start">
 
   {/* LEFT SIDE */}
   <div className="space-y-6">
