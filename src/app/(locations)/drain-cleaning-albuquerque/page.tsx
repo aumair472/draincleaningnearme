@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "rooter services Albuquerque"
   ],
   alternates: {
-    canonical: "https://www.draincleaningnearme.us/drain-cleaning-albuquerque",
+    canonical: "https://draincleaningnearme.us/drain-cleaning-albuquerque",
   }
 };
 

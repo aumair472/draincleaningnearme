@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { blogs } from "@/data/blogs";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://www.draincleaningnearme.us";
+  const baseUrl = "https://draincleaningnearme.us";
   const now = new Date();
 
   const staticRoutes: MetadataRoute.Sitemap = [

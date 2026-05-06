@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "rooter services El Paso"
   ],
   alternates: {
-    canonical: "https://www.draincleaningnearme.us/drain-cleaning-el-paso",
+    canonical: "https://draincleaningnearme.us/drain-cleaning-el-paso",
   }
 };
 

@@ -37,12 +37,12 @@ export const metadata: Metadata = {
     "drain and sewer cleaning",
   ],
   authors: [{ name: "Drain Cleaning Near Me" }],
-  metadataBase: new URL("https://www.draincleaningnearme.us"),
+  metadataBase: new URL("https://draincleaningnearme.us"),
   openGraph: {
     title: "Drain Cleaning Services Near Me | 24/7 Emergency Plumbers",
     description: "Professional Drain Cleaning & Emergency Service Nationwide. Available 24/7.",
     type: "website",
-    url: "https://www.draincleaningnearme.us/",
+    url: "https://draincleaningnearme.us/",
     siteName: "Drain Cleaning Near Me",
     images: [
       {

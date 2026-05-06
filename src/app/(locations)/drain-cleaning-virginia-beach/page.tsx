@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "rooter services Virginia Beach"
   ],
   alternates: {
-    canonical: "https://www.draincleaningnearme.us/drain-cleaning-virginia-beach",
+    canonical: "https://draincleaningnearme.us/drain-cleaning-virginia-beach",
   }
 };
 

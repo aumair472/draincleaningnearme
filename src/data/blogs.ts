@@ -155,16 +155,16 @@ export const blogs = [
       localBusiness: `{
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "@id": "https://www.draincleaningnearme.us/#organization",
+        "@id": "https://draincleaningnearme.us/#organization",
         "name": "DrainCleaningNearMe",
         "description": "Stop slow drain pipes before they flood! Master 2026 professional & emergency drain cleaning; guide helps you to prevent backups & fix tough clogs fast to avoid damage. Call now.",
-        "url": "https://www.draincleaningnearme.us/",
+        "url": "https://draincleaningnearme.us/",
         "telephone": "+1-(724) 750-6935",
         "email": "info@draincleaningnearme.us",
-        "logo": "https://www.draincleaningnearme.us/logo.png",
+        "logo": "https://draincleaningnearme.us/logo.png",
         "image": [
-          "https://www.draincleaningnearme.us/images/hero-drain-cleaning.jpg",
-          "https://www.draincleaningnearme.us/images/hydro-jetting-service.jpg"
+          "https://draincleaningnearme.us/images/hero-drain-cleaning.jpg",
+          "https://draincleaningnearme.us/images/hydro-jetting-service.jpg"
         ],
         "priceRange": "$$",
         "areaServed": {
@@ -440,11 +440,11 @@ export const blogs = [
       localBusiness: `{
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "@id": "https://www.draincleaningnearme.us/#organization",
+        "@id": "https://draincleaningnearme.us/#organization",
         "name": "DrainCleaningNearMe",
-        "url": "https://www.draincleaningnearme.us/",
-        "logo": "https://www.draincleaningnearme.us/logo.png",
-        "image": "https://www.draincleaningnearme.us/hero-image.jpg",
+        "url": "https://draincleaningnearme.us/",
+        "logo": "https://draincleaningnearme.us/logo.png",
+        "image": "https://draincleaningnearme.us/hero-image.jpg",
         "description": "Expert drain cleaning services near me offering hydro jet drain cleaning, emergency drain clearing, sewer line cleaning, and 24/7 plumbing solutions for homes and businesses across the USA.",
         "telephone": "+1-800-DRAIN-PRO",
         "email": "info@draincleaningnearme.us",
@@ -765,11 +765,11 @@ export const blogs = [
       localBusiness: `{
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "@id": "https://www.draincleaningnearme.us/#organization",
+        "@id": "https://draincleaningnearme.us/#organization",
         "name": "DrainCleaningNearMe",
-        "url": "https://www.draincleaningnearme.us/",
-        "logo": "https://www.draincleaningnearme.us/logo.png",
-        "image": "https://www.draincleaningnearme.us/images/blog/residential-vs-commercial-drain-cleaning.webp",
+        "url": "https://draincleaningnearme.us/",
+        "logo": "https://draincleaningnearme.us/logo.png",
+        "image": "https://draincleaningnearme.us/images/blog/residential-vs-commercial-drain-cleaning.webp",
         "description": "Expert drain cleaning services near me offering residential and commercial solutions.",
         "telephone": "+1-(724) 750-6935",
         "email": "info@draincleaningnearme.us",

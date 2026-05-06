@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "Lead Generation Terms",
   ],
   alternates: {
-    canonical: "https://www.draincleaningnearme.us/terms",
+    canonical: "https://draincleaningnearme.us/terms",
   },
 };
 

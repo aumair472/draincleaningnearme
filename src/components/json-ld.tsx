@@ -5,7 +5,7 @@ export function JsonLd() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Drain Cleaning Near Me",
-    "url": "https://www.draincleaningnearme.us/",
+    "url": "https://draincleaningnearme.us/",
     "telephone": "+17247506935",
     "description": "Need drain cleaning near you? Get 24/7 emergency drain cleaning for kitchen sink clogs & bathroom drains through hydro jetting & camera inspection. Licensed pros on-site within 60 minutes.",
     "address": {
@@ -74,7 +74,7 @@ export function JsonLd() {
           "itemOffered": {
             "@type": "Service",
             "name": "Kitchen Sink Drain Cleaning",
-            "url": "https://www.draincleaningnearme.us/kitchen-sink-drain-cleaning-unclogging-services",
+            "url": "https://draincleaningnearme.us/kitchen-sink-drain-cleaning-unclogging-services",
             "description": "Kitchen sink clogs are often caused by grease, food scraps, coffee grounds and soap residue.",
           },
         },
@@ -83,7 +83,7 @@ export function JsonLd() {
           "itemOffered": {
             "@type": "Service",
             "name": "Bathroom Drain Cleaning",
-            "url": "https://www.draincleaningnearme.us/bathroom-drain-cleaning-unclogging-services",
+            "url": "https://draincleaningnearme.us/bathroom-drain-cleaning-unclogging-services",
             "description": "Professional bathroom drain unclogging for hair, soap scum and mineral buildup.",
           },
         },
@@ -92,7 +92,7 @@ export function JsonLd() {
           "itemOffered": {
             "@type": "Service",
             "name": "Emergency Drain Cleaning",
-            "url": "https://www.draincleaningnearme.us/emergency-drain-cleaning-services",
+            "url": "https://draincleaningnearme.us/emergency-drain-cleaning-services",
             "description": "24/7 emergency clogged drain service near me dispatch with fast local response times.",
           },
         },
@@ -101,7 +101,7 @@ export function JsonLd() {
           "itemOffered": {
             "@type": "Service",
             "name": "Hydro Jetting Services",
-            "url": "https://www.draincleaningnearme.us/hydro-jetting-cleaning-services",
+            "url": "https://draincleaningnearme.us/hydro-jetting-cleaning-services",
             "description": "High-pressure hydro jetting to clear stubborn blockages and clean sewer pipes.",
           },
         },
@@ -110,7 +110,7 @@ export function JsonLd() {
           "itemOffered": {
             "@type": "Service",
             "name": "Sewer Line Cleaning & Main Drain Clog Service",
-            "url": "https://www.draincleaningnearme.us/sewer-line-cleaning-repair-usa",
+            "url": "https://draincleaningnearme.us/sewer-line-cleaning-repair-usa",
             "description": "Complete sewer line cleaning, main drain clog removal, inspection, and preventive maintenance.",
           },
         },
@@ -119,7 +119,7 @@ export function JsonLd() {
           "itemOffered": {
             "@type": "Service",
             "name": "Drain Camera Inspection",
-            "url": "https://www.draincleaningnearme.us/drain-camera-inspection",
+            "url": "https://draincleaningnearme.us/drain-camera-inspection",
             "description": "Professional drain inspection services & sewer inspection near you. Accurate video camera drain inspection for homes & commercial sites.",
           },
         },
@@ -170,12 +170,12 @@ export function JsonLd() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Drain Cleaning Near Me",
-    "url": "https://www.draincleaningnearme.us/",
+    "url": "https://draincleaningnearme.us/",
     "potentialAction": {
       "@type": "SearchAction",
       "target": {
         "@type": "EntryPoint",
-        "urlTemplate": "https://www.draincleaningnearme.us/contact?q={search_term_string}",
+        "urlTemplate": "https://draincleaningnearme.us/contact?q={search_term_string}",
       },
       "query-input": "required name=search_term_string",
     },
@@ -189,7 +189,7 @@ export function JsonLd() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://www.draincleaningnearme.us/",
+        "item": "https://draincleaningnearme.us/",
       },
     ],
   };

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "rooter services Kansas City"
   ],
   alternates: {
-    canonical: "https://www.draincleaningnearme.us/drain-cleaning-kansas-city",
+    canonical: "https://draincleaningnearme.us/drain-cleaning-kansas-city",
   }
 };
 

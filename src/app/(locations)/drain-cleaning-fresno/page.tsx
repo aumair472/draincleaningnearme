@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "rooter services Fresno"
   ],
   alternates: {
-    canonical: "https://www.draincleaningnearme.us/drain-cleaning-fresno",
+    canonical: "https://draincleaningnearme.us/drain-cleaning-fresno",
   }
 };
 

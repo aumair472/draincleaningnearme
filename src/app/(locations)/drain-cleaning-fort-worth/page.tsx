@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "rooter services Fort Worth"
   ],
   alternates: {
-    canonical: "https://www.draincleaningnearme.us/drain-cleaning-fort-worth",
+    canonical: "https://draincleaningnearme.us/drain-cleaning-fort-worth",
   }
 };
 
@@ -22,7 +22,7 @@ export default function FortWorthPage() {
   const schema1 = {
     "@context": "https://schema.org", "@graph": [
     {
-    "@type": "LocalBusiness", "@id": "https://www.draincleaningnearme.us/#organization", "name": "DrainCleaningNearMe", "url": "https://www.draincleaningnearme.us/", "logo": "https://www.draincleaningnearme.us/logo.png", "image": [ "https://www.draincleaningnearme.us/images/hero-fort-worth.jpg", "https://www.draincleaningnearme.us/logo.png"
+    "@type": "LocalBusiness", "@id": "https://draincleaningnearme.us/#organization", "name": "DrainCleaningNearMe", "url": "https://draincleaningnearme.us/", "logo": "https://draincleaningnearme.us/logo.png", "image": [ "https://draincleaningnearme.us/images/hero-fort-worth.jpg", "https://draincleaningnearme.us/logo.png"
     ],"description": "Emergency drain cleaning services Fort Worth TX. 24/7 clogged drain repair, hydrojetting, sewerline cleaning by top-rated local plumbing experts.", "telephone": "+1(724) 750-6935", "email": "info@draincleaningnearme.us", "sameAs": [ "https://www.facebook.com/draincleaningnearme", "https://www.instagram.com/draincleaningnearme", "https://www.yelp.com/biz/draincleaningnearme-fort-worth"
     ],"priceRange": "$$", "areaServed": {
     "@type": "GeoCircle", "geoMidpoint": {
@@ -55,8 +55,8 @@ export default function FortWorthPage() {
     }, {
     "@type": "BreadcrumbList", "itemListElement": [
     {
-    "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.draincleaningnearme.us/" }, {
-    "@type": "ListItem", "position": 2, "name": "Drain Cleaning Fort Worth", "item": "https://www.draincleaningnearme.us/drain-cleaning-fort-worth" }
+    "@type": "ListItem", "position": 1, "name": "Home", "item": "https://draincleaningnearme.us/" }, {
+    "@type": "ListItem", "position": 2, "name": "Drain Cleaning Fort Worth", "item": "https://draincleaningnearme.us/drain-cleaning-fort-worth" }
     ]
     }
     ]

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "rooter services Jacksonville"
   ],
   alternates: {
-    canonical: "https://www.draincleaningnearme.us/drain-cleaning-jacksonville",
+    canonical: "https://draincleaningnearme.us/drain-cleaning-jacksonville",
   }
 };
 

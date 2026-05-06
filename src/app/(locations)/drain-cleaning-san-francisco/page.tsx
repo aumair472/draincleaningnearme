@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "rooter services San Francisco"
   ],
   alternates: {
-    canonical: "https://www.draincleaningnearme.us/drain-cleaning-san-francisco",
+    canonical: "https://draincleaningnearme.us/drain-cleaning-san-francisco",
   }
 };
 
@@ -23,15 +23,15 @@ export default function SanFranciscoPage() {
     "@graph": [
       {
         "@type": "LocalBusiness",
-        "@id": "https://www.draincleaningnearme.us/#organization",
+        "@id": "https://draincleaningnearme.us/#organization",
         "name": "DrainCleaningNearMe",
         "description": "Expert drain cleaning services in San Francisco offering emergency rooter services, hydro jetting, sewer line cleaning, and 24/7 clogged drain repair.",
-        "url": "https://www.draincleaningnearme.us/",
+        "url": "https://draincleaningnearme.us/",
         "telephone": "(415) 555-DRAIN",
-        "image": "https://www.draincleaningnearme.us/logo.png",
+        "image": "https://draincleaningnearme.us/logo.png",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://www.draincleaningnearme.us/logo.png"
+          "url": "https://draincleaningnearme.us/logo.png"
         },
         "address": {
           "@type": "PostalAddress",
@@ -65,37 +65,37 @@ export default function SanFranciscoPage() {
           "name": "DrainCleaningNearMe"
         },
         "hasOfferCatalog": {
-          "@id": "https://www.draincleaningnearme.us/#offer-catalog"
+          "@id": "https://draincleaningnearme.us/#offer-catalog"
         },
         "makesOffer": [
           {
-            "@id": "https://www.draincleaningnearme.us/#drain-cleaning-service"
+            "@id": "https://draincleaningnearme.us/#drain-cleaning-service"
           }
         ]
       },
       {
-        "@id": "https://www.draincleaningnearme.us/#offer-catalog",
+        "@id": "https://draincleaningnearme.us/#offer-catalog",
         "@type": "OfferCatalog",
         "name": "Drain Cleaning Services in San Francisco",
         "itemListElement": [
           {
             "@type": "Offer",
             "itemOffered": {
-              "@id": "https://www.draincleaningnearme.us/#drain-cleaning-service",
+              "@id": "https://draincleaningnearme.us/#drain-cleaning-service",
               "@type": "Service",
               "name": "Professional Drain Cleaning Services San Francisco",
               "description": "Expert drain unclogging, sewer line cleaning, hydro jetting, and emergency rooter services for residential and commercial properties.",
               "serviceType": "Drain Cleaning",
               "areaServed": "San Francisco, CA",
               "provider": {
-                "@id": "https://www.draincleaningnearme.us/#organization"
+                "@id": "https://draincleaningnearme.us/#organization"
               }
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
-              "@id": "https://www.draincleaningnearme.us/#hydro-jetting-service",
+              "@id": "https://draincleaningnearme.us/#hydro-jetting-service",
               "@type": "Service",
               "name": "Hydro Jetting San Francisco",
               "description": "High-pressure water jetting to completely clean pipes and remove grease, roots, and debris.",
@@ -106,19 +106,19 @@ export default function SanFranciscoPage() {
           {
             "@type": "Offer",
             "itemOffered": {
-              "@id": "https://www.draincleaningnearme.us/#emergency-drain-service",
+              "@id": "https://draincleaningnearme.us/#emergency-drain-service",
               "@type": "Service",
               "name": "24/7 Emergency Drain Cleaning San Francisco",
               "description": "Same-day response for sewer backups, clogged drains, and plumbing emergencies.",
               "serviceType": "Emergency Plumbing",
               "areaServed": "San Francisco, CA",
-              "availableChannel": "https://www.draincleaningnearme.us/"
+              "availableChannel": "https://draincleaningnearme.us/"
             }
           }
         ]
       },
       {
-        "@id": "https://www.draincleaningnearme.us/#drain-cleaning-service",
+        "@id": "https://draincleaningnearme.us/#drain-cleaning-service",
         "@type": "Service",
         "name": "Drain Cleaning Services San Francisco",
         "description": "Professional drain cleaning including kitchen drains, bathroom unclogging, sewer line cleaning, and hydro jetting for San Francisco homes and businesses.",
@@ -134,7 +134,7 @@ export default function SanFranciscoPage() {
           "sameAs": "https://en.wikipedia.org/wiki/San_Francisco"
         },
         "provider": {
-          "@id": "https://www.draincleaningnearme.us/#organization"
+          "@id": "https://draincleaningnearme.us/#organization"
         },
         "offers": {
           "@type": "Offer",

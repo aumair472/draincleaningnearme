@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "rooter services Oklahoma City"
   ],
   alternates: {
-    canonical: "https://www.draincleaningnearme.us/drain-cleaning-oklahoma-city",
+    canonical: "https://draincleaningnearme.us/drain-cleaning-oklahoma-city",
   }
 };
 

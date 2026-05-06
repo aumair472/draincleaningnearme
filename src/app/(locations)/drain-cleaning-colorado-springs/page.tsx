@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "rooter services Colorado Springs"
   ],
   alternates: {
-    canonical: "https://www.draincleaningnearme.us/drain-cleaning-colorado-springs",
+    canonical: "https://draincleaningnearme.us/drain-cleaning-colorado-springs",
   }
 };
 

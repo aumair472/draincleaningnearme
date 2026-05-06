@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   description:
     "Trust DrainCleaningNearMe for reliable, nationwide service in USA. Our local licensed drain cleaning experts provide 24/7 emergency services. Get help fast, reliable & ready!",
   alternates: {
-    canonical: "https://www.draincleaningnearme.us/about",
+    canonical: "https://draincleaningnearme.us/about",
   },
   robots: {
     index: true,

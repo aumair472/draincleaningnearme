@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     "hydro jetting phoenix"
   ],
   alternates: {
-    canonical: "https://www.draincleaningnearme.us/drain-cleaning-phoenix",
+    canonical: "https://draincleaningnearme.us/drain-cleaning-phoenix",
   }
 };
 

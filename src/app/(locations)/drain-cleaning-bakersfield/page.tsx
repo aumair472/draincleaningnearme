@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "rooter services Bakersfield"
   ],
   alternates: {
-    canonical: "https://www.draincleaningnearme.us/drain-cleaning-bakersfield",
+    canonical: "https://draincleaningnearme.us/drain-cleaning-bakersfield",
   }
 };
 

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "rooter services Long Beach"
   ],
   alternates: {
-    canonical: "https://www.draincleaningnearme.us/drain-cleaning-long-beach",
+    canonical: "https://draincleaningnearme.us/drain-cleaning-long-beach",
   }
 };
 

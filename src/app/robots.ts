@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/", "/_next/", "/static/"],
     },
-    sitemap: "https://www.draincleaningnearme.us/sitemap.xml",
+    sitemap: "https://draincleaningnearme.us/sitemap.xml",
   };
 }

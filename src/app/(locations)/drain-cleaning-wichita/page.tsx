@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "rooter services Wichita"
   ],
   alternates: {
-    canonical: "https://www.draincleaningnearme.us/drain-cleaning-wichita",
+    canonical: "https://draincleaningnearme.us/drain-cleaning-wichita",
   }
 };
 

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "rooter services Indianapolis"
   ],
   alternates: {
-    canonical: "https://www.draincleaningnearme.us/drain-cleaning-indianapolis",
+    canonical: "https://draincleaningnearme.us/drain-cleaning-indianapolis",
   }
 };
 
@@ -22,7 +22,7 @@ export default function IndianapolisPage() {
   const schema = {
     "@context": "https://schema.org", "@graph": [
     {
-    "@type": "LocalBusiness", "@id": "https://www.draincleaningnearme.us/#organization", "name": "DrainCleaningNearMe", "url": "https://www.draincleaningnearme.us/", "logo": "https://www.draincleaningnearme.us/logo.png", "image": "https://www.draincleaningnearme.us/images/drain-cleaning-team.jpg", "description": "Professional & Emergency Drain Cleaning Rooter Services in Indianapolis, IN. 24/7emergencydrain cleaning, hydro jetting, sewer line cleaning, and rooter services.", "telephone": "+1-317-555-3724", "email": "info@draincleaningnearme.us", "priceRange": "$$", "areaServed": {
+    "@type": "LocalBusiness", "@id": "https://draincleaningnearme.us/#organization", "name": "DrainCleaningNearMe", "url": "https://draincleaningnearme.us/", "logo": "https://draincleaningnearme.us/logo.png", "image": "https://draincleaningnearme.us/images/drain-cleaning-team.jpg", "description": "Professional & Emergency Drain Cleaning Rooter Services in Indianapolis, IN. 24/7emergencydrain cleaning, hydro jetting, sewer line cleaning, and rooter services.", "telephone": "+1-317-555-3724", "email": "info@draincleaningnearme.us", "priceRange": "$$", "areaServed": {
     "@type": "City", "name": "Indianapolis" }, "address": {
     "@type": "PostalAddress",
     "addressLocality": "Indianapolis", "addressRegion": "IN", "addressCountry": "US", "postalCode": "46201" }, "geo": {
@@ -50,8 +50,8 @@ export default function IndianapolisPage() {
     "@type": "AggregateRating", "ratingValue": "4.9", "bestRating": "5", "worstRating": "1", "ratingCount": "1278" }, "makesOffer": {
     "@type": "Offer", "name": "Professional Drain Cleaning Services", "description": "Licensed drain cleaning experts serving Indianapolis with transparent pricing and 24/7availability." }
     }, {
-    "@type": "Service", "@id": "https://www.draincleaningnearme.us/#drain-cleaning-service", "name": "Professional Drain Cleaning Services Indianapolis", "description": "Expert drain cleaning, hydro jetting, sewer line cleaning, and 24/7 emergency services for Indianapolis homes and businesses.", "serviceType": "Drain Cleaning", "provider": {
-    "@id": "https://www.draincleaningnearme.us/#organization" }, "areaServed": {
+    "@type": "Service", "@id": "https://draincleaningnearme.us/#drain-cleaning-service", "name": "Professional Drain Cleaning Services Indianapolis", "description": "Expert drain cleaning, hydro jetting, sewer line cleaning, and 24/7 emergency services for Indianapolis homes and businesses.", "serviceType": "Drain Cleaning", "provider": {
+    "@id": "https://draincleaningnearme.us/#organization" }, "areaServed": {
     "@type": "City", "name": "Indianapolis, Indiana" }, "offers": {
     "@type": "Offer", "priceCurrency": "USD", "price": "190", "priceSpecification": {
     "@type": "PriceSpecification", "eligibleRegion": "Indianapolis, IN", "minPrice": "100", "maxPrice": "1500", "priceCurrency": "USD" }
@@ -68,7 +68,7 @@ export default function IndianapolisPage() {
     ]
     }
     }, {
-    "@type": "FAQPage", "@id": "https://www.draincleaningnearme.us/#faq", "mainEntity": [
+    "@type": "FAQPage", "@id": "https://draincleaningnearme.us/#faq", "mainEntity": [
     {
     "@type": "Question", "name": "How much does drain cleaning cost in Indianapolis?", "acceptedAnswer": {
     "@type": "Answer", "text": "Drain cleaning costs in Indianapolis typically range from $100 to $800, with an average of $190-$275for basic unclogging services. Hydro jetting and sewer line cleaning range from $300-$800 depending onseverityandpipe size. Emergency services may include a 20-50% surcharge." }

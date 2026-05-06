@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     "24/7 drain service"
   ],
   alternates: {
-    canonical: "https://www.draincleaningnearme.us",
+    canonical: "https://draincleaningnearme.us",
   },
 };
 

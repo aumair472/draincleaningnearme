@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "rooter services Santa Ana"
   ],
   alternates: {
-    canonical: "https://www.draincleaningnearme.us/drain-cleaning-santa-ana",
+    canonical: "https://draincleaningnearme.us/drain-cleaning-santa-ana",
   }
 };
 

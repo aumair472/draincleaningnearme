@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     "clogged drain repair NYC"
   ],
   alternates: {
-    canonical: "https://www.draincleaningnearme.us/drain-cleaning-nyc",
+    canonical: "https://draincleaningnearme.us/drain-cleaning-nyc",
   }
 };
 

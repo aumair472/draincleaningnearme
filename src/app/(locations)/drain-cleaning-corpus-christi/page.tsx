@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "rooter services Corpus Christi"
   ],
   alternates: {
-    canonical: "https://www.draincleaningnearme.us/drain-cleaning-corpus-christi",
+    canonical: "https://draincleaningnearme.us/drain-cleaning-corpus-christi",
   }
 };
 

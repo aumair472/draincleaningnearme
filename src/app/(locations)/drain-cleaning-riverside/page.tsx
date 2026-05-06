@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "rooter services Riverside"
   ],
   alternates: {
-    canonical: "https://www.draincleaningnearme.us/drain-cleaning-riverside",
+    canonical: "https://draincleaningnearme.us/drain-cleaning-riverside",
   }
 };
 

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "User data protection",
   ],
   alternates: {
-    canonical: "https://www.draincleaningnearme.us/privacy-policy",
+    canonical: "https://draincleaningnearme.us/privacy-policy",
   },
 };
 

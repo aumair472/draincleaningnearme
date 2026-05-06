@@ -103,7 +103,7 @@ export function PrivacyClient() {
             <div className="grid sm:grid-cols-2 gap-4">
                {[
                  { label: "Business Name", value: "DrainCleaningNearMe", Icon: Building },
-                 { label: "Website", value: "draincleaningnearme.us", Icon: Globe, href: "https://www.draincleaningnearme.us/" },
+                 { label: "Website", value: "draincleaningnearme.us", Icon: Globe, href: "https://draincleaningnearme.us/" },
                  { label: "Email", value: mainEmail, Icon: Mail, href: `mailto:${mainEmail}` },
                  { label: "Phone", value: "(724) 750-6935", Icon: Smartphone, href: mainTelLink },
                  { label: "Address", value: "209 Mountain Rd PL NE Ste R, Albuquerque, NM", Icon: MapPin }

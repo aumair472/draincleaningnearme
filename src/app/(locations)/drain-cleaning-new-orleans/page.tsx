@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "rooter services New Orleans"
   ],
   alternates: {
-    canonical: "https://www.draincleaningnearme.us/drain-cleaning-new-orleans",
+    canonical: "https://draincleaningnearme.us/drain-cleaning-new-orleans",
   }
 };
 

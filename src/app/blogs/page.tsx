@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Expert Plumbing & Drain Cleaning Blog | Best Tips 2026",
   description: "Read the latest tips, guides, and trends for professional drain cleaning, sewer repair, and home plumbing maintenance across the USA.",
   alternates: {
-    canonical: "https://www.draincleaningnearme.us/blogs",
+    canonical: "https://draincleaningnearme.us/blogs",
   }
 };
 

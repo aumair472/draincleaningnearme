@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     "hydro jetting Houston TX"
   ],
   alternates: {
-    canonical: "https://www.draincleaningnearme.us/drain-cleaning-houston",
+    canonical: "https://draincleaningnearme.us/drain-cleaning-houston",
   }
 };
 

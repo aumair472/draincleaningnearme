@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: blog.description,
     keywords: blog.keywords,
     alternates: {
-      canonical: `https://www.draincleaningnearme.us/blogs/${blog.slug}`,
+      canonical: `https://draincleaningnearme.us/blogs/${blog.slug}`,
     }
   };
 }

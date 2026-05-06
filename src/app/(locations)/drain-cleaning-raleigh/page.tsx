@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "rooter services Raleigh"
   ],
   alternates: {
-    canonical: "https://www.draincleaningnearme.us/drain-cleaning-raleigh",
+    canonical: "https://draincleaningnearme.us/drain-cleaning-raleigh",
   }
 };
 

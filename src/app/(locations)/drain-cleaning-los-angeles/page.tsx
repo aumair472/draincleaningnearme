@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     "hydro jetting Los Angeles"
   ],
   alternates: {
-    canonical: "https://www.draincleaningnearme.us/drain-cleaning-los-angeles",
+    canonical: "https://draincleaningnearme.us/drain-cleaning-los-angeles",
   }
 };
 

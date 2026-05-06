@@ -568,7 +568,7 @@ export function JAXClient() {
         "@type": "LocalBusiness",
         "name": "DrainCleaningNearMe",
         "description": "Expert drain cleaning services Jacksonville FL. Emergency rooter, hydro jetting, sewer cleaning.",
-        "url": "https://www.draincleaningnearme.us/",
+        "url": "https://draincleaningnearme.us/",
         "telephone": "(724) 750-6935",
         "address": {
           "@type": "PostalAddress",

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "rooter services Seattle"
   ],
   alternates: {
-    canonical: "https://www.draincleaningnearme.us/drain-cleaning-seattle",
+    canonical: "https://draincleaningnearme.us/drain-cleaning-seattle",
   }
 };
 

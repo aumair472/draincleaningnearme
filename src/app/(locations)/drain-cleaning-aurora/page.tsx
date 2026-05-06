@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "rooter services Aurora"
   ],
   alternates: {
-    canonical: "https://www.draincleaningnearme.us/drain-cleaning-aurora",
+    canonical: "https://draincleaningnearme.us/drain-cleaning-aurora",
   }
 };
 
