@@ -39,10 +39,16 @@
   --radius-3xl: calc(var(--radius) * 2.2);
 
   @keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(20px); }
+    from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
   }
-  --animate-fade-in-up: fadeInUp 0.6s ease both;
+  --animate-fade-in-up: fadeInUp 0.6s ease-out both;
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  --animate-fade-in: fadeIn 0.5s ease-out both;
 }
 
 :root {
@@ -76,6 +82,10 @@
   * {
     @apply border-border outline-ring/50;
   }
+  html, body {
+    @apply overflow-x-hidden w-full max-w-full relative;
+    scroll-behavior: smooth;
+  }
   body {
     @apply bg-bg text-text selection:bg-primary/30;
     font-family: var(--font-body);
@@ -99,4 +109,12 @@
   .container-narrow {
     @apply mx-auto px-5 sm:px-10 lg:px-12 w-full max-w-[1000px];
   }
-}
+
+  .animate-fade-in-up {
+    animation: var(--animate-fade-in-up);
+  }
+
+  .animate-fade-in {
+    animation: var(--animate-fade-in);
+  }
+}

@@ -1,8 +1,5 @@
-"use client";
-
-import { motion } from "framer-motion";
-import { Phone, Star, CheckCircle2, ShieldCheck, Clock, MapPin } from "lucide-react";
-import { TrustBadge } from "@/components/ui/trust-badge";
+import { ShieldCheck, Clock, Star, MapPin, Phone, CheckCircle2 } from "lucide-react";
+import React from "react";
 
 export function Hero() {
   const mainTelLink = "tel:+17247506935";
@@ -21,33 +18,24 @@ export function Hero() {
       <div className="container relative z-10">
         <div className="flex flex-col items-center text-center max-w-5xl mx-auto">
           
-          {/* 🔹 H1 (CLEAN & BOLD) */}
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-3xl sm:text-5xl md:text-7xl font-extrabold tracking-tight mb-8 text-text leading-[1.1]"
+          {/* 🔹 H1 (SSR READY - NO HYDRATION DELAY) */}
+          <h1
+            className="text-3xl sm:text-5xl md:text-7xl font-extrabold tracking-tight mb-8 text-text leading-[1.1] animate-fade-in-up"
           >
             Emergency Drain Cleaning Near You <br className="hidden md:block" />
             <span className="text-primary">24/7 Fast Local Service</span>
-          </motion.h1>
+          </h1>
 
-          {/* 🔹 SUBHEADING (READABLE) */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-lg md:text-xl text-text/70 font-medium max-w-3xl mx-auto mb-12 leading-relaxed"
+          {/* 🔹 SUBHEADING */}
+          <div
+            className="text-lg md:text-xl text-text/70 font-medium max-w-3xl mx-auto mb-12 leading-relaxed animate-fade-in-up [animation-delay:200ms]"
           >
             Clogged drain or sewer backup? Don’t wait. DrainCleaningNearMe connects you with licensed local drain cleaning professionals who can be at your door within <span className="text-primary font-bold border-b-2 border-primary/20">30–60 minutes</span>.
-          </motion.div>
+          </div>
 
           {/* 🔹 INLINE TRUST SIGNALS */}
-          <motion.div 
-             initial={{ opacity: 0, scale: 0.95 }}
-             animate={{ opacity: 1, scale: 1 }}
-             transition={{ duration: 0.5, delay: 0.2 }}
-             className="flex flex-wrap justify-center gap-6 md:gap-10 mb-12 text-sm font-semibold text-text/40 tracking-tight"
+          <div 
+             className="flex flex-wrap justify-center gap-6 md:gap-10 mb-12 text-sm font-semibold text-text/40 tracking-tight animate-fade-in-up [animation-delay:400ms]"
           >
              <div className="flex items-center gap-2">
                 <ShieldCheck size={18} className="text-primary" /> Licensed & Insured
@@ -61,14 +49,11 @@ export function Hero() {
              <div className="flex items-center gap-2">
                 <MapPin size={18} className="text-primary" /> Nationwide Coverage
              </div>
-          </motion.div>
+          </div>
 
           {/* 🔹 MAIN CTAs */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="flex flex-col sm:flex-row gap-6 w-full sm:w-auto mb-16"
+          <div
+            className="flex flex-col sm:flex-row gap-6 w-full sm:w-auto mb-16 animate-fade-in-up [animation-delay:600ms]"
           >
             <a
               href={mainTelLink}
@@ -83,14 +68,11 @@ export function Hero() {
             >
               Request service
             </a>
-          </motion.div>
+          </div>
 
           {/* 🔹 BOTTOM TRUST BAR */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="flex flex-wrap justify-center items-center gap-8 py-6 px-10 bg-card/50 border border-border rounded-full shadow-xl backdrop-blur-sm"
+          <div
+            className="flex flex-wrap justify-center items-center gap-8 py-6 px-10 bg-card/50 border border-border rounded-full shadow-xl backdrop-blur-sm animate-fade-in-up [animation-delay:800ms]"
           >
             <div className="flex items-center gap-3">
                <div className="flex -space-x-1">
@@ -106,10 +88,11 @@ export function Hero() {
             <div className="flex items-center gap-2 text-sm font-semibold text-primary">
                <MapPin size={16} /> Available in your area
             </div>
-          </motion.div>
+          </div>
 
         </div>
       </div>
     </section>
   );
 }
+

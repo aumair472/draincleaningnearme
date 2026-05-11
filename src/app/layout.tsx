@@ -69,6 +69,8 @@ export const metadata: Metadata = {
   },
 };
 
+import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/footer";
 import { CallCTA } from "@/components/call-cta";
 
 export default function RootLayout({
@@ -77,7 +79,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className="scroll-smooth" data-scroll-behavior="smooth">
+    <html lang="en" suppressHydrationWarning className="scroll-smooth">
       <head>
         <script
           src="https://analytics.ahrefs.com/analytics.js"
@@ -106,7 +108,6 @@ export default function RootLayout({
         </Script>
       </head>
       <body
-        suppressHydrationWarning
         className={cn(
           "min-h-screen bg-bg text-text font-sans antialiased flex flex-col",
           manrope.variable,
@@ -122,10 +123,13 @@ export default function RootLayout({
           ></iframe>
         </noscript>
         <JsonLd />
-        {children}
+        <Navbar />
+        <main className="flex-1">{children}</main>
+        <Footer />
         <CallCTA />
       </body>
     </html>
   );
 }
+
 

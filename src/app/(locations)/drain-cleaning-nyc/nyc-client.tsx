@@ -1,16 +1,11 @@
-"use client";
-
-import { motion } from "framer-motion";
 import { 
   Phone, Star, CheckCircle2, ShieldCheck, Clock, MapPin, 
-  ChevronRight, Utensils, Building2, Construction, Search, 
+  ChevronRight, Utensils, Building2, Search, 
   Activity, Waves, Droplets, Trash2, ShieldAlert,
-  Plus, Minus, HelpCircle, UserCheck, Zap
+  Zap
 } from "lucide-react";
 import React from "react";
-import { Navbar } from "@/components/navbar";
-import { Footer } from "@/components/footer";
-import { TrustBadge } from "@/components/ui/trust-badge";
+import { FAQClient } from "@/components/faq-client";
 
 const boroughs = [
   "Manhattan", "Brooklyn", "Queens", "Bronx", "Staten Island"
@@ -19,12 +14,17 @@ const boroughs = [
 const mainTelLink = "tel:+17247506935";
 
 export function NYCClient() {
-  const [openIndex, setOpenIndex] = React.useState<number | null>(0);
+  const faqs = [
+    { q: "How much does drain cleaning cost in NYC?", a: "Depends on clog severity and location. Simple clogs are fixed quickly; sewer cleaning ranges slightly higher." },
+    { q: "How long does it take?", a: "Usually 1–2 hours for most residential single-line clogs in NYC apartments." },
+    { q: "Signs of sewer blockage?", a: "Multiple drains backing up and foul odors in the basement or floor drains." },
+    { q: "Is hydro jetting safe?", a: "Yes, when performed by our professional network experts on verified pipe systems." },
+    { q: "Emergency arrival time?", a: "Often within 30–60 minutes across the five NYC boroughs." }
+  ];
 
   return (
     <div className="flex flex-col min-h-screen bg-bg font-body">
-      <Navbar />
-      <main className="flex-1 pt-20">
+      <main className="flex-1">
         
         {/* 1. HERO SECTION (NYC LOCAL + HIGH CONVERSION) */}
         <section className="relative min-h-[80vh] flex flex-col justify-center py-20 overflow-hidden bg-bg border-b border-border">
@@ -34,33 +34,24 @@ export function NYCClient() {
 
           <div className="container relative z-10 w-full">
             <div className="flex flex-col items-center text-center container-narrow">
-              <TrustBadge 
-                badgeText="NY"
-                text="Licensed and Insured NYC Plumbers"
-              />
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-primary/10 border border-primary/20 rounded-full text-[10px] font-bold uppercase tracking-widest text-primary mb-8 animate-fade-in">
+                 NY — Licensed and Insured NYC Plumbers
+              </div>
 
-              <motion.h1
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight mb-8 text-text leading-[1.1]"
+              <h1
+                className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight mb-8 text-text leading-[1.1] animate-fade-in-up"
               >
                 Professional Drain Cleaning & <span className="text-primary italic font-black">Rooter Services</span> in New York City
-              </motion.h1>
+              </h1>
 
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.1 }}
-                className="text-lg md:text-xl text-text/70 font-medium max-w-3xl mx-auto mb-12 leading-relaxed"
+              <div
+                className="text-lg md:text-xl text-text/70 font-medium max-w-3xl mx-auto mb-12 leading-relaxed animate-fade-in-up [animation-delay:200ms]"
               >
                 Need fast, reliable drain cleaning service in New York? (Manhattan, Brooklyn, Queens, Bronx or Staten Island). We connect you with licensed local drain cleaning professionals who can be at your door within <span className="text-primary font-bold">30–60 minutes</span>.
-              </motion.div>
+              </div>
 
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2 }}
-                className="flex flex-col sm:flex-row gap-6 w-full sm:w-auto mb-16"
+              <div
+                className="flex flex-col sm:flex-row gap-6 w-full sm:w-auto mb-16 animate-fade-in-up [animation-delay:400ms]"
               >
                 <a
                   href={mainTelLink}
@@ -75,19 +66,16 @@ export function NYCClient() {
                 >
                   Get free estimate
                 </a>
-              </motion.div>
+              </div>
 
-              <motion.div
-                 initial={{ opacity: 0 }}
-                 animate={{ opacity: 1 }}
-                 transition={{ delay: 0.3 }}
-                 className="flex flex-wrap justify-center gap-8 py-6 px-10 bg-card/50 border border-border rounded-full text-sm font-semibold text-text/60"
+              <div
+                 className="flex flex-wrap justify-center gap-8 py-6 px-10 bg-card/50 border border-border rounded-full text-sm font-semibold text-text/60 animate-fade-in [animation-delay:600ms]"
               >
                  <div className="flex items-center gap-2"><Star size={18} className="text-accent fill-accent" /> 4.8/5 Rating</div>
                  <div className="flex items-center gap-2"><ShieldCheck size={18} className="text-primary" /> Licensed NYC Plumbers</div>
                  <div className="flex items-center gap-2"><Clock size={18} className="text-primary" /> Same-Day dispatch</div>
                  <div className="flex items-center gap-2"><MapPin size={18} className="text-primary" /> All 5 Boroughs</div>
-              </motion.div>
+              </div>
             </div>
           </div>
         </section>
@@ -98,7 +86,7 @@ export function NYCClient() {
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="space-y-8">
                 <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text leading-tight">
-                  NYC drain cleaning services you can trust
+                   NYC drain cleaning services you can trust
                 </h2>
                 <div className="space-y-6 text-lg text-text/70 leading-relaxed font-body">
                   <p>
@@ -138,7 +126,7 @@ export function NYCClient() {
           <div className="container">
              <div className="text-center mb-20 space-y-4">
                 <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text">
-                  Our drain cleaning services in New York
+                   Our drain cleaning services in New York
                 </h2>
                 <p className="text-text/70 font-medium text-lg max-w-2xl mx-auto">
                     Professional, localized solutions for the unique plumbing systems of New York City homes and businesses.
@@ -153,12 +141,8 @@ export function NYCClient() {
                   { title: "Sewer camera inspection NYC", desc: "Detect cracks, roots and pipe damage with HD video before they cause a flood.", icon: Search },
                   { title: "Emergency drain cleaning NYC", desc: "24/7 fast response across all boroughs. Immediate help for total backups.", icon: Zap }
                 ].map((s, i) => (
-                  <motion.div
+                  <div
                     key={i}
-                    initial={{ opacity: 0, y: 15 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: i * 0.1 }}
                     className="p-10 rounded-[2.5rem] bg-card border border-border hover:border-primary/20 transition-all hover:shadow-2xl group flex flex-col items-center text-center shadow-sm"
                   >
                     <div className="w-16 h-16 rounded-2xl bg-primary/5 text-primary flex items-center justify-center mb-8 transition-colors group-hover:bg-primary group-hover:text-white shadow-inner">
@@ -169,7 +153,7 @@ export function NYCClient() {
                     <a href={mainTelLink} className="mt-8 text-primary font-bold text-sm flex items-center gap-2 group/link">
                        Call now <ChevronRight size={16} className="group-hover/link:translate-x-1 transition-transform" />
                     </a>
-                  </motion.div>
+                  </div>
                 ))}
              </div>
           </div>
@@ -233,7 +217,7 @@ export function NYCClient() {
                    { t: "Foul odors", icon: Activity },
                    { t: "Gurgling sounds", icon: Waves },
                    { t: "Water backing up", icon: Droplets },
-                   { t: "Recurring clogs", icon: Plus }
+                   { t: "Recurring clogs", icon: ShieldAlert }
                  ].map((sign, i) => (
                    <div key={i} className="space-y-4 flex flex-col items-center">
                       <div className="w-16 h-16 rounded-2xl bg-card border border-border flex items-center justify-center text-primary shadow-sm group hover:bg-primary hover:text-white transition-all">
@@ -288,7 +272,7 @@ export function NYCClient() {
           <div className="container">
              <div className="text-center mb-20">
                 <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text leading-tight mb-4">
-                  Why choose DrainCleaningNearMe in New York?
+                   Why choose DrainCleaningNearMe in New York?
                 </h2>
                 <p className="text-text/70 font-medium text-lg max-w-2xl mx-auto italic">Our network is built on local trust, speed and expertise.</p>
              </div>
@@ -396,42 +380,14 @@ export function NYCClient() {
               <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-center text-text mb-20 uppercase">
                 Frequently asked questions
               </h2>
-              <div className="space-y-4">
-                {[
-                  { q: "How much does drain cleaning cost in NYC?", a: "Depends on clog severity and location. Simple clogs are fixed quickly; sewer cleaning ranges slightly higher." },
-                  { q: "How long does it take?", a: "Usually 1–2 hours for most residential single-line clogs in NYC apartments." },
-                  { q: "Signs of sewer blockage?", a: "Multiple drains backing up and foul odors in the basement or floor drains." },
-                  { q: "Is hydro jetting safe?", a: "Yes, when performed by our professional network experts on verified pipe systems." },
-                  { q: "Emergency arrival time?", a: "Often within 30–60 minutes across the five NYC boroughs." }
-                ].map((faq, index) => (
-                  <div key={index} className="bg-card border border-border rounded-3xl overflow-hidden shadow-sm">
-                    <button
-                      onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                      className="w-full flex items-center justify-between p-8 text-left group"
-                    >
-                      <span className="text-lg font-bold text-text tracking-tight group-hover:text-primary transition-colors">{faq.q}</span>
-                      <div className="w-10 h-10 rounded-xl bg-bg border border-border flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all shadow-inner shrink-0">
-                         {openIndex === index ? <Minus size={18} /> : <Plus size={18} />}
-                      </div>
-                    </button>
-                    {openIndex === index && (
-                      <div className="px-8 pb-8 text-base text-text/60 font-medium leading-relaxed border-t border-border pt-6 mx-8 italic">
-                         {faq.a}
-                      </div>
-                    )}
-                  </div>
-                ))}
-              </div>
+              <FAQClient faqs={faqs} cityName="New York City" />
            </div>
         </section>
 
         {/* 12. FINAL CTA */}
         <section className="py-24 bg-card">
            <div className="container-narrow">
-              <motion.div
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
+              <div
                 className="p-12 md:p-20 rounded-[4rem] bg-slate-900 border border-primary/20 text-white text-center shadow-2xl relative overflow-hidden group"
               >
                   <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-primary/20 blur-[150px] -translate-y-1/2 translate-x-1/2 rounded-full" />
@@ -452,18 +408,18 @@ export function NYCClient() {
                        </a>
                        <a
                           href={mainTelLink}
-                          className="w-full sm:w-auto flex items-center justify-center gap-4 px-12 py-6 bg-white/10 text-white border-2 border-white/20 rounded-2xl font-bold text-2xl hover:bg-white hover:text-slate-900 transition-all active:scale-95 tracking-tight"
+                          className="flex items-center justify-center gap-4 px-12 py-6 bg-white/10 text-white border-2 border-white/20 rounded-2xl font-bold text-2xl hover:bg-white hover:text-slate-900 transition-all active:scale-95 tracking-tight"
                        >
                           Same-day service
                        </a>
                     </div>
                   </div>
-              </motion.div>
+              </div>
            </div>
         </section>
 
       </main>
-      <Footer />
     </div>
   );
 }
+

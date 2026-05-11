@@ -1,6 +1,5 @@
 import { Metadata } from "next";
-import { Navbar } from "@/components/navbar";
-import { Footer } from "@/components/footer";
+
 
 // Core Homepage Flow
 import { Hero } from "@/components/hero";
@@ -31,40 +30,37 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <>
-      <Navbar />
-      <main className="flex-1 bg-card">
-        {/* 1. HERO — H1 lives here */}
-        <Hero />
+    <main className="flex-1 bg-card">
+      {/* 1. HERO — H1 lives here */}
+      <Hero />
 
-        {/* 2. SERVICES GRID */}
-        <ServicesGrid />
+      {/* 2. SERVICES GRID */}
+      <ServicesGrid />
 
-        {/* 3. WHY CHOOSE US */}
-        <WhyChooseUsSection />
+      {/* 3. WHY CHOOSE US */}
+      <WhyChooseUsSection />
 
-        {/* 4. HOW IT WORKS */}
-        <HowItWorks />
+      {/* 4. HOW IT WORKS */}
+      <HowItWorks />
 
-        {/* 5. SERVICE AREAS */}
-        <ServiceAreas />
+      {/* 5. SERVICE AREAS */}
+      <ServiceAreas />
 
-        {/* 6. COMMON PROBLEMS */}
-        <CommonProblems />
+      {/* 6. COMMON PROBLEMS */}
+      <CommonProblems />
 
-        {/* 7. TESTIMONIALS */}
-        <Testimonials />
+      {/* 7. TESTIMONIALS */}
+      <Testimonials />
 
-        {/* 8. URGENCY SECTION */}
-        <UrgencySection />
+      {/* 8. URGENCY SECTION */}
+      <UrgencySection />
 
-        {/* 9. FAQ */}
-        <FAQ />
+      {/* 9. FAQ */}
+      <FAQ />
 
-        {/* 10. FINAL CTA */}
-        <CTASection />
-      </main>
-      <Footer />
-    </>
+      {/* 10. FINAL CTA */}
+      <CTASection />
+    </main>
   );
 }
+
