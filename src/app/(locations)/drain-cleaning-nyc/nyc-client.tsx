@@ -1,7 +1,21 @@
+"use client";
+
 import { 
-  Phone, Star, CheckCircle2, ShieldCheck, Clock, MapPin, 
-  ChevronRight, Utensils, Building2, Search, 
-  Activity, Waves, Droplets, Trash2, ShieldAlert,
+  Activity,
+  Building2,
+  CheckCircle2,
+  ChevronRight,
+  Clock,
+  Droplets,
+  MapPin,
+  Phone,
+  Search,
+  ShieldAlert,
+  ShieldCheck,
+  Star,
+  Trash2,
+  Utensils,
+  Waves,
   Zap
 } from "lucide-react";
 import React from "react";
@@ -39,38 +53,32 @@ export function NYCClient() {
               </div>
 
               <h1
-                className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight mb-8 text-text leading-[1.1] animate-fade-in-up"
-              >
+                className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight mb-8 text-text leading-[1.1] animate-fade-in-up">
                 Professional Drain Cleaning & <span className="text-primary italic font-black">Rooter Services</span> in New York City
               </h1>
 
               <div
-                className="text-lg md:text-xl text-text/70 font-medium max-w-3xl mx-auto mb-12 leading-relaxed animate-fade-in-up [animation-delay:200ms]"
-              >
+                className="text-lg md:text-xl text-text/70 font-medium max-w-3xl mx-auto mb-12 leading-relaxed animate-fade-in-up [animation-delay:200ms]">
                 Need fast, reliable drain cleaning service in New York? (Manhattan, Brooklyn, Queens, Bronx or Staten Island). We connect you with licensed local drain cleaning professionals who can be at your door within <span className="text-primary font-bold">30–60 minutes</span>.
               </div>
 
               <div
-                className="flex flex-col sm:flex-row gap-6 w-full sm:w-auto mb-16 animate-fade-in-up [animation-delay:400ms]"
-              >
+                className="flex flex-col sm:flex-row gap-6 w-full sm:w-auto mb-16 animate-fade-in-up [animation-delay:400ms]">
                 <a
                   href={mainTelLink}
-                  className="flex items-center justify-center gap-4 px-10 py-6 bg-primary text-white rounded-2xl font-bold text-xl shadow-2xl shadow-primary/30 hover:bg-blue-700 hover:-translate-y-1 transition-all active:scale-95 group"
-                >
+                  className="flex items-center justify-center gap-4 px-10 py-6 bg-primary text-white rounded-2xl font-bold text-xl shadow-2xl shadow-primary/30 hover:bg-blue-700 hover:-translate-y-1 transition-all active:scale-95 group">
                   <Phone size={24} fill="currentColor" className="group-hover:rotate-12 transition-transform" />
                   Call Now for Emergency Service
                 </a>
                 <a
                   href={mainTelLink}
-                  className="flex items-center justify-center gap-4 px-10 py-6 bg-card border-2 border-border text-text rounded-2xl font-bold text-xl hover:border-primary transition-all active:scale-95"
-                >
+                  className="flex items-center justify-center gap-4 px-10 py-6 bg-card border-2 border-border text-text rounded-2xl font-bold text-xl hover:border-primary transition-all active:scale-95">
                   Get free estimate
                 </a>
               </div>
 
               <div
-                 className="flex flex-wrap justify-center gap-8 py-6 px-10 bg-card/50 border border-border rounded-full text-sm font-semibold text-text/60 animate-fade-in [animation-delay:600ms]"
-              >
+                 className="flex flex-wrap justify-center gap-8 py-6 px-10 bg-card/50 border border-border rounded-full text-sm font-semibold text-text/60 animate-fade-in [animation-delay:600ms]">
                  <div className="flex items-center gap-2"><Star size={18} className="text-accent fill-accent" /> 4.8/5 Rating</div>
                  <div className="flex items-center gap-2"><ShieldCheck size={18} className="text-primary" /> Licensed NYC Plumbers</div>
                  <div className="flex items-center gap-2"><Clock size={18} className="text-primary" /> Same-Day dispatch</div>
@@ -143,8 +151,7 @@ export function NYCClient() {
                 ].map((s, i) => (
                   <div
                     key={i}
-                    className="p-10 rounded-[2.5rem] bg-card border border-border hover:border-primary/20 transition-all hover:shadow-2xl group flex flex-col items-center text-center shadow-sm"
-                  >
+                    className="p-10 rounded-[2.5rem] bg-card border border-border hover:border-primary/20 transition-all hover:shadow-2xl group flex flex-col items-center text-center shadow-sm">
                     <div className="w-16 h-16 rounded-2xl bg-primary/5 text-primary flex items-center justify-center mb-8 transition-colors group-hover:bg-primary group-hover:text-white shadow-inner">
                        <s.icon size={32} />
                     </div>
@@ -348,8 +355,7 @@ export function NYCClient() {
               <p className="text-lg text-text/60 font-medium italic">Immediate help available across all NYC boroughs. Don't let a backup destroy your property.</p>
               <a
                 href={mainTelLink}
-                className="inline-flex items-center gap-4 px-12 py-6 bg-red-600 text-white rounded-2xl font-bold text-2xl shadow-2xl shadow-red-600/30 hover:bg-red-700 transition-all active:scale-95 group"
-              >
+                className="inline-flex items-center gap-4 px-12 py-6 bg-red-600 text-white rounded-2xl font-bold text-2xl shadow-2xl shadow-red-600/30 hover:bg-red-700 transition-all active:scale-95 group">
                  <Phone size={28} fill="currentColor" className="group-hover:rotate-12 transition-transform" />
                  Emergency help now
               </a>
@@ -388,8 +394,7 @@ export function NYCClient() {
         <section className="py-24 bg-card">
            <div className="container-narrow">
               <div
-                className="p-12 md:p-20 rounded-[4rem] bg-slate-900 border border-primary/20 text-white text-center shadow-2xl relative overflow-hidden group"
-              >
+                className="p-12 md:p-20 rounded-[4rem] bg-slate-900 border border-primary/20 text-white text-center shadow-2xl relative overflow-hidden group">
                   <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-primary/20 blur-[150px] -translate-y-1/2 translate-x-1/2 rounded-full" />
                   <div className="relative z-10 space-y-10">
                     <h2 className="text-4xl md:text-6xl font-bold tracking-tight text-white leading-tight">
@@ -401,15 +406,13 @@ export function NYCClient() {
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
                        <a
                           href={mainTelLink}
-                          className="w-full sm:w-auto flex items-center justify-center gap-4 px-12 py-6 bg-primary text-white rounded-2xl font-bold text-2xl shadow-xl hover:bg-blue-700 transition-all active:scale-95 group tracking-tight"
-                       >
+                          className="w-full sm:w-auto flex items-center justify-center gap-4 px-12 py-6 bg-primary text-white rounded-2xl font-bold text-2xl shadow-xl hover:bg-blue-700 transition-all active:scale-95 group tracking-tight">
                           <Phone size={28} fill="currentColor" className="group-hover:rotate-12 transition-transform" />
                           Call now
                        </a>
                        <a
                           href={mainTelLink}
-                          className="flex items-center justify-center gap-4 px-12 py-6 bg-white/10 text-white border-2 border-white/20 rounded-2xl font-bold text-2xl hover:bg-white hover:text-slate-900 transition-all active:scale-95 tracking-tight"
-                       >
+                          className="flex items-center justify-center gap-4 px-12 py-6 bg-white/10 text-white border-2 border-white/20 rounded-2xl font-bold text-2xl hover:bg-white hover:text-slate-900 transition-all active:scale-95 tracking-tight">
                           Same-day service
                        </a>
                     </div>

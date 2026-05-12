@@ -119,58 +119,58 @@ export function Footer() {
   const visibleLocations = showAllLocations ? locationLinks : locationLinks.slice(0, initialVisibleCount);
 
   return (
-    <footer className="bg-slate-900 relative pt-20 pb-12 overflow-hidden text-slate-300 border-t border-white/5">
+    <footer className="bg-slate-900 relative pt-16 pb-10 overflow-hidden text-slate-300 border-t border-white/5 font-body">
       <div className="container relative z-10">
         
         {/* Top Section: Brand & Main Services */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 mb-12">
           
           {/* Brand Column */}
-          <div className="lg:col-span-4 grid grid-cols-1 sm:grid-cols-2 gap-10 items-start">
+          <div className="lg:col-span-4 grid grid-cols-1 sm:grid-cols-2 gap-8 items-start">
 
   {/* LEFT SIDE */}
-  <div className="space-y-6">
+  <div className="space-y-5">
     <Link
       href="/"
-      className="text-2xl font-bold tracking-tight text-white inline-block"
+      className="text-2xl font-black tracking-tight text-white inline-block uppercase italic"
     >
       DrainCleaning
-      <span className="text-primary font-normal">NearMe</span>
+      <span className="text-primary font-black">NearMe</span>
     </Link>
 
-    <p className="text-[14px] font-medium leading-relaxed max-w-sm text-slate-400">
+    <p className="text-[13px] font-medium leading-relaxed max-w-sm text-slate-400 italic">
       Connecting you with licensed local drain cleaning and sewer experts across the USA.
       Fast response, professional results, 24/7 availability.
     </p>
 
-    <div className="flex items-center gap-4 flex-wrap">
-      <div className="flex items-center gap-2 text-primary font-bold text-[11px] uppercase tracking-wider bg-primary/5 px-3 py-1 rounded-full border border-primary/10">
-        <ShieldCheck size={14} /> Licensed & Insured
+    <div className="flex items-center gap-3 flex-wrap">
+      <div className="flex items-center gap-2 text-primary font-black text-[9px] uppercase tracking-widest bg-primary/5 px-3 py-1 rounded-full border border-primary/10 italic">
+        <ShieldCheck size={12} /> Licensed & Insured
       </div>
 
-      <div className="flex items-center gap-2 text-primary font-bold text-[11px] uppercase tracking-wider bg-primary/5 px-3 py-1 rounded-full border border-primary/10">
-        <Zap size={14} /> 24/7 Verified
+      <div className="flex items-center gap-2 text-primary font-black text-[9px] uppercase tracking-widest bg-primary/5 px-3 py-1 rounded-full border border-primary/10 italic">
+        <Zap size={12} /> 24/7 Verified
       </div>
     </div>
   </div>
 
   {/* RIGHT SIDE (CTA + ADDRESS) */}
-  <div className="space-y-6 lg:pl-10">
+  <div className="space-y-5 lg:pl-6">
 
     {/* CALL CARD */}
     <a
       href="tel:+17247506935"
-      className="flex items-center gap-4 group bg-white/5 hover:bg-white/10 p-5 rounded-2xl border border-white/10 transition-all shadow-lg"
+      className="flex items-center gap-3 group bg-white/5 hover:bg-white/10 p-4 rounded-2xl border border-white/10 transition-all shadow-lg"
     >
-      <div className="p-3 bg-primary/20 rounded-xl text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-        <Phone size={22} fill="currentColor" />
+      <div className="p-2.5 bg-primary/20 rounded-xl text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+        <Phone size={20} fill="currentColor" />
       </div>
 
       <div>
-        <p className="text-[11px] font-bold uppercase tracking-widest text-primary">
+        <p className="text-[9px] font-black uppercase tracking-widest text-primary italic">
           Emergency Dispatch
         </p>
-        <p className="text-2xl font-black text-white tracking-tight">
+        <p className="text-xl font-black text-white tracking-tight uppercase italic">
           (724) 750-6935
         </p>
       </div>
@@ -178,8 +178,8 @@ export function Footer() {
 
     {/* ADDRESS */}
     <div className="flex items-start gap-3">
-      <MapPin size={18} className="text-primary mt-1" />
-      <p className="text-sm font-medium text-slate-400 leading-relaxed">
+      <MapPin size={16} className="text-primary mt-1" />
+      <p className="text-[13px] font-medium text-slate-400 leading-relaxed italic">
         209 Mountain Rd PL NE Ste R <br />
         Albuquerque, NM 87110, USA
       </p>
@@ -191,18 +191,18 @@ export function Footer() {
 
           {/* Grouped Services Grid */}
           <div className="lg:col-span-8">
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
     {serviceGroups.map((group) => (
-      <div key={group.title} className="space-y-6">
+      <div key={group.title} className="space-y-5">
         <div className="relative">
-          <h3 className="text-[12px] font-bold uppercase tracking-[0.2em] text-white">
+          <h3 className="text-[11px] font-black uppercase tracking-[0.2em] text-white italic">
             {group.title}
           </h3>
-          <div className="absolute -bottom-3 left-0 w-8 h-0.5 bg-primary rounded-full" />
+          <div className="absolute -bottom-2.5 left-0 w-6 h-0.5 bg-primary rounded-full" />
         </div>
 
-        <ul className="space-y-4">
+        <ul className="space-y-3">
           {group.links.map((link) => (
             <LinkItem key={link.name} link={link} />
           ))}
@@ -211,15 +211,15 @@ export function Footer() {
     ))}
 
     {/* Company Column */}
-    <div className="space-y-6">
+    <div className="space-y-5">
       <div className="relative">
-        <h3 className="text-[12px] font-bold uppercase tracking-[0.2em] text-white">
+        <h3 className="text-[11px] font-black uppercase tracking-[0.2em] text-white italic">
           Company
         </h3>
-        <div className="absolute -bottom-3 left-0 w-8 h-0.5 bg-primary rounded-full" />
+        <div className="absolute -bottom-2.5 left-0 w-6 h-0.5 bg-primary rounded-full" />
       </div>
 
-      <ul className="space-y-4">
+      <ul className="space-y-3">
         {companyLinks.map((link) => (
           <LinkItem key={link.name} link={link} />
         ))}
@@ -231,54 +231,47 @@ export function Footer() {
         </div>
 
         {/* Middle Section: Service Areas Grid */}
-        <div className="pt-16 border-t border-white/5">
-          <div className="flex flex-col sm:flex-row items-baseline justify-between gap-4 mb-10">
-            <div className="space-y-2">
-              <h3 className="text-[16px] font-bold text-white tracking-tight">Service Areas</h3>
-              <p className="text-[13px] text-slate-500 font-medium">Licensed drain cleaning experts across major US cities.</p>
+        <div className="pt-12 border-t border-white/5">
+          <div className="flex flex-col sm:flex-row items-baseline justify-between gap-4 mb-8">
+            <div className="space-y-1">
+              <h3 className="text-sm font-black text-white tracking-widest uppercase italic">Service Areas</h3>
+              <p className="text-[11px] text-slate-500 font-black uppercase tracking-tight italic">Licensed experts across major US cities.</p>
             </div>
             {!showAllLocations && (
               <button 
                 onClick={() => setShowAllLocations(true)}
-                className="text-[13px] font-bold text-primary hover:text-white transition-colors flex items-center gap-1 group"
+                className="text-[11px] font-black text-primary hover:text-white transition-colors flex items-center gap-1 group uppercase italic tracking-widest"
               >
-                View All Locations <ChevronRight size={14} className="group-hover:translate-x-1 transition-transform" />
+                View All <ChevronRight size={12} className="group-hover:translate-x-1 transition-transform" />
               </button>
             )}
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-3">
             {visibleLocations.map((link) => (
               <LinkItem key={link.name} link={link} />
             ))}
           </div>
 
-          <AnimatePresence>
-            {!showAllLocations && (
-              <motion.div 
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                className="mt-10 flex justify-center"
+          {!showAllLocations && (
+            <div className="mt-8 flex justify-center">
+              <button
+                onClick={() => setShowAllLocations(true)}
+                className="px-6 py-2.5 bg-white/5 border border-white/10 rounded-xl text-[11px] font-black text-white hover:bg-white/10 hover:border-primary/50 transition-all flex items-center gap-2 group uppercase italic tracking-widest"
               >
-                <button
-                  onClick={() => setShowAllLocations(true)}
-                  className="px-8 py-3 bg-white/5 border border-white/10 rounded-xl text-[13px] font-bold text-white hover:bg-white/10 hover:border-primary/50 transition-all flex items-center gap-2 group"
-                >
-                  <Plus size={16} className="text-primary group-hover:scale-110 transition-transform" />
-                  Show More Locations ({locationLinks.length - initialVisibleCount} Cities)
-                </button>
-              </motion.div>
-            )}
-          </AnimatePresence>
+                <Plus size={14} className="text-primary group-hover:scale-110 transition-transform" />
+                Show More ({locationLinks.length - initialVisibleCount})
+              </button>
+            </div>
+          )}
 
           {showAllLocations && (
-            <div className="mt-10 flex justify-center">
+            <div className="mt-8 flex justify-center">
               <button
                 onClick={() => setShowAllLocations(false)}
-                className="px-8 py-3 bg-white/5 border border-white/10 rounded-xl text-[13px] font-bold text-white hover:bg-white/10 hover:border-primary/50 transition-all flex items-center gap-2 group"
+                className="px-6 py-2.5 bg-white/5 border border-white/10 rounded-xl text-[11px] font-black text-white hover:bg-white/10 hover:border-primary/50 transition-all flex items-center gap-2 group uppercase italic tracking-widest"
               >
-                <Minus size={16} className="text-primary group-hover:scale-110 transition-transform" />
+                <Minus size={14} className="text-primary group-hover:scale-110 transition-transform" />
                 Show Less
               </button>
             </div>
@@ -286,19 +279,19 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-20 pt-8 border-t border-white/5">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            <div className="flex flex-col items-center md:items-start gap-1">
-              <p className="text-[12px] font-medium text-slate-500">
-                &copy; {new Date().getFullYear()} DrainCleaningNearMe.us &mdash; Professional Lead Generation Service.
+        <div className="mt-12 pt-6 border-t border-white/5">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <div className="flex flex-col items-center md:items-start gap-0.5">
+              <p className="text-[11px] font-black text-slate-500 uppercase italic tracking-tight">
+                &copy; {new Date().getFullYear()} DrainCleaningNearMe.us &mdash; Lead Generation Service.
               </p>
-              <p className="text-[10px] text-slate-600 font-medium">
+              <p className="text-[9px] text-slate-600 font-black uppercase italic tracking-widest">
                 Not a plumbing contractor. We connect you with local licensed professionals.
               </p>
             </div>
             <div className="flex items-center gap-6">
-              <p className="text-[12px] font-medium text-slate-500 flex items-center gap-2">
-                Built with <Heart size={12} className="text-primary fill-primary" /> for American Homeowners
+              <p className="text-[11px] font-black text-slate-500 flex items-center gap-1.5 uppercase italic">
+                Built with <Heart size={10} className="text-primary fill-primary" /> for Homeowners
               </p>
             </div>
           </div>
@@ -307,3 +300,4 @@ export function Footer() {
     </footer>
   );
 }
+

@@ -1,7 +1,5 @@
-"use client";
-
-import { motion } from "framer-motion";
 import { Star, Quote, CheckCircle2 } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 const reviews = [
   {
@@ -29,57 +27,56 @@ const reviews = [
 
 export function Testimonials() {
   return (
-    <section className="py-24 bg-card relative overflow-hidden border-y border-border font-body">
+    <section className="py-16 md:py-20 bg-card relative overflow-hidden border-y border-border font-body">
       {/* Decorative background element */}
       <div className="absolute top-0 right-0 p-32 opacity-5 pointer-events-none -translate-y-1/4 translate-x-1/4">
-        <Quote size={300} className="text-primary" />
+        <Quote size={200} className="text-primary" />
       </div>
 
       <div className="container relative z-10">
-        <div className="text-center mb-20 space-y-4">
-          <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text leading-tight">
-            Real customer experiences
+        <div className="text-center mb-12 md:mb-16 space-y-3 animate-fade-in">
+          <h2 className="text-3xl md:text-5xl font-black tracking-tight text-text leading-tight uppercase italic underline decoration-primary decoration-4 underline-offset-8">
+            Real experiences
           </h2>
-          <p className="text-text/70 font-medium max-w-2xl mx-auto text-lg leading-relaxed">
-            Homeowners across the USA trust our network for fast, professional and mess-free drain cleaning results.
+          <p className="text-text/70 font-medium max-w-2xl mx-auto text-base md:text-lg leading-relaxed italic">
+            Homeowners across the USA trust our network for fast, professional and mess-free results.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {reviews.map((review, i) => (
-            <motion.div
+            <div
               key={i}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
-              className="p-10 rounded-[2rem] bg-card border border-border flex flex-col items-center text-center transition-all hover:shadow-2xl hover:border-primary/20 group h-full shadow-sm"
+              className="p-8 rounded-[2rem] bg-card border border-border flex flex-col items-center text-center transition-all hover:shadow-2xl hover:border-primary/20 group h-full shadow-sm animate-fade-in-up"
+              style={{ animationDelay: `${i * 100}ms` }}
             >
-              <div className="flex gap-1 mb-8">
+              <div className="flex gap-1 mb-6">
                 {[...Array(review.stars)].map((_, starI) => (
-                  <Star key={starI} size={18} className="fill-accent text-accent" />
+                  <Star key={starI} size={16} className="fill-accent text-accent" />
                 ))}
               </div>
               
-              <h3 className="text-xl md:text-2xl font-bold text-text mb-4 leading-tight tracking-tight group-hover:text-primary transition-colors">
+              <h3 className="text-lg md:text-xl font-black text-text mb-3 leading-tight tracking-tight group-hover:text-primary transition-colors uppercase italic">
                  "{review.text}"
               </h3>
               
-              <p className="text-text/60 text-base font-medium leading-relaxed mb-10 grow">
+              <p className="text-text/60 text-sm font-medium leading-relaxed mb-8 grow italic">
                 {review.desc}
               </p>
               
-              <div className="flex flex-col items-center gap-1 pt-8 border-t border-border w-full">
-                <div className="flex items-center gap-2">
-                   <p className="text-base font-bold text-text">{review.name}</p>
-                   <CheckCircle2 size={16} className="text-primary" />
+              <div className="flex flex-col items-center gap-1 pt-6 border-t border-border w-full">
+                <div className="flex items-center gap-1.5">
+                   <p className="text-sm font-black text-text uppercase italic">{review.name}</p>
+                   <CheckCircle2 size={14} className="text-primary" />
                 </div>
-                <p className="text-xs font-semibold text-text/40 tracking-wide">{review.location}</p>
+                <p className="text-[10px] font-black text-text/40 tracking-widest uppercase italic">{review.location}</p>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
     </section>
   );
 }
+
+

@@ -1,8 +1,8 @@
 "use client";
 
-import { motion, AnimatePresence } from "framer-motion";
 import { Plus, Minus, HelpCircle, Phone } from "lucide-react";
 import React from "react";
+import { cn } from "@/lib/utils";
 
 const faqs = [
   {
@@ -28,32 +28,29 @@ export function FAQ() {
   const mainTelLink = "tel:+17247506935";
 
   return (
-    <section className="py-24 bg-card border-y border-border relative overflow-hidden font-body">
+    <section className="py-16 md:py-20 bg-card border-y border-border relative overflow-hidden font-body">
       <div className="container relative z-10">
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
-          <div className="space-y-8 text-center lg:text-left">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-xs font-bold uppercase tracking-widest text-primary"
+        <div className="grid lg:grid-cols-2 gap-10 md:gap-16 items-start">
+          <div className="space-y-6 text-center lg:text-left animate-fade-in">
+            <div
+              className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-[10px] font-black uppercase tracking-widest text-primary"
             >
               <HelpCircle size={14} /> Comprehensive support
-            </motion.div>
+            </div>
             
-            <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text leading-tight">
+            <h2 className="text-3xl md:text-5xl font-black tracking-tight text-text leading-tight uppercase italic">
                Frequently asked questions
             </h2>
             
-            <p className="text-lg text-text/70 font-medium leading-relaxed max-w-xl">
+            <p className="text-base md:text-lg text-text/70 font-medium leading-relaxed max-w-xl italic">
                Find clear answers about professional drain cleaning services, pricing and response times.
             </p>
 
-            <div className="p-8 rounded-[2rem] bg-bg border border-border flex flex-col items-center lg:items-start gap-6 shadow-sm">
-                <p className="text-sm font-semibold text-text/60 tracking-tight">Still have a specific question?</p>
+            <div className="p-6 md:p-8 rounded-[2rem] bg-bg border border-border flex flex-col items-center lg:items-start gap-5 shadow-sm animate-fade-in-up [animation-delay:200ms]">
+                <p className="text-xs font-black text-text/60 tracking-widest uppercase italic">Still have a specific question?</p>
                 <a
                   href={mainTelLink}
-                  className="flex items-center gap-3 px-8 py-4 bg-primary text-white rounded-2xl font-bold text-lg shadow-xl shadow-primary/20 hover:bg-blue-700 transition-all group"
+                  className="flex items-center gap-3 px-8 py-4 bg-primary text-white rounded-2xl font-bold text-lg shadow-xl shadow-primary/20 hover:bg-blue-700 transition-all group uppercase tracking-tight"
                 >
                    <Phone size={20} fill="currentColor" className="group-hover:rotate-12 transition-transform" />
                    Speak with an expert
@@ -61,41 +58,34 @@ export function FAQ() {
             </div>
           </div>
 
-          <div className="space-y-4">
+          <div className="space-y-3">
             {faqs.map((faq, index) => (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="bg-bg border border-border rounded-3xl overflow-hidden transition-all hover:shadow-lg hover:border-primary/20 shadow-sm"
+                className="bg-bg border border-border rounded-3xl overflow-hidden transition-all hover:shadow-lg hover:border-primary/20 shadow-sm animate-fade-in-up"
+                style={{ animationDelay: `${index * 100}ms` }}
               >
                 <button
                   onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                  className="w-full flex items-center justify-between p-8 text-left"
+                  className="w-full flex items-center justify-between p-6 md:p-7 text-left group"
                 >
-                  <span className="text-lg md:text-xl font-bold text-text tracking-tight pr-8">{faq.question}</span>
-                  <div className="w-10 h-10 rounded-xl bg-card border border-border flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all shadow-inner shrink-0">
-                     {openIndex === index ? <Minus size={20} /> : <Plus size={20} />}
+                  <span className="text-base md:text-lg font-black text-text tracking-tight pr-8 group-hover:text-primary transition-colors uppercase italic">{faq.question}</span>
+                  <div className="w-9 h-9 rounded-xl bg-card border border-border flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all shadow-inner shrink-0">
+                     {openIndex === index ? <Minus size={18} /> : <Plus size={18} />}
                   </div>
                 </button>
                 
-                <AnimatePresence>
-                  {openIndex === index && (
-                    <motion.div
-                      initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: "auto", opacity: 1 }}
-                      exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.3 }}
-                    >
-                      <div className="px-8 pb-8 text-base text-text/60 font-medium leading-relaxed border-t border-border pt-6 mx-8">
-                        {faq.answer}
-                      </div>
-                    </motion.div>
+                <div 
+                  className={cn(
+                    "overflow-hidden transition-all duration-300 ease-in-out",
+                    openIndex === index ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
                   )}
-                </AnimatePresence>
-              </motion.div>
+                >
+                  <div className="px-7 pb-7 text-sm md:text-base text-text/60 font-medium leading-relaxed border-t border-border pt-5 mx-7 italic">
+                    {faq.answer}
+                  </div>
+                </div>
+              </div>
             ))}
           </div>
         </div>
@@ -103,3 +93,5 @@ export function FAQ() {
     </section>
   );
 }
+
+

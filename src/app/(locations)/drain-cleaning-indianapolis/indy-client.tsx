@@ -1,15 +1,34 @@
 "use client";
 
-import { motion } from "framer-motion";
+
+
 import { 
-  Phone, Star, CheckCircle2, ShieldCheck, Clock, MapPin, 
-  ChevronRight, Utensils, Building2, Search, 
-  Activity, Waves, Droplets, Trash2, ShieldAlert,
-  Plus, Minus, HelpCircle, Zap, Bath, Hammer, ThermometerSun
+  Activity,
+  Bath,
+  Building2,
+  CheckCircle2,
+  ChevronRight,
+  Clock,
+  Droplets,
+  Hammer,
+  HelpCircle,
+  MapPin,
+  Minus,
+  Phone,
+  Plus,
+  Search,
+  ShieldAlert,
+  ShieldCheck,
+  Star,
+  ThermometerSun,
+  Trash2,
+  Utensils,
+  Waves,
+  Zap
 } from "lucide-react";
 import React from "react";
-import { Navbar } from "@/components/navbar";
-import { Footer } from "@/components/footer";
+import { FAQClient } from "@/components/faq-client";
+
 import { TrustBadge } from "@/components/ui/trust-badge";
 
 const serviceAreas = [
@@ -20,15 +39,16 @@ const serviceAreas = [
 const mainTelLink = "tel:+17247506935";
 
 export function IndyClient() {
-  const [openIndex, setOpenIndex] = React.useState<number | null>(0);
+  const [openIndex, setOpenIndex] = React.useState<number | null>(null);
+  
 
   return (
-    <div className="flex flex-col min-h-screen bg-bg font-body">
-      <Navbar />
-      <main className="flex-1 pt-20">
+    <div className="flex flex-col bg-bg font-body">
+      
+      <main className="flex-1">
         
         {/* 1. HERO SECTION */}
-        <section className="relative min-h-[85vh] flex flex-col justify-center py-20 overflow-hidden bg-bg border-b border-border">
+        <section className="relative flex flex-col justify-center pt-24 pb-12 overflow-hidden bg-bg border-b border-border">
           <div className="absolute inset-0 pointer-events-none overflow-hidden -z-10">
             <div className="absolute top-0 w-full h-[600px] bg-primary/5 blur-[120px] rounded-full opacity-60" />
           </div>
@@ -40,64 +60,43 @@ export function IndyClient() {
                 text="Licensed, Insured, Local Experts - Free Estimates!"
               />
 
-              <motion.h1
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight mb-8 text-text leading-[1.1] font-black"
-              >
+              <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight mb-6 uppercase italic text-text leading-[1.1] font-black animate-fade-in">
                 Fast, Reliable Drain Cleaning in <span className="text-primary italic">Indianapolis</span>
-              </motion.h1>
+              </h1>
 
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.1 }}
-                className="text-lg md:text-xl text-text/70 font-medium max-w-3xl mx-auto mb-12 leading-relaxed italic"
-              >
+              <div className="text-base md:text-lg text-text/70 font-medium max-w-3xl mx-auto mb-8 italic leading-relaxed italic animate-fade-in [animation-delay:100ms]">
                 Clogged drains disrupt daily life in Indianapolis homes and businesses, leading to standing water, foul odors and potential property damage. DrainCleaningNearMe delivers fast, reliable drain cleaning services using advanced techniques like hydro jetting and rooter services.
-              </motion.div>
+              </div>
 
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2 }}
-                className="flex flex-col sm:flex-row gap-6 w-full sm:w-auto mb-16"
-              >
+              <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto mb-10 animate-fade-in-up [animation-delay:200ms]">
                 <a
                   href={mainTelLink}
-                  className="flex items-center justify-center gap-4 px-10 py-6 bg-primary text-white rounded-2xl font-bold text-xl shadow-2xl shadow-primary/30 hover:bg-blue-700 hover:-translate-y-1 transition-all active:scale-95 group font-black uppercase tracking-tight"
-                >
+                  className="flex items-center justify-center gap-3 px-8 py-5 bg-primary text-white rounded-2xl font-bold text-xl shadow-2xl shadow-primary/30 hover:bg-blue-700 hover:-translate-y-1 transition-all active:scale-95 group font-black uppercase tracking-widest text-lg">
                   <Phone size={24} fill="currentColor" className="group-hover:rotate-12 transition-transform" />
                   Call Now: (724) 750-6935
                 </a>
                 <a
                   href={mainTelLink}
-                  className="flex items-center justify-center gap-4 px-10 py-6 bg-card border-2 border-border text-text rounded-2xl font-bold text-xl hover:border-primary transition-all active:scale-95"
-                >
+                  className="flex items-center justify-center gap-3 px-8 py-5 bg-card border-2 border-border text-text rounded-2xl font-bold text-xl hover:border-primary transition-all active:scale-95">
                   Get Free Quote
                 </a>
-              </motion.div>
+              </div>
 
-              <motion.div
-                 initial={{ opacity: 0 }}
-                 animate={{ opacity: 1 }}
-                 transition={{ delay: 0.3 }}
-                 className="flex flex-wrap justify-center gap-8 py-6 px-10 bg-card/50 border border-border rounded-full text-sm font-semibold text-text/60 uppercase tracking-widest font-black"
-              >
+              <div className="flex flex-wrap justify-center gap-6 py-4 px-8 bg-card/50 border border-border rounded-full text-sm font-semibold text-text/60 uppercase tracking-widest font-black animate-fade-in [animation-delay:300ms]">
                  <div className="flex items-center gap-2"><ShieldCheck size={18} className="text-primary" /> Licensed & Insured</div>
                  <div className="flex items-center gap-2"><Clock size={18} className="text-primary" /> Same-Day Service</div>
                  <div className="flex items-center gap-2"><Star size={18} className="text-accent fill-accent" /> 5,000+ Clogs Cleared</div>
                  <div className="flex items-center gap-2"><Zap size={18} className="text-primary" /> 24/7 Availability</div>
-              </motion.div>
+              </div>
             </div>
           </div>
         </section>
 
         {/* 2. WHY INDIANAPOLIS NEEDS EXPERTS */}
-        <section className="py-24 bg-card border-b border-border">
+        <section className="py-14 md:py-16 bg-card border-b border-border">
           <div className="container">
-            <div className="grid lg:grid-cols-2 gap-16 items-center">
-              <div className="space-y-8">
+            <div className="grid lg:grid-cols-2 gap-10 items-center">
+              <div className="space-y-6">
                 <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text leading-tight uppercase font-black underline decoration-primary decoration-4 underline-offset-8">
                    Why Indianapolis Needs Expert Drain Cleaning
                 </h2>
@@ -111,13 +110,12 @@ export function IndyClient() {
                 </div>
                 <a
                   href={mainTelLink}
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-xl font-bold uppercase tracking-widest text-xs hover:bg-blue-700 transition-colors"
-                >
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-xl font-bold uppercase tracking-widest text-xs hover:bg-blue-700 transition-colors">
                   Ready to unclog your drains? Get a Free Quote Today
                 </a>
               </div>
               <div className="relative">
-                 <div className="aspect-square bg-bg border border-border rounded-[3rem] p-12 shadow-2xl relative overflow-hidden flex flex-col justify-center items-center text-center">
+                 <div className="aspect-square bg-bg border border-border rounded-[3rem] p-8 md:p-10 shadow-2xl relative overflow-hidden flex flex-col justify-center items-center text-center">
                     <ShieldAlert size={80} className="text-primary mb-8 animate-pulse" />
                     <h3 className="text-2xl font-bold text-text mb-4 tracking-tight uppercase font-black">Hoosier Pipe Protection</h3>
                     <p className="text-sm text-text/50 font-bold max-w-xs leading-relaxed uppercase tracking-widest italic">
@@ -130,9 +128,9 @@ export function IndyClient() {
         </section>
 
         {/* 3. OUR COMPREHENSIVE SERVICES */}
-        <section className="py-24 bg-bg border-b border-border">
+        <section className="py-14 md:py-16 bg-bg border-b border-border">
           <div className="container">
-             <div className="text-center mb-20 space-y-4">
+             <div className="text-center mb-12 space-y-3">
                 <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text uppercase font-black">
                   Our Comprehensive Drain Cleaning Services in Indianapolis
                 </h2>
@@ -141,7 +139,7 @@ export function IndyClient() {
                 </p>
              </div>
 
-             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[
                   { 
                     title: "Residential Drain Cleaning", 
@@ -186,15 +184,8 @@ export function IndyClient() {
                     icon: Hammer 
                   }
                 ].map((s, i) => (
-                  <motion.div
-                    key={i}
-                    initial={{ opacity: 0, scale: 0.95 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: i * 0.1 }}
-                    className="p-10 rounded-[2.5rem] bg-card border border-border hover:border-primary/20 transition-all group flex flex-col items-start text-left shadow-sm hover:shadow-2xl"
-                  >
-                    <div className="w-16 h-16 rounded-2xl bg-bg text-primary flex items-center justify-center mb-8 transition-colors group-hover:bg-primary group-hover:text-white shadow-inner">
+                  <div key={i} className="p-8 rounded-[2rem] bg-card border border-border hover:border-primary/20 transition-all group flex flex-col items-start text-left shadow-sm hover:shadow-2xl animate-fade-in-up" style={{ animationDelay: `${i * 100}ms` }}>
+                    <div className="w-16 h-16 rounded-2xl bg-bg text-primary flex items-center justify-center mb-6 transition-colors group-hover:bg-primary group-hover:text-white shadow-inner">
                        <s.icon size={32} />
                     </div>
                     <h3 className="text-xl font-bold text-text mb-4 tracking-tight group-hover:text-primary transition-colors uppercase font-black">{s.title}</h3>
@@ -206,7 +197,7 @@ export function IndyClient() {
                     <a href={s.link} className="mt-auto text-primary font-bold text-xs flex items-center gap-2 group/link uppercase tracking-widest font-black">
                        View service page <ChevronRight size={14} className="group-hover/link:translate-x-1 transition-transform" />
                     </a>
-                  </motion.div>
+                  </div>
                 ))}
              </div>
              <div className="mt-12 text-center">
@@ -216,9 +207,9 @@ export function IndyClient() {
         </section>
 
         {/* 4. COMMON DRAIN PROBLEMS IN INDY */}
-        <section className="py-24 bg-card border-b border-border">
+        <section className="py-14 md:py-16 bg-card border-b border-border">
            <div className="container">
-              <div className="text-center mb-20 space-y-4">
+              <div className="text-center mb-12 space-y-3">
                  <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text leading-tight max-w-4xl mx-auto uppercase font-black italic underline decoration-primary decoration-4 underline-offset-8">
                     Common Drain Problems in Indianapolis
                  </h2>
@@ -226,7 +217,7 @@ export function IndyClient() {
                     Indianapolis's clay soils, mature trees and heavy rains exacerbate drain issues. Here is what locals face most.
                  </p>
               </div>
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 font-black uppercase tracking-tight">
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 font-black uppercase tracking-widest text-lg">
                  {[
                    { t: "Slow Drains", d: "Gradual buildup causing overflows. Tip: Use hot water + vinegar weekly.", icon: Clock },
                    { t: "Foul Odors", d: "Sewer gases escaping from dry traps. Common in humid Indy summers.", icon: Activity },
@@ -257,7 +248,7 @@ export function IndyClient() {
         {/* 5. OUR PROVEN PROCESS */}
         <section className="py-24 bg-bg border-y border-border text-center">
            <div className="container">
-              <div className="mb-20 space-y-4">
+              <div className="mb-12 space-y-3">
                  <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text uppercase font-black italic">
                     Our Proven 5-Step Drain Cleaning Process
                  </h2>
@@ -287,7 +278,7 @@ export function IndyClient() {
         </section>
 
         {/* 6. WHY CHOOSE US */}
-        <section className="py-24 bg-card border-b border-border">
+        <section className="py-14 md:py-16 bg-card border-b border-border">
           <div className="container text-center">
              <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text mb-16 uppercase font-black">
                Why Choose DrainCleaningNearMe in Indianapolis
@@ -312,7 +303,7 @@ export function IndyClient() {
         </section>
 
         {/* 7. REALISTIC PRICING */}
-        <section className="py-24 bg-bg border-b border-border">
+        <section className="py-14 md:py-16 bg-bg border-b border-border">
            <div className="container">
               <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text text-center mb-16 uppercase font-black">
                 Realistic Pricing for Indianapolis
@@ -360,7 +351,7 @@ export function IndyClient() {
         </section>
 
         {/* 8. SIGNS YOU NEED PROFESSIONAL HELP */}
-        <section className="py-24 bg-card border-b border-border">
+        <section className="py-14 md:py-16 bg-card border-b border-border">
            <div className="container-narrow text-center space-y-16">
               <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text leading-tight uppercase font-black">
                 Signs You Need Professional Drain Cleaning
@@ -375,7 +366,7 @@ export function IndyClient() {
                    "Frequent minor clogs (recurring issue).",
                    "Lush grass over sewer lines (root intrusion sign)."
                  ].map((tip, i) => (
-                    <div key={i} className="flex items-start gap-4 p-6 rounded-2xl bg-bg border border-border shadow-sm group hover:border-primary/20 transition-all">
+                    <div key={i} className="flex items-start gap-4 p-4 rounded-2xl bg-bg border border-border shadow-sm group hover:border-primary/20 transition-all">
                        <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white transition-colors">
                           <Plus size={16} className="text-primary group-hover:text-white" />
                        </div>
@@ -391,7 +382,7 @@ export function IndyClient() {
         </section>
 
         {/* 9. FAQ SECTION */}
-        <section className="py-24 bg-bg border-b border-border">
+        <section className="py-14 md:py-16 bg-bg border-b border-border">
            <div className="container-narrow">
               <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-center text-text mb-20 uppercase font-black uppercase italic">
                 Frequently Asked Questions (FAQs)
@@ -409,8 +400,7 @@ export function IndyClient() {
                   <div key={index} className="bg-card border border-border rounded-2xl overflow-hidden shadow-sm hover:border-primary/20 transition-all">
                     <button
                       onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                      className="w-full flex items-center justify-between p-8 text-left group"
-                    >
+                      className="w-full flex items-center justify-between p-8 text-left group">
                       <span className="text-lg font-bold text-text tracking-tight group-hover:text-primary transition-colors">{faq.q}</span>
                       <div className="w-10 h-10 rounded-xl bg-bg border border-border flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all shadow-inner shrink-0">
                          {openIndex === index ? <Minus size={18} /> : <Plus size={18} />}
@@ -428,9 +418,9 @@ export function IndyClient() {
         </section>
 
         {/* 10. FINAL CTA */}
-        <section className="py-24 bg-card overflow-hidden relative border-y border-border">
+        <section className="py-16 md:py-20 bg-card overflow-hidden relative border-y border-border">
            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[400px] bg-primary/5 blur-[150px] rounded-full opacity-60" />
-           <div className="container-narrow text-center space-y-12 relative z-10">
+           <div className="container-narrow text-center space-y-8 relative z-10">
               <h2 className="text-4xl md:text-7xl font-bold tracking-tight text-text leading-tight uppercase font-black">
                  Secure Your Drains Today
               </h2>
@@ -440,15 +430,13 @@ export function IndyClient() {
               <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
                  <a
                     href={mainTelLink}
-                    className="w-full sm:w-auto flex items-center justify-center gap-4 px-12 py-6 bg-primary text-white rounded-2xl font-bold text-3xl shadow-xl hover:bg-blue-700 hover:-translate-y-1 transition-all active:scale-95 group tracking-tighter font-black"
-                 >
+                    className="w-full sm:w-auto flex items-center justify-center gap-4 px-10 py-5 bg-primary text-white rounded-2xl font-bold text-2xl shadow-xl hover:bg-blue-700 hover:-translate-y-1 transition-all active:scale-95 group tracking-tighter font-black">
                     <Phone size={32} fill="currentColor" className="group-hover:rotate-12 transition-transform" />
                     (724) 750-6935
                  </a>
                  <a
                     href={mainTelLink}
-                    className="w-full sm:w-auto flex items-center justify-center gap-4 px-12 py-6 bg-card border-2 border-border text-text rounded-2xl font-bold text-2xl hover:border-primary transition-all active:scale-95 tracking-tight font-black"
-                 >
+                    className="w-full sm:w-auto flex items-center justify-center gap-4 px-10 py-5 bg-card border-2 border-border text-text rounded-2xl font-bold text-xl hover:border-primary transition-all active:scale-95 tracking-tight font-black">
                     Free On-Site Estimate
                  </a>
               </div>
@@ -462,7 +450,7 @@ export function IndyClient() {
         </section>
 
       </main>
-      <Footer />
+      
     </div>
   );
 }

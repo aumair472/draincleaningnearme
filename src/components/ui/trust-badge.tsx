@@ -1,7 +1,4 @@
-"use client";
-
 import React from "react";
-import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 interface TrustBadgeProps {
@@ -21,11 +18,9 @@ export function TrustBadge({
   if (!text) return null;
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: -20 }}
-      animate={{ opacity: 1, y: 0 }}
+    <div
       className={cn(
-        "inline-flex items-center gap-3 px-5 py-2.5 bg-card border border-border rounded-full shadow-sm mb-10 transition-all hover:border-primary/30",
+        "inline-flex items-center gap-3 px-5 py-2.5 bg-card border border-border rounded-full shadow-sm mb-10 transition-all hover:border-primary/30 animate-fade-in",
         className
       )}
     >
@@ -36,9 +31,10 @@ export function TrustBadge({
           </div>
         </div>
       )}
-      <div className="text-sm font-bold text-text/70 tracking-tight uppercase">
+      <div className="text-sm font-bold text-text/70 tracking-tight uppercase italic">
         {text}
       </div>
-    </motion.div>
+    </div>
   );
 }
+

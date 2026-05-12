@@ -1,7 +1,5 @@
-"use client";
-
-import { motion } from "framer-motion";
 import { Phone, MessageSquare, UserCheck, CheckCircle2 } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 const steps = [
   {
@@ -32,40 +30,36 @@ const steps = [
 
 export function HowItWorks() {
   return (
-    <section className="py-24 bg-card border-y border-border relative overflow-hidden font-body">
+    <section className="py-16 md:py-20 bg-card border-y border-border relative overflow-hidden font-body">
       <div className="container relative z-10">
-        <div className="text-center mb-20 space-y-4">
-          <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text leading-tight">
+        <div className="text-center mb-12 md:mb-16 space-y-3">
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-text leading-tight uppercase font-black italic animate-fade-in">
             How it works – simple & fast
           </h2>
-          <p className="text-text/70 font-medium max-w-2xl mx-auto text-lg leading-relaxed">
+          <p className="text-text/70 font-medium max-w-2xl mx-auto text-base md:text-lg leading-relaxed animate-fade-in [animation-delay:100ms] italic">
             Connecting you with top-tier local expertise shouldn't be complicated. We've streamlined the process for maximum speed.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 relative items-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative items-start">
           {/* Connecting line for desktop */}
-          <div className="hidden lg:block absolute top-12 left-[10%] right-[10%] h-0.5 bg-border -z-10" />
+          <div className="hidden lg:block absolute top-10 left-[10%] right-[10%] h-0.5 bg-border -z-10" />
 
           {steps.map((step, i) => (
-            <div key={i} className="flex flex-col items-center text-center group">
-              <motion.div
-                initial={{ scale: 0.8, opacity: 0 }}
-                whileInView={{ scale: 1, opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className="w-24 h-24 rounded-3xl bg-card border-2 border-border text-primary flex items-center justify-center shadow-xl mb-8 relative group-hover:bg-primary group-hover:text-white group-hover:border-primary transition-all duration-300"
+            <div key={i} className="flex flex-col items-center text-center group animate-fade-in-up" style={{ animationDelay: `${i * 100}ms` }}>
+              <div
+                className="w-20 h-20 rounded-[2rem] bg-card border-2 border-border text-primary flex items-center justify-center shadow-xl mb-6 relative group-hover:bg-primary group-hover:text-white group-hover:border-primary transition-all duration-300"
               >
-                <div className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-primary text-white text-xs font-bold flex items-center justify-center border-4 border-card group-hover:bg-white group-hover:text-primary transition-colors">
+                <div className="absolute -top-1 -right-1 w-7 h-7 rounded-full bg-primary text-white text-[10px] font-black flex items-center justify-center border-4 border-card group-hover:bg-white group-hover:text-primary transition-colors uppercase">
                   {step.number}
                 </div>
-                <step.icon size={36} strokeWidth={1.5} />
-              </motion.div>
+                <step.icon size={28} strokeWidth={2} />
+              </div>
               
-              <h3 className="text-xl font-bold text-text mb-4 leading-tight tracking-tight px-2 group-hover:text-primary transition-colors">
+              <h3 className="text-lg font-bold text-text mb-3 leading-tight tracking-tight px-2 group-hover:text-primary transition-colors uppercase font-black">
                 {step.title}
               </h3>
-              <p className="text-sm text-text/60 font-medium leading-relaxed">
+              <p className="text-xs md:text-sm text-text/60 font-medium leading-relaxed italic">
                 {step.description}
               </p>
             </div>
@@ -75,3 +69,5 @@ export function HowItWorks() {
     </section>
   );
 }
+
+
